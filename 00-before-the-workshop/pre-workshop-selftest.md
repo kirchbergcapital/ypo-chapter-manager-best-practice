@@ -27,7 +27,7 @@ Your chapter files will live in your OneDrive or Google Drive — on the laptop 
 ## Step 3 — One working folder with the kit inside (3 min)
 
 1. Inside that synced folder, create a folder `CM-Workspace`.
-2. Download the kit as one file, [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) (also the link in your pre-workshop message). Move it into `CM-Workspace` and unzip it there — Windows: right-click → *Extract All* → *Extract*; Mac: double-click. You get a folder `_kit`. Named `_kit (1)` or `_kit 2`? Rename it to `_kit`.
+2. Download the kit as one file, [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) (also the link in your pre-workshop message). Move it into `CM-Workspace` and unzip it there — Windows: right-click → *Extract All* → *Extract*; Mac: double-click. You get a folder `_kit`. Named `_kit (1)` or `_kit 2`? Rename it to `_kit`. Safari unpacked it already? Move that `_kit` folder from Downloads.
 3. In `CM-Workspace`, create a small text file `selftest.txt` (Notepad on Windows; TextEdit on Mac, *Format → Make Plain Text*) with this — all fictional:
 
 ```

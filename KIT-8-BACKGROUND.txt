@@ -544,7 +544,7 @@ Purpose: what changed between versions of this kit, and what is planned next.
 - From the first pilots (26 Oct 2026): prompt 40 *Incoming work sweep* over mail and chosen chats (40 prompts in all); `incoming-work.md` gets *Source* and *Last sweep*; prompts 27 and 28 say when they are worth it; a folder that already works gets `folder-map.md` instead of a copy; the AI guide: a link that fails is not a missing file.
 - From the second pilot (26 Oct 2026): an *Elect* column in the officer table; budget lines explained; Claude Code first start and a Mac PATH fix; no hours line for setup steps; the thread checked before a reply draft; areas from an existing job description; project files are copies; connector test never with a Forum mail.
 - Chapter moments: module [`11-chapter-moments`](11-chapter-moments/) — complaints, sad news and event emergencies, renewals, Gold or leaving, elections, the year review, a merger. Each page: who decides, what is yours, first steps. Prompts 32–39; they answer in the chat first and change a file only after your yes.
-- Situations: [`SITUATIONS.md`](SITUATIONS.md) starts from what is on the Chapter Manager's desk — getting started, the week, events, members, Chair and officers, continuity, time — and names the file and the prompt for each situation.
+- Situations: [`SITUATIONS.md`](SITUATIONS.md) starts from what is on your desk and names the file and prompt for each situation.
 - Presentation for trainers in [`trainer/presentation/`](trainer/presentation/README.md): workshop deck (PDF + PPTX, 21 slides), sketchnote series (12 images) and the 2:58 sketchnote video; speaker notes left out.
 - New module [`10-time-by-area`](10-time-by-area/): where your hours go, by area of work. Your assistant offers one hours line per finished task; only confirmed hours count. The log lives in your own folder; you share the month report. Optional: build prompt for your own hours app (no install).
 - House rules: rule 19 now reads "You may suggest minutes for a finished task, marked suggested; only hours I confirm count; never fill in hours I did not confirm"; new rule 20 *Hours line*.
@@ -776,7 +776,7 @@ Your chapter files will live in your OneDrive or Google Drive — on the laptop 
 ## Step 3 — One working folder with the kit inside (3 min)
 
 1. Inside that synced folder, create a folder `CM-Workspace`.
-2. Download the kit as one file, [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) (also the link in your pre-workshop message). Move it into `CM-Workspace` and unzip it there — Windows: right-click → *Extract All* → *Extract*; Mac: double-click. You get a folder `_kit`. Named `_kit (1)` or `_kit 2`? Rename it to `_kit`.
+2. Download the kit as one file, [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) (also the link in your pre-workshop message). Move it into `CM-Workspace` and unzip it there — Windows: right-click → *Extract All* → *Extract*; Mac: double-click. You get a folder `_kit`. Named `_kit (1)` or `_kit 2`? Rename it to `_kit`. Safari unpacked it already? Move that `_kit` folder from Downloads.
 3. In `CM-Workspace`, create a small text file `selftest.txt` (Notepad on Windows; TextEdit on Mac, *Format → Make Plain Text*) with this — all fictional:
 
 ```
