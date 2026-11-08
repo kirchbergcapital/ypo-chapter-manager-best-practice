@@ -1,0 +1,15 @@
+Fictional example — not a real chapter, not real rules. (Group "Lakeside Wine Dinner 22 Oct", exported with "Export chat", without media. Delete this line before testing an import.)
+[08/10/2026, 09:14:03] Lakeside Wine Dinner 22 Oct: Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+[08/10/2026, 09:15:20] Jamie (CM): Welcome to the Wine Dinner group! 22 Oct, 19:00, Lakeside Boathouse. RSVP deadline is Mon 12 Oct.
+[08/10/2026, 09:31:44] Pat: Count me in, plus partner 🍷
+[08/10/2026, 10:02:11] Lee: Yes for me, partner can't make it.
+[08/10/2026, 12:47:58] Morgan: Is there parking at the boathouse?
+[08/10/2026, 13:05:36] Dana: In! Is it ok to bring a business guest?
+[09/10/2026, 08:20:14] Ari: Sorry, travelling that week – next time.
+[09/10/2026, 18:44:09] Pat: Morgan, last time we parked at the marina, 5 min walk.
+[10/10/2026, 11:12:30] Sam: Two from our side.
+[11/10/2026, 21:03:47] Lee: Dress code?
+[12/10/2026, 07:55:02] Jamie (CM): Reminder: RSVP closes tonight. Dress code is smart casual.
+[12/10/2026, 19:40:26] Robin: Just saw this – still ok for one? 🙏
+[13/10/2026, 09:10:51] Dana: Jamie, any news on my guest question?
+[14/10/2026, 16:22:05] Lee: Change of plan, partner can come after all – ok?

@@ -1,0 +1,17 @@
+# Your areas - where your hours go
+# One area per line. Optional: keywords after a colon, separated by commas.
+# Keywords only help the app suggest an area for a pasted line; you always decide.
+# Lines starting with # are notes and are ignored. About ten areas is plenty. Area names: no commas, no colons, no ·
+# Travel is not an area: travel time goes to the area the trip is for.
+# Prompt 23 (Areas interview) turns this list into your own.
+# Save your copy as areas.txt in your own hours folder, not in the chapter folder.
+
+Member communication: member question, newsletter, reminder, member mail, whatsapp group
+Learning and chapter events: venue, speaker, run of show, rsvp, invitation, catering, debrief, learning calendar
+Forum logistics: forum date, forum venue, moderator training, forum calendar
+Membership lifecycle: prospect, onboarding, renewal, new member, welcome, roster, dues
+Officers ExCo and board: exco, officer note, minutes, agenda, officer training, elect, handover
+Game plan commitments and reporting: game plan, commitment, scorecard, charter, bylaws review, strategic plan, chapter management hub, cmh, report to region
+Region and global YPO: regional, regional call, regional manager, global, request from region
+Finance and administration: invoice, receipt, budget, payment, contract, tools, filing
+Knowledge base handover and own learning: faq, playbook, checkpoint, learnings, course, training, ai setup, kit

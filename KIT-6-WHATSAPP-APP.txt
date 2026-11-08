@@ -1,0 +1,629 @@
+OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 6 OF 8: KIT-6-WHATSAPP-APP.txt
+Contents: optional Station 10: build your own WhatsApp app.
+Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
+Built 2026-11-08 from 5 files.
+For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
+
+FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
+
+CHAT FILES OF THE KIT
+  1. KIT-START.txt — the starter file: this AI guide, Stations 1 and 3 with the house rules, the Lab B practice pack (picking a business plan: file 2; more prompts: file 4)
+  2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
+  3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
+  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs
+  6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app   <- this file
+  7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
+  8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
+
+IN THIS FILE
+  - 09-whatsapp-app-build-guide/BUILD-PROMPT.md
+  - 09-whatsapp-app-build-guide/CHECKLIST.md
+  - 09-whatsapp-app-build-guide/OPTIONAL-SEND.md
+  - 09-whatsapp-app-build-guide/README.md
+  - 09-whatsapp-app-build-guide/TROUBLESHOOTING.md
+
+
+===== FILE: 09-whatsapp-app-build-guide/BUILD-PROMPT.md =====
+
+# Build prompt — your own read-only WhatsApp app
+
+Purpose: the one prompt you paste into Claude Code (or a comparable AI coding tool) in your empty `whatsapp-app` folder. It describes the whole app.
+Time: about 10 minutes of building and testing in our test run — allow up to half an hour. You answer a few questions and say yes to commands inside the folder (README step 3).
+
+How to use it: copy **everything inside the grey box** — from "You are helping me" to the last line — and paste it as one message.
+The prompt is in English on purpose: the code, the tests and the app's README come out in English, and you can always ask Claude Code to explain any step in your own language.
+
+Why it is this detailed: an earlier reference build of this app went through three rounds of independent code review, and a test build with an
+earlier version of this prompt (Oct 2026: about 10 minutes, every test passing, no sending calls in the code) showed where a tool could still
+take a wrong turn — for example which library version to pick. Every requirement below answers one of those findings.
+
+```text
+You are helping me, a non-technical person, build a small app on my own laptop. Work only in the current folder.
+Before each step, tell me in one or two plain sentences what you are about to do. Ask me before you install
+anything outside this folder. Never use sudo or admin rights, never open a port, never download anything except
+through npm install. Keep the code small and readable, with comments in plain English.
+
+GOAL
+A small command-line app that links to MY OWN WhatsApp as a linked device (the way WhatsApp Web does), using the
+open-source library Baileys. It saves incoming messages on this laptop, lists my chats, and exports one chat I name
+as a Markdown file. My AI assistant then reads that file, summarises it and drafts replies; I send every reply
+myself. This version sends nothing of its own - no messages, reactions, read receipts or presence; only the
+protocol traffic the library itself sends, like WhatsApp Web (section 5).
+Forum stays out at the door: messages of chats on the never-export list (Forum) are never written to disk.
+The saved messages in ./data are for the app only: you, the AI tool, never open, read, search or print ./auth,
+./data or ./exports - not now and not later - and my chapter folder never contains them. Exports stay in this app
+folder; only a summary ever goes into my chapter folder, and I file that myself.
+
+0. CHECK FIRST
+- Run `node --version`. I need Node.js 20 or newer. If it is missing or older, stop and tell me to install the LTS
+  version from https://nodejs.org/en/download, then wait for me.
+- Run `git --version`. npm needs git once, because Baileys fetches one dependency (libsignal) from GitHub. If git
+  is missing, stop and tell me how to get it: on macOS, accept the offer to install the command line developer
+  tools; on Windows, install Git for Windows from https://git-scm.com/downloads/win. Then wait for me.
+- Find out whether I am on macOS or Windows and give every command for my system (PowerShell on Windows).
+- Check whether this folder lies inside a cloud-synced folder (iCloud Drive, Desktop & Documents in iCloud,
+  OneDrive, Google Drive, Dropbox). If it does, stop and tell me: the login keys this app stores work like a
+  password and must stay on this laptop only.
+
+1. TECH BASE
+- Node.js with ES modules ("type": "module" in package.json), plain JavaScript, no TypeScript, no build step.
+- Baileys version: install EXACTLY 6.7.24 - the stable version this guide was tested with (Oct 2026).
+  Do not choose a version yourself. Do not use 6.17.x: that number is an old, mis-numbered release from March 2025.
+  Do not use 7.x release candidates, even though npm's "latest" tag points to one.
+- Direct dependencies, each pinned to an EXACT version in package.json (no ^, no ~), and keep package-lock.json:
+  baileys 6.7.24; pino (the logger Baileys expects, set to level "silent") at the exact version npm resolves for
+  Baileys 6.7.24 - read it from package-lock.json (9.14.0 on 21 Oct 2026); qrcode-terminal 0.12.0 (draws the QR
+  code). No other direct dependencies. npm will also pull in Baileys' own dependencies (among them sharp, and
+  libsignal from GitHub via git); that is expected. Tests use only Node's built-in test runner.
+- After installing, show me the three exact versions from package.json in one line.
+- Use the real API of Baileys 6.7.24: read its README and type definitions in node_modules (connection.update with
+  the qr field, useMultiFileAuthState, DisconnectReason, Browsers, the messaging-history.set event). Do not rely on
+  memory of other versions.
+- If `npm install` fails, explain it in plain words and stop. Do not switch to another Baileys version on your own.
+
+2. COMMANDS (npm scripts)
+- npm run link     connect, show the QR code in the terminal, store the login keys in ./auth, then keep listening
+                   like `listen`.
+- npm run listen   connect with the stored keys and save incoming messages to ./data until I press Ctrl-C.
+                   If ./auth holds no saved login yet (no creds.json), stop at once, without connecting, with
+                   "No saved login yet - run npm run link first." listen never shows a QR code.
+- npm run chats    offline. List chats from ./data: name, last activity, number of messages. Optional
+                   `-- --search <text>`. Never print message text.
+- npm run export -- --chat "<name>" [--days N] [--out <folder>]
+                   offline. Export ONE chat as Markdown (details in section 6). --days: 1 to 365, default 7.
+                   --out: default ./exports in the app folder.
+- npm run unlink   offline. Print the steps to remove the link and the data (section 5). It changes nothing.
+- npm test         run all tests with `node --test`.
+On any error: a short, friendly English sentence and a non-zero exit code; stack traces only with --debug.
+No command ever asks me a question or waits for input.
+
+3. CONNECTION (link and listen)
+- Socket options: markOnlineOnConnect: false (written as the literal false); syncFullHistory: false; a standard
+  desktop browser preset from Baileys' Browsers for my operating system; logger = pino({ level: 'silent' }).
+  Ignore status updates, channels/newsletters and broadcast lists.
+- QR code: draw it only when process.stdout.isTTY is true. `link` checks this at the very start, before it takes
+  the lock or connects: if stdout is not a terminal, it prints "Run this in a terminal window - the QR code is a
+  one-time login code and is only shown there." and exits. Show at most 3 QR codes per run, then stop
+  with the hint to run `npm run link` again.
+- Draw the QR code with qrcode-terminal's callback form - generate(qr, { small: true }, callback) - and write the
+  string it hands to the callback with process.stdout.write. Do not let qrcode-terminal print by itself: it uses
+  console.log, which is muted during the connection, so the code would never appear. Never print the raw QR string.
+- Mute the console: right before the connection starts, replace console.log, info, warn, error and debug with
+  functions that do nothing (the encryption library underneath can print session keys); restore them when the run
+  ends. The app's own status lines go to process.stderr.write. Never print or log the contents of ./auth, keys,
+  tokens or the QR string.
+- After linking succeeds, print one line: the device name passed to WhatsApp (from the Browsers preset) and the
+  time, and say "Note this - it is how you find this laptop under WhatsApp -> Linked devices."
+- Reconnect: right after pairing WhatsApp asks for one restart (restartRequired) - do it once, at once; it does not
+  count as an attempt. After any other drop: up to 8 reconnect attempts, with growing pauses (2 s, 4 s, 8 s ... at
+  most 60 s). The counter resets to 0 after a connection has stayed open for 10 minutes. After 8 failed attempts,
+  stop with a clear message.
+- Logged out by WhatsApp: stop. Do NOT delete anything. Print: "WhatsApp logged this laptop out. To link again,
+  delete the folder ./auth by hand, then run npm run link."
+- Connection replaced: stop and say that another session took over.
+- Never-export filter BEFORE anything is written: keep in memory the chat ids whose name contains a word from
+  never-export.txt (case-insensitive; the names come from the history, chats/contacts events or groupMetadata).
+  If a group's name is not known yet when its message arrives, call groupMetadata for it once (a read) before
+  writing. For such a chat write NOTHING to disk - no message, edit or delete line in messages.jsonl, no line in
+  chats.jsonl or contacts.jsonl. Re-read never-export.txt at the start of every link/listen run.
+- Save from BOTH events: messaging-history.set (the history WhatsApp sends when I link, with chats, contacts and
+  messages) and messages.upsert (new messages). Also messages.update (edits, deleted-for-everyone), and chat and
+  contact names as WhatsApp shares them (chats.upsert/update, contacts.upsert/update). You may call
+  groupFetchAllParticipating once after connecting to learn group names - that is a read.
+- When connected, record my own chat: append to chats.jsonl the linked account's own chat id(s) - phone-number
+  form and, if WhatsApp provides it, the @lid form - with "self": true.
+- Lock: link and listen create ./data/app.lock exclusively (open flag 'wx'), holding the process id, the start
+  time and a random token, written in a single write. If the file exists: when that process is still running, or
+  the file is empty or incomplete, refuse with "The app is already running in another window." When that process
+  is no longer running, refuse too and print exactly which file to delete by hand. Never decide by the file's age.
+  chats, export and unlink do not need the lock.
+
+4. DATA (./auth, ./data and ./exports on this laptop only)
+- Create ./auth, ./data and ./exports with mode 0o700 (owner only). ./data holds messages.jsonl, chats.jsonl and
+  contacts.jsonl: one JSON object per line - never anything from a chat on the never-export list (section 3).
+- Create never-export.txt in the app folder, one word per line, pre-filled with "forum" (used in sections 3 and 6).
+- Keep the AI tool out of the data: write a CLAUDE.md and an AGENTS.md in the app folder, each saying in plain
+  words "Never open, read, search or print ./auth, ./data or ./exports. Work only on the code, the tests and the
+  README." Also write .claude/settings.json with permissions.deny for Read(./auth/**), Read(./data/**) and
+  Read(./exports/**). Say in the README that these are a second lock for the AI tool, not a proof.
+- Append only these fields. Never write the raw message object, mediaKey, media URLs or direct paths, file
+  hashes, thumbnails, or anything from ./auth.
+  messages.jsonl: id, chatId, timestamp, senderId, senderName (if WhatsApp shares one), fromMe, text or media
+  marker, kind ("message", "edit" or "delete") and, for edits and deletes, the id of the message they change.
+  chats.jsonl: chatId, name, isGroup, self (only for my own chat), timestamp.
+  contacts.jsonl: id, address-book name, profile name.
+- Media becomes a marker only: [image], [video], [voice message], [document: <file name>], [sticker], [location],
+  [contact card]. Never download media.
+- Before appending, if the file does not end with a newline, write a newline first. Never rewrite, repair,
+  truncate, reorder or de-duplicate a file on disk. Apply edits, deletions and duplicates in memory when reading:
+  the latest edit wins and is marked "(edited)"; a message deleted for everyone shows "[deleted for everyone]"
+  (its earlier line stays in messages.jsonl - say so in the README).
+- When reading, skip every line that is not a valid JSON object (null included), count them and print only
+  "Skipped N unreadable lines (content not shown)."
+- Refuse to run, and say why, if ./auth, ./data or any data file is a symbolic link (check with lstat).
+- The app's own code never deletes, repairs or truncates any file or folder. The one exception: at the end of its
+  own run it removes the lock file it created - only if the file still carries this run's token. (Inside ./auth
+  the library manages its own key files; that is expected.)
+- .gitignore: /auth/, /data/, /exports/, /node_modules/, .DS_Store.
+- --out (section 6) is for a folder on this laptop only; the README recommends the default ./exports and says
+  never to export into the chapter folder or any cloud-synced folder.
+
+5. NOTHING IS SENT - hard rule for this version
+- The code must never call sendMessage, relayMessage, sendReceipt, sendReceipts, readMessages, sendPresenceUpdate,
+  presenceSubscribe, chatModify, star, any group function other than groupFetchAllParticipating and groupMetadata,
+  any updateProfile..., updateBlockStatus, any privacy or settings update, query, sendNode, or the raw websocket.
+  So: no messages, reactions, read receipts (blue ticks), typing state, "online" presence, group or profile changes.
+- No other network access: no fetch, http, https, net, dgram, child_process, eval, telemetry, analytics or update
+  checks. The only connection is the one Baileys opens to WhatsApp. If you think another one is needed (for
+  example to look up the current WhatsApp Web version), explain why and ask me first.
+- Do not patch the library. Explain honestly in the README that, like WhatsApp Web, the library itself sends
+  protocol traffic: delivery receipts (grey double ticks), history-sync receipts, acknowledgements and an
+  "unavailable" (offline) presence when it connects.
+- unlink prints these steps and nothing else: 1) On your phone: WhatsApp -> Settings -> Linked devices -> tap this
+  laptop -> Log out. 2) Delete the folder ./auth by hand - or the whole app folder - in Finder or File Explorer.
+  3) Exports stay where you saved them; delete them by hand if you no longer need them.
+
+6. EXPORT
+- --chat matching, case-insensitive: export only when exactly ONE chat name matches the text exactly. In every
+  other case (no exact match, or several chats with that exact name) print up to 10 chat names that contain the
+  text, each with its last activity, say "Use one of these names exactly.", and exit. Never prompt, never pick
+  a chat on my behalf, never export more than one chat per run.
+- "Me" is reserved: --chat "Me" (any case) matches only my own chat - the chat(s) marked "self": true - and never
+  a chat by its name. chats shows it as "Me (message yourself)".
+- Forum stays out: refuse to export any chat whose name contains one of the words in never-export.txt (case-insensitive) and say: "This looks like a Forum
+  chat. Forum content stays out."
+- --out: default ./exports. Create the folder if it is missing (mode 0o700). If the --out folder itself is a
+  symbolic link, refuse and print its real path, so I can use that instead.
+- File name: YYYY-MM-DD_<slug>-<6 hex characters from a hash of the chat id>.md. The slug keeps only a-z, 0-9 and
+  hyphens, at most 40 characters, so no chat name can create a path.
+- Create the file exclusively (open flag 'wx'). Never overwrite and never follow a link: if the name exists, try
+  -2, -3 ... up to -99, then stop with a message.
+- Content: a header with the chat name, the period (from and to dates), the export time and the line
+  "Source, not truth - exported read-only."; then one line per message: "YYYY-MM-DD HH:MM · Name: text" in local
+  time, continuation lines of multi-line messages indented.
+- Names: the address-book name if WhatsApp shares it, otherwise the profile name, otherwise the phone number. A
+  sender whose id ends in @lid and who has no name shows as "Unknown (lid)" - never print the lid number itself.
+- At the end, print the full path of the file.
+
+7. TESTS (node --test, fictional data only)
+- Fixtures in test/fixtures: a fictional "Lakeside Chapter (fictional)" with made-up names and numbers that start
+  with +00. No real data anywhere.
+- Every test works in a temporary folder under os.tmpdir() and never touches ./auth, ./data or ./exports.
+- Cover at least: argument parsing (--days default 7, range 1 to 365; --out default ./exports); chat matching (no
+  match, one exact match, a name that only contains the text, two chats with the same exact name - only one exact
+  match exports, and nothing ever prompts); "Me" matches only the self chat, not "Megan" or "Meeting"; the Forum
+  refusal; the --days window; file names and slugs; no overwrite (second export gets -2); refusing a symbolic-link
+  --out folder and a symbolic-link data file (on Windows, skip with a clear note if creating links is not
+  permitted); skipping unreadable and null lines; appending after a last line without newline; edits and
+  deletions applied ("(edited)", "[deleted for everyone]"); stored lines contain only the listed fields, even when
+  the incoming fixture message carries mediaKey, a URL and file hashes; a chat named "Lakeside Forum (fictional)"
+  writes nothing to messages.jsonl, chats.jsonl or contacts.jsonl - neither from history, nor from new messages,
+  nor from edits or deletes, and also when its group name only arrives via groupMetadata; history from messaging-history.set and new
+  messages from messages.upsert both end up in messages.jsonl; "Unknown (lid)" for an unnamed @lid sender; listen
+  without saved login stops with "run npm run link first"; the lock (second run refused; dead process refused with
+  the delete-by-hand message; own lock removed only with the matching token); no QR code when stdout is not a
+  terminal; the QR code is written via process.stdout.write while the console is muted; reconnect counting with
+  fake timers (at most 8 attempts after a drop, the pairing restart not counted, the counter reset after 10 minutes
+  open); a run against a mock socket on which every sending function is a spy that must never be called; and a
+  tripwire test - with "tripwire" in its name - that scans src/ for the forbidden names and imports from
+  section 5, also written as strings. Call that scan what it is: a tripwire, not a proof.
+
+8. README.md (for me, a non-technical user)
+Plain English: what the app does and does not do; the commands (with the defaults --days 7 and --out ./exports);
+where the data lives (./auth works like a password, ./data holds messages - never those of chats on the
+never-export list - ./exports holds exports, all on this laptop, none of it for the chapter folder); that a word
+added to never-export.txt later stops saving from then on, while earlier lines stay until I delete ./data by hand;
+that CLAUDE.md, AGENTS.md and .claude/settings.json keep the AI tool out of ./auth, ./data and ./exports; that a message deleted for everyone stays in messages.jsonl; that
+backups (Time Machine, File History) copy these folders; how to stop it (Ctrl-C); which name the laptop shows under
+WhatsApp -> Linked devices; how to unlink and remove everything by hand; what goes over the wire (the honest list
+from section 5); known limits: new messages arrive only while link or listen runs on an awake laptop; do not run
+listen while link is still running; history at linking is limited; the never-export check goes by chat name only;
+WhatsApp may log out linked devices after the phone has been unused for a while; WhatsApp changes its web protocol
+from time to time, so a newer stable library version may be needed one day.
+
+9. FINISH
+- Run npm test and fix until every test passes. Then show me the test summary (tests, pass, fail) and the list
+  of files, one line each.
+- Do not run `npm run link` yourself: it needs my phone and a real terminal window.
+
+When done, show me how to run the test, then walk me through `npm run link` step by step.
+```
+
+Next: link your phone (step 4 in the [README](README.md)), then tick [`CHECKLIST.md`](CHECKLIST.md).
+Want to send one confirmed message at a time from the app later? That is [`OPTIONAL-SEND.md`](OPTIONAL-SEND.md) — your choice, not a step.
+
+===== FILE: 09-whatsapp-app-build-guide/CHECKLIST.md =====
+
+# Before you use it — ten ticks
+
+Purpose: a short check of the app your AI tool built, before you use it with real chats.
+Time: about 10 minutes. Ask Claude Code the questions in *italics* in the app folder; you do not need to read the code yourself.
+
+Print it or copy it into a note and tick as you go.
+
+- [ ] **1 · Node and Git are there.** `node --version` shows `v20` or higher; `git --version` shows a version number.
+- [ ] **2 · The library version is the tested one, pinned.** Open `package.json` (any text editor) or ask *"Show me the dependencies in package.json."* — you see `"baileys": "6.7.24"`, plus exact versions for `pino` and `qrcode-terminal`, with no `^` or `~` in front. Not 6.17.x, not 7.0.0-rc.
+- [ ] **3 · The tests pass.** Run `npm test` yourself in a terminal window. The summary at the end shows **`fail 0`**.
+- [ ] **4 · Nothing in the code sends — two ways.** (a) In the `npm test` output from tick 3, find a passing test with **"tripwire"** in its name — it scans the code for every sending function. (b) Ask *"Show me every place in the code that sends anything to WhatsApp."* — the answer should be: none in the app's own code; only the protocol traffic the library sends by itself (delivery receipts, offline presence). If you added the [optional send step](OPTIONAL-SEND.md): exactly one place, behind your `y`.
+- [ ] **5 · It stays offline on WhatsApp and stores only what it needs.** *"Is markOnlineOnConnect the literal false, is the console muted while the connection runs, and which fields does the app write to messages.jsonl?"* — yes, yes, and a short list (id, chat, time, sender, from-me, text or media marker, edit/delete) — no raw message, no media keys, no URLs.
+- [ ] **6 · Your keys stay home.** The app folder is in your home folder, not in iCloud Drive, OneDrive, Google Drive or Dropbox — and `.gitignore` lists `/auth/`, `/data/`, `/exports/` and `/node_modules/`. Disk encryption (FileVault / BitLocker) is on, or the app folder is excluded from your backup. `CLAUDE.md` and `AGENTS.md` in the app folder tell the AI tool never to open `auth`, `data` or `exports`; your chapter folder holds no export.
+- [ ] **7 · The QR code shows only in a terminal window.** In Claude Code, *"run npm run link"* — the app should refuse with "Run this in a terminal window". And `npm run listen` before you ever linked stops with "run npm run link first".
+- [ ] **8 · The self-chat test worked.** "Message yourself" → `npm run chats` lists *Me (message yourself)* → `npm run export -- --chat "Me" --days 1` gives a readable file in `exports` → a second export gives a new file ending in `-2.md`.
+- [ ] **9 · Forum chats are excluded, and only exact names export.** `never-export.txt` contains `forum`, and *"Show me the tests that prove a chat with 'Forum' in its name is refused for export and never written to ./data."* — both exist and pass. `npm run export -- --chat "e"` exports nothing and lists names instead. Add words for any other chat that must never leave your phone.
+- [ ] **10 · You know the way out.** You noted the laptop's name under WhatsApp → Settings → **Linked devices**; to log out, tap it → **Log out**. On your laptop: delete the app folder by hand. `npm run unlink` prints the same steps and deletes nothing.
+
+All ten ticked? Then go to step 6 in the [README](README.md): export one real chat and let your assistant summarise it.
+Something did not tick? Paste the question and the answer into Claude Code and ask it to fix the app — then run `npm test` again.
+Stuck: [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md).
+
+===== FILE: 09-whatsapp-app-build-guide/OPTIONAL-SEND.md =====
+
+# Optional: send after you confirm
+
+Purpose: an add-on prompt for later. It gives your app one more command — `send` — that sends **exactly one message to one chat**, and only after you have seen the text and typed `y`.
+Time: about 15 minutes with your AI tool, once the read-only app works and [`CHECKLIST.md`](CHECKLIST.md) is ticked.
+
+## Your decision first
+
+Most Chapter Managers will not need this: your assistant drafts, you copy the draft into WhatsApp on your phone, done.
+The send step saves that copy-and-paste when you are working at the laptop anyway.
+
+Sending through an unofficial client is a bigger step for your own number than reading: WhatsApp's [messaging guidelines](https://www.whatsapp.com/legal/messaging-guidelines)
+name unofficial clients, bulk messaging and auto-messaging among what they act against. One confirmed message at a time, to chats you already have,
+at your own pace, stays close to how you write from your phone — whether you add it is your call.
+
+Either way the chapter rule stays the same: **A human sends** — *"AI drafts; a person reads, edits and sends. No automatic sending, no bulk WhatsApp."*
+([`../06-chapter-rules/ai-use-one-pager.md`](../06-chapter-rules/ai-use-one-pager.md)).
+
+## What the send step does — and what it never does
+
+| It does | It never does |
+|---|---|
+| Send **one** message to **one** chat that already exists in your saved chats | Send to several chats, to a list, or to a number you have never chatted with |
+| Show you the chat, the full text and — for a group — the number of members, then wait for `y` | Send without your `y`, send on a timer, or send automatically in reply to anything |
+| Take the text you type or paste in the terminal, or one `--text "…"` | Read the text from a file, a list or another program |
+| Tell you if sending failed, without trying again on its own | Retry by itself (a retry could send the message twice) |
+
+## The prompt
+
+Open Claude Code in your `whatsapp-app` folder and paste everything inside the grey box.
+
+```text
+Please add ONE new command to this app: npm run send. Keep everything else exactly as it is, and keep all
+existing tests passing.
+
+WHAT SEND DOES
+- npm run send -- --chat "<name>" [--text "<message>"]
+- The chat must already exist in ./data. Use the same matching as export: exactly ONE exact name match (or "Me"
+  for my own chat); otherwise list up to 10 names and stop; never more than one chat. No sending to a phone number
+  that is not an existing chat.
+- send is the one command that asks me something: the confirmation below. Everything else stays non-interactive.
+- The never-export.txt words apply to send as well: refuse any chat whose name contains one of them.
+- The message is ONE text. Either from --text, or - if --text is missing - typed or pasted at a prompt in the
+  terminal (an empty line ends the input). No --file option, no reading from stdin when stdin is not a terminal,
+  no lists, no templates with placeholders, no scheduling, no repeat.
+- Before sending, show: the chat name, "group with N members" for a group, and the full text exactly as it will be
+  sent. Then ask: "Send this one message to <chat>? Type y and press Enter." Only the single letter y sends.
+  Anything else, or Ctrl-C, cancels and says "Nothing was sent."
+- Refuse to run when stdout or stdin is not a terminal (so no other program or AI tool can confirm for me), and say
+  "Run this in a terminal window - you confirm each message yourself."
+- Send exactly once per run, then end the run. If sending fails, say so and do NOT retry; tell me to check my phone
+  before I try again.
+- Send needs the connection, so it takes the same lock as link and listen. If listen is running in another window,
+  refuse with "Stop listen first (Ctrl-C in its window), then send."
+- After a successful send, append one line to ./data/sent-log.jsonl: time, chat name, message id (no text).
+
+WHAT STAYS FORBIDDEN
+- sendMessage may appear in ONE place only: a function in src/send.js, called only after the y confirmation.
+  Everything else from the "nothing is sent" rule stays forbidden: no read receipts (blue ticks), no typing state,
+  no "online" presence, no reactions, no group or profile changes, no other network access.
+  markOnlineOnConnect stays the literal false; the console stays muted during the connection.
+- Update the tripwire test so it allows sendMessage only in src/send.js, exactly once, and still forbids it
+  everywhere else.
+
+TESTS (fictional data, temporary folders, mock socket)
+- y sends exactly one message to exactly one chat; "n", empty input, "yes", "Y " and Ctrl-C send nothing.
+- Not a terminal -> refused, nothing sent. --file or piped input -> refused.
+- Unknown chat, a name that only partly matches, several exact matches, a never-export word, a phone number that
+  is not a chat -> refused.
+- A failed send is not retried. The lock is respected. sent-log.jsonl gets one line without the text.
+
+README: add a short section "Sending one message" with the command, the confirmation, and one sentence that
+sending through an unofficial client carries more risk for my number than reading, and that I can keep sending
+from my phone instead.
+
+When done, run the tests, show me every place in the code that sends anything, and then walk me through one test
+send to my own chat with --chat "Me" - in a terminal window, while listen is stopped.
+```
+
+## Before you use it
+
+Add four ticks to [`CHECKLIST.md`](CHECKLIST.md):
+
+- [ ] Asked Claude Code *"show me every place that sends anything"* — the answer is **one** place, in `src/send.js`, behind the `y`.
+- [ ] Test send with `--chat "Me"` reached your own chat; typing anything other than `y` sent nothing.
+- [ ] The tripwire test (the one with "tripwire" in its name) still passes in `npm test`.
+- [ ] I still send group posts and anything sensitive with a second look — one message, one chat, one `y`.
+
+===== FILE: 09-whatsapp-app-build-guide/README.md =====
+
+# 09 · Build your own WhatsApp app — a guide, not a program
+
+Purpose: build a small app on your own laptop, together with your AI tool, so your assistant can read the WhatsApp chats you choose, summarise them and draft your replies.
+Time: the build itself took **about 10 minutes** in our test. Plan **one to two hours the first time**, including installing Node and linking your phone. After that, a few minutes whenever you use it.
+Level: 3 — an AI tool that can write and run code in a folder on your laptop (see [`../01-foundations/three-levels.md`](../01-foundations/three-levels.md)).
+
+Tool facts: as of 21 Oct 2026, with sources; `[verify]` where we could not confirm on the provider's page.
+
+**This folder contains no code.** It contains a build prompt. You paste it into your AI tool, and the tool builds the app on your laptop,
+for your own WhatsApp number. The app runs on your own laptop, for your own number —
+like the rest of your own tools (see [`../05-officer-handover/what-stays-yours.md`](../05-officer-handover/what-stays-yours.md)).
+
+| File | What it is for |
+|---|---|
+| [`BUILD-PROMPT.md`](BUILD-PROMPT.md) | The one prompt you copy into your AI tool. It describes the whole app |
+| [`CHECKLIST.md`](CHECKLIST.md) | Ten ticks before you use the app for real |
+| [`OPTIONAL-SEND.md`](OPTIONAL-SEND.md) | A second prompt, for later, if you want to send one confirmed message at a time from the app |
+| [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) | QR code expired, logged out, Windows quirks and other bumps |
+
+No code at all, ever? WhatsApp's own **"Export chat"** does the same job one chat at a time: stage 1 in
+[`../03-communication/whatsapp.md`](../03-communication/whatsapp.md).
+
+## What your app can do — and what it can't
+
+| It can | It can't (in the version the build prompt describes) |
+|---|---|
+| Link to **your own** WhatsApp as a linked device, by QR code, the way WhatsApp Web does | Send anything: no messages, reactions, blue ticks, "typing …" or "online" — sending is an optional add-on you decide on later |
+| Save new messages while it runs, plus the recent history WhatsApp shares when you link — except chats on your never-export list (Forum): their messages are never written to disk | Read messages that arrived while your laptop was off, unless they came with that history |
+| List your chats with name and last activity | Download photos, voice messages or documents — they appear as `[image]`, `[voice message]`, `[document: agenda.pdf]` |
+| Export **one chat you name exactly**, for the last N days (7 unless you say otherwise), as a Markdown file | Export all chats at once, guess which chat you meant, or export a chat whose name contains "forum" |
+| Keep everything on your laptop | Upload anything anywhere — the only connection is the one to WhatsApp |
+
+Your assistant then reads the exported file exactly like a stage-1 export: summary, open questions, one-to-one reply drafts.
+
+## What you need
+
+| | |
+|---|---|
+| **Laptop** | macOS 13 or newer, or Windows 10/11 (the requirements of Claude Code; [code.claude.com/docs/en/setup](https://code.claude.com/docs/en/setup)) |
+| **Phone** | Your phone with WhatsApp on **your own number** |
+| **Paid AI plan** | Claude Pro or Max (Claude Code is not in the free plan), or a comparable paid plan with a coding tool |
+| **Node.js** | Free. Download the **LTS** version from [nodejs.org/en/download](https://nodejs.org/en/download) — macOS: the *macOS Installer (.pkg)*; Windows: the *Windows Installer (.msi)*. Double-click, next, next, done. Check in *Terminal* (macOS) or *PowerShell* (Windows): `node --version` should show `v20` or higher |
+| **Git** | Free, and **needed for this app**, because the WhatsApp library fetches one part from GitHub while it installs (the setup guides list Git as optional — for this app it is not). Check: `git --version`. macOS: if a window offers to install the *command line developer tools*, click **Install** (a few minutes). Windows: install *Git for Windows* from [git-scm.com/downloads/win](https://git-scm.com/downloads/win) — optional for Claude Code itself, but it also gives Claude Code its Bash tool ([setup](https://code.claude.com/docs/en/setup)). Step by step: § 5 *Git* in [`../setup/macos.md`](../setup/macos.md) · [`../setup/windows.md`](../setup/windows.md) |
+| **Claude Code** | In the terminal: macOS `curl -fsSL https://claude.ai/install.sh \| bash` · Windows PowerShell `irm https://claude.ai/install.ps1 \| iex` (no admin rights needed). Or use the **Claude desktop app**, which offers Claude Code with a window instead of the terminal ([setup](https://code.claude.com/docs/en/setup)). Check: `claude --version` |
+
+New to the terminal? [`../setup/macos.md`](../setup/macos.md) and [`../setup/windows.md`](../setup/windows.md) walk you through opening it, installing Node and Claude Code, and the first login.
+
+Other AI tools that can write and run code in a folder on your laptop can follow the same build prompt; the steps and the checklist stay the same.
+This guide shows Claude Code because the kit's Level 3 uses it.
+
+**Using ChatGPT?** Codex, included in ChatGPT Plus ([source](https://help.openai.com/en/articles/11369540)), can run the same build prompt in your `whatsapp-app` folder,
+and it reads `AGENTS.md` files ([source](https://developers.openai.com/codex/guides/agents-md)). How to install it: OpenAI's own page `[verify]`.
+
+## Six steps
+
+### 1 · Make a folder for the app (2 min)
+
+Open *Terminal* (macOS: Spotlight `Cmd Space`, type "Terminal") or *PowerShell* (Windows: Start menu, type "PowerShell").
+Make the folder in your **home folder**, not inside a cloud-synced folder (iCloud Drive, OneDrive, Google Drive, Dropbox): the app keeps your WhatsApp
+login keys there, and they work like a password.
+
+- **macOS** (Terminal): `mkdir ~/whatsapp-app` then `cd ~/whatsapp-app`
+- **Windows** (PowerShell): `mkdir $HOME\whatsapp-app` then `cd $HOME\whatsapp-app`
+
+The app folder is separate from your chapter folder — and stays separate: the app's saved messages (`data`) and its exports never go into the chapter folder,
+and your chapter assistant never works in this folder. Claude Code works here only to build and fix the app; the build prompt tells it never to open `auth`, `data` or `exports`.
+Exports land in the app's own `exports` folder (step 6).
+
+### 2 · Open Claude Code in that folder and paste the build prompt (5 min)
+
+In the same window, type `claude` and press Enter (or, in the desktop app, open Claude Code and choose the `whatsapp-app` folder).
+
+- **First start:** a browser window opens to log in with your Claude account (Pro or Max). Log in, then come back to the terminal.
+- **"Do you trust the files in this folder?"** Yes — it is your own, empty folder.
+
+Open [`BUILD-PROMPT.md`](BUILD-PROMPT.md), copy the whole prompt and paste it in.
+Details and screenshots for the login: [`../setup/macos.md`](../setup/macos.md) · [`../setup/windows.md`](../setup/windows.md).
+
+### 3 · Let it build the app (about 10–30 min)
+
+Claude Code checks Node and Git, installs the library version the prompt names, writes the app and its tests, and runs the tests until they pass.
+It asks before it runs a command. Read the one line, then:
+
+| Say **yes** to | Say **no** to |
+|---|---|
+| `npm install`, `npm test`, creating and changing files **inside this folder** | Anything that opens a port, downloads something else, installs outside the folder, needs `sudo` or admin rights, or opens or prints what is in `./auth`, `./data` or `./exports` |
+
+Not sure? Ask *"What does this command do, in one sentence?"* before you answer.
+You do not need to understand the code. At the end `npm test` shows a short summary — something like `tests 66 · pass 66 · fail 0`. The numbers may differ; **`fail 0`** is what counts.
+
+### 4 · Link your phone — in a terminal window (5 min)
+
+The QR code is a one-time login code, so the app shows it **only in a terminal window**, never in Claude's chat.
+
+1. Open a **new** *Terminal* or *PowerShell* window, go to the folder (`cd ~/whatsapp-app` or `cd $HOME\whatsapp-app`) and type `npm run link`.
+2. On your phone: **WhatsApp → Settings → Linked devices → Link a device**, and scan the QR code.
+3. Under **Linked devices** a new entry appears for the laptop. Note its name and today's date, so you can later log out the right one.
+4. Leave the window open for a minute or two while your recent chats arrive. It keeps listening; **Ctrl-C** stops it.
+
+The QR code did not work twice? Use WhatsApp's own "Export chat" (stage 1 in [`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)) for now — it does the same job one chat at a time — and look at [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) when you have a quiet moment.
+
+From the second time on, use `npm run listen` instead of `link` — it reuses the saved login. Claude Code walks you through linking step by step; the build prompt ends by asking it to.
+
+### 5 · Test with "Message yourself" (5 min)
+
+1. Keep the window from step 4 open — `link` is already listening, so **do not start `listen` as well**. On your phone, send yourself a message:
+   in WhatsApp, start a new chat and pick **your own name** at the top (marked *You* or *Message yourself*). Write *"Test one"*.
+2. In a **second** terminal window in the same folder: `npm run chats` — your own chat is listed as *Me (message yourself)*.
+3. `npm run export -- --chat "Me" --days 1` — the app prints the path of a new file in the `exports` folder; open it, your message is there.
+   `Me` always means your own chat, in any language your WhatsApp uses.
+4. Run the same export again. You get a second file ending in `-2.md`: the app never overwrites.
+
+Then go through [`CHECKLIST.md`](CHECKLIST.md) once.
+
+### 6 · Export one real chat and let your assistant summarise it (5 min)
+
+First `npm run chats -- --search dinner` to see the exact chat name. The app exports only when the name matches **exactly**; otherwise it lists up to 10 names and stops, so you copy the right one.
+
+**The export stays in the app folder.** It lands in the app's own `exports` folder, on this laptop, not synced to any cloud.
+Do not export into your chapter folder: the chapter folder is shared with `chair@` and synced, and the chat itself is yours, not the chapter's
+([`../05-officer-handover/what-stays-yours.md`](../05-officer-handover/what-stays-yours.md)).
+
+```
+npm run export -- --chat "Holiday dinner" --days 14
+```
+
+Then open your assistant — the one you use for chapter work — and upload or drag in that one export file, with the prompt from
+[`../03-communication/whatsapp.md`](../03-communication/whatsapp.md) — it starts with a stop line for Forum content:
+*"Read the WhatsApp export I just uploaded, summarise what's open and draft my replies. I send them myself."*
+
+**Only the summary goes into the chapter folder**, in the event folder: `03-events/YYYY-MM-DD_event-name/YYYY-MM-DD_whatsapp-summary.md`.
+That is what the chapter keeps. The chat stays on your phone, the export in the app folder — delete the export once the summary is filed.
+
+## Where your data lives — and its copies
+
+| Folder | What it holds | Good to know |
+|---|---|---|
+| `whatsapp-app/auth` | Your WhatsApp login keys | Works like a password. Stays on this laptop |
+| `whatsapp-app/data` | The messages the app saved, as plain text | It holds the chats the app saw — **except** chats whose name contains a word from `never-export.txt` (Forum): their messages are never written here. A message deleted for everyone after it was saved stays in this file; exports show it as `[deleted for everyone]`. Not for any AI tool: the app reads it, you do not hand it to an assistant |
+| `whatsapp-app/exports` | Your exports | One chat at a time, for your assistant to read. Delete each one once its summary is in the event folder |
+
+**Backups copy these folders too.** Time Machine (macOS) and File History (Windows) back up your home folder, including `auth` and `data`. Keep FileVault (macOS) or BitLocker / device encryption (Windows) switched on and choose an encrypted backup — or exclude the `whatsapp-app` folder from the backup. Both take a minute in the settings.
+
+## Removing it again
+
+1. **On your phone:** WhatsApp → Settings → **Linked devices** → tap the laptop entry you noted in step 4 → **Log out**. From this moment the app cannot read anything new.
+2. **On your laptop:** delete the `whatsapp-app` folder by hand (Finder or File Explorer → Trash, then empty the Trash). That removes the login keys and the saved messages.
+3. Exports you saved elsewhere stay where you saved them, and older backups keep their copy — delete them by hand if you no longer need them.
+
+`npm run unlink` prints these steps for you. The app itself never deletes files or folders — you stay the one who decides what goes.
+
+## WhatsApp's rules and good habits
+
+The app connects as an unofficial client, and WhatsApp's [messaging guidelines](https://www.whatsapp.com/legal/messaging-guidelines) name unofficial clients, bulk messaging and automation
+among the things they act against — the app as built here stays close to normal personal use: it reads and you draft, at your own pace, on your own number.
+
+| Habit | Why it helps |
+|---|---|
+| **Read and draft** | Your assistant summarises and drafts; you send from your phone — or, if you add the optional send step, one confirmed message at a time |
+| **Personal pace** | Export a few chats when you sit down to work, not every minute, not every chat |
+| **No bulk** | No mass messages, no lists of recipients, no schedules — the chapter rule *"A human sends"* ([`../06-chapter-rules/ai-use-one-pager.md`](../06-chapter-rules/ai-use-one-pager.md)) |
+| **Only what is yours to read** | Your own chats for your chapter work; Forum stays out (below) |
+
+## Honest limits
+
+- **Your laptop has to run.** New messages reach the app only while `npm run listen` (or `link`) is open on a laptop that is awake and online.
+  Messages from the time in between arrive only if WhatsApp includes them in its history — it usually does not.
+- **History at linking is limited.** When you link, WhatsApp shares recent history, not your whole archive `[verify: how much depends on WhatsApp]`.
+- **Some senders have no name.** WhatsApp sometimes shares only an internal id instead of a number; the app then writes *Unknown (lid)* rather than guessing.
+- **Linked devices can be logged out.** WhatsApp may log out linked devices when your phone has not been used for a longer while `[verify]`. Then link again (see [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md)).
+- **Delivered, not read.** Like WhatsApp Web, the library confirms delivery (grey double ticks) and announces the laptop as "offline" when it connects. It does not send blue ticks.
+- **WhatsApp changes its web protocol from time to time.** The build prompt pins the library to version 6.7.24, the stable version this guide was tested with (Oct 2026). If linking stops working one day, ask Claude Code to check for a newer **stable** version and run the tests again.
+- **The library is open source and not affiliated with WhatsApp** ([npm: baileys](https://www.npmjs.com/package/baileys)); the app should work for personal use as described, but nobody can promise it will keep working.
+
+## Forum stays out
+
+> Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
+
+For the app that means: **Forum chats are never exported.** The build prompt makes the app refuse any chat whose name contains "forum"
+(you can add more words to `never-export.txt`). The check goes by the chat's **name only**: a Forum chat with a different name, or one renamed later, is not detected —
+add a word from its name to `never-export.txt`, or simply never export it.
+Messages of a chat on the list are **not saved** at all — not in `./data`, not anywhere. A word you add later stops new saving from then on;
+what was saved before stays in `./data` (the app never edits that file) — to remove it, stop the app, delete the `data` folder by hand and start `npm run listen` again.
+
+===== FILE: 09-whatsapp-app-build-guide/TROUBLESHOOTING.md =====
+
+# Troubleshooting
+
+Purpose: the usual bumps and the quick way past each one.
+First move, every time: paste the exact message into Claude Code in the app folder and ask *"What does this mean, and what should I do?"* — it knows the app it built.
+
+## Getting started
+
+| What you see | What helps |
+|---|---|
+| A browser window opens when you first type `claude` | That is the login. Sign in with your Claude account (Pro or Max), then return to the terminal. Step by step: [`../setup/macos.md`](../setup/macos.md) · [`../setup/windows.md`](../setup/windows.md) |
+| "Do you trust the files in this folder?" | Yes, for your own `whatsapp-app` folder |
+| Claude Code asks to run a command and you are unsure | Yes to `npm install`, `npm test` and file changes inside the folder. No to opening a port, extra downloads, installing outside the folder, `sudo`/admin, or opening or printing `./auth`, `./data` or `./exports`. Ask *"What does this do, in one sentence?"* first |
+| A dragged folder path does not work | Type the command up to `--out `, then drag the folder into the terminal window; do not add your own quotes around it |
+
+## Linking
+
+| What you see | What helps |
+|---|---|
+| The QR code expires before you scan it, or the app stops after three codes | Open WhatsApp → Settings → **Linked devices** → **Link a device** on your phone **first**, then run `npm run link` and scan straight away |
+| No QR code appears at all | The app should draw it directly in the window. Paste what you see into Claude Code and ask it to check that the QR code is written with `process.stdout.write`, not `console.log` |
+| Two attempts did not work | Take a break from the app and use WhatsApp's own "Export chat" (stage 1 in [`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)) for today — same result, one chat at a time. Try again later with the rows below |
+| "Run this in a terminal window" | You started `link` inside Claude Code or the desktop app. Open *Terminal* (macOS) or *PowerShell* (Windows), go to the app folder, run it there |
+| "No saved login yet - run npm run link first" | `listen` needs a link first. Run `npm run link` once, scan, then use `listen` from then on |
+| The QR code looks broken or will not scan | Make the terminal window bigger, or zoom out (macOS `Cmd -`, Windows `Ctrl -`) until the whole code fits; a plain light or dark theme scans best |
+| "WhatsApp logged this laptop out" | The link was ended — on your phone, or by WhatsApp after your phone was unused for a while `[verify]`. Delete the `auth` folder in the app folder by hand, then `npm run link` again |
+| "Another session took over" (connection replaced) | The app runs in a second window, or on another laptop with the same keys. Close the other one, start again |
+| "The app is already running in another window" | Usually `link` is still open in another window — it keeps listening, so you do not need `listen` as well. Use that window, or stop it with **Ctrl-C** first. No other window? The message names a lock file left over from a crash — delete that one file by hand and start again |
+| Several laptops under Linked devices, not sure which is the app | Look for the name and date you noted when linking (step 4 in the [README](README.md)). Still unsure: log out all entries you do not recognise, then link again |
+| Linking fails again and again, even with a fresh QR code | WhatsApp may have changed its web protocol. Ask Claude Code: *"Is there a newer stable Baileys version than 6.7.24 — no release candidate, not 6.17.x? If yes, explain, update the exact pin, and run the tests."* |
+
+## Node, npm, Git and the terminal
+
+| What you see | What helps |
+|---|---|
+| `node` or `npm` is "not found" / "not recognized" | Close the terminal window and open a new one after installing Node. Still missing: install the **LTS** version again from [nodejs.org/en/download](https://nodejs.org/en/download) |
+| `node --version` shows `v18` or lower | Install the current **LTS** version from [nodejs.org/en/download](https://nodejs.org/en/download); it replaces the old one |
+| `npm install` fails with `spawn git` or "git not found" | Git is missing. macOS: type `git --version` and accept the offer to install the command line developer tools. Windows: install Git for Windows from [git-scm.com/downloads/win](https://git-scm.com/downloads/win). Then open a new terminal window and ask Claude Code to run `npm install` again |
+| `claude` is "not found" after installing | Open a new terminal window. Still missing: see [Troubleshoot installation](https://code.claude.com/docs/en/troubleshoot-install) |
+| `npm install` fails with `EPERM` and mentions the npm cache or "root-owned files" | An old installation left npm's cache locked. Do **not** run the `sudo chown` line npm suggests. Ask Claude Code to run `npm install --cache ./.npm-cache` instead — the cache then lives inside the app folder — and to add `.npm-cache/` to `.gitignore` |
+| `npm install` fails for another reason | Paste the error into Claude Code. Never use `sudo` to get past it, and do not let it switch to another Baileys version on its own |
+
+## Windows and PowerShell
+
+| What you see | What helps |
+|---|---|
+| "running scripts is disabled on this system" when you type `npm …` | Type `npm.cmd` instead of `npm` — for example `npm.cmd run link`. It does the same thing |
+| The app says `--chat` is missing although you typed it | PowerShell can swallow the `--` in npm commands. Use `npm.cmd run export -- --chat "…"` |
+| A path with spaces does not work | Drag the folder into the window (PowerShell adds the quotes), or type the quotes yourself: `--out "C:\Users\you\WhatsApp exports"` (a folder on this laptop — not your chapter folder, not a synced folder) |
+| You are in CMD, not PowerShell (`'irm' is not recognized`) | Open **PowerShell** from the Start menu — the prompt starts with `PS` |
+| Symbolic-link tests are skipped | Expected on Windows without the permission to create links; the app's checks still run |
+
+## Network and firewall
+
+| What you see | What helps |
+|---|---|
+| The app keeps reconnecting and gives up after 8 attempts | Check the internet connection. Company networks, hotel Wi-Fi or a VPN sometimes block WhatsApp Web; try your home network or your phone's hotspot |
+| A firewall window asks whether Node may accept incoming connections | The app only connects out to WhatsApp and should not need incoming connections — you can decline. Ask Claude Code why the app asked; it should not open a port |
+| WhatsApp Web works in the browser, the app does not | Same cause as "linking fails again and again" above: ask for a newer stable library version |
+
+## Chats and exports
+
+| What you see | What helps |
+|---|---|
+| "Use one of these names exactly" | The app exports only on an exact name. Copy one name from the list, in quotes, and run the export again |
+| Two chats have the same name | The app will not guess. Rename one of them on your phone (group name or contact name), let `listen` run a moment, then export |
+| A chat is not in `npm run chats` | The app knows only chats from the history it got when you linked, plus messages that arrived while `listen` ran. Keep `npm run listen` open while you work; try `npm run chats -- --search <part of the name>` |
+| Older messages are missing from an export | Same reason — and the history WhatsApp shares at linking is limited `[verify]`. The export covers 7 days unless you add `--days`. For an older stretch, use WhatsApp's own "Export chat" (stage 1 in [`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)) |
+| Names show as phone numbers, or as "Unknown (lid)" | The app uses only the names WhatsApp shares; *Unknown (lid)* means WhatsApp shared neither name nor number. Your assistant should write "unknown number", never guess a name |
+| "This looks like a Forum chat" | Working as intended. Forum stays out |
+| "Skipped N unreadable lines" | A save was cut off, for example by a crash. The rest is fine; the app never repairs or rewrites its files |
+| Where did the export go? | The app prints the full path at the end of every export. Without `--out` it is the `exports` folder inside the app folder |
+
+Still stuck: start again from step 4 in the [README](README.md), or remove the app as described there and rebuild it — the build prompt gives you a fresh copy in 10 to 30 minutes.

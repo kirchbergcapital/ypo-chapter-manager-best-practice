@@ -1,0 +1,1570 @@
+OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 3 OF 8: KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt
+Contents: Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules.
+Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
+Built 2026-11-08 from 21 files.
+For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
+
+FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
+
+CHAT FILES OF THE KIT
+  1. KIT-START.txt — the starter file: this AI guide, Stations 1 and 3 with the house rules, the Lab B practice pack (picking a business plan: file 2; more prompts: file 4)
+  2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
+  3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules   <- this file
+  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs
+  6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
+  7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
+  8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
+
+IN THIS FILE
+  - 03-communication/email-handoff.md
+  - 03-communication/message-templates.md
+  - 03-communication/one-channel.md
+  - 03-communication/whatsapp.md
+  - 04-knowledge-base/knowledge-base.md
+  - 04-knowledge-base/keeping-it-true.md
+  - 04-knowledge-base/event-lifecycle.md
+  - 05-officer-handover/handover-checklist.md
+  - 05-officer-handover/what-stays-yours.md
+  - 05-officer-handover/commitments-calendar.md
+  - 05-officer-handover/game-plan-keeping.md
+  - 05-officer-handover/officer-briefing-template.md
+  - 06-chapter-rules/ai-use-one-pager.md
+  - 06-chapter-rules/for-your-chair.md
+  - 06-chapter-rules/operating-guardrails.md
+  - examples/bylaws-excerpt-fictional.md
+  - examples/email-1-member-question.md
+  - examples/email-2-officer-request.md
+  - examples/handover.md
+  - examples/log.md
+  - examples/whatsapp-export-event-group.txt
+
+
+===== FILE: 03-communication/email-handoff.md =====
+
+# Email handoff — mail in, filed, logged, drafted
+
+Purpose: every mail worth keeping ends up in the right folder with a clear name, leaves one line in the log, and gets a reply draft you send yourself.
+Time: about 20 minutes to set up the first time; after that about 5 minutes per mail at Level 1, about 2 at Level 2.
+
+## The pattern
+
+```
+mail arrives
+   → 1. folder + file name       06-communication/inbox-filed/YYYY-MM-DD_sender-role_topic.md
+   → 2. one log line             00-handover/log.md
+   → 3. reply draft              06-communication/drafts/ (Level 1) or your mailbox drafts (Level 2)
+   → 4. YOU read, edit, send
+   → 5. if it changed a fact     update 02-chapter-knowledge (chapter-facts.md, a playbook, FAQ.md)
+```
+
+Folder names and file names as in [`../02-your-assistant/folder-structure.md`](../02-your-assistant/folder-structure.md).
+
+Why it pays off: three months later, you — or a stand-in, or a new officer — find the mail by date and role,
+and the log shows what happened without opening a single inbox.
+
+## Level 1 — copy and paste (any paid AI project)
+
+Your assistant has the house rules: `house-rules.md` in the chapter folder or the project's files, and the core in its instructions ([`../02-your-assistant/cm-assistant-instructions.md`](../02-your-assistant/cm-assistant-instructions.md)).
+Copy the mail (sender, date, subject, body) and paste it under this prompt — the same one as Lab B in
+[`../02-your-assistant/lab-build-your-assistant.md`](../02-your-assistant/lab-build-your-assistant.md). If the mail asks about a rule, paste the bylaws section under the second `---`;
+if it touches no rule, write `no rules needed` there.
+
+```
+New email below, followed by our rules. 1) Say which folder it belongs in and give a file name with its extension (YYYY-MM-DD_sender-role_topic.md).
+2) Give me one log line for 00-handover/log.md.
+3) Draft a reply in my voice; answer only from the rules below and cite the section; mark every fact without a source as [verify]. I send it myself.
+---
+{{PASTE_EMAIL}}
+---
+{{PASTE_BYLAWS_EXCERPT}}
+```
+
+Then:
+1. Save the mail text under the suggested name — ending in `.md` — in `06-communication/inbox-filed/`. Attachments go next to it, same date prefix.
+2. Paste the log line at the bottom of `00-handover/log.md`.
+3. Copy the draft into your mail program, check every `[verify]`, send.
+
+## Level 2 — with a mail connector
+
+The assistant reads the mail in your mailbox and leaves the reply as a **draft in your mailbox**. You open it, edit, send.
+
+| Your mailbox | Connector | What you need | Source (as of 21 Oct 2026) |
+|---|---|---|---|
+| **Gmail** (also Gmail on a chapter domain) | Claude → Gmail, Calendar, Drive | Available to all Claude users. Claude can create drafts, reply and send; by default it asks before every action | [support.claude.com](https://support.claude.com/en/articles/10166901) |
+| **Outlook / Microsoft 365** | Claude → Microsoft 365 | A **work account** (not outlook.com or hotmail), and a **one-time consent by the tenant's global admin**. On Claude Team or Enterprise, the Claude owner enables the connector and an admin switches on the write tools. With write tools it can draft and send, without attachments | [support.claude.com](https://support.claude.com/en/articles/15183774) |
+| **ChatGPT users** | Gmail / Outlook apps | Drafting and sending since June 2026, in ChatGPT on the web, for Plus, Pro, Business and Enterprise. On Business, the admin decides which write actions are allowed. Availability depends on app, plan and region — check in your account | [Release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Admin controls](https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps) |
+
+**The admin consent is a one-off.** If your chapter has its own Microsoft tenant, whoever set it up is the admin — often
+an IT-minded officer or the chapter's provider. One message does it; [`../05-officer-handover/role-accounts.md`](../05-officer-handover/role-accounts.md)
+shows the chapter accounts `manager@` and `chair@` the kit asks for — on that tenant they are the work accounts the connector needs.
+
+**Keep it at drafts:** the connectors could send, so answer "draft only" when the assistant asks — setup line in [`../07-connectors-and-browser/email-connectors.md`](../07-connectors-and-browser/email-connectors.md).
+
+Prompt for Level 2 (the assistant also needs access to your chapter folder — see [`../01-foundations/three-levels.md`](../01-foundations/three-levels.md)):
+
+```
+Read the newest mail from {{SENDER_OR_SUBJECT}} in my mailbox.
+1) Save its text to 06-communication/inbox-filed/ as YYYY-MM-DD_sender-role_topic.md (attachments next to it, same prefix).
+2) Append one line to 00-handover/log.md: YYYY-MM-DD · topic · source file · what changed · next step.
+3) Before drafting, read this thread including my sent replies in it: if I have already answered, say so and draft
+   only what is still open. If you cannot see my sent mail, say UNCHECKED. Skip anything with Forum content. Create a reply DRAFT in my mailbox in my voice. Mark facts without a source [verify]. Do not send.
+4) If the mail changes a fact in 02-chapter-knowledge, show me the change before you make it.
+Show me the file path, the log line and the first three lines of the draft.
+```
+
+## What good looks like (fictional example)
+
+```
+File:      06-communication/inbox-filed/2026-11-12_learning-officer_speaker-confirmation.md
+Log line:  2026-11-12 · events · inbox-filed/2026-11-12_learning-officer_speaker-confirmation.md · speaker confirmed for holiday dinner · send venue details by 2026-11-20
+Draft:     "Thank you — wonderful news. I will send the speaker the venue details and timing by 20 November [verify date]..."
+```
+
+To practise first: the [Lab B practice pack](../02-your-assistant/lab-b-practice-pack.md) — prompt, fictional mail and rules in one block. Fictional mails: [`../examples/email-1-member-question.md`](../examples/email-1-member-question.md) · [`../examples/email-2-officer-request.md`](../examples/email-2-officer-request.md).
+
+## Your check (30 seconds)
+
+- [ ] File name: date, **role** (not a member's name), topic, and `.md` at the end.
+- [ ] **Saved**, not only **drafted**: you can see the mail in `inbox-filed/` and the line in `log.md` (drafted = the text is still only in the chat).
+- [ ] Log line at the bottom, nothing above it changed.
+- [ ] Every `[verify]` in the draft checked or removed.
+- [ ] Names and roles in the draft match `chapter-facts.md`, not the sender's email address.
+
+## When it gets busy
+
+- **Ten mails at once:** *"Here are ten mails. For each: folder, file name, log line, and 'reply needed yes/no'. Drafts only for the yes ones."*
+- **A mail with a rule question:** prompt 2 in [`../08-prompts/prompt-library.md`](../08-prompts/prompt-library.md) — answer from the bylaws, with section.
+- **A mail with numbers:** the assistant checks them against `05-finance` before they go into a draft.
+
+Next: [one-channel.md](one-channel.md).
+
+===== FILE: 03-communication/message-templates.md =====
+
+# Message templates
+
+Purpose: five short patterns for the messages a Chapter Manager writes again and again. Your assistant fills the placeholders from your files; you read and send.
+Copy the ones you use into `06-communication/templates/` and adapt them to your chapter's voice.
+
+## How to use them with your assistant
+
+```
+Use the template "{{TEMPLATE_NAME}}" from 06-communication/templates/.
+Fill the placeholders from {{EVENT_FOLDER_OR_FILE}} and chapter-facts.md. Names and roles only from chapter-facts.md.
+Anything you cannot find: [verify]. Write it in {{LANGUAGE}}. Mail version and a short WhatsApp version. I send it.
+```
+
+The WhatsApp version is for a one-to-one chat or a group post you send yourself, from your own number.
+
+---
+
+## 1 · Event invitation
+
+```text
+Subject: {{EVENT_NAME}} — {{DATE}}, {{CITY}}
+
+Dear {{FIRST_NAME}},
+
+You are warmly invited to {{EVENT_NAME}} on {{WEEKDAY}}, {{DATE}}, {{START}}–{{END}}, at {{VENUE}}.
+{{ONE_SENTENCE_WHY_IT_IS_WORTH_IT}}
+
+Spouses / partners: {{YES_NO_PER_EVENT_RULE}}
+Cost: {{COST_OR_"included"}}
+Please register by {{DEADLINE}}: {{REGISTRATION_LINK}}
+
+Looking forward to seeing you,
+{{YOUR_NAME}}, Chapter Manager, {{CHAPTER}}
+```
+WhatsApp version: *"{{EVENT_NAME}}, {{WEEKDAY}} {{DATE}}, {{VENUE}}. {{ONE_LINE_HOOK}} Register by {{DEADLINE}}: {{LINK}}"*
+
+## 2 · Reminder
+
+```text
+Subject: Reminder: {{EVENT_NAME}} — {{DATE}}
+
+Dear {{FIRST_NAME}},
+
+A quick reminder: {{EVENT_NAME}} is {{IN_X_DAYS / next WEEKDAY}}.
+{{START}} at {{VENUE}}, {{ADDRESS}}. {{PARKING_OR_DRESS_CODE_IF_RELEVANT}}
+
+{{IF_REGISTERED: "See you there!" / IF_NOT: "There are still a few places — register here: {{LINK}}"}}
+
+{{YOUR_NAME}}
+```
+WhatsApp version: *"Reminder: {{EVENT_NAME}} {{WEEKDAY}} at {{START}}, {{VENUE}}. See you there!"*
+
+## 3 · Follow-up after no reply
+
+```text
+Subject: {{EVENT_NAME}} — will you join us?
+
+Dear {{FIRST_NAME}},
+
+I'm finalising numbers for {{EVENT_NAME}} on {{DATE}}. Could you let me know by {{DATE}} whether you will join?
+A simple yes or no is perfect.
+
+Thank you,
+{{YOUR_NAME}}
+```
+WhatsApp version: *"Hi {{FIRST_NAME}}, quick one: are you joining {{EVENT_NAME}} on {{DATE}}? A yes or no helps me plan. Thank you!"*
+
+## 4 · Welcome, new member
+
+```text
+Subject: Welcome to {{CHAPTER}}, {{FIRST_NAME}}
+
+Dear {{FIRST_NAME}},
+
+Welcome to {{CHAPTER}} — we are delighted you are here.
+I am {{YOUR_NAME}}, the Chapter Manager. I am your first contact for events, registrations and practical questions.
+
+Three things for your first weeks:
+1. Our next event: {{NEXT_EVENT}} on {{DATE}} — {{LINK}}
+2. Your Forum: {{FORUM_OFFICER_ROLE}} will be in touch about Forum placement and training.
+3. Your mentor: {{MENTOR_IF_THE_CHAPTER_ASSIGNS_ONE / "you will hear from us soon"}}
+
+The fastest way to reach me: {{CHANNEL}}.
+Warm regards,
+{{YOUR_NAME}}
+```
+Prompt 5 in [`../08-prompts/prompt-library.md`](../08-prompts/prompt-library.md) fills this from your onboarding file.
+
+## 5 · Request to officers for input
+
+```text
+Subject: Input needed by {{DEADLINE}}: {{TOPIC}}
+
+Dear {{OFFICER_ROLES}},
+
+For {{ExCo MEETING / REPORT / EVENT}} on {{DATE}} I need from you:
+
+| Who (role) | What | By |
+|---|---|---|
+| {{ROLE}} | {{ITEM}} | {{DATE}} |
+| {{ROLE}} | {{ITEM}} | {{DATE}} |
+
+One week ahead gives everyone time to read before we meet — thank you.
+If something is unclear, reply to this mail and I will sort it out.
+
+{{YOUR_NAME}}
+```
+This follows the one-week lead time in [`../06-chapter-rules/operating-guardrails.md`](../06-chapter-rules/operating-guardrails.md).
+
+---
+
+## Your check before sending
+
+- [ ] Date, weekday and time match the event folder.
+- [ ] Every `{{PLACEHOLDER}}` and `[verify]` is gone.
+- [ ] Names and roles come from `chapter-facts.md`.
+- [ ] Sent by you, one message at a time or to the group you chose.
+
+===== FILE: 03-communication/one-channel.md =====
+
+# One channel to the Chapter Manager
+
+Purpose: all requests from the ExCo reach you through one agreed channel, so you get one prioritised list instead of five competing ones.
+Time: one conversation with your Chair, one friendly message to the officers.
+
+## The problem, from your side of the desk
+
+A familiar pattern across chapters: several officers each send their own requests — by mail, WhatsApp, a call in the evening.
+Each request is reasonable. Together they collide, and nobody sees the whole list except you.
+You end up setting the chapter's priorities without having been asked to.
+
+## From both sides of the table
+
+| | |
+|---|---|
+| **The chair's view** | A chair rarely sees how many requests reach the Chapter Manager in a week. One channel makes the load visible — and gives the chair the job of setting priorities, which is where that job belongs |
+| **The regional view** | Across many chapters, the same lesson holds one level up: when regional mail goes to everyone on every channel, it gets lost. One main channel per audience works better |
+| **What made it better** | One channel, one weekly list, one person who decides when two requests collide |
+
+## What "one channel" means
+
+| Element | Agreement |
+|---|---|
+| **The channel** | One place where ExCo requests reach the CM: a role mailbox (`manager@<chapter-domain>`), or one named thread. Best is a channel that leaves a record in the chapter folder, so the weekly list writes itself |
+| **The gate** | Requests go via the Chair or a named person, who sends you a prioritised list |
+| **The rhythm** | One list a week, at a fixed time. Urgent means: today, with a reason |
+| **Collisions** | When two requests compete, the Chair decides — not you |
+
+This is rule 1 of the operating guardrails in [`../06-chapter-rules/operating-guardrails.md`](../06-chapter-rules/operating-guardrails.md).
+The guardrails cost no money; they ask for discipline. Your Chair can propose them at the next ExCo.
+
+## How to introduce it — friendly, not as a complaint
+
+**Step 1 — Talk to your Chair first (10 minutes).** Bring one example week: how many requests, how many channels.
+Your assistant can count them from `00-handover/log.md`:
+
+```
+Read 00-handover/log.md for the last 4 weeks. Count the requests from officers by channel (mail, WhatsApp, call, other)
+and by officer role. Show a small table and the two weeks with the most collisions. Roles only, no names.
+```
+
+**Step 2 — The Chair (or you, with the Chair's OK) sends one message to the officers:**
+
+```text
+Subject: How we work with {{CM_NAME}} this year
+
+Dear all,
+
+To make sure every request gets the attention it deserves, we are trying one simple rule this year:
+please send requests for {{CM_NAME}} to {{CHANNEL — e.g. manager@chapter-domain}}, or to me.
+Every {{WEEKDAY}} {{CM_NAME}} receives one prioritised list, and when two things compete, I decide.
+
+Urgent things still work — just say why it is urgent.
+
+Thank you — this gives all of us faster answers.
+{{CHAIR_NAME}}
+```
+
+**Step 3 — Your weekly list (5 minutes with your assistant):**
+
+```
+Read the requests filed since {{LAST_WEEK_DATE}} in 06-communication/inbox-filed/ and the log.
+Make one list: request · from (role) · due · effort (S/M/L) · conflicts with.
+Sort by due date. Mark collisions for the Chair. Draft a short message to the Chair with the list. I send it.
+```
+
+**Step 4 — Keep it kind when someone forgets.** A one-line reply does it:
+*"Thank you! I've added it to this week's list for {{CHANNEL}} — {{CHAIR_ROLE}} will confirm the priority."*
+
+## The weekly officer note
+
+One channel brings requests in. The weekly officer note sends one picture back out — once a week, for example on Friday, to all officers on the agreed channel:
+
+| Part | What it says |
+|---|---|
+| **What went out** | Messages and invitations sent this week |
+| **What was agreed** | Decisions, each with its line in `00-handover/decisions.md` |
+| **What was paid** | Amounts, each with its receipt or invoice |
+| **What went quiet** | Requests and threads still waiting for an answer, with the owner (role) |
+
+Your assistant drafts it from the log, the decisions file and the receipts list — prompt 22 in [`../08-prompts/prompt-library.md`](../08-prompts/prompt-library.md).
+You read it, change what needs changing, and send it. Officers stop asking "what did we decide?", and the note itself lands in the chapter folder.
+
+## Members are different
+
+One channel is for **requests from the ExCo**. Members can still reach you the way they like. For members, the habit is:
+mail for what is binding (dates, payments, registrations), WhatsApp for what is short (reminders, quick questions).
+Patterns for both: [message-templates.md](message-templates.md) · [whatsapp.md](whatsapp.md).
+
+Next: [message-templates.md](message-templates.md).
+
+===== FILE: 03-communication/whatsapp.md =====
+
+# WhatsApp — read faster, answer better, send yourself
+
+Purpose: turn busy WhatsApp chats into a summary, a list of open questions and one-to-one reply drafts — in two stages, from "works today" to "runs on your laptop".
+Time: 10 minutes a week at stage 1; building your own app for stage 2 takes one to two hours the first time, with your AI tool (the build itself takes minutes).
+
+Tool facts: as of 21 Oct 2026, with sources; `[verify]` where we could not confirm on the provider's page.
+
+**Your number, your chats.** You work with members from your own WhatsApp number. The chats stay on your phone and stay yours —
+see [`../05-officer-handover/what-stays-yours.md`](../05-officer-handover/what-stays-yours.md).
+What the chapter needs to keep — who comes, what was decided, what changed — goes from the chat into the chapter folder as a short summary:
+**export → summary → file.** That way the chapter's memory is complete, and your phone stays your own.
+
+## Forum stays out
+
+> Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
+
+For WhatsApp that means:
+
+- **Forum groups, and any chat with Forum content, are never exported, uploaded or summarised.**
+- **A mixed chat** — logistics and Forum in one thread — is not exported either. Type the logistics (date, place, headcount) into the event file by hand.
+- **Forum content in an export by accident?** Delete the export. Do not summarise it.
+- The prompt below starts with a stop line for this, and so does prompt 12 in the library.
+
+## The two WhatsApp stages
+
+The WhatsApp stages are not the kit's Levels 1–3: stage 1 works at any level; stage 2 needs an AI tool that can write and run code on your laptop (Level 3).
+
+| Stage | What | Setup | Good for |
+|---|---|---|---|
+| **1 · Chat export** | WhatsApp's own "Export chat" → a text file → your assistant | None | Every CM, today |
+| **2 · Your own small WhatsApp app** | You build it with your AI tool, following [`09-whatsapp-app-build-guide`](../09-whatsapp-app-build-guide/): it reads the chats you choose, summarises them and drafts replies | One to two hours the first time, Level 3 | CMs with many active groups |
+
+At every stage: **the assistant reads and drafts. You decide what goes out — one message at a time**, from your phone or, with the optional send step of your own app, after you confirm that one message.
+
+## Stage 1 — Export chat (official, works today)
+
+1. In WhatsApp, open the chat → menu → **More → Export chat** → *without media* `[verify: menu path differs on iPhone and Android]`.
+2. Keep the export outside the chapter folder — on your phone, or in your laptop's Downloads folder — named `YYYY-MM-DD_chat-name_topic.txt`, e.g. `2026-11-14_event-group_holiday-dinner.txt`. The chapter folder gets only the summary (below).
+3. Upload it to your AI project (Level 1) or give your assistant the file (Level 2), and use this prompt:
+
+```
+Stop and tell me if the chat contains Forum content; do not summarise it.
+Read the WhatsApp export {{FILE}} from {{DATE_FROM}} onwards.
+1) Who confirmed, who declined, who has not answered — for {{EVENT}}. Names exactly as in chapter-facts.md
+   or the event attendee list; if a name only appears as a phone number, write "unknown number", never guess.
+2) Open questions that need my answer, each with the date it was asked.
+3) Anything that changes a fact (date, venue, cost) — show it, do not update files yet.
+4) One-to-one reply drafts for the open questions, short, in the language of each person. I send them myself.
+5) A short summary for the event folder: RSVPs, decisions, changed facts — each with the date of the message.
+6) One log line for 00-handover/log.md.
+```
+
+Save the summary in the event folder (`03-events/{{EVENT_FOLDER}}/YYYY-MM-DD_whatsapp-summary.md`). That file is what the chapter keeps; the chat stays on your phone, and you can delete the export afterwards.
+The summary is a decision record: RSVPs, decisions, changed facts, each with its date. Names appear only with a role or an RSVP — never next to a topic.
+
+**What good looks like:** a three-column attendance table, a short list of open questions, a few drafts of two or three lines each, and a summary of five lines or fewer for the event folder.
+A fictional export to practise with: [`../examples/whatsapp-export-event-group.txt`](../examples/whatsapp-export-event-group.txt).
+
+**Group posts:** if one message should go to the whole event group, ask for one group post — you post it yourself in the group.
+
+## Stage 2 — Build your own small WhatsApp app with your AI tool
+
+[`../09-whatsapp-app-build-guide/`](../09-whatsapp-app-build-guide/) is a build guide, not a ready-made program. You give its build prompt to your AI tool
+(Level 3, see [`../01-foundations/three-levels.md`](../01-foundations/three-levels.md)), and together you build a small app that runs on your laptop.
+It connects the way WhatsApp Web does, **reads** the chats you choose, **summarises** them and **drafts replies**, and saves its exports as Markdown files in its own folder on your laptop, outside the chapter folder.
+Your assistant reads such a file exactly like a stage-1 export; only the summary goes into the event folder. Sending is an **optional** step you can add later: the app then sends one message only after you have confirmed that one message.
+
+The app uses Baileys, an open-source library that is not affiliated with WhatsApp; its own README discourages bulk or automated messaging
+([npm: baileys](https://www.npmjs.com/package/baileys)).
+
+WhatsApp's [messaging guidelines](https://www.whatsapp.com/legal/messaging-guidelines) (last updated 23 Sep 2026) ask users not to
+"use unofficial clients, bulk messaging, auto-messaging, auto-dialing, or automation to harm WhatsApp or our users". The build guide keeps your app far from that line:
+it reads at your own pace, drafts, and sends — if you add sending at all — only the single message you have just confirmed. The full rules for Europe: WhatsApp's [terms for the European Region](https://www.whatsapp.com/legal/terms-of-service-eea).
+
+### Good habits
+
+| Habit | Why it helps |
+|---|---|
+| **You confirm every send** | The app reads, summarises and drafts. If you add sending, each message goes out only after you confirm that one message — no bulk, no schedules, no automatic replies |
+| **Personal pace** | Export a few chats when you sit down to work — not every minute, not all chats |
+| **Keep what the chapter needs in the chapter folder** | Summarise decisions and RSVPs from WhatsApp into the event file — the chat itself stays on your phone |
+| **Leave out what is not yours to read** | Forum groups, chats with Forum content and private conversations are never exported |
+
+## A group charter — pin it in every group you run
+
+A group runs more smoothly when everyone knows what it is for. Post this as the first message of each group you set up, pin it,
+and keep a copy in `06-communication/templates/`. Adapt the purpose line; keep the rest.
+
+```text
+{{GROUP_NAME}} — what this group is for
+
+Purpose: {{e.g. logistics for the holiday dinner — times, places, quick questions}}.
+Everyone here said yes before being added. Know someone who should join? Ask them first, then tell me.
+Your phone number is visible to everyone in this group.
+Please share no sensitive documents here — no ID copies, contracts or bank details.
+Decisions and payments go by mail, so the chapter has them on file. This chat is for the quick things.
+Questions about the group: {{YOUR_NAME}}, Chapter Manager.
+```
+
+**Ask, then add.** Before you add someone, send a short one-to-one message — *"May I add you to the {{EVENT}} group?"* — and add the people who say yes.
+Your assistant can draft these one-to-ones from the RSVP list; you send them.
+
+## Your weekly 10 minutes
+
+| Step | Time |
+|---|---|
+| Export the 2–3 active event groups (stage 1) or let your own app read them (stage 2) | 3 min |
+| Summary + open questions + drafts with the prompt above; summary into the event folder | 4 min |
+| Send the drafts (from your phone, or confirm each one in your app), add the log line | 3 min |
+
+Ready-made prompt: "Chat-export summary" in [`../08-prompts/prompt-library.md`](../08-prompts/prompt-library.md).
+
+**Asks hidden in chats** — a form to fill, a deadline, a request from an officer: the weekly *Incoming work sweep* (prompt 40) takes the exports you choose, together with your mail, and offers rows for your incoming work list. Same rules: your choice of chats, never a Forum group, exports outside the chapter folder.
+
+===== FILE: 04-knowledge-base/knowledge-base.md =====
+
+# Knowledge base
+
+> What your chapter knows, in one folder, in plain files your assistant can read. So "how do we do X?" gets the same answer in March as in October — and a stand-in or the next officer finds it without calling you.
+
+---
+
+## 1 · What it is
+
+Your knowledge base is the folder `02-chapter-knowledge` inside the chapter folder ([`../02-your-assistant/folder-structure.md`](../02-your-assistant/folder-structure.md)).
+It holds what is **true and reusable**. Your assistant reads it before it answers. Everything else in the chapter folder — emails, exports, drafts — is a source that feeds it.
+
+## 2 · What goes in
+
+| File | What it holds | Starts from |
+| --- | --- | --- |
+| `chapter-facts.md` | The chapter on one page: year, officers, standard events, budget lines, channels, deadlines | [`../02-your-assistant/chapter-facts-interview.md`](../02-your-assistant/chapter-facts-interview.md) |
+| `game-plan.md` | The chapter's goals from the Game Plan: metric, tracking source, owner (role), status, evidence. You track it; the chapter commits; the Chair owns delivery | The empty file in [`../02-your-assistant/template-folder/02-chapter-knowledge/game-plan.md`](../02-your-assistant/template-folder/02-chapter-knowledge/game-plan.md) · [`../05-officer-handover/game-plan-keeping.md`](../05-officer-handover/game-plan-keeping.md) |
+| Bylaws | The chapter's bylaws: the original PDF **and** a Markdown copy with page numbers | The current signed version |
+| Operating guidelines | How the chapter works in practice: who approves what, lead times, the one channel to the Chapter Manager | [`../06-chapter-rules/operating-guardrails.md`](../06-chapter-rules/operating-guardrails.md) |
+| `FAQ.md` | Questions members and officers ask again and again — each with a short answer and its source | The last three questions you answered twice |
+| Event playbooks | One file per standard event: timeline back from the date, venue and supplier notes, run sheet, checklist, budget line | Your best past event folder in `03-events` — the steps in [`event-lifecycle.md`](event-lifecycle.md) |
+| Learnings, one file per role | `learnings-chapter-manager.md`, `learnings-learning-officer.md`, `learnings-membership-officer.md` … dated lines: what worked, what did not, what we change | The prompt in [`keeping-it-true.md`](keeping-it-true.md) after each event |
+| Process playbooks | One file per recurring process you run every year, such as `process-board-registration.md` (incoming board registration, membership transfer, platform steps, a tool's how-to with dated workarounds) | Your own last run plus the official guidance |
+| Platform field map | `platform-fields.md` — each screen field points at the chapter file that already holds the value | The first screen that asks — prompt 30 |
+
+What stays in other folders: single emails (`06-communication`), exports (`07-reporting`), event working files (`03-events`), drafts.
+What never goes in: passwords, members' private details (home addresses, private phone numbers, ID or passport copies, health or family details), Forum content. The chapter's password manager, YPO Connect and the Forum itself are the right homes for those — the Forum rule in full: [`../02-your-assistant/folder-structure.md`](../02-your-assistant/folder-structure.md).
+
+## 3 · Markdown, not a database
+
+Write the knowledge base as Markdown files (`.md`): plain text with headings, lists and tables.
+
+| Markdown files | A database or a new app |
+| --- | --- |
+| Every AI assistant reads them, at every level | Needs a connector, a licence, or an export |
+| You read and edit them in any editor | Needs someone who knows the tool |
+| They move with the folder at handover | Often tied to one person's login |
+| A new tool next year reads the same files | A new tool next year means a migration |
+
+Lists that look like tables — receipts, attendance — can be CSV files. Your assistant reads those too.
+
+**Turning a PDF into Markdown.** Keep the original. Add a Markdown copy next to it:
+
+```
+Turn the attached {{DOCUMENT}} into Markdown for 02-chapter-knowledge.
+Keep every heading and section number. Put the page number in brackets after each section, like (p. 4).
+Change no wording. Mark anything you could not read as [verify].
+At the top write: Source: {{FILE_NAME}}, version/date {{DATE}}, converted {{TODAY}}.
+```
+
+Then check three sections against the PDF yourself. If they match, the copy is good.
+
+## 4 · One truth
+
+Each fact lives in **one** file. Other files point to it.
+
+- The date of the holiday dinner lives in `chapter-facts.md`. The playbook says "date: see chapter-facts.md".
+- A rule lives in the bylaws copy. `FAQ.md` quotes it and names the section.
+- Who holds a role lives in the officer table. Nowhere else.
+
+Find the same fact in two places? Keep one, make the other a pointer. If the two disagree, [`keeping-it-true.md`](keeping-it-true.md) shows how to settle it.
+
+## 5 · Where it lives: cloud, synced to your laptop from Level 2 on
+
+**Recommendation:** keep the chapter folder in the chapter's cloud storage (Google Drive or OneDrive). At Level 1 that is all — you upload the key files to your AI project.
+From Level 2 on, install the storage's desktop app so the same folder is synced to your laptop.
+
+| Why cloud | Why also on the laptop |
+| --- | --- |
+| The chapter owns it, through a role account | Desktop AI apps (Level 2) open the folder directly — no uploading |
+| Two admins, so nobody is the only key | Level 3 (Claude Code) works locally in the same folder |
+| Backed up and shareable with officers | You work offline on a train; it syncs later |
+
+At Level 1, you upload the key files (`chapter-facts.md`, `FAQ.md`, the bylaws copy, `handover.md`) into your AI project and refresh them when they change.
+At Levels 2 and 3, the assistant reads and writes the synced folder itself. Same files, same structure — see [`../01-foundations/three-levels.md`](../01-foundations/three-levels.md) and [`../01-foundations/where-your-data-lives.md`](../01-foundations/where-your-data-lives.md).
+
+One person edits a file at a time. Officers read; you and your assistant write.
+
+## 6 · Asking it questions
+
+```
+{{QUESTION}}
+Answer only from 02-chapter-knowledge. Quote file and section (and page for the bylaws).
+If the files do not cover it, say so, write [verify with Regional Manager], and suggest where the answer should live once we have it.
+```
+
+When the answer is new and worth keeping, add it to `FAQ.md` with its source. Next time the question costs you nothing.
+
+## 7 · From both seats
+
+Patterns as chairs and regional officers tend to see them — no single chapter described.
+
+| | Pattern |
+| --- | --- |
+| What worked | A reusable run sheet per event, kept and improved from year to year instead of rebuilt. |
+| What did not | Three places to file things: a private inbox, a private drive, a WhatsApp chat. Every officer change started from zero. |
+| What we improved | One chapter storage, one fixed structure, one file per fact. New officers read the folder before they ask. |
+
+
+## Prompts for your AI
+
+- *"Read 02-chapter-knowledge. Which standard events in chapter-facts.md have no playbook yet? Draft an empty playbook for the next one, from its folder in 03-events."*
+- *"Here are three emails with the same question {{PASTE}}. Write one FAQ.md entry with the answer from our files and the source. Mark anything not in our files [verify]."*
+- *"List every fact that appears in more than one file in 02-chapter-knowledge. Propose which file keeps it and where a pointer goes. Change nothing yet."*
+
+*Patterns from chapter practice. Not official YPO material.*
+
+===== FILE: 04-knowledge-base/keeping-it-true.md =====
+
+# Keeping it true
+
+> A knowledge base is only useful while it is right. Four habits keep it right with little effort: sources feed the truth, open points are marked, logs only grow, and twenty minutes a month you check.
+
+---
+
+## 1 · Sources and truth
+
+| | What it is | Examples | Rule |
+| --- | --- | --- | --- |
+| **Truth** | Your own files, kept current | `chapter-facts.md`, bylaws copy, `FAQ.md`, playbooks, learnings, `handover.md` | Edited in place the same day; every change gets a log line |
+| **Sources** | What comes in from outside | Emails, WhatsApp exports, PDFs, exports from YPO tools, meeting notes | Saved unchanged with a date; cited when they change the truth |
+| **History** | What happened and what was decided | `00-handover/log.md`, `00-handover/decisions.md` | Append-only |
+
+The flow is always the same: **a source arrives → you or your assistant cite it → the truth is updated → one log line.**
+An email that changes the venue does not "become" the truth. It is the reason the playbook changes.
+
+## 2 · Marks that keep you honest
+
+| Mark | Means | What to do |
+| --- | --- | --- |
+| `[verify]` | A fact the assistant could not source, or you were not sure of | Confirm with the owner, then replace the mark with the fact and its source |
+| `[verify with Regional Manager]` | A rule question your files do not answer | Ask once; put the answer in `FAQ.md` with its source |
+| `UNCHECKED` | A file could not be opened, or a reply has not come | Not fine, not failing — open. Check before anyone relies on it |
+| `SOURCE MISSING` | A draft says something in a person's name without a file line or a message behind it | Find the source or take the line out before you send |
+
+A mark is a tool, not a failure. It shows the next person exactly where the work is.
+
+To see all of them at once:
+
+```
+List every [verify], UNCHECKED and SOURCE MISSING in the chapter folder.
+For each: file, line, what is missing, and who could confirm it (role).
+```
+
+## 3 · Logs only grow
+
+`log.md` and `decisions.md` are append-only. New lines go at the bottom. Nothing is rewritten.
+
+A correction is a new line that points to the old one (fictional example):
+
+```
+2026-11-03 · holiday dinner · venue email · start time set to 19:00 · send invitation
+2026-11-05 · holiday dinner · venue email 2026-11-05 · correction of 2026-11-03: start time 19:30 · update invitation draft
+```
+
+Why it matters: a year from now, a new Chair asks "why did we move the dinner?". The log answers in one line, with the source. Nobody has to remember.
+
+`handover.md` is the one page you may rewrite. It shows the current state and points to the log for history.
+
+## 4 · The monthly check — 20 minutes
+
+Put a repeating 20-minute slot in your calendar, for example the first working Monday of the month.
+
+| Min | Step |
+| --- | --- |
+| 0–5 | Run the prompt below |
+| 5–15 | Decide each proposal: yes, no, or ask someone. Clear the [verify] marks you can clear right now |
+| 15–20 | Let the assistant apply the yes-items, add log lines, and refresh `handover.md` |
+
+```
+Monthly check. Read 02-chapter-knowledge, 00-handover, and the log lines of the last 30 days.
+1) List every [verify] and UNCHECKED, with who could clear it (role).
+2) Officers, dates or events that changed in the log or in 06-communication / 07-reporting but not in chapter-facts.md. Cite both files.
+3) Facts that appear in two files with different values. Cite both.
+4) Files in the wrong folder, or names that break YYYY-MM-DD_topic.
+5) Learnings lines from the last month that should change a playbook.
+Propose every edit as a list. Change nothing until I say yes.
+Then apply the approved edits, add one log line per change, and refresh 00-handover/handover.md.
+```
+
+## 5 · After every event: learnings
+
+Within two days of each event, while it is fresh. It takes five minutes and it is the single best gift to next year's officers.
+Working with the event template? The longer debrief with numbers and hours is prompt 18 — see [`event-lifecycle.md`](event-lifecycle.md).
+
+```
+Event done: {{EVENT}} on {{DATE}}. My notes: {{NOTES}}
+(attendance, what members said, what went wrong, what to keep, costs against budget).
+1) Append 3–7 dated lines to 02-chapter-knowledge/learnings-{{ROLE}}.md, each as: what worked · what did not · what we change next time.
+2) Propose edits to the playbook for this event in 02-chapter-knowledge. Mark them as proposals.
+3) Give me one log line for 00-handover/log.md.
+4) Draft a thank-you to the host or speaker for me to send. Use no member's feedback by name.
+```
+
+Ask the officer who owned the event to add their own lines to their learnings file — or send you three bullet points and let the assistant append them.
+When the role changes, the next officer reads that file first.
+
+## 6 · When two sources disagree
+
+It happens every month: the playbook says one thing, a new email says another. Settle it in five steps.
+
+1. **Put both side by side**, each with its source and date. Your assistant does this when you ask: *"These two disagree. Show both with source and date."*
+2. **Ask who owns the fact.** Newer is not automatically right. The source from the owner wins:
+
+   | Kind of fact | Who owns it |
+   | --- | --- |
+   | Rules and bylaws | The current signed bylaws; YPO guidance from its official source, with its date |
+   | How the chapter does things | The ExCo, through a line in `decisions.md` |
+   | Event details | The venue's or supplier's latest written confirmation |
+   | Who holds a role | The officer table in `chapter-facts.md`, confirmed by the Chair |
+   | Money | The budget file and the invoice |
+
+3. **Cannot tell?** Mark the fact `[verify]`, ask the owner in one short message (your assistant drafts it), and add an open item to `handover.md`.
+4. **Decided?** Update the truth file, add a line to `decisions.md` if it was a decision, and a log line that names both sources.
+5. **Fix the cause.** If the old value came from a playbook, update the playbook too, so it does not come back next year.
+
+## 7 · At the officer change
+
+If you kept these habits, the handover is the folder: `handover.md` on top, the logs for history, the learnings files for each role.
+The checklist for the change itself: [`../05-officer-handover/handover-checklist.md`](../05-officer-handover/handover-checklist.md).
+
+*Patterns from chapter practice. Not official YPO material.*
+
+===== FILE: 04-knowledge-base/event-lifecycle.md =====
+
+# Event lifecycle — from first idea to archive
+
+> Events come back all year, and each one touches many people and files. One event folder, the same eight files every time, and a fixed rhythm from T-90 to T+14:
+> your assistant finds every event fact in the same place, and the next organiser starts from your folder instead of from zero.
+
+---
+
+## 1 · The event folder
+
+Copy `03-events/_event-template/` from your chapter folder ([`../02-your-assistant/template-folder/03-events/_event-template/`](../02-your-assistant/template-folder/03-events/_event-template/) in the kit) and rename it `YYYY-MM-DD_event-name`.
+
+| File | What it holds |
+| --- | --- |
+| `brief.md` | Why, for whom, format, date, target number, who decides (by role), what success looks like — the event's one truth |
+| `budget.md` | The budget line from `05-finance`, commitments, actuals — amounts only from a contract, an invoice or a receipt |
+| `run-of-show.md` | Minute plan with roles, tech and plan B — after the event, the candidate for the playbook |
+| `speaker.md` | Bio, briefing, what was agreed, tech and travel needs — nothing without a source |
+| `venue.md` | Contract, capacity, deadlines, contact by role, deliveries, parking |
+| `rsvps.md` | One table: person as on the list · status · guests · venue note the member agreed to share · source and date · attended |
+| `comms-log.md` | Append-only, one line per item: date · channel · topic · open point · hours — every line ends like `· 0.5h` |
+| `debrief.md` | Worked · did not work · change · numbers · hours — the source for the learnings files |
+
+Optional: `follow-up.md` for open loops after the event, and `YYYY-MM-DD_whatsapp-summary.md` for what the chapter keeps from the event group — the chat itself stays on your phone ([`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)).
+
+## 2 · From T-90 to T+14
+
+T = the event day. Adjust the distances to your chapter; keep the order.
+
+| When | What | Lands in | Prompt |
+| --- | --- | --- | --- |
+| T-90 | Clarify the brief with the officer in charge, block the date, create the folder | `brief.md` | — |
+| T-75 | Venue requests and deadlines | `venue.md`, `budget.md` | 11 Email handoff |
+| T-60 | Speaker: research, request, confirm | `speaker.md` | 6 Speaker research |
+| T-45 | Invitation draft, approval | `rsvps.md` (header) | Template 1 in [`../03-communication/message-templates.md`](../03-communication/message-templates.md) |
+| T-30 | Run-of-show draft, budget check | `run-of-show.md`, `budget.md` | 17 Run of show · 4 Budget check |
+| T-21 | Speaker briefing — your assistant drafts, you send | `speaker.md` | 15 Speaker briefing |
+| T-14 … T-3 | RSVP reconciliation, weekly, then daily | `rsvps.md` | 16 RSVP reconciliation |
+| T-7 | Final number to the venue | `venue.md` | — |
+| T-1 | Checklist, mails to the roles involved, checkpoint | `comms-log.md`, `00-handover/handover.md` | 13 Checkpoint |
+| T-0 | Attendance | `rsvps.md`, column "attended" | — |
+| T+2 | Thanks, close the loops | `follow-up.md` | 1 Event follow-up |
+| T+7 | Debrief with numbers and hours | `debrief.md`, `02-chapter-knowledge/learnings-{{ROLE}}.md` | 18 Debrief → learnings |
+| T+14 | Reconcile invoices, move the folder to `09-archive` | `budget.md` (final) | 4 Budget check |
+
+All prompts: [`../08-prompts/prompt-library.md`](../08-prompts/prompt-library.md) — group G · Event lifecycle (15–18), the others by number.
+
+## 3 · Make event hours visible
+
+Event work comes in waves, and it is easy for it to disappear into "the job". A few small habits make it visible — to you first.
+
+| Habit | How |
+| --- | --- |
+| **Hours in the comms log** | Each line in `comms-log.md` ends with your hours, for example `· 0.5h`. You write them, or confirm the assistant's suggestion; only hours you confirm count |
+| **Hours in the debrief** | `debrief.md` has an "Hours" block per phase — and a line for the base work you postponed meanwhile |
+| **Base work stays separate** | Everyday chapter work stays in `00-handover/log.md`, without an hours column — your hours for it go into your own hours log, by area ([`../10-time-by-area/`](../10-time-by-area/)) |
+| **A conversation about facts** | Your hours per event are on file. When you share a debrief with your Chair, scope and event fees become a conversation about what the work really took |
+| **Your own pattern** | After three events, ask your assistant for the pattern across your own debriefs — and only your own |
+
+No benchmark numbers here on purpose: your chapter, your events, your log. The bet: the hours come from searching and answering twice. Test it with your own week ([log](../10-time-by-area/)).
+
+```
+Read the debrief.md files of my last three events in 03-events/ and 09-archive/.
+Show hours per phase for each event, side by side, and the base work I postponed.
+What pattern do you see? Only from these files — no comparison with other chapters.
+```
+
+## 4 · After the event: into the knowledge base
+
+The debrief feeds the chapter's memory: learnings into `02-chapter-knowledge/learnings-{{ROLE}}.md`, playbook changes as proposals, and the run of show as the start of next year's playbook.
+How the learnings files work: [`keeping-it-true.md`](keeping-it-true.md) § 5. What a playbook holds: [`knowledge-base.md`](knowledge-base.md) § 2.
+
+## 5 · The same facts, typed once
+
+Before you type an event into a platform, open `02-chapter-knowledge/platform-fields.md` (prompt 30).
+Each field points at the event file that already holds the value. You copy. You submit.
+When the screen changes, run prompt 30 again.
+A required field on the screen stays required.
+
+*Patterns from chapter practice. Not official YPO material.*
+
+===== FILE: 05-officer-handover/handover-checklist.md =====
+
+# Handover checklists — officer, Chapter Manager, Chair
+
+Three short lists for the three handovers a chapter goes through. Copy the one you need into
+`00-handover/` (for example `00-handover/YYYY-MM_learning-officer.md`) and let your assistant fill in what the
+folder already knows.
+
+When officer terms start and end is set by your bylaws — your Chair or Regional Manager can confirm it for your chapter.
+
+**Two habits that make every handover below easier:**
+- **Meet early.** A common recommendation for associations: hold the handover meeting at least two weeks before the
+  term ends, so there is time for follow-up questions — and record it or name a notetaker
+  (for example in [ASAE's guide to officer handovers](https://www.asaecenter.org/resources/articles/an_plus/2026/09-september/a-guide-to-seamless-officer-handovers-for-associations), Sept 2026).
+- **Hand over the risks, not only the documents.** Lists that only move files miss what someone was promised.
+  Each checklist has its own line for unfinished risks and open promises.
+
+---
+
+## A · Officer change (Learning, Forum, Membership, any officer role)
+
+| # | What | Done when | Who |
+|---|---|---|---|
+| 1 | **The role on one page** — tasks, the year at a glance, what went well, what to change | One page in `00-handover/` (use [officer-briefing-template.md](officer-briefing-template.md)) | Outgoing officer + CM |
+| 2 | **Access** — add the new officer, remove the outgoing one (role address, chapter folder, event tools, groups) | Access list in `01-role-and-calendar/` is current | CM + admin |
+| 3 | **Open projects and contracts with a deadline** — venues, speakers, sponsors, anything signed | Each item has an owner and a date | Outgoing officer |
+| 4 | **Unfinished risks and open promises** — what could still go wrong, and what someone was promised (a speaker, a sponsor, a member), even if nothing is signed | Each item has an owner and a date | Outgoing officer |
+| 5 | **Commitment deadlines of the role** — the ones this role owns, as listed in the official source | Entered in your commitments calendar ([template](commitments-calendar.md)) | CM |
+| 6 | **Contacts and the one channel to the CM** — who the officer works with, and how requests reach you | Written in the briefing | Chair + CM |
+| 7 | **30-minute handover call** — new officer, CM, outgoing officer; at least two weeks before the term ends | Call held and recorded or noted; notes in `00-handover/log.md` | CM invites |
+| 8 | **Passwords only in the chapter's password manager** — never in mails, chats or files | Vault entries moved to the new officer | Admin |
+
+**Prompt for your assistant:**
+
+```
+Prepare the handover for the incoming {{ROLE}}. Read 00-handover/handover.md, 01-role-and-calendar/,
+03-events/ and 00-handover/log.md. Fill the eight points of the officer checklist in
+05-officer-handover/handover-checklist.md (section A). For every open item give owner, date and what
+"done" looks like. Mark anything you could not find as UNCHECKED. Draft only.
+```
+
+---
+
+## B · Chapter Manager change — what your successor (or a stand-in) needs on day one
+
+Write this list while you are still in the role — it also carries a stand-in through a few weeks of absence.
+The chapter keeps the facts; your method stays with you ([what-stays-yours.md](what-stays-yours.md)).
+
+**Access (day one)**
+- [ ] manager@ mailbox — password reset by an admin, not passed on in a chat
+- [ ] Chapter cloud folder — your successor becomes admin, together with the Chair
+- [ ] Chapter password manager — vault handed over by the Chair or the second admin
+- [ ] YPO tools (Chapter Management Hub, Cvent, YPO Connect, Zoom, Canva) — ask the Regional Manager how access moves to the new CM **[verify]**
+
+**Orientation (first week)**
+- [ ] `00-handover/handover.md` — current, with open items and what "done" looks like
+- [ ] `00-handover/log.md` — the history, append-only
+- [ ] `02-chapter-knowledge/chapter-facts.md` — chapter name, officer roles, standard events, budget lines, channels, deadlines
+- [ ] Officer list with roles and the one channel each officer uses to reach the CM
+- [ ] [commitments-calendar.md](commitments-calendar.md) filled for this fiscal year, with status per commitment
+- [ ] This year's events with status (date, venue, contract, registration, budget)
+- [ ] **Goals:** `02-chapter-knowledge/game-plan.md` — status as of {{DATE}}, with the last quarterly report ([game-plan-keeping.md](game-plan-keeping.md))
+
+**Money and contracts**
+- [ ] Budget file and who approves what
+- [ ] Open invoices, deposits, sponsor agreements with dates
+- [ ] How expenses and receipts are processed
+- [ ] **Unfinished risks and open promises** — to members, speakers, sponsors, venues — each with owner and date
+
+**People**
+- [ ] Introductions to the Chair, the Past Chair and the Regional Manager
+- [ ] A 30-minute handover meeting: you, your successor, the Chair — at least two weeks before your last day, recorded or with notes
+
+**The assistant**
+- [ ] The assistant instructions file and the link to the chapter folder — your successor sets up their own AI project in a paid account with training off and points it at the same folder ([../01-foundations/paid-plan-and-training-off.md](../01-foundations/paid-plan-and-training-off.md))
+- [ ] The chapter's own texts in `06-communication/templates/` and the prompts its routines use in `08-prompts/`
+
+**What stays with you**
+- Your WhatsApp number and chats, your own templates and prompt library, your method and your personal AI plan stay yours; the chapter's AI seat on `manager@` stays with the chapter.
+  Before you hand over, write a short summary of any open member conversation into the folder (`06-communication/whatsapp/`: who, topic, what is
+  promised, next step) — then your successor can pick it up. The full line, and the 30-minute handover meeting:
+  [what-stays-yours.md](what-stays-yours.md).
+- Your access to the role accounts, the chapter folder and the password manager ends with the role — the admins
+  close it on your last day.
+
+**Prompt for your assistant:**
+
+```
+I am handing over the Chapter Manager role. Read the whole folder, starting with 00-handover/.
+Write 00-handover/for-my-successor.md: access to arrange, open items with owner and date,
+this year's events with status, the goals in 02-chapter-knowledge/game-plan.md with status,
+money and contracts with deadlines, unfinished risks and open promises, people to meet.
+Mark every gap as UNCHECKED so I can fill it before I leave. Draft only.
+```
+
+---
+
+## C · Chair change
+
+| # | What | Done when |
+|---|---|---|
+| 1 | **chair@ moves** — admin resets the password; the new Chair signs in | Old Chair no longer signs in; mail history is still there |
+| 2 | **Admins** — new Chair + CM become the two admins; Past Chair stays reserve for a year | Admin list updated in `01-role-and-calendar/` |
+| 3 | **Chapter rules re-adopted** — the AI-use one-pager and the operating guardrails, reviewed at the first ExCo | Decision in the minutes ([../06-chapter-rules/README.md](../06-chapter-rules/README.md)) |
+| 4 | **The one channel confirmed** — how ExCo requests reach the CM, and who prioritises | Written in the ExCo minutes and in `01-role-and-calendar/` |
+| 5 | **Commitments status** — where the chapter stands, which deadlines fall in the new Chair's year | One-page status from [commitments-calendar.md](commitments-calendar.md) |
+| 6 | **Governance documents** — when the charter was signed and the bylaws and strategic plan were last updated | Dates in `02-chapter-knowledge/` |
+| 7 | **Goals** — re-confirmed, owners updated by role; the new Chair now owns delivery ([game-plan-keeping.md](game-plan-keeping.md)) | Goals re-confirmed at the first ExCo; `02-chapter-knowledge/game-plan.md` updated |
+| 8 | **Unfinished risks and open promises** — what the outgoing Chair agreed or promised that is not finished | Each item has an owner and a date |
+| 9 | **The CM's scope** — what the base agreement covers and how event work is budgeted, reviewed together | Agreed in a 1:1 between Chair and CM |
+| 10 | **Handover meeting** — outgoing Chair, incoming Chair, CM, 45 minutes, at least two weeks before the term ends | Recorded or noted; notes in `00-handover/log.md` |
+| 11 | **Officer status** — on the first day of the chapter year (the date in `chapter-facts.md`) every officer row in `chapter-facts.md` says `confirmed`; anything still open says `provisional` or `[verify]` | Status column updated, one log line |
+
+**Prompt for your assistant:**
+
+```
+Prepare a one-page briefing for the incoming Chair. Read 00-handover/, 01-role-and-calendar/,
+02-chapter-knowledge/ and 07-reporting/. Cover: commitments status with dates, goal status from
+02-chapter-knowledge/game-plan.md, governance documents with the date of the last signature or update,
+open decisions, unfinished risks and open promises, the one channel to the CM, and the next three
+ExCo dates. Facts only from the folder; mark everything else [verify]. Draft only.
+```
+
+===== FILE: 05-officer-handover/what-stays-yours.md =====
+
+# What stays yours — and what stays with the chapter
+
+**In one sentence:** your know-how is yours; the chapter owns its memory. A clear line between the two protects you,
+makes every handover easy, and lets you take your way of working to the next chapter.
+
+**Self-employed or employed?** Chapter Managers work for their chapter — a small association, sometimes a small company — never for YPO Global.
+If the chapter employs you, its rules, its AI rules included, and your contract set the details, such as who pays the AI plan and what you take with you `[check your contract]`.
+
+## Why a clear line helps you
+
+- **Your know-how is what you bring.** It grows with every event, every ExCo and every chapter. It belongs to you.
+- **The chapter trusts a CM who keeps its memory in its own place.** Chapter data in the chapter folder is the
+  strongest sign of a professional setup.
+- **No awkward questions at the end.** When the line is clear from day one, the handover itself can be a 30-minute
+  meeting.
+
+## Yours
+
+| What | Where it lives |
+|---|---|
+| Your know-how and experience — how events run, what works with officers, what to watch for | In your head and in your own notes |
+| Your own templates and prompt library — general texts and prompts you brought or use with any chapter or client; for ones built for chapter work, agree what you take with you `[check your contract]` | Your own folder, outside the chapter folder |
+| Your own method — how you plan the year, your checklists, your working rhythm | Your own folder |
+| Your WhatsApp number and your chats | Your phone |
+| A personal paid AI plan, if you have one, and the projects in it — a seat the chapter pays sits with the chapter's accounts | Your own account |
+| Your own mail and devices; if self-employed, your invoices to the chapter | Your own accounts |
+| Your hours log as a personal analysis — `hours.csv` and `areas.txt` ([`../10-time-by-area/`](../10-time-by-area/)); employed: next to the chapter's own working-time records | Your own folder, where the chapter's rules allow; the report is what you share, within those rules |
+
+## The chapter's
+
+| What | Where it lives |
+|---|---|
+| Chapter data — member and prospect notes, roster notes, finance | Chapter folder |
+| Decisions, minutes, adopted rules | Chapter folder, `02-chapter-knowledge/` |
+| Event files — contracts, venues, budgets, registrations | Chapter folder, `03-events/` |
+| Role accounts (manager@, chair@), the chapter folder, the password manager | Owned by the chapter ([role-accounts.md](role-accounts.md)) |
+| The chapter's AI seat on `manager@` and the chapter projects in it | The chapter's plan — access ends with the role |
+| What the chapter needs from WhatsApp — decisions, RSVPs, promises | A short summary in the chapter folder; the chat stays on your phone |
+| Texts written for this chapter — its invitation, its welcome mail | Chapter folder, `06-communication/templates/` |
+| The handover note and the log | Chapter folder, `00-handover/` |
+
+**A simple test:** would the next Chapter Manager need it to run this chapter? Then it goes into the chapter folder.
+Would you use it with any chapter or client? Then it is yours. When you copy a chapter text into your own library,
+take the chapter facts out first — names, numbers, member details — and keep the method.
+
+## Keep the line, every day
+
+- Chapter work in chapter accounts and the chapter folder; your library in your own folder. Two places, never mixed.
+- Your assistant reads the chapter folder. Upload chapter files into your own AI project only as far as the work needs.
+- WhatsApp: export → summary → file. What the chapter must keep lands in its folder within the week
+  ([../03-communication/whatsapp.md](../03-communication/whatsapp.md)).
+- Access ends with the role — yours and everyone else's. That protects you as much as the chapter: nobody can ask you
+  about a mailbox you no longer hold.
+
+## When your agreement ends — the handover
+
+1. **Refresh the handover note** and write `00-handover/for-my-successor.md` — section B of
+   [handover-checklist.md](handover-checklist.md) has the list and the prompt.
+2. **Summarise open WhatsApp conversations** into the folder: who, topic, what is promised, next step.
+3. **Tidy your own side:** chapter files you uploaded to your AI project or keep as local copies go back into the
+   chapter folder or are deleted. Your templates and prompts stay with you.
+4. **Close access:** the admins reset the role account passwords and remove you from the chapter folder and the
+   password manager. You confirm in one line that you hold no chapter logins.
+5. **Hold a 30-minute handover meeting** — you, the Chair and, if known, your successor. Walk through
+   `00-handover/handover.md`, confirm the access list, agree what is still open. One line in `00-handover/log.md`.
+
+**Prompt for your assistant:**
+
+```
+My agreement with the chapter ends on {{DATE}}. Read 00-handover/ and the chapter folder.
+Draft three lists: (1) what the chapter needs from me before I leave, each with a date;
+(2) chapter files that may also sit outside the folder (uploads in my AI project, local copies) for me to check;
+(3) open WhatsApp conversations that need a summary in the folder.
+Then draft a 30-minute agenda for the handover meeting with the Chair. Facts only from the folder; mark gaps UNCHECKED.
+Draft only.
+```
+
+## Your setup is portable
+
+Your way of working goes with you; the folder structure, the house rules and your prompt library too, as far as you agreed with the chapter `[check your contract]`.
+Your next chapter or client benefits too: you start on day one with a system that already runs — filled with their
+facts instead of the old ones. That is what a professional brings to the table.
+
+---
+*A practical guide, not legal advice. Where your agreement with the chapter says something specific, the agreement
+applies — and where it says nothing yet, this page is a good starting point for a conversation with your Chair.*
+
+===== FILE: 05-officer-handover/commitments-calendar.md =====
+
+# Commitments calendar — your template for the year
+
+> **This template is empty on purpose.** Copy the current Chapter Commitments — names, definitions and deadlines —
+> from the official Chapter Commitments page in the Chapter Management Hub (CMH), or ask your Regional Manager for them.
+> Definitions and dates change; the official source is always the current one.
+> Which commitments involve you is something you agree with your Chair.
+
+Copy this file to `01-role-and-calendar/commitments-calendar.md`, fill it once at the start of the year, and review it
+once a month with your assistant.
+
+## Template
+
+| Commitment (official wording) | Deadline | CM's part | File | Status |
+|---|---|---|---|---|
+| {{COMMITMENT}} | {{DEADLINE}} | {{WHAT_YOU_DO_OR_DASH}} | {{PATH_IN_CHAPTER_FOLDER}} | met / on track / at risk / UNCHECKED |
+| {{COMMITMENT}} | {{DEADLINE}} | {{WHAT_YOU_DO_OR_DASH}} | {{PATH_IN_CHAPTER_FOLDER}} | |
+| {{COMMITMENT}} | {{DEADLINE}} | {{WHAT_YOU_DO_OR_DASH}} | {{PATH_IN_CHAPTER_FOLDER}} | |
+| {{COMMITMENT}} | {{DEADLINE}} | {{WHAT_YOU_DO_OR_DASH}} | {{PATH_IN_CHAPTER_FOLDER}} | |
+| {{COMMITMENT}} | {{DEADLINE}} | {{WHAT_YOU_DO_OR_DASH}} | {{PATH_IN_CHAPTER_FOLDER}} | |
+
+Source: {{CMH_PAGE_OR_REGIONAL_MANAGER}} · copied on {{DATE}}
+
+Paths point into the folder structure from
+[../02-your-assistant/folder-structure.md](../02-your-assistant/folder-structure.md) — for example
+`01-role-and-calendar/` for officer topics, `03-events/` for event deadlines, `07-reporting/` for status notes.
+
+## Fill it with your assistant
+
+Paste the current text from the official source below the line:
+
+```
+Fill 01-role-and-calendar/commitments-calendar.md from the official Chapter Commitments text I paste below.
+One row per commitment: official wording, deadline, file in our folder. Leave "CM's part" as a question to me
+where it is not clear. Do not add commitments, numbers or dates that are not in the pasted text.
+Mark every gap [verify]. Draft only.
+---
+{{PASTE_FROM_CMH}}
+```
+
+## Monthly check with your assistant
+
+```
+Monthly commitments check. Read 01-role-and-calendar/commitments-calendar.md and the files it points to.
+For each commitment: status (met / on track / at risk / UNCHECKED), the file that shows it, and the next date.
+List what is due in the next 60 days and who owns it. Then draft a five-line status note for the Chair.
+Facts only from the folder; mark everything else [verify]. Draft only.
+```
+
+Add one line to `00-handover/log.md` after each check. When the official definitions change, copy them again and note
+the date in the "Source" line.
+
+===== FILE: 05-officer-handover/game-plan-keeping.md =====
+
+# Game plan keeping — the goals stay alive after the Game Day
+
+**In one sentence:** the chapter commits to its goals on the Game Day; the Chair owns delivery; you keep the file
+current — so the goals are still visible in March, and the next Chair finds them where they belong.
+
+Time: 30 minutes a quarter, plus one goals handover a year.
+
+## Who does what
+
+| Role | Part in the game plan |
+|---|---|
+| **The chapter** | Commits to the goals on the Game Day |
+| **The Chair** | Owns delivery of every goal |
+| **Officers** | Own the goals assigned to their role |
+| **The Chapter Manager** | Tracks and prepares: keeps `game-plan.md` current, drafts the status and the quarterly report |
+
+You do not write goals *for* the chapter, and you do not reword them. When a goal has no metric, no owner or no
+tracking source, the file says so and marks it `[verify]` — the Chair decides how to close the gap.
+
+## The file
+
+`02-chapter-knowledge/game-plan.md` is the truth file for the goals. An empty template is in
+[`../02-your-assistant/template-folder/02-chapter-knowledge/game-plan.md`](../02-your-assistant/template-folder/02-chapter-knowledge/game-plan.md).
+
+- **Header:** plan year, Game Day date, where the dataset came from, date of the last update.
+- **One row per goal:** ID · Goal (action and hard deadline) · Metric, including its denominator · Tracking (which file or source shows progress) · Owner (by role) · Chair owns delivery · Status · Evidence (file and line).
+- **Sources stay as they came:** the playbook PDF and the dataset go unchanged into `02-chapter-knowledge/game-plan-sources/`.
+- **Standing decisions** from the Game Day go into `00-handover/decisions.md`.
+
+A meta-goal makes the year easy to read — for example *"80 % of the goals met by fiscal year end"* (fictional example;
+your chapter sets its own).
+
+## The quarterly slot — 30 minutes
+
+Put four dates in your calendar, one per quarter. Then:
+
+1. **Goal status** (prompt 19) — your assistant reads `game-plan.md`, `03-events/` and `04-members-and-prospects/` and
+   proposes a status per goal: met · on track · at risk · UNCHECKED, each with the evidence. You accept or change it.
+2. **Quarterly report** (prompt 20) — a one-page draft for the Chair: done, on track, at risk with the reason,
+   decisions needed from the ExCo, share of goals met against the meta-goal. Owners named by role.
+   Save it as `07-reporting/YYYY-MM-DD_game-plan-Qn.md`.
+3. **You send it** to the Chair yourself.
+4. **One log line** in `00-handover/log.md`:
+   `YYYY-MM-DD · game plan · Q{{n}} status · report to Chair · {{N}} at risk · next check {{DATE}}`
+
+The prompts are in [`../08-prompts/prompt-library.md`](../08-prompts/prompt-library.md), group **H · Game plan**:
+19 goal status · 20 quarterly report · 21 goals handover.
+
+## At the handover
+
+When the Chair changes, the goals change owner too: the new Chair now owns delivery.
+
+- **Goals handover** (prompt 21) — per goal: status, what was tried, what is open, next date, owner by role, and which
+  goals should be re-confirmed at the first ExCo. No goal dropped, none reworded.
+- **`00-handover/handover.md`** carries one line: `Goals: status as of {{DATE}}`.
+- **Chair change** — "Goals re-confirmed, owners updated by role" is a line in
+  [handover-checklist.md](handover-checklist.md), section C. For a Chapter Manager change, section B lists the goals file.
+- **New officers** get the goals their role owns in their one-page briefing
+  ([officer-briefing-template.md](officer-briefing-template.md)).
+
+## Why this sits with you
+
+Officers change every year, and the Game Day is one day. The game plan only works if someone keeps it alive after
+the Game Day — the person who is still there in the fourth quarter. Thirty minutes a quarter, and the Chair walks into
+every ExCo knowing where the chapter stands.
+
+===== FILE: 05-officer-handover/officer-briefing-template.md =====
+
+# Officer briefing — one page from the CM to every new officer
+
+New officers arrive motivated and with little time. One page from you on their first day saves both of you
+weeks of back-and-forth: what the role covers, which deadlines matter, how to reach you, and where things live.
+
+Use the template as it is, or let your assistant fill it from the folder (prompt below). Keep it to one page.
+
+---
+
+## Template
+
+```markdown
+# Welcome, {{OFFICER_ROLE}} — {{CHAPTER}}, FY {{YEAR}}
+
+Prepared by {{YOUR_NAME}}, Chapter Manager · {{DATE}}
+
+## Your role in one line
+{{ONE_LINE_PURPOSE}}
+
+## Your year at a glance
+| When | What | Commitment / deadline |
+|---|---|---|
+| {{MONTH}} | {{TASK}} | {{DEADLINE_OR_DASH}} |
+| {{MONTH}} | {{TASK}} | {{DEADLINE_OR_DASH}} |
+| {{MONTH}} | {{TASK}} | {{DEADLINE_OR_DASH}} |
+
+## Your goals this year
+From our game plan ({{LINK_TO_GAME_PLAN_FILE}}) — the goals this role owns:
+| ID | Goal | Metric | Status |
+|---|---|---|---|
+| {{GOAL_ID}} | {{GOAL}} | {{METRIC_WITH_DENOMINATOR}} | {{STATUS}} |
+
+## How we work together
+- **One channel:** requests to me go via {{CHANNEL}} (for example: email to manager@{{chapter-domain}}, or via the Chair).
+  I keep a prioritised list and tell you where your request sits.
+- **Lead time:** updates and material for an event or the ExCo one week before the date.
+- **Response:** I answer within 24 hours or give you a date. I'm grateful for the same when I need a decision from you.
+- **Fixed dates:** ExCo dates and deadlines are in our chapter calendar ({{CALENDAR_LINK}}) and stay put.
+
+## Where things live
+- Chapter folder: {{FOLDER_LINK}} — start with `00-handover/` and `02-chapter-knowledge/`
+- Your role address: {{ROLE_ADDRESS_OR_DASH}}
+- Logins: in the chapter password manager — {{ADMIN_NAME_OR_ROLE}} adds you
+
+## What your predecessor handed over
+- {{OPEN_ITEM_1}} — owner, date, what "done" looks like
+- {{OPEN_ITEM_2}}
+
+## AI in our chapter
+We use AI for drafts, summaries and checklists. Our five simple rules are on one page: {{LINK_TO_AI_ONE_PAGER}}.
+The short version (the Forum rule in full: [START-HERE.md](../START-HERE.md)): Forum logistics yes, Forum content never; paid AI plans only, training off; a human sends; our own files are the truth.
+
+## Your first 30 days
+1. Handover call with {{PREDECESSOR_ROLE}} and me — {{DATE}}
+2. Officer training — {{TRAINING_DATE_OR_HOW_TO_BOOK}}
+3. {{FIRST_CONCRETE_TASK}}
+
+Questions? {{CHANNEL}} — I'm glad you're on board.
+```
+
+---
+
+## Which deadlines go into "Your year at a glance"
+
+Take them from your commitments calendar (`01-role-and-calendar/commitments-calendar.md`, template:
+[commitments-calendar.md](commitments-calendar.md)), which you fill from the official source in the Chapter Management Hub
+or from your Regional Manager. Pick the deadlines this role owns — your bylaws and your Chair decide how they are split
+between officers. Add the role's own fixed dates (events, ExCo meetings) from `03-events/` and the chapter calendar.
+
+## Which goals go into "Your goals this year"
+
+The goals with this role as owner in `02-chapter-knowledge/game-plan.md` — how that file is kept, and the prompts for
+goal status and the goals handover (group "Game plan" in [../08-prompts/prompt-library.md](../08-prompts/prompt-library.md)):
+[game-plan-keeping.md](game-plan-keeping.md). If the role owns no goal, delete the section.
+
+---
+
+## Prompt: let your assistant write the briefing
+
+```
+Write the one-page officer briefing for the incoming {{OFFICER_ROLE}}, using the template in
+05-officer-handover/officer-briefing-template.md.
+
+Read first: 00-handover/handover.md, 00-handover/log.md, 01-role-and-calendar/ (officer list, the one channel,
+commitments calendar), 02-chapter-knowledge/chapter-facts.md, 02-chapter-knowledge/game-plan.md and 03-events/.
+
+Rules:
+- Facts only from these files. Name the file for each deadline. Anything you cannot find: [verify].
+- Goals: copy the goals this role owns from game-plan.md word for word, with metric and status. Do not reword a goal.
+- Names and roles only from the officer list — never from an email address.
+- Keep it to one page. Plain, warm, short. Language: {{LANGUAGE}}.
+- Draft only — I review and send it myself.
+
+At the end, list separately: what you could not check, and which open items have no owner yet.
+```
+
+After you send it, add one line to `00-handover/log.md`:
+`YYYY-MM-DD · officer briefing · {{OFFICER_ROLE}} · sent by CM · next step: handover call on {{DATE}}`
+
+===== FILE: 06-chapter-rules/ai-use-one-pager.md =====
+
+# AI use in our chapter
+
+**{{CHAPTER}}** · Proposed by the Chair and the Chapter Manager for ExCo decision · {{DATE}}
+
+*Chair and Chapter Manager fill the placeholders together in a 1:1 before the ExCo meeting — then delete this line.*
+
+## Why
+
+AI can take routine work off our Chapter Manager and our officers — mailings, drafts, minutes and reporting.
+We encourage everyone in a chapter role to use it — for drafts, summaries of our own documents, checklists,
+graphics and handover notes.
+
+## Part A — five rules we adopt now
+
+1. Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
+   *In short: **Forum logistics yes. Forum content never. A name next to a topic is content.***
+2. **We use paid AI plans only, with training on our data switched off — a business plan with a data processing agreement where the chapter pays.**
+3. **A human sends.** AI drafts; a person reads, edits and sends. No automatic sending, no bulk WhatsApp.
+4. **Role accounts.** Chapter mail and files live in role accounts in {{Microsoft 365 or Google Workspace}} — at least
+   manager@{{chapter-domain}} for the Chapter Manager and chair@{{chapter-domain}} for the Chair — and in one folder owned by the chapter
+   that both can open. WhatsApp stays on the Chapter Manager's own number; what the chapter needs
+   from it goes into the chapter folder as a short summary.
+5. **Our own files are the truth.** AI works from our chapter folder and marks [verify] when unsure.
+   Nobody publishes a statement about a person that no one has checked.
+
+**Access to chapter accounts and the chapter folder ends when the role ends.**
+
+## Part B — automations beyond drafting: a separate OK per tool
+
+Connectors that write (into mail, calendar or files), a browser agent, a self-built WhatsApp app: each starts only after its own OK.
+
+| Automation | What it may do | OK by · date |
+|---|---|---|
+| *Example:* Claude email connector | Read mail, create drafts in my mailbox, never sends | Chair · {{DATE}} |
+| {{TOOL}} | {{WHAT_IT_DOES}} | {{ROLE}} · {{DATE}} |
+| {{TOOL}} | {{WHAT_IT_DOES}} | {{ROLE}} · {{DATE}} |
+
+## Tools and who pays
+
+{{e.g. Microsoft 365 Business with Copilot, or Google Workspace with Gemini, on manager@ and chair@ — plus ChatGPT Business or Claude Team if wanted}} · {{who pays — e.g. the chapter, or as agreed with the Chapter Manager}}
+
+## Decision requested
+
+The ExCo adopts Part A for FY {{YEAR}}, agrees the tools and who pays as above, sets up the role accounts manager@ and chair@ by {{DATE}} if they do not exist yet,
+and names **{{NAME_OR_ROLE}}** as admin of the role accounts and the chapter folder, together with the Chapter Manager.
+
+Decided on: {{DATE_OF_DECISION}} · Minutes: {{LINK_OR_REFERENCE}}
+
+---
+*Chapter-internal guideline, not official YPO material. This does not replace YPO's own rules — check with your
+Regional Manager. Reviewed each year at the officer handover.*
+
+===== FILE: 06-chapter-rules/for-your-chair.md =====
+
+# For the Chapter Chair
+
+Your officers change every year. Your Chapter Manager stays. That is why they are the memory of the chapter.
+
+They work for the chapter — self-employed or as its employee — for the whole ExCo, on their own WhatsApp number. Either way, how they may use AI at work is the chapter's decision; the two texts in this folder make it one. When a board walks in, they are the person who still knows how a decision was made, how an event actually runs, and what is still open. A paid AI plan, pointed at a folder the chapter owns, helps them keep that memory in files the next officer can read — drafts, notes, a handover. The bet: the hours come from searching and answering twice — their log will tell you. The assistant drafts. Your Chapter Manager reads, edits and sends.
+
+## Five ways of working
+
+Agree these for the year. The rules cost no money; they ask for discipline. The text for the ExCo: [operating-guardrails.md](operating-guardrails.md).
+
+1. **One channel.** Requests reach your Chapter Manager through you, or one named person, as a single list in priority order.
+2. **Lead time.** Updates and material arrive one week before they are needed.
+3. **A response target.** They answer within 24 hours or name a date. The ExCo does the same when they ask for a decision.
+4. **Fixed dates.** ExCo dates and deadlines stay put. Event work is budgeted apart from their base agreement.
+5. **A briefing before office.** Every new officer sits with your Chapter Manager, and hears the chapter's AI house rules, before they start.
+
+Review the five at the next officer handover.
+
+## The one-pager, with your Chapter Manager
+
+Combine the five with a one-page decision on how the chapter uses AI ([ai-use-one-pager.md](ai-use-one-pager.md)). The page says: Forum logistics yes, Forum content never — a name next to a topic is content (the short form; the page quotes the kit's Forum rule in full); the chapter uses paid AI plans only, with training on its data switched off — a business plan with a data processing agreement where the chapter pays; a human sends every message; chapter work lives in role accounts — at least `manager@` and `chair@` — and in storage the chapter owns; the chapter's own files are what the assistant trusts, and anything unsure is marked for a person to check.
+
+**Who fills it.** Your Chapter Manager drafts it. They know the folder, the addresses and the year. You edit it until it sounds like your chapter, and you bring it in your name.
+
+**When.** Sit together before your first ExCo, or in the first weeks of your term. Then give it one **20-minute ExCo item**: adopt the one-pager and the five ways of working for the year, name who administers the role accounts together with your Chapter Manager, and record the decision in the minutes. If the room wants longer, keep the draft in the chapter folder and bring it to the handover.
+
+## Thirty minutes at the start of your term
+
+Book half an hour with your Chapter Manager in the first weeks. That is the onboarding.
+
+- **Ten minutes** in the chapter folder: where last year's decisions live, and what still sits only in a head or a private mailbox.
+- **Ten minutes** on the rhythm: the one list, the one-week lead time, and which dates you will protect.
+- **Ten minutes** on the draft: what you will change, and the date of the 20-minute ExCo item.
+
+## What you give them
+
+- **One channel**, so five officers are not five urgent lists.
+- **Chapter accounts — required:** Microsoft 365 or Google Workspace with at least `manager@` for your Chapter Manager and `chair@` for you, on the chapter's domain, and cloud storage the chapter owns, with two admins. That is what makes the handover work and lets you read the chapter folder. The address and the folder stay when people change. WhatsApp stays on their own number. What the chapter must keep is written into the folder as a summary, a decision or a file. How to set it up: [role-accounts.md](../05-officer-handover/role-accounts.md).
+- **The AI on the same accounts.** Since the two accounts exist anyway, the simplest business plan is Microsoft 365 Business with Copilot or Google Workspace with Gemini on `manager@` and `chair@`. ChatGPT Business or Claude Team can come on top; their two-seat minimum fits your Chapter Manager and you. A business plan in the chapter's name keeps training off by default, comes with a data processing agreement, and lets the chapter add and remove people when roles change. Which plan, and a 10-point check before you buy: [business-plan-checklist.md](../01-foundations/business-plan-checklist.md). Whether your Chapter Manager is self-employed or employed by the chapter, seats paid by the chapter keep chapter work off their personal tools.
+
+## What you need yourself
+
+- **Your own `chair@` account** in the chapter's Microsoft 365 or Google Workspace — not your company or private mail. With it you read the chapter folder, your chapter mail stays with the role, and on handover day your successor gets a password reset instead of a forwarded inbox.
+
+*A community resource by a YPO member, not official YPO material.*
+
+===== FILE: 06-chapter-rules/operating-guardrails.md =====
+
+# Operating guardrails — how our ExCo and our Chapter Manager work together
+
+## The text for the ExCo
+
+> **{{CHAPTER}} · Operating guardrails · Proposed by the Chair for ExCo decision · {{DATE}}**
+>
+> Our Chapter Manager works for the chapter — self-employed or as its employee — and for the whole ExCo. To make that work well for everyone, we agree on five simple rules
+> for FY {{YEAR}}.
+>
+> 1. **One channel.** All requests to the Chapter Manager go via the Chair or a named person ({{NAME_OR_ROLE}}).
+>    The Chapter Manager receives one prioritised list and works from it.
+> 2. **Lead time.** Officer updates and material reach the Chapter Manager one week before the date they are needed.
+> 3. **Response target.** The Chapter Manager answers within 24 hours or gives a date. The ExCo does the same when
+>    the Chapter Manager asks for a decision.
+> 4. **Fixed dates.** ExCo dates and deadlines are not moved at short notice. Work for events is budgeted separately
+>    from the Chapter Manager's base agreement.
+> 5. **Briefing before taking office.** Every new officer receives a briefing from the Chapter Manager and our AI
+>    house rules before they start.
+>
+> Cost: the rules cost no money; they ask for discipline. Reviewed each year at the officer handover.
+>
+> Decided on: {{DATE_OF_DECISION}} · Minutes: {{LINK_OR_REFERENCE}}
+
+---
+
+## Why this is not an AI question
+
+AI makes drafting, filing and reporting faster. It cannot decide who may ask the Chapter Manager for what, or by when.
+Several officers sending urgent requests through several channels will outrun any tool. These guardrails are about how
+the ExCo works — the Chair sets them, and AI then makes them easy to live by: one request list your assistant can
+sort, briefings it can draft from the folder, reminders that go out a week ahead.
+
+## How to bring this up with your Chair — as a partner
+
+You are not asking for less work. You are offering the Chair a way to get more out of the hours the chapter already pays for.
+
+**Choose the setting.** A 1:1 with the Chair, ideally before the first ExCo of the year or when a new Chair takes over.
+Not in a full ExCo meeting — the Chair should own the proposal.
+
+**Start from what the Chair wants.**
+> "I'd like the ExCo to get faster, cleaner support from me this year. I've drafted five simple rules for how
+> we work together — may I show you?"
+
+**Describe what you see, without blame.**
+> "When requests come from several officers at once, I end up guessing the priority. A single list from you would let
+> me deliver the most important things first."
+
+**Offer your side of the deal.** Rule 3 binds you too: 24 hours or a date. Say it first.
+> "I commit to answering within 24 hours or giving a date. In return it would help me to have material a week ahead."
+
+**Hand over the text, let the Chair shape it.**
+> "Here's a draft. Change whatever doesn't fit us — it's your call whether it goes to the ExCo."
+
+**Pair it with the AI one-pager** ([ai-use-one-pager.md](ai-use-one-pager.md)). Together they make one agenda item:
+how our chapter works, with and without AI.
+
+**Follow up in writing** — ask your assistant for a short thank-you mail that summarises what the Chair decided and
+what you will prepare. You send it yourself.
+
+```
+Draft a short, warm follow-up to {{CHAIR_ROLE}} after our 1:1 on the operating guardrails.
+Summarise what we agreed, what the Chair wants to change, and what I will prepare for the ExCo, with the date.
+Use only my notes below; mark anything else [verify]. I send it myself.
+---
+{{YOUR_NOTES}}
+```
+
+If the answer is "not this year", keep the text in `02-chapter-knowledge/` and bring it to the next Chair handover
+([../05-officer-handover/handover-checklist.md](../05-officer-handover/handover-checklist.md), section C).
+
+===== FILE: examples/bylaws-excerpt-fictional.md =====
+
+# Bylaws excerpt · Lakeside Chapter (fictional)
+
+> **Fictional example — not a real chapter, not real rules.** These rules were invented to practise
+> "what do our bylaws say about …?" with your assistant. They are not YPO rules and not a template for your bylaws.
+
+Source: Lakeside Chapter Bylaws (fictional), version adopted by the ExCo on 2025-06-12. Excerpt of three sections.
+
+## Section 4.1 · Partners and guests at chapter events
+
+Members may bring their partner to every chapter event unless the invitation says "members only".
+Children and other guests may attend events marked "family" in the invitation. For any other event, a guest needs the
+approval of the Learning Officer before the RSVP deadline. Guests pay their own share of the event cost.
+
+## Section 4.2 · RSVP deadline
+
+Members reply by the RSVP deadline in the invitation, normally 10 days before the event.
+After the deadline, the Chapter Manager may accept a registration only if the venue confirms there is capacity.
+A registration after the deadline is confirmed in writing by the Chapter Manager; until then it is a request, not a seat.
+
+## Section 6.1 · Requests to the Chapter Manager and all-member mailings
+
+Requests to the Chapter Manager come from the Chair or from the officer responsible for the topic.
+Material for an all-member mailing reaches the Chapter Manager at least one week before the send date.
+Shorter notice is possible when the Chair approves it in writing.
+
+===== FILE: examples/email-1-member-question.md =====
+
+# Email 1 · a member question
+
+> **Fictional example — not a real chapter, not real rules.**
+
+```
+From:    Chris Example <chris@member-company.example>
+To:      manager@lakeside-chapter.example
+Date:    Wed, 14 Oct 2026, 22:41
+Subject: Wine Dinner – still possible?
+
+Hi Jamie,
+
+sorry, I completely missed the deadline. Can I still sign up for the Wine Dinner on 22 October?
+And could I bring my partner and one more guest?
+
+Also – did we not agree last year that guests are free if they are family?
+
+Thanks a lot,
+Chris
+```
+
+---
+
+**Practise with it:** the [Lab B practice pack](../02-your-assistant/lab-b-practice-pack.md) has this mail, the Lab B prompt and the two bylaws sections it needs in one block to paste. You play Jamie, the fictional Chapter Manager.
+
+| A good result … | Why |
+|---|---|
+| files it as `06-communication/inbox-filed/2026-10-14_member_wine-dinner-rsvp.md` | file name format `YYYY-MM-DD_sender-role_topic.md` — always with the extension |
+| writes one log line for `00-handover/log.md` | the log keeps the history |
+| says: partner yes (Section 4.1), the other guest needs the Learning Officer's approval (Section 4.1), late registration only if the venue has capacity (Section 4.2) | answers from the bylaws file, with section numbers |
+| does **not** promise a seat and does not confirm "guests are free" | no source for either — the claim about last year is `[verify]` |
+| flags that Section 4.1 does not say whether partners pay like guests | a real gap in the rules — the assistant should notice it, not fill it |
+| drafts a friendly reply in Chris's language, for you to send | draft, never send |
+
+===== FILE: examples/email-2-officer-request.md =====
+
+# Email 2 · an officer request
+
+> **Fictional example — not a real chapter, not real rules.**
+
+```
+From:    Kim Example <learning@lakeside-chapter.example>
+To:      manager@lakeside-chapter.example
+Date:    Fri, 16 Oct 2026, 19:05
+Subject: URGENT – retreat speaker + budget
+
+Hi Jamie,
+
+great news, the speaker for the Spring Retreat confirmed! Can you send the announcement to all members
+tomorrow morning? Text is below, maybe make it a bit nicer.
+
+Also, Alex asked how much is left in the events budget – can you just send him a number tonight?
+
+And please WhatsApp everyone the link as well, people read WhatsApp more than email.
+
+Thanks!!
+Kim
+
+--- draft text ---
+Save the date: Spring Retreat, 14–16 May 2027. Our speaker is confirmed. More details soon.
+```
+
+---
+
+**Practise with it:** run the same handoff prompt. This mail tests the guardrails, not the wording.
+
+| A good result … | Why |
+|---|---|
+| thanks Kim and proposes a send date one week out, or asks whether the Chair approves a shorter notice | Section 6.1 (fictional): one week for all-member mailings |
+| gives the remaining budget only from `05-finance/budget-2026-27.csv` — or says UNCHECKED and when you will send it | numbers are checked against the file before they go out |
+| suggests email for the announcement plus a short note in the event channel you post yourself — no bulk WhatsApp | drafts only — the AI never sends; no bulk WhatsApp; a human sends |
+| does not invent the speaker's name | no source in the mail |
+| logs the request with its next step | the log keeps the history |
+
+===== FILE: examples/handover.md =====
+
+# Handover · Lakeside Chapter (fictional)
+
+> **Fictional example — not a real chapter, not real rules.**
+
+The checkpoint note in `00-handover/`. Refreshed at the end of every long session and before every officer change.
+Anyone who opens this file — the next Chapter Manager, a new officer, or the assistant tomorrow — knows where things stand.
+
+**Last checkpoint:** 2026-10-16 · by Jamie Example (Chapter Manager) with the assistant
+
+## What is set up
+
+| Item | Where | Since |
+|---|---|---|
+| Chapter folder in the chapter's cloud storage, owned by manager@ | `lakeside-chapter/` (folders `00`–`09`) | 2026-09-21 |
+| AI project with house rules (Level 2) | core from `02-your-assistant/cm-assistant-instructions.md` in the instructions · `house-rules.md` at the top of this folder | 2026-09-21 |
+| Chapter facts | `02-chapter-knowledge/chapter-facts.md` | 2026-09-28 |
+| Bylaws as text file | `02-chapter-knowledge/bylaws.md` | 2026-09-28 |
+| Email handoff routine, 3× a week | `06-communication/inbox-filed/`, `06-communication/drafts/` | 2026-09-29 |
+| Wine Dinner playbook | `02-chapter-knowledge/playbook-wine-dinner.md` | 2026-10-08 |
+
+## Decisions (with source)
+
+| Date | Decision | Source |
+|---|---|---|
+| 2026-09-15 | Requests to the Chapter Manager go through the Chair or the officer responsible | ExCo minutes 2026-09-15, item 4 |
+| 2026-09-15 | Role addresses manager@ and chair@ for chapter work; Chair and Chapter Manager are the two admins of the folder | ExCo minutes 2026-09-15, item 5 |
+| 2026-10-12 | Wine Dinner event group closes on 29 Oct | Jamie, in the group chat 2026-10-12 |
+
+## Open items
+
+| Item | Done looks like | Owner | Due |
+|---|---|---|---|
+| Late Wine Dinner registrations (Chris, Robin, Lee's partner) | Venue confirms capacity; each person has a written yes or no | Jamie | 2026-10-17 |
+| Dana's business guest | Learning Officer's approval or refusal in writing; Dana informed | Kim → Jamie | 2026-10-17 |
+| Spring Retreat announcement | Mail sent from manager@ on the agreed date, logged | Jamie | 2026-10-23 `[verify date with Kim]` |
+| Events budget figure for the Chair | Figure from `05-finance/budget-2026-27.csv`, checked this session, sent to chair@ | Jamie | 2026-10-19 |
+| AI one-pager on the ExCo agenda | ExCo minutes record a decision (adopted / changed / not adopted) | Alex (Chair) | next ExCo `[verify date]` |
+| Officer briefing for the Chair Elect | 30-min call held with Robin; briefing file filled | Jamie + Alex | 2027-03-31 |
+
+## Paths touched this session
+
+- `06-communication/inbox-filed/2026-10-14_member_wine-dinner-rsvp.md`
+- `06-communication/inbox-filed/2026-10-16_learning-officer_retreat-and-budget.md`
+- `06-communication/drafts/2026-10-16_reply-chris.md`
+- `06-communication/drafts/2026-10-16_reply-kim.md`
+- `03-events/2026-10-22_wine-dinner/2026-10-14_whatsapp-summary.md`
+- `00-handover/log.md` (two lines appended)
+
+===== FILE: examples/log.md =====
+
+# Log · Lakeside Chapter (fictional)
+
+> **Fictional example — not a real chapter, not real rules.**
+
+Append-only. One dated line per change, newest at the bottom; a correction is a new line.
+Format: `YYYY-MM-DD · topic · source · what changed · next step`
+
+2026-09-28 · setup · chapter-facts interview · chapter-facts.md created, 8 sections · ExCo to confirm the roles table
+2026-10-08 · wine dinner · WhatsApp export 2026-10-08 · event group opened, 3 yes so far · reminder on RSVP day (12 Oct)
+2026-10-14 · wine dinner · WhatsApp export 2026-10-14 + email Chris 2026-10-14 · 2 late requests (Chris, Robin) and 1 guest question listed in handover.md · ask venue about capacity; ask Kim about Dana's guest
+2026-10-16 · retreat · email Kim 2026-10-16 · announcement request filed; reply drafted with a send date one week out · Jamie sends the reply; budget figure from budget file by 19 Oct
+2026-10-16 · correction · WhatsApp export 2026-10-14 (16:22) · line of 2026-10-14 counted 2 late requests; it is 3 — Lee's partner too · include them in the venue question
+
+===== FILE: examples/whatsapp-export-event-group.txt =====
+
+Fictional example — not a real chapter, not real rules. (Group "Lakeside Wine Dinner 22 Oct", exported with "Export chat", without media. Delete this line before testing an import.)
+[08/10/2026, 09:14:03] Lakeside Wine Dinner 22 Oct: Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+[08/10/2026, 09:15:20] Jamie (CM): Welcome to the Wine Dinner group! 22 Oct, 19:00, Lakeside Boathouse. RSVP deadline is Mon 12 Oct.
+[08/10/2026, 09:31:44] Pat: Count me in, plus partner 🍷
+[08/10/2026, 10:02:11] Lee: Yes for me, partner can't make it.
+[08/10/2026, 12:47:58] Morgan: Is there parking at the boathouse?
+[08/10/2026, 13:05:36] Dana: In! Is it ok to bring a business guest?
+[09/10/2026, 08:20:14] Ari: Sorry, travelling that week – next time.
+[09/10/2026, 18:44:09] Pat: Morgan, last time we parked at the marina, 5 min walk.
+[10/10/2026, 11:12:30] Sam: Two from our side.
+[11/10/2026, 21:03:47] Lee: Dress code?
+[12/10/2026, 07:55:02] Jamie (CM): Reminder: RSVP closes tonight. Dress code is smart casual.
+[12/10/2026, 19:40:26] Robin: Just saw this – still ok for one? 🙏
+[13/10/2026, 09:10:51] Dana: Jamie, any news on my guest question?
+[14/10/2026, 16:22:05] Lee: Change of plan, partner can come after all – ok?
