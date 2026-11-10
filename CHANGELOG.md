@@ -3,7 +3,15 @@
 Purpose: what changed between versions of this kit, and what is planned next.
 
 > Community resource by a YPO member, not an official YPO resource.
-> **Maintainer:** see [`README.md`](README.md) · **last checked:** 26 Oct 2026 · menus move — every tool page carries an as-of date.
+> **Maintainer:** see [`README.md`](README.md) · **last checked:** 10 Nov 2026 · menus move — every tool page carries an as-of date.
+
+## v0.3 — November 2026
+
+- **YPO Data or chapter data?** in [`where-your-data-lives.md`](01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data): data from YPO's systems versus what your chapter collects itself, after YPO's AI guidance (October 2026). Guidance, not a rule.
+- **Five settings worth checking** in [`business-plan-checklist.md`](01-foundations/business-plan-checklist.md), starting with two-factor sign-in.
+- **Meetings: record them** — knowledge base § 8: YPO's Zoom, announced at the start, never a Forum meeting.
+- Member data the role needs now names email, mobile number and business details for invoicing.
+- Lab B: one of your own chapter emails can replace the practice email.
 
 ## v0.2 — 22 Oct 2026 (draft)
 
@@ -36,12 +44,7 @@ Purpose: what changed between versions of this kit, and what is planned next.
 
 ### v0.1 corrections (21 Oct 2026)
 
-- Paid AI plans only: no free-plan path in the kit.
-- Chapter Managers work for their chapter, self-employed or employed; the kit adds what stays yours (`05-officer-handover/what-stays-yours.md`).
-- WhatsApp runs on your own number; what the chapter needs is kept as summaries and decisions in the chapter folder.
-- Chapter Commitments: no definitions, counts or dates in the kit any more — copy the current ones from CMH or your Regional Manager.
-- Tool facts re-checked with provider sources (Canva, Copilot, Gemini, Microsoft 365 connector); Level 3 described as Claude Code in your folder, a repository optional.
-- Wording softened where the kit promised outcomes; time plan in `START-HERE.md` recalculated.
+- Paid plans only; Chapter Managers work for their chapter, self-employed or employed ([`what-stays-yours.md`](05-officer-handover/what-stays-yours.md)); WhatsApp on your own number; Chapter Commitments copied from CMH; tool facts re-checked; wording softened.
 
 ### v0.1 round 2 (21 Oct 2026)
 

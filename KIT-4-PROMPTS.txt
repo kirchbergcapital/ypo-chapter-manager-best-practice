@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 4 OF 8: KIT-4-PROMPTS.txt
 Contents: the prompt library for everyday work (40 prompts) and the chapter moments.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-08 from 10 files.
+Built 2026-11-10 from 10 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -184,7 +184,7 @@ New member: {{FIRST_NAME}} {{LAST_NAME}}, joined {{DATE}}.
 Update 04-members-and-prospects/pipeline.md from the note I paste. If the file is missing, show me the empty table and the path.
 One row per person - add a new row for a new prospect: initials, type (new, transfer, secondary, gold, leaving, or [verify]),
 stage (first contact, invited, applied, approved, onboarding, done, or [verify]), next step, due, owner (role), source.
-No home address, no private phone, no health or family details. Do not copy the member directory. Link to YPO Connect.
+No home address, no health or family details. Do not copy the member directory. Link to YPO Connect.
 If that step is already on the row, say so.
 If a screen asks for these fields, take them from platform-fields.md (prompt 30). Never invent a value.
 Draft the next follow-up, one person per draft. I send it.
@@ -216,6 +216,7 @@ No payment details, no reasons for not renewing. Draft only - I send, one person
 ```
 **Result file:** `04-members-and-prospects/YYYY-MM-DD_renewals.md` · drafts in `06-communication/drafts/`.
 **Your check:** every status matches an export from this reminder round; members an officer calls and paused members get no draft.
+**Good to know:** the export is YPO Data — fine to use today; if YPO's Board approves the proposed 2027 policy, sharing it with an AI tool would need YPO's approval ([`where-your-data-lives.md`](../01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data)).
 
 ---
 
@@ -258,7 +259,7 @@ If the answer is new, propose one line for FAQ.md.
 
 ### 3 · Meeting minutes → action items
 **Purpose:** from an ExCo meeting to a clear list of who does what by when. **When:** the day of the meeting.
-**Reads:** your notes or the transcript (recorded only if everyone agreed) · `chapter-facts.md`.
+**Reads:** your notes or the transcript (recorded with YPO's Zoom, announced at the start; never a Forum meeting) · `chapter-facts.md`.
 ```text
 Here are my notes from the ExCo meeting on {{DATE}}.
 1) Action items as a table: Who (role) | What | Deadline. Only items someone agreed to; unclear owner = "owner open".
@@ -1122,6 +1123,7 @@ Purpose: in renewal season, one list shows who has renewed, who has not, and who
 2. **Build the list from a fresh source.** The status comes from YPO's report or the platform export, saved unchanged in `07-reporting/` with its date. Your list in `04-members-and-prospects/` uses initials, the status as the source states it, *as of* that date, the next step and the owner (role). Chapter dues come from the finance officer's own list.
 3. **Agree who speaks to whom.** Your Membership Officer and your Chair pick the members they will call. Reminder drafts go only to the others whose renewal the export shows as still open — never to anyone `UNCHECKED`, on a pause after sad news, or in the middle of a transition (prompt 35).
 4. **Refresh, then remind.** Before each reminder round, save a new export: whoever paid yesterday gets no reminder today. First a friendly reminder with the deadline and where to renew; then — only if agreed — a personal note from an officer. One person per message, never a group message.
+   The export is YPO Data: you can work with it today; if YPO's Board approves the proposed 2027 policy, sharing it with an AI tool would need YPO's approval — [YPO Data or chapter data?](../01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data)
 5. **Report the picture.** A short status for the ExCo: renewed, open, being called, `UNCHECKED` — with the export and its date next to the numbers.
 
 ## Good to know

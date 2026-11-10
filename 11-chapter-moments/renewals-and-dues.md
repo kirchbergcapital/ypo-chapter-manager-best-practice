@@ -18,6 +18,7 @@ Purpose: in renewal season, one list shows who has renewed, who has not, and who
 2. **Build the list from a fresh source.** The status comes from YPO's report or the platform export, saved unchanged in `07-reporting/` with its date. Your list in `04-members-and-prospects/` uses initials, the status as the source states it, *as of* that date, the next step and the owner (role). Chapter dues come from the finance officer's own list.
 3. **Agree who speaks to whom.** Your Membership Officer and your Chair pick the members they will call. Reminder drafts go only to the others whose renewal the export shows as still open — never to anyone `UNCHECKED`, on a pause after sad news, or in the middle of a transition (prompt 35).
 4. **Refresh, then remind.** Before each reminder round, save a new export: whoever paid yesterday gets no reminder today. First a friendly reminder with the deadline and where to renew; then — only if agreed — a personal note from an officer. One person per message, never a group message.
+   The export is YPO Data: you can work with it today; if YPO's Board approves the proposed 2027 policy, sharing it with an AI tool would need YPO's approval — [YPO Data or chapter data?](../01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data)
 5. **Report the picture.** A short status for the ExCo: renewed, open, being called, `UNCHECKED` — with the export and its date next to the numbers.
 
 ## Good to know

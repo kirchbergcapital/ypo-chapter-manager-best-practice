@@ -16,7 +16,7 @@ graphics and handover notes.
    *In short: **Forum logistics yes. Forum content never. A name next to a topic is content.***
 2. **We use paid AI plans only, with training on our data switched off — a business plan with a data processing agreement where the chapter pays.**
 3. **A human sends.** AI drafts; a person reads, edits and sends. No automatic sending, no bulk WhatsApp.
-4. **Role accounts.** Chapter mail and files live in role accounts in {{Microsoft 365 or Google Workspace}} — at least
+4. **Role accounts, with two-factor sign-in.** Chapter mail and files live in role accounts in {{Microsoft 365 or Google Workspace}} — at least
    manager@{{chapter-domain}} for the Chapter Manager and chair@{{chapter-domain}} for the Chair — and in one folder owned by the chapter
    that both can open. WhatsApp stays on the Chapter Manager's own number; what the chapter needs
    from it goes into the chapter folder as a short summary.
@@ -24,6 +24,8 @@ graphics and handover notes.
    Nobody publishes a statement about a person that no one has checked.
 
 **Access to chapter accounts and the chapter folder ends when the role ends.**
+
+**Meetings.** We record chapter meetings with YPO's Zoom and say so at the start. Forum meetings are never recorded or transcribed.
 
 ## Part B — automations beyond drafting: a separate OK per tool
 
@@ -48,4 +50,5 @@ Decided on: {{DATE_OF_DECISION}} · Minutes: {{LINK_OR_REFERENCE}}
 
 ---
 *Chapter-internal guideline, not official YPO material. This does not replace YPO's own rules — check with your
-Regional Manager. Reviewed each year at the officer handover.*
+Regional Manager. YPO's own AI guidance for Chapter Managers (October 2026) shares the basics — paid accounts, training off, people review, Forum protected; for data from YPO's own systems see
+[`../01-foundations/where-your-data-lives.md`](../01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data). Reviewed each year at the officer handover.*

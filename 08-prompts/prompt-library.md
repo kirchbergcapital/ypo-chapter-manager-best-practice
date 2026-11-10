@@ -103,7 +103,7 @@ New member: {{FIRST_NAME}} {{LAST_NAME}}, joined {{DATE}}.
 Update 04-members-and-prospects/pipeline.md from the note I paste. If the file is missing, show me the empty table and the path.
 One row per person - add a new row for a new prospect: initials, type (new, transfer, secondary, gold, leaving, or [verify]),
 stage (first contact, invited, applied, approved, onboarding, done, or [verify]), next step, due, owner (role), source.
-No home address, no private phone, no health or family details. Do not copy the member directory. Link to YPO Connect.
+No home address, no health or family details. Do not copy the member directory. Link to YPO Connect.
 If that step is already on the row, say so.
 If a screen asks for these fields, take them from platform-fields.md (prompt 30). Never invent a value.
 Draft the next follow-up, one person per draft. I send it.
@@ -135,6 +135,7 @@ No payment details, no reasons for not renewing. Draft only - I send, one person
 ```
 **Result file:** `04-members-and-prospects/YYYY-MM-DD_renewals.md` · drafts in `06-communication/drafts/`.
 **Your check:** every status matches an export from this reminder round; members an officer calls and paused members get no draft.
+**Good to know:** the export is YPO Data — fine to use today; if YPO's Board approves the proposed 2027 policy, sharing it with an AI tool would need YPO's approval ([`where-your-data-lives.md`](../01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data)).
 
 ---
 
@@ -177,7 +178,7 @@ If the answer is new, propose one line for FAQ.md.
 
 ### 3 · Meeting minutes → action items
 **Purpose:** from an ExCo meeting to a clear list of who does what by when. **When:** the day of the meeting.
-**Reads:** your notes or the transcript (recorded only if everyone agreed) · `chapter-facts.md`.
+**Reads:** your notes or the transcript (recorded with YPO's Zoom, announced at the start; never a Forum meeting) · `chapter-facts.md`.
 ```text
 Here are my notes from the ExCo meeting on {{DATE}}.
 1) Action items as a table: Who (role) | What | Deadline. Only items someone agreed to; unclear owner = "owner open".

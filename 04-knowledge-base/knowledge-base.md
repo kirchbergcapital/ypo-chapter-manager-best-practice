@@ -24,7 +24,7 @@ It holds what is **true and reusable**. Your assistant reads it before it answer
 | Platform field map | `platform-fields.md` — each screen field points at the chapter file that already holds the value | The first screen that asks — prompt 30 |
 
 What stays in other folders: single emails (`06-communication`), exports (`07-reporting`), event working files (`03-events`), drafts.
-What never goes in: passwords, members' private details (home addresses, private phone numbers, ID or passport copies, health or family details), Forum content. The chapter's password manager, YPO Connect and the Forum itself are the right homes for those — the Forum rule in full: [`../02-your-assistant/folder-structure.md`](../02-your-assistant/folder-structure.md).
+What never goes in: passwords, members' private details (home addresses, ID or passport copies, health or family details), Forum content. The chapter's password manager, YPO Connect and the Forum itself are the right homes for those — the Forum rule in full: [`../02-your-assistant/folder-structure.md`](../02-your-assistant/folder-structure.md).
 
 ## 3 · Markdown, not a database
 
@@ -96,6 +96,16 @@ Patterns as chairs and regional officers tend to see them — no single chapter 
 | What did not | Three places to file things: a private inbox, a private drive, a WhatsApp chat. Every officer change started from zero. |
 | What we improved | One chapter storage, one fixed structure, one file per fact. New officers read the folder before they ask. |
 
+
+## 8 · Meetings: record them
+
+Recording your chapter meetings — ExCo, officer calls, committee and planning calls — is the easiest way to keep what was said and decided.
+YPO's Zoom records without extra tools; where your account also shows a transcript or an AI summary, keep that too `[verify for your account]`.
+
+- **Say it at the start:** "We are recording; the notes will be taken from the recording." People know where the notes come from.
+- **Save the source, keep the truth:** the transcript or summary goes with its date into `07-reporting/` or the event folder. Prompt 3 turns it into action items, a minutes draft and lines for `00-handover/decisions.md`.
+- **Forum meetings are never recorded or transcribed.** Forum is sacred.
+- Where your chapter or YPO has rules for recordings and AI notetakers, they apply.
 
 ## Prompts for your AI
 

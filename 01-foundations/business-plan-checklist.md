@@ -80,6 +80,21 @@ Fill it in for the plan you choose and save it as `05-finance/ai-plan-check-YYYY
 - [ ] 9. **Admin = a chapter role account** (manager@ or chair@ on the chapter's domain), not a private address: ____________________
 - [ ] 10. **Date checked**, with the link to each provider page you used: ____________________
 
+## Five settings worth checking
+
+It starts before AI: two-factor sign-in on your email, your cloud storage and your AI account, and a clear picture of the tools you already use — what each one stores, where, and who can see it.
+Then, in a chapter-managed pro or business account, check the five areas YPO's AI guidance for Chapter Managers (October 2026) names:
+
+| Area | What to check |
+|---|---|
+| Training off | For the whole account, not only your own settings: prompts, files, outputs and usage data do not train the provider's models |
+| Secure sign-in | Two-factor sign-in (MFA); single sign-on or managed sign-in where your plan has it |
+| Sharing | Few admins and users; public links and external sharing off unless you need them |
+| Connected apps | Review connectors, plug-ins, APIs and data sources now and then; remove connections you did not approve or no longer use |
+| Usage and updates | Activity log, usage limits and alerts where the plan offers them; automatic updates on |
+
+These are checks, not a gate. YPO's guidance adds: a business or pro licence does not by itself make YPO Data fine to use — see [YPO Data or chapter data?](where-your-data-lives.md#ypo-data-or-chapter-data)
+
 ## Ask your AI to re-check this page
 
 Plans, prices and names change every few months. Before any purchase, and once a quarter, paste this into your AI tool:

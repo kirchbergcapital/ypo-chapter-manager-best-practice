@@ -74,7 +74,8 @@ A finished, fictional page to compare with: [`../examples/chapter-facts.md`](../
 
 ## Lab B — One email, handled the same way every time (12 min)
 
-You practise on the fictional Lakeside Chapter, so the steps are copy, paste, file — and nothing real is at stake.
+You practise on the fictional Lakeside Chapter, so the steps are copy, paste, file — with Lakeside's mail, nothing real is at stake.
+**Prefer a real one?** You can use one of your own chapter emails instead: nothing beyond names, roles, email and mobile, and nothing from a Forum. Paste it in place of the practice email; the rest of the block stays the same.
 You play Jamie, its fictional Chapter Manager — the draft will be in Jamie's voice. Your assistant holds your own chapter facts, not Lakeside's — so expect [verify] marks in Jamie's draft; that is the assistant being honest, not failing.
 
 | Min | Step |

@@ -42,9 +42,21 @@ they sync like any other file, and the next Chapter Manager needs no special sof
 | Goes in | Stays out — and where it goes instead |
 |---|---|
 | Bylaws, guidelines, event files, budgets, invoices, filed mails, summaries and decisions from WhatsApp chats, reports, minutes | **Forum content** → stays in the Forum. Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out. |
-| Officer names, roles and role addresses; the member contact details you use for chapter work; who came to which event | **Passwords, PINs, card numbers** → the chapter's password manager |
+| Officer names, roles and role addresses; members' email, mobile number and the business details you need for invoicing; who came to which event | **Passwords, PINs, card numbers** → the chapter's password manager |
 | Prospect pipeline, onboarding steps | **A copy of the member directory** → link to YPO Connect instead |
-| Your learnings after each event | **Home addresses, private phone numbers, ID or passport copies, health or family details** → not needed for the role |
+| Your learnings after each event | **Home addresses, ID or passport copies, health or family details** → not needed for the role |
+
+## YPO Data or chapter data?
+
+YPO's AI guidance for Chapter Managers (October 2026) draws one line that is useful to know. It is guidance, not a rule today.
+
+| | What it is | Examples |
+|---|---|---|
+| **YPO Data** | What comes from YPO's systems — the guidance names Salesforce, Cvent and the Chapter Management Hub; you usually open them as YPO Connect and the Hub. Exports, copies and anything derived from them stay YPO Data | Member directory, YPO Global event lists, membership reports, exports from YPO systems |
+| **Chapter data** | What your chapter collects itself, not taken or derived from YPO Data | Your own surveys and sign-ups, chapter event engagement, mails and files that did not come from a YPO system |
+
+Chapter data is yours to work with; Forum content stays out either way. For YPO Data, YPO has proposed an AI appendix to its Operations Manual for 2027, subject to its Board's approval. If the Board approves it, connecting AI to YPO systems or sharing YPO Data with an AI tool would need YPO's approval.
+Until then you can work as this kit describes — and look at the policy again when it comes. Questions: your Regional Manager or aigovernance@ypo.org.
 
 ## Already working from a private drive?
 

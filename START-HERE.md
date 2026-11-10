@@ -122,9 +122,9 @@ and most of the prompt library — start with the email handoff and the debrief.
 ## What goes into your AI — and what doesn't
 
 Your AI is only as useful as what it can read — so give it the chapter's real work: bylaws, event files, budgets, emails, minutes,
-and the member details your role needs (names, roles, role addresses, the contact details you use for chapter work, who comes to which event). Do it in a **paid account with
+and the member details your role needs (names, roles, role addresses, email, mobile number, business details for invoicing, who comes to which event). Do it in a **paid account with
 training switched off** and keep the files in the **chapter's** folder, so they stay with the role. Three things stay out: **Forum content**,
-**passwords**, and **private member details** — home addresses, private phone numbers, ID or passport copies, health or family details
+**passwords**, and **private member details** — home addresses, ID or passport copies, health or family details
 (house rule 16 in [`02-your-assistant/template-folder/house-rules.md`](02-your-assistant/template-folder/house-rules.md)).
 
 **On Forum, one rule for the whole kit:** Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
@@ -146,7 +146,7 @@ What moves where when a contract ends: [`05-officer-handover/what-stays-yours.md
 7. **Check numbers** against the budget file or invoice before they go to anyone. Anything you would have to invent: ask, or write `[verify]`.
 8. **Logs are append-only.** Add a dated line at the bottom; a correction is a new line.
 9. **Checkpoint** long sessions: update the files, refresh `00-handover/handover.md`, then stop.
-10. No passwords, no Forum content (Forum logistics only — a name next to a topic is content), no private member details (home addresses, private phone numbers, ID or passport copies, health or family details) in any file — the contact details you use for chapter work are fine.
+10. No passwords, no Forum content (Forum logistics only — a name next to a topic is content), no private member details (home addresses, ID or passport copies, health or family details) in any file — email, mobile number and business details for invoicing are fine.
 
 ## Order of work in a typical month
 

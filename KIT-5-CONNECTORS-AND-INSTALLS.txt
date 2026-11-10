@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 5 OF 8: KIT-5-CONNECTORS-AND-INSTALLS.txt
 Contents: optional Stations 9 and 11: mail connectors, browser, installs.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-08 from 7 files.
+Built 2026-11-10 from 7 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -169,6 +169,9 @@ Time: 10 minutes to install, then minutes per task.
 | Compare with your files | "Compare this list with 03-events/. Which events are on the page but have no folder — and the other way round?" | A short gap list |
 | Data you report on | "Read this dashboard page. List each figure with its label and the date shown on the page. Do not interpret." | A dated snapshot for `07-reporting/` |
 | Long forms | "Fill this form for 03-events/{{EVENT_FOLDER}}/, using 02-chapter-knowledge/platform-fields.md to find each value. Stop before submit and show me the fields. If a field has no source, write [verify]. Do not invent a value." If the browser assistant cannot open your folder, paste the map and the brief into the chat | A filled form; you check and submit |
+
+**YPO's AI guidance.** YPO has proposed an AI appendix to its Operations Manual for 2027, subject to its Board's approval. If the Board approves it, connecting AI to YPO systems — here YPO Connect and the Chapter Management Hub — would need YPO's approval.
+Today it is guidance: you can use the browser agent as described here, and look at the policy again when it comes — [YPO Data or chapter data?](../01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data)
 
 ## The four habits
 

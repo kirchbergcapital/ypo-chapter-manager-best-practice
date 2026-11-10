@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 2 OF 8: KIT-2-FOLDER-AND-FACTS.txt
 Contents: Stations 2 and 4: business plans, working folder, templates, chapter facts.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-08 from 42 files.
+Built 2026-11-10 from 42 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -145,6 +145,21 @@ Fill it in for the plan you choose and save it as `05-finance/ai-plan-check-YYYY
 - [ ] 9. **Admin = a chapter role account** (manager@ or chair@ on the chapter's domain), not a private address: ____________________
 - [ ] 10. **Date checked**, with the link to each provider page you used: ____________________
 
+## Five settings worth checking
+
+It starts before AI: two-factor sign-in on your email, your cloud storage and your AI account, and a clear picture of the tools you already use — what each one stores, where, and who can see it.
+Then, in a chapter-managed pro or business account, check the five areas YPO's AI guidance for Chapter Managers (October 2026) names:
+
+| Area | What to check |
+|---|---|
+| Training off | For the whole account, not only your own settings: prompts, files, outputs and usage data do not train the provider's models |
+| Secure sign-in | Two-factor sign-in (MFA); single sign-on or managed sign-in where your plan has it |
+| Sharing | Few admins and users; public links and external sharing off unless you need them |
+| Connected apps | Review connectors, plug-ins, APIs and data sources now and then; remove connections you did not approve or no longer use |
+| Usage and updates | Activity log, usage limits and alerts where the plan offers them; automatic updates on |
+
+These are checks, not a gate. YPO's guidance adds: a business or pro licence does not by itself make YPO Data fine to use — see [YPO Data or chapter data?](where-your-data-lives.md#ypo-data-or-chapter-data)
+
 ## Ask your AI to re-check this page
 
 Plans, prices and names change every few months. Before any purchase, and once a quarter, paste this into your AI tool:
@@ -211,9 +226,21 @@ they sync like any other file, and the next Chapter Manager needs no special sof
 | Goes in | Stays out — and where it goes instead |
 |---|---|
 | Bylaws, guidelines, event files, budgets, invoices, filed mails, summaries and decisions from WhatsApp chats, reports, minutes | **Forum content** → stays in the Forum. Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out. |
-| Officer names, roles and role addresses; the member contact details you use for chapter work; who came to which event | **Passwords, PINs, card numbers** → the chapter's password manager |
+| Officer names, roles and role addresses; members' email, mobile number and the business details you need for invoicing; who came to which event | **Passwords, PINs, card numbers** → the chapter's password manager |
 | Prospect pipeline, onboarding steps | **A copy of the member directory** → link to YPO Connect instead |
-| Your learnings after each event | **Home addresses, private phone numbers, ID or passport copies, health or family details** → not needed for the role |
+| Your learnings after each event | **Home addresses, ID or passport copies, health or family details** → not needed for the role |
+
+## YPO Data or chapter data?
+
+YPO's AI guidance for Chapter Managers (October 2026) draws one line that is useful to know. It is guidance, not a rule today.
+
+| | What it is | Examples |
+|---|---|---|
+| **YPO Data** | What comes from YPO's systems — the guidance names Salesforce, Cvent and the Chapter Management Hub; you usually open them as YPO Connect and the Hub. Exports, copies and anything derived from them stay YPO Data | Member directory, YPO Global event lists, membership reports, exports from YPO systems |
+| **Chapter data** | What your chapter collects itself, not taken or derived from YPO Data | Your own surveys and sign-ups, chapter event engagement, mails and files that did not come from a YPO system |
+
+Chapter data is yours to work with; Forum content stays out either way. For YPO Data, YPO has proposed an AI appendix to its Operations Manual for 2027, subject to its Board's approval. If the Board approves it, connecting AI to YPO systems or sharing YPO Data with an AI tool would need YPO's approval.
+Until then you can work as this kit describes — and look at the policy again when it comes. Questions: your Regional Manager or aigovernance@ypo.org.
 
 ## Already working from a private drive?
 
@@ -289,8 +316,8 @@ No chapter accounts yet? Ask your Chair for `manager@` and `chair@`, and meanwhi
 | `00-handover` | `handover.md` (current state, open items), `log.md` (one line per change, append-only), `decisions.md` (one line per decision) | Long notes and drafts — they go in the topic folder; the log points to them |
 | `01-role-and-calendar` | Your role description and contract scope, the chapter year, commitment deadlines (see [`../05-officer-handover/commitments-calendar.md`](../05-officer-handover/commitments-calendar.md)) · `incoming-work.md` | Personal calendar entries; private contract details you would not hand over |
 | `02-chapter-knowledge` | `chapter-facts.md`, `game-plan.md` (the chapter's goals, sources unchanged in `game-plan-sources/`), bylaws, operating guidelines, `FAQ.md`, one playbook per standard event, one learnings file per role · `platform-fields.md`. See [`../04-knowledge-base/knowledge-base.md`](../04-knowledge-base/knowledge-base.md) | Drafts and one-off emails — knowledge here is what is true and reusable |
-| `03-events` | One folder per event, copied from `_event-template/`: `brief.md`, `budget.md`, `run-of-show.md`, `speaker.md`, `venue.md`, `rsvps.md`, `comms-log.md`, `debrief.md`. The steps from first idea to archive: [`../04-knowledge-base/event-lifecycle.md`](../04-knowledge-base/event-lifecycle.md) | Member private data beyond name and attendance; Forum content (rule below) |
-| `04-members-and-prospects` | Prospect pipeline, onboarding steps, who came to which event, mentor matches the chapter allows — the member data your role needs · `pipeline.md` | A copy of the member directory (link to YPO Connect instead); private details: home addresses, private phone numbers, ID or passport copies, health or family details |
+| `03-events` | One folder per event, copied from `_event-template/`: `brief.md`, `budget.md`, `run-of-show.md`, `speaker.md`, `venue.md`, `rsvps.md`, `comms-log.md`, `debrief.md`. The steps from first idea to archive: [`../04-knowledge-base/event-lifecycle.md`](../04-knowledge-base/event-lifecycle.md) | Member private data beyond name, email, mobile and attendance; Forum content (rule below) |
+| `04-members-and-prospects` | Prospect pipeline, onboarding steps, who came to which event, mentor matches the chapter allows — the member data your role needs (email, mobile number, business details for invoicing) · `pipeline.md` | A copy of the member directory (link to YPO Connect instead); private details: home addresses, ID or passport copies, health or family details |
 | `05-finance` | Budget file, invoices, receipts list (CSV), sponsor agreements | Bank logins, card numbers, PINs — they belong in the chapter's password manager |
 | `06-communication` | Filed emails (`inbox-filed`), drafts (`drafts`), patterns (`templates`), WhatsApp summaries that belong to no event, e.g. open conversations at a handover (`whatsapp`) — an event's summary goes into its event folder. See [`../03-communication/email-handoff.md`](../03-communication/email-handoff.md) and [`../03-communication/whatsapp.md`](../03-communication/whatsapp.md) | Bulk lists for mass messages; WhatsApp exports — they stay on your phone or outside the chapter folder; nothing from Forum groups or any chat with Forum content |
 | `07-reporting` | ExCo reports, exports from YPO tools, saved unchanged in a dated file | Edited exports — keep the original, put your analysis next to it |
@@ -911,7 +938,8 @@ A finished, fictional page to compare with: [`../examples/chapter-facts.md`](../
 
 ## Lab B — One email, handled the same way every time (12 min)
 
-You practise on the fictional Lakeside Chapter, so the steps are copy, paste, file — and nothing real is at stake.
+You practise on the fictional Lakeside Chapter, so the steps are copy, paste, file — with Lakeside's mail, nothing real is at stake.
+**Prefer a real one?** You can use one of your own chapter emails instead: nothing beyond names, roles, email and mobile, and nothing from a Forum. Paste it in place of the practice email; the rest of the block stays the same.
 You play Jamie, its fictional Chapter Manager — the draft will be in Jamie's voice. Your assistant holds your own chapter facts, not Lakeside's — so expect [verify] marks in Jamie's draft; that is the assistant being honest, not failing.
 
 | Min | Step |

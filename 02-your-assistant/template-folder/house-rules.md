@@ -68,8 +68,8 @@ Use roles in file names, not member names.
 ## Passwords, member data, Forum
 
 15. Passwords, keys and codes. They live in the chapter's password manager.
-16. Member data the role needs — names, roles, companies, attendance, the contact details I use for chapter work — is fine here, in this paid account.
-    Private details are not: home addresses, private phone numbers, ID or passport copies, health or family details.
+16. Member data the role needs — names, roles, companies, attendance, email, mobile number, business details for invoicing — is fine here, in this paid account.
+    Private details are not: home addresses, ID or passport copies, health or family details.
     The member directory is YPO Connect; link to it, do not copy it.
 17. Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
     If a mail, chat or file I give you contains Forum content, stop and tell me. Do not summarise it.

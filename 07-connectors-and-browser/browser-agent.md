@@ -26,6 +26,9 @@ Time: 10 minutes to install, then minutes per task.
 | Data you report on | "Read this dashboard page. List each figure with its label and the date shown on the page. Do not interpret." | A dated snapshot for `07-reporting/` |
 | Long forms | "Fill this form for 03-events/{{EVENT_FOLDER}}/, using 02-chapter-knowledge/platform-fields.md to find each value. Stop before submit and show me the fields. If a field has no source, write [verify]. Do not invent a value." If the browser assistant cannot open your folder, paste the map and the brief into the chat | A filled form; you check and submit |
 
+**YPO's AI guidance.** YPO has proposed an AI appendix to its Operations Manual for 2027, subject to its Board's approval. If the Board approves it, connecting AI to YPO systems — here YPO Connect and the Chapter Management Hub — would need YPO's approval.
+Today it is guidance: you can use the browser agent as described here, and look at the policy again when it comes — [YPO Data or chapter data?](../01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data)
+
 ## The four habits
 
 1. **You log in, then hand over.** Open the portal, log in yourself, then ask the assistant to work on that page.
