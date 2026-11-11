@@ -46,7 +46,7 @@ node --version
 npm --version
 ```
 
-`node --version` should show `v20` or higher.
+`node --version` should show `v20` or higher — `v24` or higher for the mini CRM (module 12).
 
 ## 4 · Claude Code
 

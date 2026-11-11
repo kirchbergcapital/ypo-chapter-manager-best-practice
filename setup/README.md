@@ -15,8 +15,8 @@ Tool facts: as of 21 Oct 2026. `[verify]` marks what we could not confirm on the
 | Program | You need it for | Learning-path station | Windows | Mac |
 |---|---|---|---|---|
 | **Your storage's desktop app** (Google Drive or OneDrive) | The chapter folder on your laptop — Level 2 and 3 | 9 | [windows.md § 1](windows.md#1--your-storages-desktop-app) | [macos.md § 1](macos.md#1--your-storages-desktop-app) |
-| **Node.js (LTS)** | Your own WhatsApp app | 10 | [windows.md § 3](windows.md#3--nodejs-lts) | [macos.md § 3](macos.md#3--nodejs-lts) |
-| **Claude Code** | Level 3; building the WhatsApp app | 10, 11 | [windows.md § 4](windows.md#4--claude-code) | [macos.md § 4](macos.md#4--claude-code) |
+| **Node.js (LTS)** | Your own WhatsApp app; your own mini CRM (needs 24 or newer) | 10, 13 | [windows.md § 3](windows.md#3--nodejs-lts) | [macos.md § 3](macos.md#3--nodejs-lts) |
+| **Claude Code** | Level 3; building the WhatsApp app and the mini CRM | 10, 11, 13 | [windows.md § 4](windows.md#4--claude-code) | [macos.md § 4](macos.md#4--claude-code) |
 | **Git** | **Needed for your own WhatsApp app** (it downloads one library from GitHub — no GitHub account needed); otherwise optional | 10, 11 | [windows.md § 5](windows.md#5--git-needed-for-the-whatsapp-app) | [macos.md § 5](macos.md#5--git-needed-for-the-whatsapp-app) |
 | **Python** | Only if your AI tool asks for it for a specific step. Nothing in the kit's path needs it | — | [windows.md § 6](windows.md#6--python-only-if-a-step-needs-it) | [macos.md § 6](macos.md#6--python-only-if-a-step-needs-it) |
 

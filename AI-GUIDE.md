@@ -129,6 +129,11 @@ All kit files with their full links. Fetch only what the current step needs.
 | Time by area: ten ticks before using the app | `10-time-by-area/CHECKLIST.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/10-time-by-area/CHECKLIST.md |
 | Time by area: troubleshooting | `10-time-by-area/TROUBLESHOOTING.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/10-time-by-area/TROUBLESHOOTING.md |
 | Time by area: default list of areas | `10-time-by-area/areas-template.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/10-time-by-area/areas-template.txt |
+| Station 13: your own mini CRM | `12-mini-crm/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/README.md |
+| Mini CRM: the build prompt | `12-mini-crm/BUILD-PROMPT.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/BUILD-PROMPT.md |
+| Mini CRM: ten ticks before real names | `12-mini-crm/CHECKLIST.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/CHECKLIST.md |
+| Mini CRM: add-ons — photo book, mailing drafts, WhatsApp links, check-in | `12-mini-crm/ADD-ONS.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/ADD-ONS.md |
+| Mini CRM: troubleshooting | `12-mini-crm/TROUBLESHOOTING.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/TROUBLESHOOTING.md |
 | Chapter moments: overview | `11-chapter-moments/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/11-chapter-moments/README.md |
 | Chapter moments: complaints | `11-chapter-moments/complaints-and-disagreements.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/11-chapter-moments/complaints-and-disagreements.md |
 | Chapter moments: sad news | `11-chapter-moments/sad-news.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/11-chapter-moments/sad-news.md |
@@ -245,7 +250,7 @@ Until the working folder exists (Station 2), keep the profile in the conversatio
 
 ## 5 · The learning path
 
-Twelve stations. 1–8 are the core and run in a desktop app or a browser. 9–12 are optional depth — offer 9–11 only when 1–8 are done, or when the Chapter Manager asks.
+Thirteen stations. 1–8 are the core and run in a desktop app or a browser. 9–13 are optional depth — offer 9–11 and 13 only when 1–8 are done, or when the Chapter Manager asks.
 Station 12's hours line can start any day after Station 3: it needs only the house rules.
 
 | # | Station | Time | Done when | Kit files |
@@ -262,6 +267,7 @@ Station 12's hours line can start any day after Station 3: it needs only the hou
 | 10 | *Optional:* their own WhatsApp app | 1–2 h | The ten ticks of the checklist are done and one summary of a real export is **saved** in an event folder | [`09-whatsapp-app-build-guide/`](09-whatsapp-app-build-guide/), [`03-communication/whatsapp.md`](03-communication/whatsapp.md) |
 | 11 | *Optional:* Claude Code / Level 3 | 1 h | `claude --version` answers, `CLAUDE.md` and `house-rules.md` are **saved** in the chapter folder, and a log line **saved** by Claude Code is confirmed | [`setup/`](setup/), [`01-foundations/three-levels.md`](01-foundations/three-levels.md) (Level 3) |
 | 12 | *Optional:* time by area | 15 min (the hours app: 30–60 min more) | `areas.txt` and `hours.csv` are **saved** in their own folder, outside the chapter folder, with one confirmed hours line in `hours.csv` | [`10-time-by-area/`](10-time-by-area/), [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) (prompts 23–26) |
+| 13 | *Optional:* their own mini CRM | 30–60 min | `node self-test.js` shows `0 failed`, the ten ticks of the checklist are done, and one backup is **saved** in the chapter storage | [`12-mini-crm/`](12-mini-crm/), [`setup/`](setup/) (Node.js) |
 
 After every station: one line at the bottom of `00-handover/log.md` (`YYYY-MM-DD · setup · <kit file> · <what is done> · <next step>`)
 and an update of `00-handover/setup-progress.md`. Before Station 2 exists, collect these lines and write them at Station 2.
@@ -398,6 +404,15 @@ With any connector: ask it to create drafts only.
 - Mode A: they paste the round-up (prompt 24) into `hours.csv` with Notepad or TextEdit. Mode B: you add the rows yourself after their yes — in their hours folder only, never in the chapter folder.
 - **Optional app:** [`10-time-by-area/BUILD-PROMPT.md`](10-time-by-area/BUILD-PROMPT.md) — three files, opened by double-click in Chrome or Edge, no install. In mode A you hand them the three files as downloads. With ChatGPT Plus, the chat is the way; Codex only after Station 11.
 - **Done when:** `areas.txt` and `hours.csv` are **saved** in their own folder and one confirmed hours line is in `hours.csv` — with the app: `self-test.html` shows `0 failed` and the ten ticks of [`10-time-by-area/CHECKLIST.md`](10-time-by-area/CHECKLIST.md) are done.
+
+### Station 13 (optional) — Their own mini CRM
+
+- For the day the member spreadsheet has five tabs: people, events and who came, in one SQLite file on their laptop, opened in the browser. Offer it after Station 11 (a coding tool) — it needs Node.js 24 or newer and a tool that writes and runs code.
+- Follow [`12-mini-crm/README.md`](12-mini-crm/README.md): a folder `chapter-crm` that is **not** cloud-synced, the prompt from [`12-mini-crm/BUILD-PROMPT.md`](12-mini-crm/BUILD-PROMPT.md), practice with the fictional `sample-people.csv`, then [`12-mini-crm/CHECKLIST.md`](12-mini-crm/CHECKLIST.md).
+- Real member data only after the chapter's decision (one-pager, Station 8). Data exported from YPO systems: YPO's guidance suggests asking aigovernance@ypo.org first. Photos only with *photo OK*. Forum content never.
+- You never read `crm.db`. When a task needs a list, they export only the columns needed and give you that file.
+- Extras one at a time, when they ask: [`12-mini-crm/ADD-ONS.md`](12-mini-crm/ADD-ONS.md) — photo book, mailing drafts, WhatsApp links, check-in list. Each add-on drafts; the Chapter Manager sends.
+- **Done when:** `node self-test.js` shows `0 failed`, the ten ticks are done, and one backup from `backups/` is **saved** in the chapter storage.
 
 ## 6 · The progress file
 
