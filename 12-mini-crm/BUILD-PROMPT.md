@@ -82,7 +82,8 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   X-Content-Type-Options nosniff, Referrer-Policy no-referrer.
 - Serve only files from public/ and photos/, never anything else (no path traversal: resolve the path and check it
   stays inside the folder). /photos/ needs the token too (as ?t=<token> in the image address) and serves a file only
-  when its person has photo_ok = 1.
+  when its person has photo_ok = 1 - always with Content-Type image/jpeg or image/png as checked at upload, never
+  anything else, plus X-Content-Type-Options nosniff and Content-Security-Policy "sandbox; default-src 'none'".
 - Photos: accept JPEG and PNG only, check the first bytes of the file (JPEG FF D8 FF, PNG 89 50 4E 47), at most
   5 MB; anything else gets the message "Please export it as JPEG first (iPhone photos are often HEIC) and upload
   again." save under a new random file name in photos/ (crypto.randomBytes(16) as hex). Never keep the original file name.
@@ -101,17 +102,18 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   tags (comma-separated words), photo_file (random name or empty), photo_ok (0 or 1), photo_ok_date (the day I
   ticked it), notes, created_at, updated_at. first_name or last_name required. email optional: store NULL when empty, never a blank; when present,
   unique on lower-case, trimmed.
-- events: id, name, date (YYYY-MM-DD), place, notes. name and date required.
+- events: id, name, date (YYYY-MM-DD), place, notes, updated_at. name and date required.
 - attendance: event_id, person_id, status (invited | registered | attended | declined | waitlist), unique per
-  event and person, deleted together with the event or the person.
+  event and person, deleted together with the event or the person; updated_at.
 - Never add fields for birthdays, private addresses, health, family matters or anything about Forum. Under the
   notes field the page shows: "Chapter facts only - notes you would keep in the member spreadsheet. No Forum
   content."
 - photo_ok: a photo is only shown and only used for extras (like a photo book) when photo_ok is 1. Ticking it
   stores today's date in photo_ok_date. Unticking asks "Delete the photo file too?" (default yes); if I say no, the
   file stays but is hidden everywhere. Deleting the person deletes the photo file too.
-- Edits: every update sends the updated_at the page loaded; if the record changed meanwhile (another tab), refuse
-  with "Changed in another window - please reload" instead of overwriting.
+- Edits: every update and delete of a person, an event or an attendance line sends the updated_at the page loaded;
+  the server checks and changes it in one step (UPDATE ... WHERE id = ? AND updated_at = ?). If the record changed
+  meanwhile (another tab), refuse with "Changed in another window - please reload" instead of overwriting.
 
 4. WHAT I CAN DO IN THE BROWSER - simple, large buttons, plain words
 - People: a list with search (name, company, email, tags), filter by kind and by tag, sorted by last name.
@@ -129,8 +131,8 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   cell that starts with = + - @, a tab or a carriage return gets a leading apostrophe, so Excel never runs it as a
   formula. Save it only into exports/ with the date in the file name and show me the file name - no second copy
   in the browser's Downloads.
-- Backup: one button "Backup now" writes a full copy with VACUUM INTO into backups/crm-YYYY-MM-DD-HHMM.db and
-  shows the file name. The page reminds me once a week: "Last backup: <date>. Copy the newest backup and the
+- Backup: one button "Backup now" writes a full copy with VACUUM INTO into backups/crm-YYYY-MM-DD-HHMMSS.db (if
+  that name exists, add -2, -3 ...) and shows the file name only after the copy has finished. The page reminds me once a week: "Last backup: <date>. Copy the newest backup and the
   photos/ folder into your chapter storage."
 - A small "About" box: where crm.db lives, the number of people and events, the last backup.
 
@@ -138,11 +140,14 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
 - Test crm-core.js thoroughly: CSV parsing (commas, semicolons, quotes, line breaks in quotes, BOM, empty lines),
   CSV writing with the formula guard, email normalisation and the duplicate rule, validation of each field,
   column-name guessing for English and German headers.
-- Test the database part against a temporary file in the system temp folder - never against crm.db: create
-  tables, add, update, unique email, attendance unique per event and person, delete cascades.
+- Tests may create ONE temporary folder in the system temp folder (I approve that here) and delete it at the end.
+  Test the database part against a database in that folder - never against crm.db: create tables, add, update,
+  unique email, attendance unique per event and person, delete cascades, a stale updated_at refused for a person,
+  an event and an attendance line, two backups in the same second get two names.
 - Test the server: start it with CRM_NO_BROWSER=1 on a free port with a temporary database, check that a request without the token
   gets 401, a wrong Host header is rejected, a foreign Origin on POST is rejected, a path like /../crm.db is
-  refused, and a normal add/list round trip works. Stop it again.
+  refused, a photo is served with an image Content-Type, nosniff and the sandbox policy (also for a JPEG that
+  carries HTML after its first bytes), and a normal add/list round trip works. Stop it again.
 - Print one line per failed test and at the end "N passed, 0 failed". Exit code 1 if anything failed.
 - Run `node self-test.js` yourself and fix everything until it shows 0 failed. Show me the last line.
 
@@ -155,7 +160,8 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
 - Write README-app.md in plain English, at most one page: how to start (double-click), how to stop (close the
   window), where the data is (crm.db - "this file is your chapter's contact list. Never copy or mail crm.db itself;
   hand over only a file from Backup now, together with photos/"), how to back up (button, then copy the newest
-  file from backups/ and the photos/ folder into the chapter storage), that deleting a person does not reach
+  file from backups/ and the photos/ folder into the chapter storage), how to restore (close the app, rename an
+  existing crm.db and its -wal/-shm files, copy the backup in as crm.db, put photos/ next to it), that deleting a person does not reach
   backups already copied, and two rules: "No Forum content, ever." and "The AI tool that built this app never
   opens crm.db, backups/, exports/ or photos/."
 - Then show me how to start the app, and wait until I tell you it opened in my browser.

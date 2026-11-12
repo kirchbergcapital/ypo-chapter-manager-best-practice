@@ -42,6 +42,7 @@ Tested in a reference build (Nov 2026): about 10 minutes to build, self-test `0 
 |---|---|
 | Where is my data? | In `crm.db` in your `chapter-crm` folder, and in `photos/` |
 | How do I hand it over? | *Backup now*, then give your successor the newest file from `backups/` and the `photos/` folder — through the chapter storage, not by private mail. Never copy `crm.db` itself while the app runs |
+| How do I restore a backup? | Close the app. If a `crm.db` is there, rename it and its `-wal`/`-shm` files to `crm-old…` first. Copy the backup file into `chapter-crm`, rename it to `crm.db`, put the `photos/` folder next to it, start the app |
 | Can two people use it? | Not at the same time. One laptop, one Chapter Manager; others get exports. Two tabs are fine — if one is out of date, it asks you to reload instead of overwriting |
 | I want to start again | Close the app first. Then rename all three together — `crm.db`, `crm.db-wal`, `crm.db-shm` — to `crm-old.db`, `crm-old.db-wal`, `crm-old.db-shm`, and start again. Never delete a database without a backup |
 
