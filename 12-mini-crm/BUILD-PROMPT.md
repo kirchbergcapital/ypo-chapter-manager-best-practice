@@ -106,8 +106,10 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   unique on lower-case, trimmed.
 - events: id, name, date (YYYY-MM-DD), place, notes, updated_at, version (integer, starts at 1). name and date
   required.
-- attendance: event_id, person_id, status (invited | registered | attended | declined | waitlist), unique per
-  event and person, deleted together with the event or the person; updated_at, version (integer, starts at 1).
+- attendance: id (a new random 16-byte hex value on every creation, never reused), event_id, person_id, status
+  (invited | registered | attended | declined | waitlist), unique per event and person, deleted together with the
+  event or the person; updated_at, version (integer, starts at 1). Edits and deletes of an attendance line send
+  its id and version, so a line that was removed and added again is a new line for a stale tab.
 - Never add fields for birthdays, private addresses, health, family matters or anything about Forum. Under the
   notes field the page shows: "Chapter facts only - notes you would keep in the member spreadsheet. No Forum
   content."
@@ -137,7 +139,9 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   in the browser's Downloads.
 - Backup: one button "Backup now" creates one new folder backups/crm-YYYY-MM-DD-HHMMSS/ (if that name exists, add
   -2, -3 ...) with crm.db inside (VACUUM INTO) and a copy of all files in photos/ inside (photos/). Only after both
-  are complete it shows the folder name; if anything fails, it says so and removes the half-made folder. A backup
+  are complete it shows the folder name; if anything fails, it says so and removes the half-made folder. While a
+  backup runs, the server refuses every change (people, events, attendance, photos) with "Backup running - try
+  again in a moment", so the database copy and the photo copy show the same moment. A backup
   folder is never changed again. The page reminds me once a week: "Last backup: <date>. Copy the newest backup
   folder into your chapter storage."
 - A small "About" box: where crm.db lives, the number of people and events, the last backup.
@@ -149,7 +153,8 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
 - Tests may create ONE temporary folder in the system temp folder (I approve that here) and delete it at the end.
   Test the database part against a database in that folder - never against crm.db: create tables, add, update,
   unique email, attendance unique per event and person, delete cascades; a stale version refused for a person, an
-  event and an attendance line, also for two changes within the same second; two backups in the same second get
+  event and an attendance line, also for two changes within the same second, and for an attendance line that was
+  removed and added again; a change sent while a backup runs is refused; two backups in the same second get
   two folders; a backup folder holds crm.db and the photos, and deleting a photo after the backup leaves the
   backup's copy in place; an older schema-1 database (made in the test) is migrated to schema 2 without data loss.
 - Test the server: start it with CRM_NO_BROWSER=1 on a free port with a temporary database, check that a request without the token
