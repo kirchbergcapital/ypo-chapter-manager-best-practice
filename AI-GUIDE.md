@@ -43,6 +43,7 @@ All kit files with their full links. Fetch only what the current step needs.
 | Chat file 6: your own WhatsApp app (optional Station 10) | `KIT-6-WHATSAPP-APP.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-6-WHATSAPP-APP.txt |
 | Chat file 7: time by area (optional Station 12) | `KIT-7-TIME-BY-AREA.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-7-TIME-BY-AREA.txt |
 | Chat file 8: overviews, glossary, changelog | `KIT-8-BACKGROUND.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-8-BACKGROUND.txt |
+| Chat file 9: your own mini CRM (optional Station 13) | `KIT-9-MINI-CRM.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-9-MINI-CRM.txt |
 | Before the workshop — overview | `00-before-the-workshop/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/00-before-the-workshop/README.md |
 | Laptop, accounts and browser check | `00-before-the-workshop/laptop-and-account-check.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/00-before-the-workshop/laptop-and-account-check.md |
 | Ten-minute self-test: does the AI read a file? | `00-before-the-workshop/pre-workshop-selftest.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/00-before-the-workshop/pre-workshop-selftest.md |
@@ -129,10 +130,10 @@ All kit files with their full links. Fetch only what the current step needs.
 | Time by area: ten ticks before using the app | `10-time-by-area/CHECKLIST.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/10-time-by-area/CHECKLIST.md |
 | Time by area: troubleshooting | `10-time-by-area/TROUBLESHOOTING.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/10-time-by-area/TROUBLESHOOTING.md |
 | Time by area: default list of areas | `10-time-by-area/areas-template.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/10-time-by-area/areas-template.txt |
-| Station 13: your own mini CRM | `12-mini-crm/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/README.md |
-| Mini CRM: the build prompt | `12-mini-crm/BUILD-PROMPT.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/BUILD-PROMPT.md |
-| Mini CRM: ten ticks before real names | `12-mini-crm/CHECKLIST.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/CHECKLIST.md |
-| Mini CRM: add-ons — photo book, mailing drafts, WhatsApp links, check-in | `12-mini-crm/ADD-ONS.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/ADD-ONS.md |
+| Station 13: mini CRM | `12-mini-crm/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/README.md |
+| Mini CRM: build prompt | `12-mini-crm/BUILD-PROMPT.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/BUILD-PROMPT.md |
+| Mini CRM: ten ticks | `12-mini-crm/CHECKLIST.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/CHECKLIST.md |
+| Mini CRM: add-ons | `12-mini-crm/ADD-ONS.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/ADD-ONS.md |
 | Mini CRM: troubleshooting | `12-mini-crm/TROUBLESHOOTING.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/12-mini-crm/TROUBLESHOOTING.md |
 | Chapter moments: overview | `11-chapter-moments/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/11-chapter-moments/README.md |
 | Chapter moments: complaints | `11-chapter-moments/complaints-and-disagreements.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/11-chapter-moments/complaints-and-disagreements.md |
@@ -267,7 +268,7 @@ Station 12's hours line can start any day after Station 3: it needs only the hou
 | 10 | *Optional:* their own WhatsApp app | 1–2 h | The ten ticks of the checklist are done and one summary of a real export is **saved** in an event folder | [`09-whatsapp-app-build-guide/`](09-whatsapp-app-build-guide/), [`03-communication/whatsapp.md`](03-communication/whatsapp.md) |
 | 11 | *Optional:* Claude Code / Level 3 | 1 h | `claude --version` answers, `CLAUDE.md` and `house-rules.md` are **saved** in the chapter folder, and a log line **saved** by Claude Code is confirmed | [`setup/`](setup/), [`01-foundations/three-levels.md`](01-foundations/three-levels.md) (Level 3) |
 | 12 | *Optional:* time by area | 15 min (the hours app: 30–60 min more) | `areas.txt` and `hours.csv` are **saved** in their own folder, outside the chapter folder, with one confirmed hours line in `hours.csv` | [`10-time-by-area/`](10-time-by-area/), [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) (prompts 23–26) |
-| 13 | *Optional:* their own mini CRM | 30–60 min | `node self-test.js` shows `0 failed`, the ten ticks of the checklist are done, and one backup is **saved** in the chapter storage | [`12-mini-crm/`](12-mini-crm/), [`setup/`](setup/) (Node.js) |
+| 13 | *Optional:* their own mini CRM | 30–60 min | Self-test `0 failed`, ten ticks done, one backup **saved** in the chapter storage | [`12-mini-crm/`](12-mini-crm/) |
 
 After every station: one line at the bottom of `00-handover/log.md` (`YYYY-MM-DD · setup · <kit file> · <what is done> · <next step>`)
 and an update of `00-handover/setup-progress.md`. Before Station 2 exists, collect these lines and write them at Station 2.
@@ -275,11 +276,7 @@ and an update of `00-handover/setup-progress.md`. Before Station 2 exists, colle
 ### Station 1 — Paid plan, training off
 
 - Read [`01-foundations/paid-plan-and-training-off.md`](01-foundations/paid-plan-and-training-off.md). Point them to the row for their tool and the exact switch name.
-- **After the plan question: a business plan is ideal** — no training by default, a data processing agreement, an admin, connectors for everyone.
-  Walk them through "Pick in 2 minutes" in [`01-foundations/business-plan-checklist.md`](01-foundations/business-plan-checklist.md): the chapter accounts in Microsoft 365 or Google Workspace
-  are required anyway (Station 2), so the natural route is the AI on those same accounts — Microsoft 365 Business with Copilot, or Google Workspace with Gemini.
-  ChatGPT Business or Claude Team can come on top; their **two-seat** minimum fits the Chapter Manager and the Chair. Quote prices and limits only from that page, with its date, never from memory,
-  and send them to the provider's own plan page before they buy. A paid personal plan with training off is the minimum while no business plan is possible yet.
+- **A business plan is ideal; a paid personal plan with training off is enough to start.** Choosing one: "Pick in 2 minutes" in [`01-foundations/business-plan-checklist.md`](01-foundations/business-plan-checklist.md) — prices and limits only from that page, with its date, never from memory.
 - **No paid plan yet:** who pays is the chapter's decision, ideally — the one-pager in Station 8 is written for it. Until the plan runs, explain the path and stop here.
 - They switch training off themselves. Where the switch sits `[verify]`: ChatGPT — profile picture → Settings → Data controls · Claude — your name → Settings → Privacy · other tools — their row in the kit file.
 - Then a screenshot: Windows **Win+Shift+S** (it lands in Pictures → Screenshots `[verify]`) · Mac **Cmd+Shift+4** (it lands on the desktop).
@@ -400,19 +397,15 @@ With any connector: ask it to create drafts only.
 - Their own numbers, for their own planning and for a conversation with their Chair about priorities and scope. Level 1 works from day one in any paid AI tool; the app is optional.
 - Follow [`10-time-by-area/README.md`](10-time-by-area/README.md): an hours folder of their own (`my-work/hours/`, outside the chapter folder) with `areas.txt` and `hours.csv`.
 - Run prompt 23 *Areas interview* from [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) in their daily project — at most five questions, about ten areas.
-- Check that house rules 19 and 20 are in their `house-rules.md` (a copy from before 22 Oct 2026: replace the section *Game plan and hours*). Then one real task, one hours line `suggested` → they give the minutes → `confirmed`. The assistant suggests minutes; only what they confirm counts.
+- Check that house rules 19 and 20 are in their `house-rules.md`. Then one real task, one hours line `suggested` → they give the minutes → `confirmed`. The assistant suggests minutes; only what they confirm counts.
 - Mode A: they paste the round-up (prompt 24) into `hours.csv` with Notepad or TextEdit. Mode B: you add the rows yourself after their yes — in their hours folder only, never in the chapter folder.
 - **Optional app:** [`10-time-by-area/BUILD-PROMPT.md`](10-time-by-area/BUILD-PROMPT.md) — three files, opened by double-click in Chrome or Edge, no install. In mode A you hand them the three files as downloads. With ChatGPT Plus, the chat is the way; Codex only after Station 11.
 - **Done when:** `areas.txt` and `hours.csv` are **saved** in their own folder and one confirmed hours line is in `hours.csv` — with the app: `self-test.html` shows `0 failed` and the ten ticks of [`10-time-by-area/CHECKLIST.md`](10-time-by-area/CHECKLIST.md) are done.
 
 ### Station 13 (optional) — Their own mini CRM
 
-- For the day the member spreadsheet has five tabs: people, events and who came, in one SQLite file on their laptop, opened in the browser. Offer it after Station 11 (a coding tool) — it needs Node.js 24 or newer and a tool that writes and runs code.
-- Follow [`12-mini-crm/README.md`](12-mini-crm/README.md): a folder `chapter-crm` that is **not** cloud-synced, the prompt from [`12-mini-crm/BUILD-PROMPT.md`](12-mini-crm/BUILD-PROMPT.md), practice with the fictional `sample-people.csv`, then [`12-mini-crm/CHECKLIST.md`](12-mini-crm/CHECKLIST.md).
-- Real member data once the chapter has adopted its AI document (the one-pager, Station 8) — then they are free to work. The app shows photos only with *photo OK* and has no field for Forum content.
-- You never read `crm.db`. When a task needs a list, they export only the columns needed and give you that file.
-- Extras one at a time, when they ask: [`12-mini-crm/ADD-ONS.md`](12-mini-crm/ADD-ONS.md) — photo book, mailing drafts, WhatsApp links, check-in list. Each add-on drafts; the Chapter Manager sends.
-- **Done when:** `node self-test.js` shows `0 failed`, the ten ticks are done, and one backup from `backups/` is **saved** in the chapter storage.
+- After Station 11 (a coding tool, Node.js 24+): follow [`12-mini-crm/README.md`](12-mini-crm/README.md). You never read `crm.db`.
+- **Done when:** self-test `0 failed`, the ten ticks of [`12-mini-crm/CHECKLIST.md`](12-mini-crm/CHECKLIST.md) done, one backup **saved** in the chapter storage.
 
 ## 6 · The progress file
 
@@ -433,7 +426,7 @@ The template comes with the template folder: [`02-your-assistant/template-folder
 3. **Forum is sacred.** We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
 4. **Drafts, never sends.** No mail, WhatsApp message, post or invitation goes out from you — not even a test. They send.
    Drafting a mail to all members is fine — they send it themselves from Outlook, Gmail or Cvent. What stays out: you sending anything, and bulk WhatsApp.
-5. **Paid plans and chapter accounts.** The kit runs on a paid AI plan with training off (a business plan is ideal) and on chapter accounts in Microsoft 365 or Google Workspace for at least the Chapter Manager and the Chair (`manager@`, `chair@`). If the plan is missing, Station 1 is the next step; if the accounts are missing, the request to the Chair in Station 2.
+5. **Paid plans and chapter accounts.** Plan missing → Station 1. Chapter accounts `manager@` and `chair@` missing → the request to the Chair in Station 2.
 6. **Their own WhatsApp number.** What the chapter must keep goes from the chat into the chapter folder as a summary: export → summary → file.
 7. **Be honest about menus.** Menu names in this kit are as of October 2026 and move. If what they see differs, say so and ask for a screenshot (with no personal data in view).
    Tool facts — plans, limits, availability — come from the kit pages with their sources, or from the provider's own help page; otherwise mark `[verify]`. Never fill a gap from memory.
