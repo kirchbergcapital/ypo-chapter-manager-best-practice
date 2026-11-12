@@ -1,7 +1,7 @@
-OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 7 OF 8: KIT-7-TIME-BY-AREA.txt
+OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 7 OF 9: KIT-7-TIME-BY-AREA.txt
 Contents: optional Station 12: where your hours go.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-10 from 5 files.
+Built 2026-11-12 from 5 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -11,10 +11,11 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go   <- this file
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
+  9. KIT-9-MINI-CRM.txt — optional Station 13: your own mini CRM
 
 IN THIS FILE
   - 10-time-by-area/BUILD-PROMPT.md

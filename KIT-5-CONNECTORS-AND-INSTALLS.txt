@@ -1,7 +1,7 @@
-OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 5 OF 8: KIT-5-CONNECTORS-AND-INSTALLS.txt
-Contents: optional Stations 9 and 11: mail connectors, browser, installs.
+OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 5 OF 9: KIT-5-CONNECTORS-AND-INSTALLS.txt
+Contents: optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-10 from 7 files.
+Built 2026-11-12 from 8 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -11,10 +11,11 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs   <- this file
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test   <- this file
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
+  9. KIT-9-MINI-CRM.txt — optional Station 13: your own mini CRM
 
 IN THIS FILE
   - 07-connectors-and-browser/README.md
@@ -24,6 +25,7 @@ IN THIS FILE
   - setup/README.md
   - setup/macos.md
   - setup/windows.md
+  - 00-before-the-workshop/pre-workshop-selftest.md
 
 
 ===== FILE: 07-connectors-and-browser/README.md =====
@@ -269,8 +271,8 @@ Tool facts: as of 21 Oct 2026. `[verify]` marks what we could not confirm on the
 | Program | You need it for | Learning-path station | Windows | Mac |
 |---|---|---|---|---|
 | **Your storage's desktop app** (Google Drive or OneDrive) | The chapter folder on your laptop — Level 2 and 3 | 9 | [windows.md § 1](windows.md#1--your-storages-desktop-app) | [macos.md § 1](macos.md#1--your-storages-desktop-app) |
-| **Node.js (LTS)** | Your own WhatsApp app | 10 | [windows.md § 3](windows.md#3--nodejs-lts) | [macos.md § 3](macos.md#3--nodejs-lts) |
-| **Claude Code** | Level 3; building the WhatsApp app | 10, 11 | [windows.md § 4](windows.md#4--claude-code) | [macos.md § 4](macos.md#4--claude-code) |
+| **Node.js (LTS)** | Your own WhatsApp app; your own mini CRM (needs 24 or newer) | 10, 13 | [windows.md § 3](windows.md#3--nodejs-lts) | [macos.md § 3](macos.md#3--nodejs-lts) |
+| **Claude Code** | Level 3; building the WhatsApp app and the mini CRM | 10, 11, 13 | [windows.md § 4](windows.md#4--claude-code) | [macos.md § 4](macos.md#4--claude-code) |
 | **Git** | **Needed for your own WhatsApp app** (it downloads one library from GitHub — no GitHub account needed); otherwise optional | 10, 11 | [windows.md § 5](windows.md#5--git-needed-for-the-whatsapp-app) | [macos.md § 5](macos.md#5--git-needed-for-the-whatsapp-app) |
 | **Python** | Only if your AI tool asks for it for a specific step. Nothing in the kit's path needs it | — | [windows.md § 6](windows.md#6--python-only-if-a-step-needs-it) | [macos.md § 6](macos.md#6--python-only-if-a-step-needs-it) |
 
@@ -340,7 +342,7 @@ node --version
 npm --version
 ```
 
-`node --version` should show `v20` or higher.
+`node --version` should show `v20` or higher — `v24` or higher for the mini CRM (module 12).
 
 ## 4 · Claude Code
 
@@ -444,7 +446,7 @@ node --version
 npm --version
 ```
 
-`node --version` should show `v20` or higher.
+`node --version` should show `v20` or higher — `v24` or higher for the mini CRM (module 12).
 
 ## 4 · Claude Code
 
@@ -500,3 +502,100 @@ or the installer from [python.org/downloads](https://www.python.org/downloads/) 
 | Typing `python` opens the Microsoft Store | Python is not installed yet, or the window is older than the install — install it (§ 6) and open a new window |
 | winget: `No package found matching input criteria` | Check the spelling of the command; otherwise use the installer link of that program |
 | An installer asks for admin rights | Normal for installs you started from these pages — click Yes |
+
+===== FILE: 00-before-the-workshop/pre-workshop-selftest.md =====
+
+# Pre-workshop self-test
+
+Purpose: in about 20 minutes, get your laptop ready for the workshop — the desktop app of your AI tool works in one folder on your laptop, reads a file there and saves a file itself — and training on your data is switched off. If all five steps work, you are ready.
+
+The workshop runs in the **desktop app** — ChatGPT or Claude, whichever you already pay for. Use the paid plan you will bring.
+A paid plan is the first prerequisite — set it up before the test
+(about 20 minutes, see [../01-foundations/paid-plan-and-training-off.md](../01-foundations/paid-plan-and-training-off.md); before anyone pays, the plan pick and check in [../01-foundations/business-plan-checklist.md](../01-foundations/business-plan-checklist.md)).
+Menu names as of Oct 2026 — menus move `[verify]`.
+
+## Step 1 — Desktop app installed and signed in (5–10 min)
+
+Install the desktop app of your tool from the provider's own website and sign in with your paid plan:
+
+| Tool | What you need | Source |
+|---|---|---|
+| ChatGPT | The ChatGPT desktop app for Mac or Windows; *Work* is the mode that works with files on your laptop. Work comes with paid plans except Free and Go; in Enterprise and Edu workspaces your admin switches it on | [OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) |
+| Claude | The Claude desktop app for Mac or Windows; *Cowork* works with a folder on your laptop, on paid plans | [Claude help](https://support.claude.com/en/articles/13345190) |
+
+**Works if:** the app opens and you see an empty chat.
+
+## Step 2 — Your synced drive on the laptop (5 min)
+
+Your chapter files will live in your OneDrive or Google Drive — on the laptop through its sync app (OneDrive comes with Windows; Mac: the OneDrive app or *Google Drive for desktop*).
+
+**Works if:** in Finder or File Explorer you see a folder called `OneDrive …` or `Google Drive` that matches your cloud storage. Two OneDrives on Windows (private and work)? Use the one of your chapter login — or your own for now.
+
+## Step 3 — One working folder with the kit inside (3 min)
+
+1. Inside that synced folder, create a folder `CM-Workspace`.
+2. Download the kit as one file, [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) (also the link in your pre-workshop message). Move it into `CM-Workspace` and unzip it there — Windows: right-click → *Extract All* → *Extract*; Mac: double-click. You get a folder `_kit`. Named `_kit (1)` or `_kit 2`? Rename it to `_kit`. Safari unpacked it already? Move that `_kit` folder from Downloads.
+3. In `CM-Workspace`, create a small text file `selftest.txt` (Notepad on Windows; TextEdit on Mac, *Format → Make Plain Text*) with this — all fictional:
+
+```
+Lakeside Chapter (fictional) — test file
+Chapter Manager: Jamie Example
+Next event: Holiday Dinner, 12 December, Lakeside Boathouse
+RSVP by: 20 November
+```
+
+**Works if:** you find exactly this arrangement in Finder or File Explorer:
+
+```
+OneDrive … or Google Drive/
+  CM-Workspace/
+    _kit/
+      AI-GUIDE.md
+      02-your-assistant/
+    selftest.txt
+```
+
+Is `AI-GUIDE.md` one folder deeper? Then move that inner folder here and name it `_kit`. Keep using this same `CM-Workspace` in the workshop.
+
+## Step 4 — The folder test (5 min)
+
+Open the desktop app, start a task that works with a folder (ChatGPT: Work · Claude: Cowork `[verify the menu name]`), choose `CM-Workspace` and allow access to that folder only. With Claude, keep the app open while it works. If the app refuses your synced drive, copy the whole `CM-Workspace` (with `_kit` and `selftest.txt`) into `Documents`, choose that copy and repeat this step. Then paste:
+
+```
+Read selftest.txt in this folder. When is the RSVP deadline for the next event, and where is the event? Quote the line you used. If the file does not say, answer UNCHECKED.
+```
+
+**Works if:** the answer is *20 November* and *Lakeside Boathouse*, with the quoted lines. Then:
+
+```
+Save a new file done.txt in this folder with one line: Desktop test passed, and today's date. Then stop.
+```
+
+**Works if:** you open `CM-Workspace` in Finder or File Explorer and see `done.txt` — the assistant saved it; you did not download or copy anything. That is how the whole workshop works.
+
+## Step 5 — Check the training setting (3 min)
+
+Find the setting that controls whether your chats are used to train the AI model, and make sure it is **off**.
+Where it is and what your plan allows: [../01-foundations/paid-plan-and-training-off.md](../01-foundations/paid-plan-and-training-off.md).
+
+**Works if:** you have seen the setting and know whether it is off.
+
+## Your result
+
+| Step | ✓ | If not |
+|---|---|---|
+| 1 Desktop app | ☐ | Can't install (a laptop managed by IT) or Work is switched off in your workspace? Note it in the form — on the day you take the browser path: the same labs, and you save the files yourself |
+| 2 Synced drive | ☐ | Note it. Today a folder on the laptop is fine; it moves into the synced drive later |
+| 3 Working folder | ☐ | Compare with the arrangement above — `AI-GUIDE.md` sits directly in `_kit` |
+| 4 Folder test | ☐ | It read the file but did not save `done.txt`, or there was no way to choose a folder? Note what happened — we sort it out at the helpdesk table, or you take the browser path |
+| 5 Training setting | ☐ | Bring the question; it is part of the Foundation block |
+
+Send your five ticks with your check answers (the form, or a reply to the pre-workshop message) — the trainer then plans
+the first 20 minutes around them, and nobody has to report in the room.
+
+**Your phone:** keep the same app on it — ordinary chats and drafts work there on the go. The folder task stays on the laptop.
+
+Done? Delete `selftest.txt` and `done.txt` if you like — keep `CM-Workspace` and `_kit`; the workshop starts there. Bring your laptop and charger.
+Not done? Come anyway. You'll pair up with a neighbour.
+
+Back to [README.md](README.md) · [laptop-and-account-check.md](laptop-and-account-check.md)

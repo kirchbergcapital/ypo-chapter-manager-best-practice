@@ -1,7 +1,7 @@
-OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 1 OF 8: KIT-START.txt
+OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 1 OF 9: KIT-START.txt
 Contents: the starter file: this AI guide, Stations 1 and 3 with the house rules, the Lab B practice pack (picking a business plan: file 2; more prompts: file 4).
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-10 from 6 files.
+Built 2026-11-12 from 6 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: the kit comes in small chat files, so each one fits into a chat. This starter file holds the guide, Stations 1 and 3 and the Lab B practice pack; picking a business plan (Station 1) is in KIT-2, the other quick-win prompts are in KIT-4. Start with the file AI-GUIDE.md below and follow it. Each file starts with a line '===== FILE: <path> ====='. The guide's kit directory names the chat file that holds every other file — ask for that one chat file only when a step needs it, as the guide says in § 0 b. Quote prompts word for word.
@@ -11,10 +11,11 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
+  9. KIT-9-MINI-CRM.txt — optional Station 13: your own mini CRM
 
 IN THIS FILE
   - AI-GUIDE.md
@@ -72,9 +73,10 @@ In this starter file: every kit file and the chat file that holds it. When a ste
 | Chat file 6: your own WhatsApp app (optional Station 10) | `KIT-6-WHATSAPP-APP.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-6-WHATSAPP-APP.txt |
 | Chat file 7: time by area (optional Station 12) | `KIT-7-TIME-BY-AREA.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-7-TIME-BY-AREA.txt |
 | Chat file 8: overviews, glossary, changelog | `KIT-8-BACKGROUND.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-8-BACKGROUND.txt |
+| Chat file 9: your own mini CRM (optional Station 13) | `KIT-9-MINI-CRM.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-9-MINI-CRM.txt |
 | Before the workshop — overview | `00-before-the-workshop/README.md` | `KIT-8-BACKGROUND.txt` |
 | Laptop, accounts and browser check | `00-before-the-workshop/laptop-and-account-check.md` | `KIT-8-BACKGROUND.txt` |
-| Ten-minute self-test: does the AI read a file? | `00-before-the-workshop/pre-workshop-selftest.md` | `KIT-8-BACKGROUND.txt` |
+| Ten-minute self-test: does the AI read a file? | `00-before-the-workshop/pre-workshop-selftest.md` | `KIT-5-CONNECTORS-AND-INSTALLS.txt` |
 | Foundations — overview | `01-foundations/README.md` | `KIT-8-BACKGROUND.txt` |
 | Station 1: paid plan, training switch off per tool | `01-foundations/paid-plan-and-training-off.md` | this file |
 | Station 1: which business plan — pick, compare, 10-point check | `01-foundations/business-plan-checklist.md` | `KIT-2-FOLDER-AND-FACTS.txt` |
@@ -158,6 +160,11 @@ In this starter file: every kit file and the chat file that holds it. When a ste
 | Time by area: ten ticks before using the app | `10-time-by-area/CHECKLIST.md` | `KIT-7-TIME-BY-AREA.txt` |
 | Time by area: troubleshooting | `10-time-by-area/TROUBLESHOOTING.md` | `KIT-7-TIME-BY-AREA.txt` |
 | Time by area: default list of areas | `10-time-by-area/areas-template.txt` | `KIT-7-TIME-BY-AREA.txt` |
+| Station 13: mini CRM | `12-mini-crm/README.md` | `KIT-9-MINI-CRM.txt` |
+| Mini CRM: build prompt | `12-mini-crm/BUILD-PROMPT.md` | `KIT-9-MINI-CRM.txt` |
+| Mini CRM: ten ticks | `12-mini-crm/CHECKLIST.md` | `KIT-9-MINI-CRM.txt` |
+| Mini CRM: add-ons | `12-mini-crm/ADD-ONS.md` | `KIT-9-MINI-CRM.txt` |
+| Mini CRM: troubleshooting | `12-mini-crm/TROUBLESHOOTING.md` | `KIT-9-MINI-CRM.txt` |
 | Chapter moments: overview | `11-chapter-moments/README.md` | `KIT-4-PROMPTS.txt` |
 | Chapter moments: complaints | `11-chapter-moments/complaints-and-disagreements.md` | `KIT-4-PROMPTS.txt` |
 | Chapter moments: sad news | `11-chapter-moments/sad-news.md` | `KIT-4-PROMPTS.txt` |
@@ -274,7 +281,7 @@ Until the working folder exists (Station 2), keep the profile in the conversatio
 
 ## 5 · The learning path
 
-Twelve stations. 1–8 are the core and run in a desktop app or a browser. 9–12 are optional depth — offer 9–11 only when 1–8 are done, or when the Chapter Manager asks.
+Thirteen stations. 1–8 are the core and run in a desktop app or a browser. 9–13 are optional depth — offer 9–11 and 13 only when 1–8 are done, or when the Chapter Manager asks.
 Station 12's hours line can start any day after Station 3: it needs only the house rules.
 
 | # | Station | Time | Done when | Kit files |
@@ -291,6 +298,7 @@ Station 12's hours line can start any day after Station 3: it needs only the hou
 | 10 | *Optional:* their own WhatsApp app | 1–2 h | The ten ticks of the checklist are done and one summary of a real export is **saved** in an event folder | [`09-whatsapp-app-build-guide/`](09-whatsapp-app-build-guide/) (in KIT-6-WHATSAPP-APP.txt), [`03-communication/whatsapp.md`](03-communication/whatsapp.md) (in KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt) |
 | 11 | *Optional:* Claude Code / Level 3 | 1 h | `claude --version` answers, `CLAUDE.md` and `house-rules.md` are **saved** in the chapter folder, and a log line **saved** by Claude Code is confirmed | [`setup/`](setup/) (in KIT-5-CONNECTORS-AND-INSTALLS.txt), [`01-foundations/three-levels.md`](01-foundations/three-levels.md) (Level 3) |
 | 12 | *Optional:* time by area | 15 min (the hours app: 30–60 min more) | `areas.txt` and `hours.csv` are **saved** in their own folder, outside the chapter folder, with one confirmed hours line in `hours.csv` | [`10-time-by-area/`](10-time-by-area/) (in KIT-7-TIME-BY-AREA.txt), [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) (in KIT-4-PROMPTS.txt) (prompts 23–26) |
+| 13 | *Optional:* their own mini CRM | 30–60 min | Self-test `0 failed`, ten ticks done, one backup **saved** in the chapter storage | [`12-mini-crm/`](12-mini-crm/) (in KIT-9-MINI-CRM.txt) |
 
 After every station: one line at the bottom of `00-handover/log.md` (`YYYY-MM-DD · setup · <kit file> · <what is done> · <next step>`)
 and an update of `00-handover/setup-progress.md`. Before Station 2 exists, collect these lines and write them at Station 2.
@@ -298,16 +306,12 @@ and an update of `00-handover/setup-progress.md`. Before Station 2 exists, colle
 ### Station 1 — Paid plan, training off
 
 - Read [`01-foundations/paid-plan-and-training-off.md`](01-foundations/paid-plan-and-training-off.md). Point them to the row for their tool and the exact switch name.
-- **After the plan question: a business plan is ideal** — no training by default, a data processing agreement, an admin, connectors for everyone.
-  Walk them through "Pick in 2 minutes" in [`01-foundations/business-plan-checklist.md`](01-foundations/business-plan-checklist.md) (in KIT-2-FOLDER-AND-FACTS.txt): the chapter accounts in Microsoft 365 or Google Workspace
-  are required anyway (Station 2), so the natural route is the AI on those same accounts — Microsoft 365 Business with Copilot, or Google Workspace with Gemini.
-  ChatGPT Business or Claude Team can come on top; their **two-seat** minimum fits the Chapter Manager and the Chair. Quote prices and limits only from that page, with its date, never from memory,
-  and send them to the provider's own plan page before they buy. A paid personal plan with training off is the minimum while no business plan is possible yet.
+- **A business plan is ideal; a paid personal plan with training off is enough to start.** Choosing one: "Pick in 2 minutes" in [`01-foundations/business-plan-checklist.md`](01-foundations/business-plan-checklist.md) (in KIT-2-FOLDER-AND-FACTS.txt) — prices and limits only from that page, with its date, never from memory.
 - **No paid plan yet:** who pays is the chapter's decision, ideally — the one-pager in Station 8 is written for it. Until the plan runs, explain the path and stop here.
 - They switch training off themselves. Where the switch sits `[verify]`: ChatGPT — profile picture → Settings → Data controls · Claude — your name → Settings → Privacy · other tools — their row in the kit file.
 - Then a screenshot: Windows **Win+Shift+S** (it lands in Pictures → Screenshots `[verify]`) · Mac **Cmd+Shift+4** (it lands on the desktop).
   Rename it `YYYY-MM-DD_ai-training-off.png`; it moves into `01-role-and-calendar/` at Station 2. Before sending any screenshot into a chat, cover the email address.
-- Optional ten-minute check that the tool reads a file: [`00-before-the-workshop/pre-workshop-selftest.md`](00-before-the-workshop/pre-workshop-selftest.md) (in KIT-8-BACKGROUND.txt).
+- Optional ten-minute check that the tool reads a file: [`00-before-the-workshop/pre-workshop-selftest.md`](00-before-the-workshop/pre-workshop-selftest.md) (in KIT-5-CONNECTORS-AND-INSTALLS.txt).
 - **Done when:** paid plan active, switch off, screenshot **saved**.
 
 ### Station 2 — Working folder from the template
@@ -423,10 +427,15 @@ With any connector: ask it to create drafts only.
 - Their own numbers, for their own planning and for a conversation with their Chair about priorities and scope. Level 1 works from day one in any paid AI tool; the app is optional.
 - Follow [`10-time-by-area/README.md`](10-time-by-area/README.md) (in KIT-7-TIME-BY-AREA.txt): an hours folder of their own (`my-work/hours/`, outside the chapter folder) with `areas.txt` and `hours.csv`.
 - Run prompt 23 *Areas interview* from [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) (in KIT-4-PROMPTS.txt) in their daily project — at most five questions, about ten areas.
-- Check that house rules 19 and 20 are in their `house-rules.md` (a copy from before 22 Oct 2026: replace the section *Game plan and hours*). Then one real task, one hours line `suggested` → they give the minutes → `confirmed`. The assistant suggests minutes; only what they confirm counts.
+- Check that house rules 19 and 20 are in their `house-rules.md`. Then one real task, one hours line `suggested` → they give the minutes → `confirmed`. The assistant suggests minutes; only what they confirm counts.
 - Mode A: they paste the round-up (prompt 24) into `hours.csv` with Notepad or TextEdit. Mode B: you add the rows yourself after their yes — in their hours folder only, never in the chapter folder.
 - **Optional app:** [`10-time-by-area/BUILD-PROMPT.md`](10-time-by-area/BUILD-PROMPT.md) (in KIT-7-TIME-BY-AREA.txt) — three files, opened by double-click in Chrome or Edge, no install. In mode A you hand them the three files as downloads. With ChatGPT Plus, the chat is the way; Codex only after Station 11.
 - **Done when:** `areas.txt` and `hours.csv` are **saved** in their own folder and one confirmed hours line is in `hours.csv` — with the app: `self-test.html` shows `0 failed` and the ten ticks of [`10-time-by-area/CHECKLIST.md`](10-time-by-area/CHECKLIST.md) (in KIT-7-TIME-BY-AREA.txt) are done.
+
+### Station 13 (optional) — Their own mini CRM
+
+- After Station 11 (a coding tool, Node.js 24+): follow [`12-mini-crm/README.md`](12-mini-crm/README.md) (in KIT-9-MINI-CRM.txt). You never read `crm.db`.
+- **Done when:** self-test `0 failed`, the ten ticks of [`12-mini-crm/CHECKLIST.md`](12-mini-crm/CHECKLIST.md) (in KIT-9-MINI-CRM.txt) done, one backup **saved** in the chapter storage.
 
 ## 6 · The progress file
 
@@ -447,7 +456,7 @@ The template comes with the template folder: [`02-your-assistant/template-folder
 3. **Forum is sacred.** We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
 4. **Drafts, never sends.** No mail, WhatsApp message, post or invitation goes out from you — not even a test. They send.
    Drafting a mail to all members is fine — they send it themselves from Outlook, Gmail or Cvent. What stays out: you sending anything, and bulk WhatsApp.
-5. **Paid plans and chapter accounts.** The kit runs on a paid AI plan with training off (a business plan is ideal) and on chapter accounts in Microsoft 365 or Google Workspace for at least the Chapter Manager and the Chair (`manager@`, `chair@`). If the plan is missing, Station 1 is the next step; if the accounts are missing, the request to the Chair in Station 2.
+5. **Paid plans and chapter accounts.** Plan missing → Station 1. Chapter accounts `manager@` and `chair@` missing → the request to the Chair in Station 2.
 6. **Their own WhatsApp number.** What the chapter must keep goes from the chat into the chapter folder as a summary: export → summary → file.
 7. **Be honest about menus.** Menu names in this kit are as of October 2026 and move. If what they see differs, say so and ask for a screenshot (with no personal data in view).
    Tool facts — plans, limits, availability — come from the kit pages with their sources, or from the provider's own help page; otherwise mark `[verify]`. Never fill a gap from memory.

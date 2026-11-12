@@ -1,7 +1,7 @@
-OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 3 OF 8: KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt
+OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 3 OF 9: KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt
 Contents: Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-10 from 21 files.
+Built 2026-11-12 from 21 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -11,10 +11,11 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules   <- this file
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
+  9. KIT-9-MINI-CRM.txt — optional Station 13: your own mini CRM
 
 IN THIS FILE
   - 03-communication/email-handoff.md
@@ -1236,7 +1237,7 @@ graphics and handover notes.
 ## Part A — five rules we adopt now
 
 1. Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
-   *In short: **Forum logistics yes. Forum content never. A name next to a topic is content.***
+   *In short: **Forum logistics yes. Forum content never.** Chapter matters — a conduct case too — are chapter business.*
 2. **We use paid AI plans only, with training on our data switched off — a business plan with a data processing agreement where the chapter pays.**
 3. **A human sends.** AI drafts; a person reads, edits and sends. No automatic sending, no bulk WhatsApp.
 4. **Role accounts, with two-factor sign-in.** Chapter mail and files live in role accounts in {{Microsoft 365 or Google Workspace}} — at least
@@ -1250,23 +1251,25 @@ graphics and handover notes.
 
 **Meetings.** We record chapter meetings with YPO's Zoom and say so at the start. Forum meetings are never recorded or transcribed.
 
-## Part B — automations beyond drafting: a separate OK per tool
+## Part B — our tools: only what is on this list
 
-Connectors that write (into mail, calendar or files), a browser agent, a self-built WhatsApp app: each starts only after its own OK.
+We work with the tools on this list — for chapter work and chapter data. That keeps our data where the chapter knows it, pays for it and can hand it over.
 
-| Automation | What it may do | OK by · date |
-|---|---|---|
-| *Example:* Claude email connector | Read mail, create drafts in my mailbox, never sends | Chair · {{DATE}} |
-| {{TOOL}} | {{WHAT_IT_DOES}} | {{ROLE}} · {{DATE}} |
-| {{TOOL}} | {{WHAT_IT_DOES}} | {{ROLE}} · {{DATE}} |
+**Something new?** Another app (Airtable, Notion, a survey or newsletter tool), a plugin or browser extension, a custom GPT, a connector, an automation, a self-built app: it goes on this list **first** — one line, OK by the Chair. Free plugins and private accounts are not used for chapter data.
 
-## Tools and who pays
+| Tool | What we use it for | Account / plan | Which data it may see | OK by · date |
+|---|---|---|---|---|
+| *Example:* ChatGPT Business or Claude Team | Drafts, summaries, work in our chapter folder | Chapter workspace on manager@ and chair@ | Chapter facts, member contact details | ExCo · {{DATE}} |
+| *Example:* {{Microsoft 365 or Google Workspace}} | Mail, calendar, the chapter folder | manager@, chair@ | All chapter data | ExCo · {{DATE}} |
+| *Example:* email connector | Reads mail, creates drafts, never sends | manager@ | The chapter mailbox | Chair · {{DATE}} |
+| *Example:* mini CRM ([kit module 12](../12-mini-crm/README.md)) | Contact and event list on the Chapter Manager's laptop | Self-built, local | Member contact details, photos with *photo OK* | Chair · {{DATE}} |
+| {{TOOL}} | {{WHAT_FOR}} | {{ACCOUNT}} | {{DATA}} | {{ROLE}} · {{DATE}} |
 
-{{e.g. Microsoft 365 Business with Copilot, or Google Workspace with Gemini, on manager@ and chair@ — plus ChatGPT Business or Claude Team if wanted}} · {{who pays — e.g. the chapter, or as agreed with the Chapter Manager}}
+**Who pays:** {{the chapter, or as agreed with the Chapter Manager}}.
 
 ## Decision requested
 
-The ExCo adopts Part A for FY {{YEAR}}, agrees the tools and who pays as above, sets up the role accounts manager@ and chair@ by {{DATE}} if they do not exist yet,
+The ExCo adopts Part A and the tool list in Part B for FY {{YEAR}} — new tools are added by the Chair, the list is reviewed at each officer handover — sets up the role accounts manager@ and chair@ by {{DATE}} if they do not exist yet,
 and names **{{NAME_OR_ROLE}}** as admin of the role accounts and the chapter folder, together with the Chapter Manager.
 
 Decided on: {{DATE_OF_DECISION}} · Minutes: {{LINK_OR_REFERENCE}}
@@ -1298,7 +1301,7 @@ Review the five at the next officer handover.
 
 ## The one-pager, with your Chapter Manager
 
-Combine the five with a one-page decision on how the chapter uses AI ([ai-use-one-pager.md](ai-use-one-pager.md)). The page says: Forum logistics yes, Forum content never — a name next to a topic is content (the short form; the page quotes the kit's Forum rule in full); the chapter uses paid AI plans only, with training on its data switched off — a business plan with a data processing agreement where the chapter pays; a human sends every message; chapter work lives in role accounts — at least `manager@` and `chair@` — and in storage the chapter owns; the chapter's own files are what the assistant trusts, and anything unsure is marked for a person to check.
+Combine the five with a one-page decision on how the chapter uses AI ([ai-use-one-pager.md](ai-use-one-pager.md)). The page says: Forum logistics yes, Forum content never — chapter matters, a conduct case too, are chapter business (the short form; the page quotes the kit's Forum rule in full); the chapter works only with the tools on its list — anything new goes on the list first, with your OK; the chapter uses paid AI plans only, with training on its data switched off — a business plan with a data processing agreement where the chapter pays; a human sends every message; chapter work lives in role accounts — at least `manager@` and `chair@` — and in storage the chapter owns; the chapter's own files are what the assistant trusts, and anything unsure is marked for a person to check.
 
 **Who fills it.** Your Chapter Manager drafts it. They know the folder, the addresses and the year. You edit it until it sounds like your chapter, and you bring it in your name.
 

@@ -1,0 +1,417 @@
+OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 9 OF 9: KIT-9-MINI-CRM.txt
+Contents: optional Station 13: your own mini CRM.
+Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
+Built 2026-11-12 from 5 files.
+For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
+
+FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
+
+CHAT FILES OF THE KIT
+  1. KIT-START.txt — the starter file: this AI guide, Stations 1 and 3 with the house rules, the Lab B practice pack (picking a business plan: file 2; more prompts: file 4)
+  2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
+  3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
+  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test
+  6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
+  7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
+  8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
+  9. KIT-9-MINI-CRM.txt — optional Station 13: your own mini CRM   <- this file
+
+IN THIS FILE
+  - 12-mini-crm/ADD-ONS.md
+  - 12-mini-crm/BUILD-PROMPT.md
+  - 12-mini-crm/CHECKLIST.md
+  - 12-mini-crm/README.md
+  - 12-mini-crm/TROUBLESHOOTING.md
+
+
+===== FILE: 12-mini-crm/ADD-ONS.md =====
+
+# Add-ons — extras on top of your mini CRM
+
+Purpose: grow the mini CRM step by step, one prompt at a time, when you need it — never all at once.
+How to use it: open your coding tool in the `chapter-crm` folder, start a **new** chat or task there, paste **one** prompt, say yes to file changes in the folder. After each add-on: `node self-test.js` shows `0 failed`, then make a backup.
+
+Every add-on keeps the rules of the app: nothing is sent automatically, Forum content never, photos only with *photo OK* — and your AI tool never opens `crm.db`, `backups/`, `exports/` or `photos/`; it tests with a temporary database. Every prompt below ends with that sentence on purpose.
+
+## A · Photo book
+
+For a welcome evening, a new-member pack or the table plan of a retreat: one page per person or a grid, with photo, name, company and chapter role.
+
+```text
+Add a photo book to my mini CRM. In the browser: a "Photo book" page where I choose people by filter (kind, tag,
+or an event's registered or attended list), a layout (grid with 6 or 12 per page, or one per page) and the fields
+(name, company, title, chapter role, member since). Only people with photo_ok = 1 get their photo; the others get
+a neutral placeholder with their initials. The page has a "Print or save as PDF" button with a print style
+(A4, no buttons on paper). Nothing leaves the laptop. Add tests to self-test.js for the filter and the photo_ok
+rule, run it until 0 failed, and show me the last line.
+No new packages, stay on 127.0.0.1 with the token. Never open crm.db, backups/, exports/ or photos/ - test
+with a temporary database only, with CRM_NO_BROWSER=1.
+```
+
+## B · Mailing drafts
+
+For invitations, reminders and thank-you notes: personal drafts, sent by you.
+
+```text
+Add mailing drafts to my mini CRM. In the browser: a "Mailing" page where I choose recipients by filter (kind, tag,
+or an event's status list), write a subject and a text with placeholders {first_name}, {last_name}, {company},
+{event_name}, {event_date}, and see a preview for three recipients. Then two choices: (1) export a CSV for mail
+merge (columns email, first_name, last_name, company, subject, body) into exports/, or (2) one .eml draft file per
+recipient into exports/mailing-YYYY-MM-DD-HHMM/, marked as unsent (X-Unsent: 1), that I open in my mail program and
+send myself. Never send anything, never connect to a mail server. Skip people without email and list them. Add
+tests for the placeholders and the CSV, run self-test.js until 0 failed, and show me the last line.
+No new packages, stay on 127.0.0.1 with the token. Never open crm.db, backups/, exports/ or photos/ - test
+with a temporary database only, with CRM_NO_BROWSER=1.
+```
+
+## C · WhatsApp links
+
+For a short reminder to the registered people of one event — one by one, from your own phone or WhatsApp on the laptop.
+
+```text
+Add WhatsApp links to my mini CRM. On an event page: a "WhatsApp reminder" box where I write one short text with
+the placeholders {first_name} and {event_name}. For each chosen person with a mobile number, ignore spaces and
+dashes. If the number starts with + or 00, show a row with the name and a link https://wa.me/<digits only, without
+the + or the 00>?text=<the text, URL-encoded>. Otherwise show "check number" and no link; never guess a country.
+I click each link myself and press send in WhatsApp; you never open a link yourself. No automatic sending, no
+WhatsApp library, no bulk sending. Add tests for the
+number format and the encoding, run self-test.js until 0 failed, and show me the last line.
+No new packages, stay on 127.0.0.1 with the token. Never open crm.db, backups/, exports/ or photos/ - test
+with a temporary database only, with CRM_NO_BROWSER=1.
+```
+
+Reading your WhatsApp chats is a different tool: [`../09-whatsapp-app-build-guide/`](../09-whatsapp-app-build-guide/README.md).
+
+## D · Event check-in list
+
+For the evening itself: a printable list, or the laptop at the door.
+
+```text
+Add a check-in list to my mini CRM. On an event page: a "Check-in" view with the registered and waitlist people,
+sorted by last name, large text, one tap or click to mark "attended", and a counter "N of M arrived". A print
+version (A4, a tick box per line) for events without a laptop at the door. Add tests for the counter and the
+status change, run self-test.js until 0 failed, and show me the last line.
+No new packages, stay on 127.0.0.1 with the token. Never open crm.db, backups/, exports/ or photos/ - test
+with a temporary database only, with CRM_NO_BROWSER=1.
+```
+
+## Your own idea
+
+Describe the extra in two sentences, add *"Keep the rules of this app: nothing is sent, no Forum content, photos only with photo_ok, never open crm.db, backups/, exports/ or photos/ - test with a temporary database, tests in self-test.js until 0 failed"*, and paste it. One extra at a time; back up before each.
+
+===== FILE: 12-mini-crm/BUILD-PROMPT.md =====
+
+# Build prompt — your own mini CRM
+
+Purpose: the one prompt you paste into your AI coding tool in your empty `chapter-crm` folder. It describes the whole app: a small contact and event list for your chapter, stored in one SQLite file on your laptop, opened in your browser.
+Time: 20 to 40 minutes the first time, most of it the AI tool writing and testing. You answer a few questions and say yes to file changes inside the folder.
+
+How to use it: copy **everything inside the grey box** — from "You are helping me" to the last line — and paste it as one message.
+
+- **A coding tool** (Claude Code, Codex, the Claude desktop app with Cowork, ChatGPT Work in the desktop app): open it in your `chapter-crm` folder first. It writes the files there and runs the self-test.
+- **A chat tool in the browser** cannot build this app — it needs to run a small program on your laptop. Use a coding tool, or stay with your spreadsheet for now.
+
+The prompt is in English on purpose: the code and the tests come out in English, and you can always ask your AI tool to explain any step in your own language.
+
+Why it is this detailed: every requirement below is something you can see working — in the self-test, in your browser, or in the [`CHECKLIST.md`](CHECKLIST.md).
+Tested in a reference build (Nov 2026, Claude Code, macOS, Node 26): about 10 minutes to build, self-test 56 passed and 0 failed; then checked by hand — no packages, only 127.0.0.1, no token → 401, a foreign website → refused, `../crm.db` → refused, the Excel export keeps `=` from running. The self-test shows whether it holds on your laptop; the number passed varies.
+
+```text
+You are helping me, a non-technical person, build a small app on my own laptop. Work only in the current folder.
+I approve file changes and `node` commands in this folder: do the work, tell me in one or two plain sentences what
+you are doing, and show me the last self-test line at the end. Stop and ask only for a password, an install, or
+anything outside this folder. Never use sudo or admin rights, never install anything, never run npm, never
+download anything, never add a package.json with dependencies. If the app files already exist here, update them in
+place. Keep the code small and readable, with comments in plain English.
+
+GOAL
+A local "mini CRM" for my YPO chapter. I am a Chapter Manager. The app keeps a list of people (members, spouses,
+guests, prospects, speakers, partners), the chapter's events, and who was invited to, registered for or attended
+which event. It stores everything in ONE SQLite file, crm.db, in this folder. I use it in my browser at a local
+address. It never connects to the internet, never sends a message or an email, and never shares data with anyone.
+Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - keep the code easy to extend.
+
+0. CHECK FIRST
+- Run `node --version`. I need Node.js 24 or newer (it has SQLite built in as node:sqlite). If Node is missing or
+  older, stop and tell me to install the LTS version from https://nodejs.org/en/download, then wait for me.
+- Find out whether I am on macOS or Windows and give every command for my system - on Windows one PowerShell
+  command per line (Windows PowerShell 5.1 has no &&). If you run on Linux or WSL, stop and ask me to run you on
+  macOS or Windows directly: the app must run where my browser runs.
+- Check whether this folder lies inside a cloud-synced folder (iCloud Drive, Desktop & Documents in iCloud,
+  OneDrive, Google Drive, Dropbox) or inside Desktop or Documents (they are often synced without the word in the
+  path). If it does, stop and tell me: "A database file can break when a sync app copies it while it is open.
+  Please move this folder into your user folder itself: /Users/<you>/chapter-crm on a Mac, C:\Users\<you>\chapter-crm
+  on Windows. Backups go into your chapter storage later." Then wait.
+- If crm.db already exists here, never delete, overwrite or reset it while building or testing. Tests use their
+  own temporary database.
+- Never open, query, print or copy crm.db, crm.db-wal, crm.db-shm, backups/, exports/ or photos/ - not to check,
+  not to debug, not now and not later in this folder. Never start server.js on this folder's data; test only with a
+  temporary database. If you need to know what the data looks like, ask me to describe it without names.
+
+1. TECH BASE - no dependencies at all
+- Node.js only, with built-in modules: node:http, node:sqlite (DatabaseSync), node:fs, node:path, node:crypto,
+  node:url. No npm packages, no frameworks, no CDN, no web fonts, no images from the internet.
+- Files, exactly these:
+    server.js          the local web server and the database access
+    crm-core.js        pure logic, no database, no files, no network: validation, CSV parsing and writing,
+                       duplicate check, text helpers - everything that can be tested
+    public/index.html  the whole user interface (plain HTML, CSS, JavaScript in one file)
+    self-test.js       runs the tests with `node self-test.js` and prints "N passed, 0 failed"
+    start-mac.command  double-click start on macOS
+    start-windows.bat  double-click start on Windows
+    README-app.md      a one-page note for me: start, stop, backup, where the data is
+  Folders the app creates when needed: photos/, backups/, exports/.
+- The start files only enter their own folder and run the server; they open no address themselves. Mac
+  (start-mac.command, Unix line endings): #!/bin/bash, cd "$(dirname "$0")", node server.js || read.
+  Windows (start-windows.bat): cd /d "%~dp0", then node server.js || pause. The window stays open while the app
+  runs; closing it stops the app. Make start-mac.command executable yourself (chmod +x) - it is in this folder.
+  Tell me: if macOS says it cannot verify the file, close the message, then System Settings > Privacy & Security >
+  Open Anyway - once.
+
+2. SAFETY - hard rules
+- The server listens on 127.0.0.1 only, port 8765 (if busy, try 8766 to 8770 and print the one it uses). Never
+  0.0.0.0, never another network interface.
+- Every request: reject it unless the Host header is 127.0.0.1:<port> or localhost:<port>. Every POST, PUT and
+  DELETE: reject it unless the Origin header is missing or equals http://127.0.0.1:<port> or
+  http://localhost:<port>. This keeps other websites in the same browser from talking to the app.
+- At start, create a random token (node:crypto, 32 bytes, hex), print the full address with ?t=<token> and open
+  exactly that address. index.html calls the API with relative addresses only (same host and port as the page),
+  takes the token from its own ?t= value and sends it in a header X-CRM-Token with every API call; the server
+  answers 401 without it. The token lives only in memory, is never stored, and changes with every start.
+- All SQL with prepared statements and ? placeholders. Never build SQL from user text.
+- The page never inserts user text as HTML: use textContent, never innerHTML with data.
+- Response headers on every page: Content-Security-Policy "default-src 'self'; img-src 'self' data:;
+  style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'",
+  X-Content-Type-Options nosniff, Referrer-Policy no-referrer.
+- Serve only files from public/ and photos/, never anything else (no path traversal: resolve the path and check it
+  stays inside the folder). /photos/ needs the token too (as ?t=<token> in the image address) and serves a file only
+  when its person has photo_ok = 1 - always with Content-Type image/jpeg or image/png as checked at upload, never
+  anything else, plus X-Content-Type-Options nosniff and Content-Security-Policy "sandbox; default-src 'none'".
+- Photos: accept JPEG and PNG only, check the first bytes of the file (JPEG FF D8 FF, PNG 89 50 4E 47), at most
+  5 MB; anything else gets the message "Please export it as JPEG first (iPhone photos are often HEIC) and upload
+  again." save under a new random file name in photos/ (crypto.randomBytes(16) as hex). Never keep the original file name.
+- No code that sends anything: no email, no SMTP, no WhatsApp, no HTTP requests to other hosts, no analytics.
+- Never run shell commands from the app, with one exception: at start, server.js may open the default browser once
+  with its own local address http://127.0.0.1:<port>/?t=<token> and nothing else - macOS: execFile('open',
+  [address]); Windows: execFile('cmd.exe', ['/c', 'start', '', address]). An environment variable
+  CRM_NO_BROWSER=1 switches this off. Never use eval.
+
+3. DATA - one SQLite file, crm.db
+- Open crm.db with PRAGMA journal_mode=WAL, PRAGMA foreign_keys=ON, PRAGMA busy_timeout=5000 and
+  PRAGMA secure_delete=ON. Create the tables if they do not exist.
+  Keep a table meta(key, value) with schema_version = 2. If crm.db already exists with an older schema (no version
+  columns, schema_version missing or 1), add the missing columns with ALTER TABLE ... DEFAULT, set schema_version =
+  2, and never drop or rewrite existing data.
+- people: id, first_name, last_name, company, title, email, mobile, kind (member | spouse | guest | prospect |
+  speaker | partner | other), chapter_role (free text, e.g. "Learning Officer"), member_since (year, optional),
+  tags (comma-separated words), photo_file (random name or empty), photo_ok (0 or 1), photo_ok_date (the day I
+  ticked it), notes, created_at, updated_at, version (integer, starts at 1). first_name or last_name required. email optional: store NULL when empty, never a blank; when present,
+  unique on lower-case, trimmed.
+- events: id, name, date (YYYY-MM-DD), place, notes, updated_at, version (integer, starts at 1). name and date
+  required.
+- attendance: id (a new random 16-byte hex value on every creation, never reused), event_id, person_id, status
+  (invited | registered | attended | declined | waitlist), unique per event and person, deleted together with the
+  event or the person; updated_at, version (integer, starts at 1). Edits and deletes of an attendance line send
+  its id and version, so a line that was removed and added again is a new line for a stale tab.
+- Never add fields for birthdays, private addresses, health, family matters or anything about Forum. Under the
+  notes field the page shows: "Chapter facts only - notes you would keep in the member spreadsheet. No Forum
+  content."
+- photo_ok: a photo is only shown and only used for extras (like a photo book) when photo_ok is 1. Ticking it
+  stores today's date in photo_ok_date. Unticking asks "Delete the photo file too?" (default yes); if I say no, the
+  file stays but is hidden everywhere. Deleting the person deletes the photo file too.
+- Edits: every update and delete of a person, an event or an attendance line sends the version the page loaded;
+  the server checks and raises it in one step (UPDATE ... SET version = version + 1 ... WHERE id = ? AND version = ?;
+  DELETE ... WHERE id = ? AND version = ?). If no row changed, the record changed meanwhile (another tab): refuse
+  with "Changed in another window - please reload" instead of overwriting. updated_at is only for display.
+
+4. WHAT I CAN DO IN THE BROWSER - simple, large buttons, plain words
+- People: a list with search (name, company, email, tags), filter by kind and by tag, sorted by last name.
+  Add, edit, delete (delete asks "Delete <name>? This cannot be undone."). Upload or remove a photo.
+- Events: a list sorted by date (next first), add, edit, delete. On an event: add people (search and tick),
+  set each person's status, see counts per status.
+- Import from CSV (for example an export from Excel or Google Sheets): I choose a file, the app shows the first
+  10 rows and a mapping of my column names to the app's fields (it guesses: "First name", "Vorname", "E-Mail",
+  "Email", "Mobile", "Handy", "Company", "Firma" ...). I confirm. Then it shows: N new, N updated (same email),
+  N skipped (no name), and only after a second yes it writes them. Accept comma and semicolon separators, UTF-8
+  with or without BOM, quoted fields with line breaks. Never map a column to notes automatically - I choose that by
+  hand - and an import never replaces existing notes; it adds below them.
+- Export to CSV: the current filtered list, with the columns I tick. UTF-8 with a BOM, every field in quotes, and
+  a choice of comma or semicolon (semicolon for Excel with a German or other European list separator). Every text
+  cell that starts with = + - @, a tab or a carriage return gets a leading apostrophe, so Excel never runs it as a
+  formula. Save it only into exports/ with the date in the file name and show me the file name - no second copy
+  in the browser's Downloads.
+- Backup: one button "Backup now" creates one new folder backups/crm-YYYY-MM-DD-HHMMSS/ (if that name exists, add
+  -2, -3 ...) with crm.db inside (VACUUM INTO) and a copy of all files in photos/ inside (photos/). Only after both
+  are complete it shows the folder name; if anything fails, it says so and removes the half-made folder. While a
+  backup runs, the server refuses every change (people, events, attendance, photos) with "Backup running - try
+  again in a moment", so the database copy and the photo copy show the same moment. A backup
+  folder is never changed again. The page reminds me once a week: "Last backup: <date>. Copy the newest backup
+  folder into your chapter storage."
+- A small "About" box: where crm.db lives, the number of people and events, the last backup.
+
+5. TESTS - self-test.js
+- Test crm-core.js thoroughly: CSV parsing (commas, semicolons, quotes, line breaks in quotes, BOM, empty lines),
+  CSV writing with the formula guard, email normalisation and the duplicate rule, validation of each field,
+  column-name guessing for English and German headers.
+- Tests may create ONE temporary folder in the system temp folder (I approve that here) and delete it at the end.
+  Test the database part against a database in that folder - never against crm.db: create tables, add, update,
+  unique email, attendance unique per event and person, delete cascades; a stale version refused for a person, an
+  event and an attendance line, also for two changes within the same second, and for an attendance line that was
+  removed and added again; a change sent while a backup runs is refused; two backups in the same second get
+  two folders; a backup folder holds crm.db and the photos, and deleting a photo after the backup leaves the
+  backup's copy in place; an older schema-1 database (made in the test) is migrated to schema 2 without data loss.
+- Test the server: start it with CRM_NO_BROWSER=1 on a free port with a temporary database, check that a request without the token
+  gets 401, a wrong Host header is rejected, a foreign Origin on POST is rejected, a path like /../crm.db is
+  refused, a photo is served with an image Content-Type, nosniff and the sandbox policy (also for a JPEG that
+  carries HTML after its first bytes), and a normal add/list round trip works. Stop it again.
+- Print one line per failed test and at the end "N passed, 0 failed". Exit code 1 if anything failed.
+- Run `node self-test.js` yourself and fix everything until it shows 0 failed. Show me the last line.
+
+6. FINISH
+- Fill crm.db with nothing. Offer me to try the app with fictional data first: create a file
+  sample-people.csv with 8 fictional people of a "Lakeside Chapter (fictional)", all with example.com email
+  addresses - I import the CSV myself in the browser, so I learn how import works. Then tell me to add one
+  fictional event by hand, "Holiday Dinner" on the next 12 December, and to register a few of the fictional
+  people. Tell me to delete these fictional people before I add real ones.
+- Write README-app.md in plain English, at most one page: how to start (double-click), how to stop (close the
+  window), where the data is (crm.db and photos/ - "this is your chapter's contact list. Never copy or mail crm.db
+  itself; hand over only a backup folder"), how to back up (button, then copy the newest folder from backups/ into
+  the chapter storage), how to restore (close the app, rename crm.db, its -wal/-shm files and photos/ to ...-old,
+  then copy crm.db and photos/ from one backup folder into chapter-crm), that deleting a person does not reach
+  backups already copied, and two rules: "No Forum content, ever." and "The AI tool that built this app never
+  opens crm.db, backups/, exports/ or photos/."
+- Then show me how to start the app, and wait until I tell you it opened in my browser.
+```
+
+After the build: tick the [`CHECKLIST.md`](CHECKLIST.md) before you put real names in. Extras on top: [`ADD-ONS.md`](ADD-ONS.md).
+
+===== FILE: 12-mini-crm/CHECKLIST.md =====
+
+# Checklist — your mini CRM, before real names go in
+
+Purpose: a short check of the app your AI tool built, before you put real people in.
+Time: about 15 minutes. Ask your AI tool the questions in *italics* — in the chat where it built the app; you do not need to read the code yourself.
+
+- [ ] **1 · Self-test.** `node self-test.js` ends with `0 failed`. *"Run the self-test and show me the last line."*
+- [ ] **2 · No packages.** *"Did you install any package? List every file you created."* — the answer: no packages, and no folder `node_modules`.
+- [ ] **3 · Only your laptop.** *"Which address does the server listen on?"* — the answer is `127.0.0.1` or `localhost`. Never `0.0.0.0`.
+- [ ] **4 · The token.** Copy the address from your browser, delete everything from `?t=` to the end, paste it into a new tab: the list stays empty or shows an error. With the full address it works.
+- [ ] **5 · Sends nothing.** *"Is there any code that sends an email, a WhatsApp message or a request to the internet?"* — the answer is no.
+- [ ] **6 · Import with preview.** Import `sample-people.csv`: you see a preview and the counts (new, updated, skipped) before anything is saved.
+- [ ] **7 · Excel-safe export.** Add a fictional person with the first name `=1+1`, export the list, open it in Excel: `=1+1` stays text (a leading `'` is fine), accents look right, and each value has its own column.
+- [ ] **8 · Photo only with the tick.** Add a photo to a fictional person, untick *photo OK*: the photo disappears from the list.
+- [ ] **9 · Backup.** *Backup now* creates a folder in `backups/` with `crm.db` and `photos/` inside. Copy that folder into your chapter storage the same day.
+- [ ] **10 · The folder is not synced.** `chapter-crm` is not inside iCloud Drive, OneDrive, Google Drive or Dropbox.
+
+All ten ticked? Delete the fictional people and the *Holiday Dinner*, then add your real list.
+Something did not tick? Paste the point and what you saw into your AI tool and ask it to fix the app — then run the self-test again.
+
+===== FILE: 12-mini-crm/README.md =====
+
+# 12 · Your own mini CRM — a guide, not a program
+
+Purpose: build a small contact and event list for your chapter on your own laptop, together with your AI tool — people, events, who came — in one file on your laptop (an SQLite database). Then add what you need on top: a photo book, mailing drafts, WhatsApp links.
+Time: 20 to 40 minutes to build the first time, most of it the AI tool writing and testing (about 10 minutes in our reference build, Nov 2026). Plan an hour including installing Node.js. After that, a few minutes whenever you use it.
+Level: 3 — an AI tool that can write and run code in a folder on your laptop (see [`../01-foundations/three-levels.md`](../01-foundations/three-levels.md)).
+
+**This folder contains no code.** It contains a build prompt. You paste it into your AI tool, and the tool builds the app on your laptop.
+No account and no subscription. The finished app does not use the internet: it runs only on your laptop, in your browser, and stores everything in one file, `crm.db`.
+
+| File | What it is for |
+|---|---|
+| [`BUILD-PROMPT.md`](BUILD-PROMPT.md) | The one prompt you copy into your AI tool. It describes the whole app |
+| [`CHECKLIST.md`](CHECKLIST.md) | Ten ticks before you put real names in |
+| [`ADD-ONS.md`](ADD-ONS.md) | Extras on top, one prompt each: photo book, mailing drafts, WhatsApp links, event check-in list |
+| [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md) | The usual bumps — Node, the start file, the browser, import |
+
+No code at all? A spreadsheet in your chapter storage does most of this too. The mini CRM is for the day the spreadsheet has five tabs and nobody knows which one is right.
+
+## What your app can do — and what it can't
+
+| It can | It can't |
+|---|---|
+| Keep people — members, spouses, guests, prospects, speakers, partners — with company, role, email, mobile, tags and a photo | Send anything: no email, no WhatsApp, no message of any kind. Extras only prepare drafts; you send |
+| Keep events and who was invited, registered, attended or declined | Connect to YPO Connect, CMH or any other system |
+| Import a list from Excel or Google Sheets (CSV), with a preview before anything is saved | Be reached from another computer — it listens only on your own laptop |
+| Export any filtered list as CSV, safe to open in Excel | Store birthdays, private addresses, health or Forum topics — the fields do not exist |
+| Make a full backup with one button | Sync by itself — you copy the backup into the chapter storage |
+
+## Which data goes in
+
+**Whatever your chapter's AI document says** — the one-pager "AI use in our chapter" ([`../06-chapter-rules/ai-use-one-pager.md`](../06-chapter-rules/ai-use-one-pager.md)) that you prepare with your Chair and your ExCo adopts. Put the mini CRM on its tool list (Part B). After that, you are free to work — member lists, events, invitations, the photo book.
+
+Two things the app does for you: a photo is only shown when *photo OK* is ticked, and there is no field for Forum content.
+
+The file `crm.db` is the chapter's contact list, like the member list in Excel. At a handover, the newest backup goes to your successor ([`../05-officer-handover/handover-checklist.md`](../05-officer-handover/handover-checklist.md)).
+
+## Step by step
+
+1. **Node.js 24 or newer.** Your AI tool checks this for you in step 3. If it says Node.js is missing or too old, install the version marked *LTS* (recommended) — [`../setup/macos.md`](../setup/macos.md) § 3 or [`../setup/windows.md`](../setup/windows.md) § 3.
+2. **One folder that is not synced.** Create `chapter-crm` directly in your user folder — the one with your name (Mac: Finder → *Go* → *Home*; Windows: File Explorer, type `%USERPROFILE%` in the address bar). Not on the Desktop, not in Documents, not in iCloud Drive, OneDrive, Google Drive or Dropbox. A sync app can break a database file while it is open. The backups go into the chapter storage later.
+3. **Start your coding tool and choose `chapter-crm` as its folder** — the Claude desktop app with Cowork, ChatGPT Work, Claude Code or Codex ([`../setup/`](../setup/README.md)). Paste the prompt from [`BUILD-PROMPT.md`](BUILD-PROMPT.md). Say yes to files in this folder and to commands that start with `node`. Say no to a password, to `npm`, and to any other folder.
+4. **Wait for the self-test.** The tool runs `node self-test.js` until it shows `0 failed` and shows you the last line.
+5. **Start it.** Mac, the first time only: see the box in [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md#starting). Double-click `start-mac.command` or `start-windows.bat`. A text window opens — **leave it open, it is the app**. Your browser opens the app.
+6. **Practise with fictional people.** Import `sample-people.csv` — in the file window, open your user folder, then `chapter-crm` — add the fictional *Holiday Dinner* by hand, register a few people. Keep them for the checklist.
+7. **Tick the checklist** — [`CHECKLIST.md`](CHECKLIST.md). Then delete the fictional people and the *Holiday Dinner*, and add your real list.
+8. **Back up weekly.** *Backup now* → copy the newest folder from `backups/` into your chapter storage. It holds the list and the photos together.
+
+To stop the app: close the text window that opened in step 5.
+
+## With your assistant
+
+Your assistant does not read `crm.db` — and neither does the coding tool that built the app: the build prompt and every add-on forbid it, and it tests with a temporary database. When it needs a list — the registered people for a name-badge draft, the speakers of the year for a thank-you note — export only the columns that task needs and give it that file.
+
+Next: [`ADD-ONS.md`](ADD-ONS.md) — the photo book, mailing drafts and WhatsApp links, one prompt each.
+
+===== FILE: 12-mini-crm/TROUBLESHOOTING.md =====
+
+# Troubleshooting — your mini CRM
+
+Purpose: the usual bumps with the mini CRM, and the quick way past each one.
+Tested in a reference build (Nov 2026): about 10 minutes to build, self-test `0 failed`.
+
+## Building
+
+| What you see | What to do |
+|---|---|
+| The tool says Node.js is missing or older than 24 | Install the newest version marked *LTS* — Node 26 in November 2026; Node 22 is too old for this app — [`../setup/macos.md`](../setup/macos.md) § 3 or [`../setup/windows.md`](../setup/windows.md) § 3. Open a **new** Terminal or PowerShell window afterwards, then paste the prompt again |
+| The tool wants to run `npm install` | Say no. The app needs no packages; paste: *"No packages — Node's built-in modules only, as the prompt says."* |
+| The tool stops: the folder is synced | Move `chapter-crm` to a place on your laptop outside iCloud Drive, OneDrive, Google Drive and Dropbox, open the tool there and paste the prompt again |
+| A chat in the browser gives you code to copy | A browser chat cannot run the app. Use a coding tool on your laptop (README step 3) |
+| The self-test shows failed tests | Paste the failing lines into the tool: *"Fix these until the self-test shows 0 failed."* |
+
+## Starting
+
+| What you see | What to do |
+|---|---|
+| Mac: "cannot be opened" or "Apple could not verify …" | Double-click once, close the message, then *System Settings* → *Privacy & Security* → scroll down → *Open Anyway* next to `start-mac.command`. On older macOS: right-click → *Open* → *Open*. Only the first time |
+| Mac: nothing happens on double-click | Ask your AI tool: *"Make start-mac.command double-clickable."* — once |
+| Windows: SmartScreen warns about `start-windows.bat` | *More info* → *Run anyway*. The file only starts `node server.js` in this folder |
+| "Port in use" | The app is already running in another window — use that one, or close it and start again |
+| The browser does not open by itself | Copy the address with `?t=…` from the start window into your browser |
+| Windows asks whether to allow Node.js on networks | Choose *Cancel* or *No*. The app still opens on this laptop |
+| The browser shows an empty list or an error code (401) | Use the address the start window prints, with `?t=…` at the end. Bookmarks of an old address stop working after a restart — on purpose |
+
+## Using it
+
+| What you see | What to do |
+|---|---|
+| Import shows strange characters (Ã©) | Save the file in Excel as *CSV UTF-8*, then import again |
+| Import puts everything into one column | The file uses another separator — the preview shows it; save as CSV with commas or semicolons |
+| "Email already exists" | The same email is already in the list. Edit that person instead of adding a second one |
+| A photo is not shown | Tick *photo OK*. Still missing? Export the photo as JPEG (Mac Photos: *File* → *Export*; iPhone photos are often HEIC) and upload that file |
+| A name in Excel starts with `'` | On purpose: the export's guard against formulas. Keep it |
+| Everything in one column in Excel | Export again with the other separator (semicolon or comma) |
+
+## Data
+
+| Question | Answer |
+|---|---|
+| Where is my data? | In `crm.db` in your `chapter-crm` folder, and in `photos/` |
+| How do I hand it over? | *Backup now*, then give your successor the newest folder from `backups/` — through the chapter storage, not by private mail. Never copy `crm.db` itself while the app runs |
+| How do I restore a backup? | Close the app. Rename `crm.db`, its `-wal`/`-shm` files and `photos/` to `crm-old…` and `photos-old`. Copy `crm.db` and `photos/` from one backup folder into `chapter-crm`, start the app |
+| Can two people use it? | Not at the same time. One laptop, one Chapter Manager; others get exports. Two tabs are fine — if one is out of date, it asks you to reload instead of overwriting |
+| I want to start again | Close the app first. Then rename all three together — `crm.db`, `crm.db-wal`, `crm.db-shm` — to `crm-old.db`, `crm-old.db-wal`, `crm-old.db-shm`, and start again. Never delete a database without a backup |
+
+Still stuck: paste what you see into your coding tool and ask it to explain in plain words — or rebuild the app from [`BUILD-PROMPT.md`](BUILD-PROMPT.md); your `crm.db` stays as it is.
