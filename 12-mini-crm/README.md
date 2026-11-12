@@ -43,7 +43,7 @@ The file `crm.db` is the chapter's contact list, like the member list in Excel. 
 5. **Start it.** Mac, the first time only: see the box in [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md#starting). Double-click `start-mac.command` or `start-windows.bat`. A text window opens — **leave it open, it is the app**. Your browser opens the app.
 6. **Practise with fictional people.** Import `sample-people.csv` — in the file window, open your user folder, then `chapter-crm` — add the fictional *Holiday Dinner* by hand, register a few people. Keep them for the checklist.
 7. **Tick the checklist** — [`CHECKLIST.md`](CHECKLIST.md). Then delete the fictional people and the *Holiday Dinner*, and add your real list.
-8. **Back up weekly.** *Backup now* → copy the newest file from `backups/` **and the `photos/` folder** into your chapter storage.
+8. **Back up weekly.** *Backup now* → copy the newest folder from `backups/` into your chapter storage. It holds the list and the photos together.
 
 To stop the app: close the text window that opened in step 5.
 

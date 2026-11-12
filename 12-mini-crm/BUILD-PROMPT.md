@@ -96,24 +96,28 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
 3. DATA - one SQLite file, crm.db
 - Open crm.db with PRAGMA journal_mode=WAL, PRAGMA foreign_keys=ON, PRAGMA busy_timeout=5000 and
   PRAGMA secure_delete=ON. Create the tables if they do not exist.
-  Keep a table meta(key, value) with schema_version = 1, so later extras can add columns safely.
+  Keep a table meta(key, value) with schema_version = 2. If crm.db already exists with an older schema (no version
+  columns, schema_version missing or 1), add the missing columns with ALTER TABLE ... DEFAULT, set schema_version =
+  2, and never drop or rewrite existing data.
 - people: id, first_name, last_name, company, title, email, mobile, kind (member | spouse | guest | prospect |
   speaker | partner | other), chapter_role (free text, e.g. "Learning Officer"), member_since (year, optional),
   tags (comma-separated words), photo_file (random name or empty), photo_ok (0 or 1), photo_ok_date (the day I
-  ticked it), notes, created_at, updated_at. first_name or last_name required. email optional: store NULL when empty, never a blank; when present,
+  ticked it), notes, created_at, updated_at, version (integer, starts at 1). first_name or last_name required. email optional: store NULL when empty, never a blank; when present,
   unique on lower-case, trimmed.
-- events: id, name, date (YYYY-MM-DD), place, notes, updated_at. name and date required.
+- events: id, name, date (YYYY-MM-DD), place, notes, updated_at, version (integer, starts at 1). name and date
+  required.
 - attendance: event_id, person_id, status (invited | registered | attended | declined | waitlist), unique per
-  event and person, deleted together with the event or the person; updated_at.
+  event and person, deleted together with the event or the person; updated_at, version (integer, starts at 1).
 - Never add fields for birthdays, private addresses, health, family matters or anything about Forum. Under the
   notes field the page shows: "Chapter facts only - notes you would keep in the member spreadsheet. No Forum
   content."
 - photo_ok: a photo is only shown and only used for extras (like a photo book) when photo_ok is 1. Ticking it
   stores today's date in photo_ok_date. Unticking asks "Delete the photo file too?" (default yes); if I say no, the
   file stays but is hidden everywhere. Deleting the person deletes the photo file too.
-- Edits: every update and delete of a person, an event or an attendance line sends the updated_at the page loaded;
-  the server checks and changes it in one step (UPDATE ... WHERE id = ? AND updated_at = ?). If the record changed
-  meanwhile (another tab), refuse with "Changed in another window - please reload" instead of overwriting.
+- Edits: every update and delete of a person, an event or an attendance line sends the version the page loaded;
+  the server checks and raises it in one step (UPDATE ... SET version = version + 1 ... WHERE id = ? AND version = ?;
+  DELETE ... WHERE id = ? AND version = ?). If no row changed, the record changed meanwhile (another tab): refuse
+  with "Changed in another window - please reload" instead of overwriting. updated_at is only for display.
 
 4. WHAT I CAN DO IN THE BROWSER - simple, large buttons, plain words
 - People: a list with search (name, company, email, tags), filter by kind and by tag, sorted by last name.
@@ -131,9 +135,11 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   cell that starts with = + - @, a tab or a carriage return gets a leading apostrophe, so Excel never runs it as a
   formula. Save it only into exports/ with the date in the file name and show me the file name - no second copy
   in the browser's Downloads.
-- Backup: one button "Backup now" writes a full copy with VACUUM INTO into backups/crm-YYYY-MM-DD-HHMMSS.db (if
-  that name exists, add -2, -3 ...) and shows the file name only after the copy has finished. The page reminds me once a week: "Last backup: <date>. Copy the newest backup and the
-  photos/ folder into your chapter storage."
+- Backup: one button "Backup now" creates one new folder backups/crm-YYYY-MM-DD-HHMMSS/ (if that name exists, add
+  -2, -3 ...) with crm.db inside (VACUUM INTO) and a copy of all files in photos/ inside (photos/). Only after both
+  are complete it shows the folder name; if anything fails, it says so and removes the half-made folder. A backup
+  folder is never changed again. The page reminds me once a week: "Last backup: <date>. Copy the newest backup
+  folder into your chapter storage."
 - A small "About" box: where crm.db lives, the number of people and events, the last backup.
 
 5. TESTS - self-test.js
@@ -142,8 +148,10 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   column-name guessing for English and German headers.
 - Tests may create ONE temporary folder in the system temp folder (I approve that here) and delete it at the end.
   Test the database part against a database in that folder - never against crm.db: create tables, add, update,
-  unique email, attendance unique per event and person, delete cascades, a stale updated_at refused for a person,
-  an event and an attendance line, two backups in the same second get two names.
+  unique email, attendance unique per event and person, delete cascades; a stale version refused for a person, an
+  event and an attendance line, also for two changes within the same second; two backups in the same second get
+  two folders; a backup folder holds crm.db and the photos, and deleting a photo after the backup leaves the
+  backup's copy in place; an older schema-1 database (made in the test) is migrated to schema 2 without data loss.
 - Test the server: start it with CRM_NO_BROWSER=1 on a free port with a temporary database, check that a request without the token
   gets 401, a wrong Host header is rejected, a foreign Origin on POST is rejected, a path like /../crm.db is
   refused, a photo is served with an image Content-Type, nosniff and the sandbox policy (also for a JPEG that
@@ -158,10 +166,10 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   fictional event by hand, "Holiday Dinner" on the next 12 December, and to register a few of the fictional
   people. Tell me to delete these fictional people before I add real ones.
 - Write README-app.md in plain English, at most one page: how to start (double-click), how to stop (close the
-  window), where the data is (crm.db - "this file is your chapter's contact list. Never copy or mail crm.db itself;
-  hand over only a file from Backup now, together with photos/"), how to back up (button, then copy the newest
-  file from backups/ and the photos/ folder into the chapter storage), how to restore (close the app, rename an
-  existing crm.db and its -wal/-shm files, copy the backup in as crm.db, put photos/ next to it), that deleting a person does not reach
+  window), where the data is (crm.db and photos/ - "this is your chapter's contact list. Never copy or mail crm.db
+  itself; hand over only a backup folder"), how to back up (button, then copy the newest folder from backups/ into
+  the chapter storage), how to restore (close the app, rename crm.db, its -wal/-shm files and photos/ to ...-old,
+  then copy crm.db and photos/ from one backup folder into chapter-crm), that deleting a person does not reach
   backups already copied, and two rules: "No Forum content, ever." and "The AI tool that built this app never
   opens crm.db, backups/, exports/ or photos/."
 - Then show me how to start the app, and wait until I tell you it opened in my browser.

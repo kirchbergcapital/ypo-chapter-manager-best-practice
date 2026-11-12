@@ -11,7 +11,7 @@ Time: about 15 minutes. Ask your AI tool the questions in *italics* — in the c
 - [ ] **6 · Import with preview.** Import `sample-people.csv`: you see a preview and the counts (new, updated, skipped) before anything is saved.
 - [ ] **7 · Excel-safe export.** Add a fictional person with the first name `=1+1`, export the list, open it in Excel: `=1+1` stays text (a leading `'` is fine), accents look right, and each value has its own column.
 - [ ] **8 · Photo only with the tick.** Add a photo to a fictional person, untick *photo OK*: the photo disappears from the list.
-- [ ] **9 · Backup.** *Backup now* creates a file you can find in `backups/`. Copy that file and `photos/` into your chapter storage the same day.
+- [ ] **9 · Backup.** *Backup now* creates a folder in `backups/` with `crm.db` and `photos/` inside. Copy that folder into your chapter storage the same day.
 - [ ] **10 · The folder is not synced.** `chapter-crm` is not inside iCloud Drive, OneDrive, Google Drive or Dropbox.
 
 All ten ticked? Delete the fictional people and the *Holiday Dinner*, then add your real list.
