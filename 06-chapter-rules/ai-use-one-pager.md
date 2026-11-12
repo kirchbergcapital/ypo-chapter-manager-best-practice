@@ -13,7 +13,7 @@ graphics and handover notes.
 ## Part A — five rules we adopt now
 
 1. Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
-   *In short: **Forum logistics yes. Forum content never. A name next to a topic is content.***
+   *In short: **Forum logistics yes. Forum content never.** Chapter matters — a conduct case too — are chapter business.*
 2. **We use paid AI plans only, with training on our data switched off — a business plan with a data processing agreement where the chapter pays.**
 3. **A human sends.** AI drafts; a person reads, edits and sends. No automatic sending, no bulk WhatsApp.
 4. **Role accounts, with two-factor sign-in.** Chapter mail and files live in role accounts in {{Microsoft 365 or Google Workspace}} — at least
@@ -27,23 +27,25 @@ graphics and handover notes.
 
 **Meetings.** We record chapter meetings with YPO's Zoom and say so at the start. Forum meetings are never recorded or transcribed.
 
-## Part B — automations beyond drafting: a separate OK per tool
+## Part B — our tools: only what is on this list
 
-Connectors that write (into mail, calendar or files), a browser agent, a self-built WhatsApp app: each starts only after its own OK.
+We work with the tools on this list — for chapter work and chapter data. That keeps our data where the chapter knows it, pays for it and can hand it over.
 
-| Automation | What it may do | OK by · date |
-|---|---|---|
-| *Example:* Claude email connector | Read mail, create drafts in my mailbox, never sends | Chair · {{DATE}} |
-| {{TOOL}} | {{WHAT_IT_DOES}} | {{ROLE}} · {{DATE}} |
-| {{TOOL}} | {{WHAT_IT_DOES}} | {{ROLE}} · {{DATE}} |
+**Something new?** Another app (Airtable, Notion, a survey or newsletter tool), a plugin or browser extension, a custom GPT, a connector, an automation, a self-built app: it goes on this list **first** — one line, OK by the Chair. Free plugins and private accounts are not used for chapter data.
 
-## Tools and who pays
+| Tool | What we use it for | Account / plan | Which data it may see | OK by · date |
+|---|---|---|---|---|
+| *Example:* ChatGPT Business or Claude Team | Drafts, summaries, work in our chapter folder | Chapter workspace on manager@ and chair@ | Chapter facts, member contact details | ExCo · {{DATE}} |
+| *Example:* {{Microsoft 365 or Google Workspace}} | Mail, calendar, the chapter folder | manager@, chair@ | All chapter data | ExCo · {{DATE}} |
+| *Example:* email connector | Reads mail, creates drafts, never sends | manager@ | The chapter mailbox | Chair · {{DATE}} |
+| *Example:* mini CRM ([kit module 12](../12-mini-crm/README.md)) | Contact and event list on the Chapter Manager's laptop | Self-built, local | Member contact details, photos with *photo OK* | Chair · {{DATE}} |
+| {{TOOL}} | {{WHAT_FOR}} | {{ACCOUNT}} | {{DATA}} | {{ROLE}} · {{DATE}} |
 
-{{e.g. Microsoft 365 Business with Copilot, or Google Workspace with Gemini, on manager@ and chair@ — plus ChatGPT Business or Claude Team if wanted}} · {{who pays — e.g. the chapter, or as agreed with the Chapter Manager}}
+**Who pays:** {{the chapter, or as agreed with the Chapter Manager}}.
 
 ## Decision requested
 
-The ExCo adopts Part A for FY {{YEAR}}, agrees the tools and who pays as above, sets up the role accounts manager@ and chair@ by {{DATE}} if they do not exist yet,
+The ExCo adopts Part A and the tool list in Part B for FY {{YEAR}} — new tools are added by the Chair, the list is reviewed at each officer handover — sets up the role accounts manager@ and chair@ by {{DATE}} if they do not exist yet,
 and names **{{NAME_OR_ROLE}}** as admin of the role accounts and the chapter folder, together with the Chapter Manager.
 
 Decided on: {{DATE_OF_DECISION}} · Minutes: {{LINK_OR_REFERENCE}}

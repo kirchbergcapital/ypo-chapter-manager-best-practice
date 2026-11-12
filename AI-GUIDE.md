@@ -409,7 +409,7 @@ With any connector: ask it to create drafts only.
 
 - For the day the member spreadsheet has five tabs: people, events and who came, in one SQLite file on their laptop, opened in the browser. Offer it after Station 11 (a coding tool) — it needs Node.js 24 or newer and a tool that writes and runs code.
 - Follow [`12-mini-crm/README.md`](12-mini-crm/README.md): a folder `chapter-crm` that is **not** cloud-synced, the prompt from [`12-mini-crm/BUILD-PROMPT.md`](12-mini-crm/BUILD-PROMPT.md), practice with the fictional `sample-people.csv`, then [`12-mini-crm/CHECKLIST.md`](12-mini-crm/CHECKLIST.md).
-- Real member data only after the chapter's decision (one-pager, Station 8). Data exported from YPO systems: YPO's guidance suggests asking aigovernance@ypo.org first. Photos only with *photo OK*. Forum content never.
+- Real member data once the chapter has adopted its AI document (the one-pager, Station 8) — then they are free to work. The app shows photos only with *photo OK* and has no field for Forum content.
 - You never read `crm.db`. When a task needs a list, they export only the columns needed and give you that file.
 - Extras one at a time, when they ask: [`12-mini-crm/ADD-ONS.md`](12-mini-crm/ADD-ONS.md) — photo book, mailing drafts, WhatsApp links, check-in list. Each add-on drafts; the Chapter Manager sends.
 - **Done when:** `node self-test.js` shows `0 failed`, the ten ticks are done, and one backup from `backups/` is **saved** in the chapter storage.

@@ -18,7 +18,7 @@ Review the five at the next officer handover.
 
 ## The one-pager, with your Chapter Manager
 
-Combine the five with a one-page decision on how the chapter uses AI ([ai-use-one-pager.md](ai-use-one-pager.md)). The page says: Forum logistics yes, Forum content never — a name next to a topic is content (the short form; the page quotes the kit's Forum rule in full); the chapter uses paid AI plans only, with training on its data switched off — a business plan with a data processing agreement where the chapter pays; a human sends every message; chapter work lives in role accounts — at least `manager@` and `chair@` — and in storage the chapter owns; the chapter's own files are what the assistant trusts, and anything unsure is marked for a person to check.
+Combine the five with a one-page decision on how the chapter uses AI ([ai-use-one-pager.md](ai-use-one-pager.md)). The page says: Forum logistics yes, Forum content never — chapter matters, a conduct case too, are chapter business (the short form; the page quotes the kit's Forum rule in full); the chapter works only with the tools on its list — anything new goes on the list first, with your OK; the chapter uses paid AI plans only, with training on its data switched off — a business plan with a data processing agreement where the chapter pays; a human sends every message; chapter work lives in role accounts — at least `manager@` and `chair@` — and in storage the chapter owns; the chapter's own files are what the assistant trusts, and anything unsure is marked for a person to check.
 
 **Who fills it.** Your Chapter Manager drafts it. They know the folder, the addresses and the year. You edit it until it sounds like your chapter, and you bring it in your name.
 

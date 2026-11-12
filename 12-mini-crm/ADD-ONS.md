@@ -16,7 +16,8 @@ or an event's registered or attended list), a layout (grid with 6 or 12 per page
 a neutral placeholder with their initials. The page has a "Print or save as PDF" button with a print style
 (A4, no buttons on paper). Nothing leaves the laptop. Add tests to self-test.js for the filter and the photo_ok
 rule, run it until 0 failed, and show me the last line.
-Never open crm.db, backups/, exports/ or photos/ - test with a temporary database only.
+No new packages, stay on 127.0.0.1 with the token. Never open crm.db, backups/, exports/ or photos/ - test
+with a temporary database only, with CRM_NO_BROWSER=1.
 ```
 
 ## B · Mailing drafts
@@ -31,7 +32,8 @@ merge (columns email, first_name, last_name, company, subject, body) into export
 recipient into exports/mailing-YYYY-MM-DD-HHMM/, marked as unsent (X-Unsent: 1), that I open in my mail program and
 send myself. Never send anything, never connect to a mail server. Skip people without email and list them. Add
 tests for the placeholders and the CSV, run self-test.js until 0 failed, and show me the last line.
-Never open crm.db, backups/, exports/ or photos/ - test with a temporary database only.
+No new packages, stay on 127.0.0.1 with the token. Never open crm.db, backups/, exports/ or photos/ - test
+with a temporary database only, with CRM_NO_BROWSER=1.
 ```
 
 ## C · WhatsApp links
@@ -40,12 +42,14 @@ For a short reminder to the registered people of one event — one by one, from 
 
 ```text
 Add WhatsApp links to my mini CRM. On an event page: a "WhatsApp reminder" box where I write one short text with
-the placeholders {first_name} and {event_name}. For each chosen person with a mobile number, show a row with the
-name and a link https://wa.me/<number in international format, digits only>?text=<the text, URL-encoded>. I click
-each link myself and press send in WhatsApp. No automatic sending, no WhatsApp library, no bulk sending. Mark
-numbers that do not start with + or 00 as "check number" instead of guessing a country code. Add tests for the
+the placeholders {first_name} and {event_name}. For each chosen person with a mobile number, ignore spaces and
+dashes. If the number starts with + or 00, show a row with the name and a link https://wa.me/<digits only, without
+the + or the 00>?text=<the text, URL-encoded>. Otherwise show "check number" and no link; never guess a country.
+I click each link myself and press send in WhatsApp; you never open a link yourself. No automatic sending, no
+WhatsApp library, no bulk sending. Add tests for the
 number format and the encoding, run self-test.js until 0 failed, and show me the last line.
-Never open crm.db, backups/, exports/ or photos/ - test with a temporary database only.
+No new packages, stay on 127.0.0.1 with the token. Never open crm.db, backups/, exports/ or photos/ - test
+with a temporary database only, with CRM_NO_BROWSER=1.
 ```
 
 Reading your WhatsApp chats is a different tool: [`../09-whatsapp-app-build-guide/`](../09-whatsapp-app-build-guide/README.md).
@@ -59,7 +63,8 @@ Add a check-in list to my mini CRM. On an event page: a "Check-in" view with the
 sorted by last name, large text, one tap or click to mark "attended", and a counter "N of M arrived". A print
 version (A4, a tick box per line) for events without a laptop at the door. Add tests for the counter and the
 status change, run self-test.js until 0 failed, and show me the last line.
-Never open crm.db, backups/, exports/ or photos/ - test with a temporary database only.
+No new packages, stay on 127.0.0.1 with the token. Never open crm.db, backups/, exports/ or photos/ - test
+with a temporary database only, with CRM_NO_BROWSER=1.
 ```
 
 ## Your own idea

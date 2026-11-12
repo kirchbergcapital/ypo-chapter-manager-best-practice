@@ -156,7 +156,7 @@ Three worked openings, ready to say in your own cadence: [opening-variants.md](o
 
 **When Forum comes up** — the house rules and the one-pager keep Forum out (the full rule is the first line of the one-pager). Say it in the members' own language:
 - *"AI takes the date-chasing, numbers and travel lists off your Forum work — that is time back for the people."*
-- *"What is said in Forum stays there. The rule is simple: a name next to a topic is already content."*
+- *"What is said in Forum stays there. Chapter matters — a conduct case too — are chapter business."*
 - *"If in doubt, leave it out — it costs a minute, and Forum keeps what makes it Forum."*
 
 **Role lens**

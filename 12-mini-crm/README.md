@@ -5,7 +5,7 @@ Time: 20 to 40 minutes to build the first time, most of it the AI tool writing a
 Level: 3 — an AI tool that can write and run code in a folder on your laptop (see [`../01-foundations/three-levels.md`](../01-foundations/three-levels.md)).
 
 **This folder contains no code.** It contains a build prompt. You paste it into your AI tool, and the tool builds the app on your laptop.
-No account, no subscription, no internet: the app runs only on your laptop, in your browser, and stores everything in one file, `crm.db`.
+No account and no subscription. The finished app does not use the internet: it runs only on your laptop, in your browser, and stores everything in one file, `crm.db`.
 
 | File | What it is for |
 |---|---|
@@ -28,23 +28,20 @@ No code at all? A spreadsheet in your chapter storage does most of this too. The
 
 ## Which data goes in
 
-Your chapter's traffic light from [`../01-foundations/where-your-data-lives.md`](../01-foundations/where-your-data-lives.md) applies here too:
+**Whatever your chapter's AI document says** — the one-pager "AI use in our chapter" ([`../06-chapter-rules/ai-use-one-pager.md`](../06-chapter-rules/ai-use-one-pager.md)) that you prepare with your Chair and your ExCo adopts. Put the mini CRM on its tool list (Part B). After that, you are free to work — member lists, events, invitations, the photo book.
 
-- **Member contact details your chapter collects itself** — business email, mobile, company, role — are what this app is for. Before real member data goes in, your chapter has made the decision in the one-pager ([`../06-chapter-rules/ai-use-one-pager.md`](../06-chapter-rules/ai-use-one-pager.md)).
-- **Data exported from YPO systems** (Salesforce, Cvent, CMH, the member directory) keeps its status as YPO Data after export. YPO's AI guidance for Chapter Managers suggests asking aigovernance@ypo.org before you use it with AI tools. Importing such an export into this app counts as that use: ask first.
-- **Photos only with a tick.** A photo is shown and used for a photo book only when *photo OK* is ticked — tick it when the member agreed.
-- **Forum content never.** There is no field for it, and the notes field says so.
+Two things the app does for you: a photo is only shown when *photo OK* is ticked, and there is no field for Forum content.
 
-The file `crm.db` is the chapter's contact list, like the member list in Excel. It belongs to the chapter: at a handover, the newest backup goes to your successor ([`../05-officer-handover/handover-checklist.md`](../05-officer-handover/handover-checklist.md)).
+The file `crm.db` is the chapter's contact list, like the member list in Excel. At a handover, the newest backup goes to your successor ([`../05-officer-handover/handover-checklist.md`](../05-officer-handover/handover-checklist.md)).
 
 ## Step by step
 
 1. **Node.js 24 or newer.** Your AI tool checks this for you in step 3. If it says Node.js is missing or too old, install the version marked *LTS* (recommended) — [`../setup/macos.md`](../setup/macos.md) § 3 or [`../setup/windows.md`](../setup/windows.md) § 3.
-2. **One folder that is not synced.** Create `chapter-crm` directly in your user folder (the one with your name) — not inside iCloud Drive, OneDrive, Google Drive or Dropbox, and not on a Desktop or in Documents that sync to the cloud. A sync app can break a database file while it is open. The backups go into the chapter storage later.
-3. **Start your coding tool and choose `chapter-crm` as its folder** — the Claude desktop app with Cowork, ChatGPT Work, Claude Code or Codex ([`../setup/`](../setup/README.md)). Paste the prompt from [`BUILD-PROMPT.md`](BUILD-PROMPT.md). Say yes to file changes in the folder; say **no** to anything that asks for a password or wants to install a program.
+2. **One folder that is not synced.** Create `chapter-crm` directly in your user folder — the one with your name (Mac: Finder → *Go* → *Home*; Windows: File Explorer, type `%USERPROFILE%` in the address bar). Not on the Desktop, not in Documents, not in iCloud Drive, OneDrive, Google Drive or Dropbox. A sync app can break a database file while it is open. The backups go into the chapter storage later.
+3. **Start your coding tool and choose `chapter-crm` as its folder** — the Claude desktop app with Cowork, ChatGPT Work, Claude Code or Codex ([`../setup/`](../setup/README.md)). Paste the prompt from [`BUILD-PROMPT.md`](BUILD-PROMPT.md). Say yes to files in this folder and to commands that start with `node`. Say no to a password, to `npm`, and to any other folder.
 4. **Wait for the self-test.** The tool runs `node self-test.js` until it shows `0 failed` and shows you the last line.
 5. **Start it.** Mac, the first time only: see the box in [`TROUBLESHOOTING.md`](TROUBLESHOOTING.md#starting). Double-click `start-mac.command` or `start-windows.bat`. A text window opens — **leave it open, it is the app**. Your browser opens the app.
-6. **Practise with fictional people.** Import `sample-people.csv` (the tool creates it), add the fictional *Holiday Dinner* by hand, register a few people. Keep them for the checklist.
+6. **Practise with fictional people.** Import `sample-people.csv` — in the file window, open your user folder, then `chapter-crm` — add the fictional *Holiday Dinner* by hand, register a few people. Keep them for the checklist.
 7. **Tick the checklist** — [`CHECKLIST.md`](CHECKLIST.md). Then delete the fictional people and the *Holiday Dinner*, and add your real list.
 8. **Back up weekly.** *Backup now* → copy the newest file from `backups/` **and the `photos/` folder** into your chapter storage.
 
@@ -52,6 +49,6 @@ To stop the app: close the text window that opened in step 5.
 
 ## With your assistant
 
-Your assistant does not read `crm.db` — and neither does the coding tool that built the app: the build prompt and every add-on forbid it, and it tests with a temporary database. When it needs a list — the registered people for a name-badge draft, the speakers of the year for a thank-you note — export only the columns needed and give it that file. Leave out names where a role is enough.
+Your assistant does not read `crm.db` — and neither does the coding tool that built the app: the build prompt and every add-on forbid it, and it tests with a temporary database. When it needs a list — the registered people for a name-badge draft, the speakers of the year for a thank-you note — export only the columns that task needs and give it that file.
 
 Next: [`ADD-ONS.md`](ADD-ONS.md) — the photo book, mailing drafts and WhatsApp links, one prompt each.

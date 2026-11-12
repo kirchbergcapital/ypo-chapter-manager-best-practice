@@ -7,6 +7,7 @@ Purpose: what changed between versions of this kit, and what is planned next.
 
 ## v0.3 — November 2026
 
+- **AI use in our chapter — one clear document:** Part B is now the chapter's **tool list** — only the tools on it are used for chapter work and chapter data; anything new (an app, a plugin, a custom GPT, a connector, a self-built app) goes on the list first, with the Chair's OK. Forum short form: chapter matters, a conduct case too, are chapter business.
 - **Your own mini CRM:** module [`12-mini-crm`](12-mini-crm/) — a build guide for a small contact and event list in one SQLite file on your laptop, no packages, only on your own computer; add-ons for a photo book, mailing drafts, WhatsApp links and a check-in list. AI guide: optional Station 13. A wish from the Chapter Managers in Edinburgh.
 - **YPO Data or chapter data?** in [`where-your-data-lives.md`](01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data): data from YPO's systems versus what your chapter collects itself, after YPO's AI guidance (October 2026). Guidance, not a rule.
 - **Five settings worth checking** in [`business-plan-checklist.md`](01-foundations/business-plan-checklist.md), starting with two-factor sign-in.

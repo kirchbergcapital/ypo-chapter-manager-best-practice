@@ -15,10 +15,11 @@ Tested in a reference build (Nov 2026, Claude Code, macOS, Node 26): about 10 mi
 
 ```text
 You are helping me, a non-technical person, build a small app on my own laptop. Work only in the current folder.
-Before each step, tell me in one or two plain sentences what you are about to do, and wait for my yes before you
-create or change a file. Never use sudo or admin rights, never install anything, never run npm, never download
-anything, never add a package.json with dependencies. Keep the code small and readable, with comments in plain
-English.
+I approve file changes and `node` commands in this folder: do the work, tell me in one or two plain sentences what
+you are doing, and show me the last self-test line at the end. Stop and ask only for a password, an install, or
+anything outside this folder. Never use sudo or admin rights, never install anything, never run npm, never
+download anything, never add a package.json with dependencies. If the app files already exist here, update them in
+place. Keep the code small and readable, with comments in plain English.
 
 GOAL
 A local "mini CRM" for my YPO chapter. I am a Chapter Manager. The app keeps a list of people (members, spouses,
@@ -30,12 +31,14 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
 0. CHECK FIRST
 - Run `node --version`. I need Node.js 24 or newer (it has SQLite built in as node:sqlite). If Node is missing or
   older, stop and tell me to install the LTS version from https://nodejs.org/en/download, then wait for me.
-- Find out whether I am on macOS or Windows and give every command for my system (PowerShell on Windows).
+- Find out whether I am on macOS or Windows and give every command for my system - on Windows one PowerShell
+  command per line (Windows PowerShell 5.1 has no &&). If you run on Linux or WSL, stop and ask me to run you on
+  macOS or Windows directly: the app must run where my browser runs.
 - Check whether this folder lies inside a cloud-synced folder (iCloud Drive, Desktop & Documents in iCloud,
-  OneDrive, Google Drive, Dropbox). If it does, stop and tell me: "A database file can break when a sync app copies
-  it while it is open. Please move this folder to a place on your laptop that is not synced, for example
-  Documents/chapter-crm on a Mac without iCloud for Documents, or C:\Users\<you>\chapter-crm on Windows. Backups
-  go into your chapter storage later." Then wait.
+  OneDrive, Google Drive, Dropbox) or inside Desktop or Documents (they are often synced without the word in the
+  path). If it does, stop and tell me: "A database file can break when a sync app copies it while it is open.
+  Please move this folder into your user folder itself: /Users/<you>/chapter-crm on a Mac, C:\Users\<you>\chapter-crm
+  on Windows. Backups go into your chapter storage later." Then wait.
 - If crm.db already exists here, never delete, overwrite or reset it while building or testing. Tests use their
   own temporary database.
 - Never open, query, print or copy crm.db, crm.db-wal, crm.db-shm, backups/, exports/ or photos/ - not to check,
@@ -55,10 +58,12 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
     start-windows.bat  double-click start on Windows
     README-app.md      a one-page note for me: start, stop, backup, where the data is
   Folders the app creates when needed: photos/, backups/, exports/.
-- The start files: change into the app folder, run `node server.js`, and open the browser at the address the
-  server prints. The window that opens stays open while the app runs; closing it stops the app. On macOS, after
-  creating start-mac.command, tell me to run `chmod +x start-mac.command` once, and explain that the first double-
-  click may need right-click > Open because the file is not from the App Store.
+- The start files only enter their own folder and run the server; they open no address themselves. Mac
+  (start-mac.command, Unix line endings): #!/bin/bash, cd "$(dirname "$0")", node server.js || read.
+  Windows (start-windows.bat): cd /d "%~dp0", then node server.js || pause. The window stays open while the app
+  runs; closing it stops the app. Make start-mac.command executable yourself (chmod +x) - it is in this folder.
+  Tell me: if macOS says it cannot verify the file, close the message, then System Settings > Privacy & Security >
+  Open Anyway - once.
 
 2. SAFETY - hard rules
 - The server listens on 127.0.0.1 only, port 8765 (if busy, try 8766 to 8770 and print the one it uses). Never
@@ -67,8 +72,9 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   DELETE: reject it unless the Origin header is missing or equals http://127.0.0.1:<port> or
   http://localhost:<port>. This keeps other websites in the same browser from talking to the app.
 - At start, create a random token (node:crypto, 32 bytes, hex), print the full address with ?t=<token> and open
-  exactly that address. index.html sends the token in a header X-CRM-Token with every API call; the server answers
-  401 without it. The token lives only in memory and changes with every start.
+  exactly that address. index.html calls the API with relative addresses only (same host and port as the page),
+  takes the token from its own ?t= value and sends it in a header X-CRM-Token with every API call; the server
+  answers 401 without it. The token lives only in memory, is never stored, and changes with every start.
 - All SQL with prepared statements and ? placeholders. Never build SQL from user text.
 - The page never inserts user text as HTML: use textContent, never innerHTML with data.
 - Response headers on every page: Content-Security-Policy "default-src 'self'; img-src 'self' data:;
@@ -78,11 +84,13 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   stays inside the folder). /photos/ needs the token too (as ?t=<token> in the image address) and serves a file only
   when its person has photo_ok = 1.
 - Photos: accept JPEG and PNG only, check the first bytes of the file (JPEG FF D8 FF, PNG 89 50 4E 47), at most
-  5 MB, save under a new random file name in photos/ (crypto.randomBytes(16) as hex). Never keep the original file name.
+  5 MB; anything else gets the message "Please export it as JPEG first (iPhone photos are often HEIC) and upload
+  again." save under a new random file name in photos/ (crypto.randomBytes(16) as hex). Never keep the original file name.
 - No code that sends anything: no email, no SMTP, no WhatsApp, no HTTP requests to other hosts, no analytics.
 - Never run shell commands from the app, with one exception: at start, server.js may open the default browser once
-  with its own local address and nothing else - macOS: execFile('open', [address]); Windows:
-  execFile('explorer.exe', [address]). An environment variable CRM_NO_BROWSER=1 switches this off. Never use eval.
+  with its own local address http://127.0.0.1:<port>/?t=<token> and nothing else - macOS: execFile('open',
+  [address]); Windows: execFile('cmd.exe', ['/c', 'start', '', address]). An environment variable
+  CRM_NO_BROWSER=1 switches this off. Never use eval.
 
 3. DATA - one SQLite file, crm.db
 - Open crm.db with PRAGMA journal_mode=WAL, PRAGMA foreign_keys=ON, PRAGMA busy_timeout=5000 and
@@ -91,14 +99,14 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
 - people: id, first_name, last_name, company, title, email, mobile, kind (member | spouse | guest | prospect |
   speaker | partner | other), chapter_role (free text, e.g. "Learning Officer"), member_since (year, optional),
   tags (comma-separated words), photo_file (random name or empty), photo_ok (0 or 1), photo_ok_date (the day I
-  ticked it), notes, created_at, updated_at. first_name or last_name required. email optional but unique when present (compare lower-case,
-  trimmed).
+  ticked it), notes, created_at, updated_at. first_name or last_name required. email optional: store NULL when empty, never a blank; when present,
+  unique on lower-case, trimmed.
 - events: id, name, date (YYYY-MM-DD), place, notes. name and date required.
 - attendance: event_id, person_id, status (invited | registered | attended | declined | waitlist), unique per
   event and person, deleted together with the event or the person.
 - Never add fields for birthdays, private addresses, health, family matters or anything about Forum. Under the
-  notes field the page shows: "Chapter facts only. No Forum content - ever. Nothing a member told you in
-  confidence."
+  notes field the page shows: "Chapter facts only - notes you would keep in the member spreadsheet. No Forum
+  content."
 - photo_ok: a photo is only shown and only used for extras (like a photo book) when photo_ok is 1. Ticking it
   stores today's date in photo_ok_date. Unticking asks "Delete the photo file too?" (default yes); if I say no, the
   file stays but is hidden everywhere. Deleting the person deletes the photo file too.
@@ -116,9 +124,11 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   N skipped (no name), and only after a second yes it writes them. Accept comma and semicolon separators, UTF-8
   with or without BOM, quoted fields with line breaks. Never map a column to notes automatically - I choose that by
   hand - and an import never replaces existing notes; it adds below them.
-- Export to CSV: the current filtered list, with the columns I tick. Every text cell that starts with = + - @, a
-  tab or a carriage return gets a leading apostrophe, so Excel never runs it as a formula. Save it only into
-  exports/ with the date in the file name and show me the file name - no second copy in the browser's Downloads.
+- Export to CSV: the current filtered list, with the columns I tick. UTF-8 with a BOM, every field in quotes, and
+  a choice of comma or semicolon (semicolon for Excel with a German or other European list separator). Every text
+  cell that starts with = + - @, a tab or a carriage return gets a leading apostrophe, so Excel never runs it as a
+  formula. Save it only into exports/ with the date in the file name and show me the file name - no second copy
+  in the browser's Downloads.
 - Backup: one button "Backup now" writes a full copy with VACUUM INTO into backups/crm-YYYY-MM-DD-HHMM.db and
   shows the file name. The page reminds me once a week: "Last backup: <date>. Copy the newest backup and the
   photos/ folder into your chapter storage."
@@ -130,7 +140,7 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
   column-name guessing for English and German headers.
 - Test the database part against a temporary file in the system temp folder - never against crm.db: create
   tables, add, update, unique email, attendance unique per event and person, delete cascades.
-- Test the server: start it on a free port with a temporary database, check that a request without the token
+- Test the server: start it with CRM_NO_BROWSER=1 on a free port with a temporary database, check that a request without the token
   gets 401, a wrong Host header is rejected, a foreign Origin on POST is rejected, a path like /../crm.db is
   refused, and a normal add/list round trip works. Stop it again.
 - Print one line per failed test and at the end "N passed, 0 failed". Exit code 1 if anything failed.

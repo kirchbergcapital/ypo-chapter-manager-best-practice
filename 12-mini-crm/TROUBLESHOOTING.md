@@ -7,7 +7,7 @@ Tested in a reference build (Nov 2026): about 10 minutes to build, self-test `0 
 
 | What you see | What to do |
 |---|---|
-| The tool says Node.js is missing or older than 24 | Install the version marked *LTS* (recommended) — [`../setup/macos.md`](../setup/macos.md) § 3 or [`../setup/windows.md`](../setup/windows.md) § 3. Open a **new** Terminal or PowerShell window afterwards, then paste the prompt again |
+| The tool says Node.js is missing or older than 24 | Install the newest version marked *LTS* — Node 26 in November 2026; Node 22 is too old for this app — [`../setup/macos.md`](../setup/macos.md) § 3 or [`../setup/windows.md`](../setup/windows.md) § 3. Open a **new** Terminal or PowerShell window afterwards, then paste the prompt again |
 | The tool wants to run `npm install` | Say no. The app needs no packages; paste: *"No packages — Node's built-in modules only, as the prompt says."* |
 | The tool stops: the folder is synced | Move `chapter-crm` to a place on your laptop outside iCloud Drive, OneDrive, Google Drive and Dropbox, open the tool there and paste the prompt again |
 | A chat in the browser gives you code to copy | A browser chat cannot run the app. Use a coding tool on your laptop (README step 3) |
@@ -22,6 +22,7 @@ Tested in a reference build (Nov 2026): about 10 minutes to build, self-test `0 
 | Windows: SmartScreen warns about `start-windows.bat` | *More info* → *Run anyway*. The file only starts `node server.js` in this folder |
 | "Port in use" | The app is already running in another window — use that one, or close it and start again |
 | The browser does not open by itself | Copy the address with `?t=…` from the start window into your browser |
+| Windows asks whether to allow Node.js on networks | Choose *Cancel* or *No*. The app still opens on this laptop |
 | The browser shows an empty list or an error code (401) | Use the address the start window prints, with `?t=…` at the end. Bookmarks of an old address stop working after a restart — on purpose |
 
 ## Using it
@@ -31,8 +32,9 @@ Tested in a reference build (Nov 2026): about 10 minutes to build, self-test `0 
 | Import shows strange characters (Ã©) | Save the file in Excel as *CSV UTF-8*, then import again |
 | Import puts everything into one column | The file uses another separator — the preview shows it; save as CSV with commas or semicolons |
 | "Email already exists" | The same email is already in the list. Edit that person instead of adding a second one |
-| A photo is not shown | *photo OK* is not ticked, or the file is not JPEG or PNG |
-| A name in Excel starts with `'` | The export's guard against formulas — it keeps Excel from running a cell as a formula |
+| A photo is not shown | Tick *photo OK*. Still missing? Export the photo as JPEG (Mac Photos: *File* → *Export*; iPhone photos are often HEIC) and upload that file |
+| A name in Excel starts with `'` | On purpose: the export's guard against formulas. Keep it |
+| Everything in one column in Excel | Export again with the other separator (semicolon or comma) |
 
 ## Data
 

@@ -146,7 +146,7 @@ What moves where when a contract ends: [`05-officer-handover/what-stays-yours.md
 7. **Check numbers** against the budget file or invoice before they go to anyone. Anything you would have to invent: ask, or write `[verify]`.
 8. **Logs are append-only.** Add a dated line at the bottom; a correction is a new line.
 9. **Checkpoint** long sessions: update the files, refresh `00-handover/handover.md`, then stop.
-10. No passwords, no Forum content (Forum logistics only — a name next to a topic is content), no private member details (home addresses, ID or passport copies, health or family details) in any file — email, mobile number and business details for invoicing are fine.
+10. No passwords, no Forum content (Forum logistics only; chapter matters are chapter business), no private member details (home addresses, ID or passport copies, health or family details) in any file — email, mobile number and business details for invoicing are fine.
 
 ## Order of work in a typical month
 
