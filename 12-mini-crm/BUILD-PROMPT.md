@@ -124,6 +124,9 @@ Later I may add extras on top (a photo book, mailing drafts, WhatsApp links) - k
 4. WHAT I CAN DO IN THE BROWSER - simple, large buttons, plain words
 - People: a list with search (name, company, email, tags), filter by kind and by tag, sorted by last name.
   Add, edit, delete (delete asks "Delete <name>? This cannot be undone."). Upload or remove a photo.
+  A chosen photo is never dropped: if I pick a photo file and press Save without Upload, Save uploads it too
+  (same checks). If the photo fails, the person is still saved and the message says so - "Saved <name>. The photo
+  was not saved: <reason>".
 - Events: a list sorted by date (next first), add, edit, delete. On an event: add people (search and tick),
   set each person's status, see counts per status.
 - Import from CSV (for example an export from Excel or Google Sheets): I choose a file, the app shows the first
