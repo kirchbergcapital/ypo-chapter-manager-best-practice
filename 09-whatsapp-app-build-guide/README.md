@@ -154,6 +154,8 @@ That is what the chapter keeps. The chat stays on your phone, the export in the 
 The app connects as an unofficial client, and WhatsApp's [messaging guidelines](https://www.whatsapp.com/legal/messaging-guidelines) name unofficial clients, bulk messaging and automation
 among the things they act against — the app as built here stays close to normal personal use: it reads and you draft, at your own pace, on your own number.
 
+Two more things decide. **Your chapter's and YPO's own WhatsApp rules:** where messages may not leave a group, export that group neither with the app nor with *Export chat*. **WhatsApp itself:** it can restrict a number that uses an unofficial client — nobody can rule that out. If your number matters for the chapter, stay with stage 1, WhatsApp's own *Export chat* ([`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)).
+
 | Habit | Why it helps |
 |---|---|
 | **Read and draft** | Your assistant summarises and drafts; you send from your phone — or, if you add the optional send step, one confirmed message at a time |

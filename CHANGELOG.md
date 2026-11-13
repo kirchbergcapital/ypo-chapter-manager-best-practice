@@ -5,6 +5,11 @@ Purpose: what changed between versions of this kit, and what is planned next.
 > Community resource by a YPO member, not an official YPO resource.
 > **Maintainer:** see [`README.md`](README.md) · **last checked:** 10 Nov 2026 · menus move — every tool page carries an as-of date.
 
+## v0.3.2 — 13 Nov 2026
+
+- **Files on the laptop, not online only:** OneDrive, Google Drive and iCloud can keep files online only — your assistant then reads them as empty. README, START-HERE and the pre-workshop self-test now say how to keep the folder on the laptop.
+- **YPO's own rules come first:** the one-pager *AI use in our chapter* sits under YPO's Operations Manual and its policies; the mini CRM and the WhatsApp app point to them. The WhatsApp guide now says plainly that WhatsApp can restrict a number that uses an unofficial client — stage 1, *Export chat*, avoids that.
+
 ## v0.3.1 — 13 Nov 2026
 
 - **Mini CRM — a chosen photo is never dropped:** pressing *Save* after choosing a photo now saves the photo too; if the file is not a JPEG or PNG, the person is still saved and the message says why. Checklist point 8 tests exactly this.

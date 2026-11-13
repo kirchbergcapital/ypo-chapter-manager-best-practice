@@ -63,7 +63,7 @@ A fictional export to practise with: [`../examples/whatsapp-export-event-group.t
 [`../09-whatsapp-app-build-guide/`](../09-whatsapp-app-build-guide/) is a build guide, not a ready-made program. You give its build prompt to your AI tool
 (Level 3, see [`../01-foundations/three-levels.md`](../01-foundations/three-levels.md)), and together you build a small app that runs on your laptop.
 It connects the way WhatsApp Web does, **reads** the chats you choose, **summarises** them and **drafts replies**, and saves its exports as Markdown files in its own folder on your laptop, outside the chapter folder.
-Your assistant reads such a file exactly like a stage-1 export; only the summary goes into the event folder. Sending is an **optional** step you can add later: the app then sends one message only after you have confirmed that one message.
+Your assistant reads such a file exactly like a stage-1 export; only the summary goes into the event folder. Sending is an **optional** step you can add later: the app then sends one message only after you have confirmed that one message. WhatsApp can restrict a number that uses an unofficial client, and your chapter's or YPO's WhatsApp rules apply to both stages — where messages may not leave a group, that group is not exported.
 
 The app uses Baileys, an open-source library that is not affiliated with WhatsApp; its own README discourages bulk or automated messaging
 ([npm: baileys](https://www.npmjs.com/package/baileys)).

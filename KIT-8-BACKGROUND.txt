@@ -51,7 +51,7 @@ IN THIS FILE
 > Read https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/AI-GUIDE.md and guide me step by step.
 > ```
 >
-> **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying.
+> **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying. Keep the folder's files on the laptop, not online only — right-click the folder: *Always keep on this device* (OneDrive) · *Available offline* (Google Drive; Windows: under *Offline access*) · *Keep Downloaded* (iCloud; older macOS: *Download Now*); otherwise your assistant may read them as empty.
 >
 > If your AI says it cannot open links, use Way 2.
 >
@@ -81,7 +81,7 @@ IN THIS FILE
 >
 > **Weg 1 — für alle:** Öffne einen neuen Chat in Deinem bezahlten KI-Tool und füge diesen Satz ein:
 > `Read https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/AI-GUIDE.md and guide me step by step.`
-> **Am besten mit einer Desktop-App.** Öffne in der ChatGPT- oder Claude-Desktop-App **einen** neuen, leeren Ordner für Deine Chapter-Arbeit — am besten in Deinem OneDrive- oder Google-Drive-Ordner auf dem Laptop, z. B. `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — und füge dann denselben Satz ein. Dein Assistent baut Deinen Chapter-Ordner darin auf und speichert jede Datei selbst — kein Herunterladen, kein Kopieren.
+> **Am besten mit einer Desktop-App.** Öffne in der ChatGPT- oder Claude-Desktop-App **einen** neuen, leeren Ordner für Deine Chapter-Arbeit — am besten in Deinem OneDrive- oder Google-Drive-Ordner auf dem Laptop, z. B. `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — und füge dann denselben Satz ein. Dein Assistent baut Deinen Chapter-Ordner darin auf und speichert jede Datei selbst — kein Herunterladen, kein Kopieren. Halte die Dateien des Ordners auf dem Laptop, nicht nur online — Rechtsklick auf den Ordner: *Immer auf diesem Gerät behalten* (OneDrive) · *Offline verfügbar* (Google Drive; Windows: unter *Offlinezugriff*) · *Geladene Objekte behalten* (iCloud; ältere macOS: *Jetzt laden* `[verify]`); sonst liest Dein Assistent sie womöglich als leer.
 > Sagt Deine KI, dass sie keine Links öffnen kann, nimm Weg 2.
 >
 > **Weg 2 — wenn Deine KI keine Links öffnen kann:** Lade die Startdatei
@@ -333,7 +333,7 @@ Then tell the maintainer, or open an issue in this repository if you already use
 > Read https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/AI-GUIDE.md and guide me step by step.
 > ```
 >
-> **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying.
+> **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying. Keep the folder's files on the laptop, not online only — right-click the folder: *Always keep on this device* (OneDrive) · *Available offline* (Google Drive; Windows: under *Offline access*) · *Keep Downloaded* (iCloud; older macOS: *Download Now*); otherwise your assistant may read them as empty.
 >
 > If your AI says it cannot open links, use Way 2.
 >
@@ -538,6 +538,11 @@ Purpose: what changed between versions of this kit, and what is planned next.
 
 > Community resource by a YPO member, not an official YPO resource.
 > **Maintainer:** see [`README.md`](README.md) · **last checked:** 10 Nov 2026 · menus move — every tool page carries an as-of date.
+
+## v0.3.2 — 13 Nov 2026
+
+- **Files on the laptop, not online only:** OneDrive, Google Drive and iCloud can keep files online only — your assistant then reads them as empty. README, START-HERE and the pre-workshop self-test now say how to keep the folder on the laptop.
+- **YPO's own rules come first:** the one-pager *AI use in our chapter* sits under YPO's Operations Manual and its policies; the mini CRM and the WhatsApp app point to them. The WhatsApp guide now says plainly that WhatsApp can restrict a number that uses an unofficial client — stage 1, *Export chat*, avoids that.
 
 ## v0.3.1 — 13 Nov 2026
 

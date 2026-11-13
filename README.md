@@ -11,7 +11,7 @@
 > Read https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/AI-GUIDE.md and guide me step by step.
 > ```
 >
-> **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying.
+> **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying. Keep the folder's files on the laptop, not online only — right-click the folder: *Always keep on this device* (OneDrive) · *Available offline* (Google Drive; Windows: under *Offline access*) · *Keep Downloaded* (iCloud; older macOS: *Download Now*); otherwise your assistant may read them as empty.
 >
 > If your AI says it cannot open links, use Way 2.
 >

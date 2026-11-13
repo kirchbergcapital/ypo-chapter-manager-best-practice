@@ -11,7 +11,7 @@
 > Read https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/AI-GUIDE.md and guide me step by step.
 > ```
 >
-> **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying.
+> **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying. Keep the folder's files on the laptop, not online only — right-click the folder: *Always keep on this device* (OneDrive) · *Available offline* (Google Drive; Windows: under *Offline access*) · *Keep Downloaded* (iCloud; older macOS: *Download Now*); otherwise your assistant may read them as empty.
 >
 > If your AI says it cannot open links, use Way 2.
 >
@@ -41,7 +41,7 @@
 >
 > **Weg 1 — für alle:** Öffne einen neuen Chat in Deinem bezahlten KI-Tool und füge diesen Satz ein:
 > `Read https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/AI-GUIDE.md and guide me step by step.`
-> **Am besten mit einer Desktop-App.** Öffne in der ChatGPT- oder Claude-Desktop-App **einen** neuen, leeren Ordner für Deine Chapter-Arbeit — am besten in Deinem OneDrive- oder Google-Drive-Ordner auf dem Laptop, z. B. `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — und füge dann denselben Satz ein. Dein Assistent baut Deinen Chapter-Ordner darin auf und speichert jede Datei selbst — kein Herunterladen, kein Kopieren.
+> **Am besten mit einer Desktop-App.** Öffne in der ChatGPT- oder Claude-Desktop-App **einen** neuen, leeren Ordner für Deine Chapter-Arbeit — am besten in Deinem OneDrive- oder Google-Drive-Ordner auf dem Laptop, z. B. `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — und füge dann denselben Satz ein. Dein Assistent baut Deinen Chapter-Ordner darin auf und speichert jede Datei selbst — kein Herunterladen, kein Kopieren. Halte die Dateien des Ordners auf dem Laptop, nicht nur online — Rechtsklick auf den Ordner: *Immer auf diesem Gerät behalten* (OneDrive) · *Offline verfügbar* (Google Drive; Windows: unter *Offlinezugriff*) · *Geladene Objekte behalten* (iCloud; ältere macOS: *Jetzt laden* `[verify]`); sonst liest Dein Assistent sie womöglich als leer.
 > Sagt Deine KI, dass sie keine Links öffnen kann, nimm Weg 2.
 >
 > **Weg 2 — wenn Deine KI keine Links öffnen kann:** Lade die Startdatei

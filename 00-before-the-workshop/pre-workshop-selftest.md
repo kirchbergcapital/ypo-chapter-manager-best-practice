@@ -52,7 +52,7 @@ Is `AI-GUIDE.md` one folder deeper? Then move that inner folder here and name it
 
 ## Step 4 — The folder test (5 min)
 
-Open the desktop app, start a task that works with a folder (ChatGPT: Work · Claude: Cowork `[verify the menu name]`), choose `CM-Workspace` and allow access to that folder only. With Claude, keep the app open while it works. If the app refuses your synced drive, copy the whole `CM-Workspace` (with `_kit` and `selftest.txt`) into `Documents`, choose that copy and repeat this step. Then paste:
+Open the desktop app, start a task that works with a folder (ChatGPT: Work · Claude: Cowork `[verify the menu name]`), choose `CM-Workspace` and allow access to that folder only. With Claude, keep the app open while it works. If the app refuses your synced drive, copy the whole `CM-Workspace` (with `_kit` and `selftest.txt`) into `Documents`, choose that copy and repeat this step. Your AI says a file is empty or cannot be read? The files sit online only — right-click `CM-Workspace`: *Always keep on this device* (OneDrive) · *Available offline* (Google Drive; Windows: under *Offline access*) · *Keep Downloaded* (iCloud, also when Documents is in iCloud; older macOS: *Download Now*) — and repeat this step. Then paste:
 
 ```
 Read selftest.txt in this folder. When is the RSVP deadline for the next event, and where is the event? Quote the line you used. If the file does not say, answer UNCHECKED.
