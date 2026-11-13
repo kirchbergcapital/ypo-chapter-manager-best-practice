@@ -342,7 +342,7 @@ No code at all? A spreadsheet in your chapter storage does most of this too. The
 
 ## Which data goes in
 
-**Whatever your chapter's AI document says** — the one-pager "AI use in our chapter" ([`../06-chapter-rules/ai-use-one-pager.md`](../06-chapter-rules/ai-use-one-pager.md)) that you prepare with your Chair and your ExCo adopts. Put the mini CRM on its tool list (Part B). After that, you are free to work — member lists, events, invitations, the photo book.
+**Whatever your chapter's AI document says** — the one-pager "AI use in our chapter" ([`../06-chapter-rules/ai-use-one-pager.md`](../06-chapter-rules/ai-use-one-pager.md)) that you prepare with your Chair and your ExCo adopts. Put the mini CRM on its tool list (Part B). After that, you are free to work — member lists, events, invitations, the photo book. That document sits under YPO's own rules: where they set a line for member data, that line applies here too. Guests, speakers, partners and events are an easy start.
 
 Two things the app does for you: a photo is only shown when *photo OK* is ticked, and there is no field for Forum content.
 

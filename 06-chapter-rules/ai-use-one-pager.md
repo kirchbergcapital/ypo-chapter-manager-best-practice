@@ -38,7 +38,7 @@ We work with the tools on this list — for chapter work and chapter data. That 
 | *Example:* ChatGPT Business or Claude Team | Drafts, summaries, work in our chapter folder | Chapter workspace on manager@ and chair@ | Chapter facts, member contact details | ExCo · {{DATE}} |
 | *Example:* {{Microsoft 365 or Google Workspace}} | Mail, calendar, the chapter folder | manager@, chair@ | All chapter data | ExCo · {{DATE}} |
 | *Example:* email connector | Reads mail, creates drafts, never sends | manager@ | The chapter mailbox | Chair · {{DATE}} |
-| *Example:* mini CRM ([kit module 12](../12-mini-crm/README.md)) | Contact and event list on the Chapter Manager's laptop | Self-built, local | Member contact details, photos with *photo OK* | Chair · {{DATE}} |
+| *Example:* mini CRM ([kit module 12](../12-mini-crm/README.md)) | Contact and event list on the Chapter Manager's laptop | Self-built, local | Contact details as YPO's rules allow, photos with *photo OK* | Chair · {{DATE}} |
 | {{TOOL}} | {{WHAT_FOR}} | {{ACCOUNT}} | {{DATA}} | {{ROLE}} · {{DATE}} |
 
 **Who pays:** {{the chapter, or as agreed with the Chapter Manager}}.
@@ -51,6 +51,6 @@ and names **{{NAME_OR_ROLE}}** as admin of the role accounts and the chapter fol
 Decided on: {{DATE_OF_DECISION}} · Minutes: {{LINK_OR_REFERENCE}}
 
 ---
-*Chapter-internal guideline, not official YPO material. This does not replace YPO's own rules — check with your
-Regional Manager. YPO's own AI guidance for Chapter Managers (October 2026) shares the basics — paid accounts, training off, people review, Forum protected; for data from YPO's own systems see
+*Chapter-internal guideline, not official YPO material. It sits under YPO's own rules — the Operations Manual and its policies, for example on member data and WhatsApp;
+where they set a line, that line applies. Check with your Regional Manager. YPO's own AI guidance for Chapter Managers (October 2026) shares the basics — paid accounts, training off, people review, Forum protected; for data from YPO's own systems see
 [`../01-foundations/where-your-data-lives.md`](../01-foundations/where-your-data-lives.md#ypo-data-or-chapter-data). Reviewed each year at the officer handover.*
