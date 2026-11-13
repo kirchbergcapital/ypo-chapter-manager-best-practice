@@ -5,6 +5,11 @@ Purpose: what changed between versions of this kit, and what is planned next.
 > Community resource by a YPO member, not an official YPO resource.
 > **Maintainer:** see [`README.md`](README.md) · **last checked:** 10 Nov 2026 · menus move — every tool page carries an as-of date.
 
+## v0.3.1 — 13 Nov 2026
+
+- **Mini CRM — a chosen photo is never dropped:** pressing *Save* after choosing a photo now saves the photo too; if the file is not a JPEG or PNG, the person is still saved and the message says why. Checklist point 8 tests exactly this.
+- Trainer deck (online only, not in `_kit.zip`): slide 14 shows the tool list and a QR code to the Word template.
+
 ## v0.3 — November 2026
 
 - **AI use in our chapter — one clear document:** Part B is the chapter's tool list; anything new goes on it first, with the Chair's OK. Forum short form: chapter matters, a conduct case too, are chapter business.
