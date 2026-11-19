@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 2 OF 9: KIT-2-FOLDER-AND-FACTS.txt
 Contents: Stations 2 and 4: business plans, working folder, templates, chapter facts.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-12 from 42 files.
+Built 2026-11-19 from 43 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -10,8 +10,8 @@ CHAT FILES OF THE KIT
   1. KIT-START.txt — the starter file: this AI guide, Stations 1 and 3 with the house rules, the Lab B practice pack (picking a business plan: file 2; more prompts: file 4)
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts   <- this file
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
-  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test
+  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (prompts 1–40) and the chapter moments
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45)
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
@@ -28,6 +28,7 @@ IN THIS FILE
   - 02-your-assistant/template-folder/00-handover/setup-progress.md
   - 02-your-assistant/template-folder/01-role-and-calendar/README.md
   - 02-your-assistant/template-folder/01-role-and-calendar/incoming-work.md
+  - 02-your-assistant/template-folder/01-role-and-calendar/my-role.md
   - 02-your-assistant/template-folder/02-chapter-knowledge/README.md
   - 02-your-assistant/template-folder/02-chapter-knowledge/game-plan-sources/README.md
   - 02-your-assistant/template-folder/02-chapter-knowledge/game-plan.md
@@ -294,7 +295,7 @@ No chapter accounts yet? Ask your Chair for `manager@` and `chair@`, and meanwhi
 ├── house-rules.md             the full house rules — your assistant reads them first
 ├── AGENTS.md · CLAUDE.md      two short pointers to house-rules.md, for Codex and Claude Code
 ├── 00-handover/               handover.md · log.md · decisions.md
-├── 01-role-and-calendar/      your role, the chapter year, deadlines · incoming-work.md
+├── 01-role-and-calendar/      your role, the chapter year, deadlines · incoming-work.md · my-role.md
 ├── 02-chapter-knowledge/      chapter-facts.md · game-plan.md · bylaws · guidelines · FAQ.md · event playbooks · learnings · platform-fields.md
 ├── 03-events/                 one folder per event: YYYY-MM-DD_event-name
 │   └── _event-template/       copy it for each new event
@@ -501,6 +502,7 @@ Append-only. One line per session, newest at the bottom. Format: `YYYY-MM-DD · 
 Your role and contract scope, the chapter year, and every fixed deadline with its owner (role).
 
 `incoming-work.md` — one open list, so you and a stand-in see what is still open.
+`my-role.md` — one page: what you do, what the officers own, how to reach you. Agree it with your Chair, give it to every new officer.
 
 ===== FILE: 02-your-assistant/template-folder/01-role-and-calendar/incoming-work.md =====
 
@@ -520,6 +522,53 @@ Last sweep: — (prompt 40 sets this date)
 From is a role (officer role, region, global, or member). Source is where the ask came from — mail date and subject words without names, or a chat (the group's purpose or the sender's role) and date — no member names, never the message text. Kind: training, survey, report, form, meeting, or other. Mandatory only when the source says so. Status is open, answered provisionally, or done. Answer file is the `07-reporting/…-answers.md` you saved after submitting (prompt 27). Outcome stays empty until you paste a result you were sent.
 
 The row marked "(example)" is fictional (Lakeside Chapter); delete it when you add your own.
+
+===== FILE: 02-your-assistant/template-folder/01-role-and-calendar/my-role.md =====
+
+# My role in our chapter — one page
+
+Purpose: every new officer knows in two minutes what you do, what you don't do and how to reach you — without you explaining it again every July.
+If your Chair or the region has a general Chapter Manager description, this page adds **your chapter's** view to it; where the two differ, talk it through with your Chair.
+Agree it with your Chair once, then give it to every new officer. They can also ask their own AI: *"What can I ask our Chapter Manager, and what is mine?"*
+
+**Fill it with your AI** — in your chapter folder, type:
+```text
+Help me write my one page "My role in our chapter" in 01-role-and-calendar/my-role.md.
+Read my contract scope if it is in 01-role-and-calendar/, and chapter-facts.md. If I attach my areas.txt from my hours folder, use it too.
+Ask me one question at a time, at most seven. Keep it to one page. Change the file only after I say yes.
+```
+
+---
+
+**{{CHAPTER}}** · Chapter Manager: {{YOUR_NAME}} · agreed with the Chair on {{DATE}} · reviewed at each officer handover
+
+## What I do
+- {{AREA_1 — for example: event logistics from venue to run of show}}
+- {{AREA_2 — for example: membership administration and renewals}}
+- {{AREA_3 — for example: the chapter calendar and every commitment deadline}}
+- {{AREA_4 — for example: chapter mail, newsletters, the chapter folder}}
+
+## What the officers own
+- {{for example: choosing speakers and content — the Learning Officer}}
+- {{for example: approving spend above the agreed amount — the Finance Officer}}
+- {{for example: member conversations about Forum — the Forum Officer}}
+
+## What I don't do
+So every question reaches the person who can answer it best:
+- {{for example: registering or cancelling members on the event platform — members do it themselves; I show them how}}
+- {{for example: writing officers' own messages to members}}
+
+## How to reach me
+- Channel: {{mail manager@… / WhatsApp for urgent only}} · I answer within {{one working day}}.
+- My working hours: {{for example: Monday–Thursday, 9:00–15:00}} · contract hours: {{optional — leave out if you prefer}}.
+- When I am away: {{STAND_IN}} · open items are in `incoming-work.md` and `00-handover/handover.md`.
+
+## How we work together
+- Requests to me go by {{mail}}, with a date when it is needed.
+- New tasks outside this page: we agree them with the Chair first.
+- {{one line of your own}}
+
+*Chapter-internal page, not an official YPO document. It sits under YPO's own rules and your contract.*
 
 ===== FILE: 02-your-assistant/template-folder/02-chapter-knowledge/README.md =====
 
@@ -865,7 +914,7 @@ The monthly check in [`../04-knowledge-base/keeping-it-true.md`](../04-knowledge
 
 Purpose: build your own Chapter Manager assistant in three short labs — in the workshop, or alone at your desk in about 40 minutes.
 You leave with an assistant in your desktop app that follows your house rules, a chapter folder it keeps for you, a first short version of your chapter facts, and one email filed, logged and drafted.
-The labs run in the **desktop app** — ChatGPT (Work) or Claude (Cowork), whichever you have; the assistant saves every file itself. No desktop app today? Every lab has a *Browser path*: the same steps, and you save the files yourself.
+The labs run in the **desktop app** — ChatGPT (Work, or Codex in the same app) or Claude (Cowork), whichever you have; the assistant saves every file itself. No desktop app today? Every lab has a *Browser path*: the same steps, and you save the files yourself.
 
 ## Before you start
 
@@ -892,7 +941,7 @@ Two words used in every check: **saved** = you can see the file in your folder �
 
 | Min | Step |
 | --- | --- |
-| 0–4 | **Open your working folder in the desktop app** — exactly as in your self-test: a new task with the folder `CM-Workspace` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`). Allow access to `CM-Workspace` only; with Claude, keep the app open while it works. **Paste the core** from [`cm-assistant-instructions.md`](cm-assistant-instructions.md) (everything below the line) as your first message. If it asks for `house-rules.md`: "Not yet — the next prompt creates it." |
+| 0–4 | **Open your working folder in the desktop app** — exactly as in your self-test: a new task with the folder `CM-Workspace` (ChatGPT: Work or Codex · Claude: Cowork `[verify the menu name]`). Allow access to `CM-Workspace` only; with Claude, keep the app open while it works. **Paste the core** from [`cm-assistant-instructions.md`](cm-assistant-instructions.md) (everything below the line) as your first message. If it asks for `house-rules.md`: "Not yet — the next prompt creates it." |
 | 4–9 | **Let it build your chapter folder.** Send prompt 1, answer its questions and say yes. |
 | 9–17 | **Your chapter facts, short version.** Send prompt 2 and answer six short questions from memory. Unsure? Say "verify". |
 | 17–20 | **Test it.** Send prompt 3 with the question you brought. Then open `CM-Workspace` in Finder or File Explorer: your chapter folder and `chapter-facts.md` are there. |

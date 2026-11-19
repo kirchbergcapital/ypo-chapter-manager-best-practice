@@ -34,7 +34,7 @@ Everything here writes into the folder structure from
 
 - `00-handover/handover.md` — the living handover note (what is set up, open items, what "done" looks like)
 - `00-handover/log.md` — append-only log, one dated line per change
-- `01-role-and-calendar/` — officer list, the one channel, the commitments calendar
+- `01-role-and-calendar/` — officer list, the one channel, the commitments calendar, `my-role.md` (give it to every new officer)
 - `02-chapter-knowledge/` — bylaws, charter, strategic plan, chapter-facts.md, game-plan.md
 
 Your assistant follows the house rules in

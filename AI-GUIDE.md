@@ -16,7 +16,7 @@ The kit is public. One of these three ways always works — use the first one th
 | Your situation | What you do |
 |---|---|
 | **(a) You can open links** | Every kit file sits at `https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/` + its path. Fetch the files yourself when a station or a question needs them — the directory below lists them all. Links inside the files are relative: resolve them from the file's own link. Do not ask the Chapter Manager to upload or paste kit files. If links fail, see the rule below the table and switch to (b) |
-| **(b) You cannot open links** | Work from the chat files — the kit cut into eight small files, so each one fits into a chat. Ask for the starter file first, in these words: *"I can't open links here. Please download this one file — no account needed: https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-START.txt (right-click → "Save link as", or open it and save it). It is about 100 KB. Then attach it to this chat with the paperclip or by drag and drop — please don't paste its text into the message box, that is too long for a chat."* `KIT-START.txt` holds this guide, Stations 1 and 3 and the Lab B practice pack; its kit directory names the chat file that holds every other file. When a step needs a file you do not have, ask for that one chat file the same way, by its name and link — for example `KIT-2-FOLDER-AND-FACTS.txt` when they want to pick a business plan (Station 1), or before Station 2. One chat file at a time, only when the step needs it; one that is already attached in this conversation, you use. If they have the chat files saved already (for example from a colleague), they drag in just the one you name |
+| **(b) You cannot open links** | Work from the chat files — the kit cut into eight small files, so each one fits into a chat. Ask for the starter file first, in these words: *"I can't open links here. Please download this one file — no account needed: https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-START.txt (right-click → "Save link as", or open it and save it). It is about 100 KB. Then attach it to this chat with the paperclip or by drag and drop — please don't paste its text into the message box, that is too long for a chat."* `KIT-START.txt` holds this guide, Stations 1 and 3 and the Lab B practice pack; its kit directory names the chat file that holds every other file. When a step needs a file you do not have, ask for that one chat file the same way, by its name and link — for example `KIT-2-FOLDER-AND-FACTS.txt` when they want to pick a business plan (Station 1), or before Station 2. One chat file at a time, only when the step needs it; one that is already attached in this conversation, you use. |
 | **(c) You work in a folder on their computer** | Read the files locally, by the paths below — the unzipped kit (in a subfolder `_kit` — from `_kit.zip` — or a folder called `ypo-chapter-manager-best-practice-main`), or the chat files saved in one folder (start with `KIT-START.txt`; its kit directory names the file that holds each kit file). File size does not matter here: read what the step needs |
 
 **A link that does not open is not a missing file.** Don't search the web or rebuild it: name the chat file that holds it; they get it from wherever `KIT-START.txt` came from and save it next to it.
@@ -39,7 +39,7 @@ All kit files with their full links. Fetch only what the current step needs.
 | Chat file 2: business plans, working folder, templates, chapter facts (Stations 2 and 4) | `KIT-2-FOLDER-AND-FACTS.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-2-FOLDER-AND-FACTS.txt |
 | Chat file 3: mail handoff, knowledge base, handover, chapter rules (Stations 5–8) | `KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt |
 | Chat file 4: the prompt library and the chapter moments | `KIT-4-PROMPTS.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-4-PROMPTS.txt |
-| Chat file 5: mail connectors, browser, installs (optional Stations 9 and 11) | `KIT-5-CONNECTORS-AND-INSTALLS.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-5-CONNECTORS-AND-INSTALLS.txt |
+| Chat file 5: mail connectors, browser, installs, routines (optional Stations 9, 11 and 14) | `KIT-5-CONNECTORS-AND-INSTALLS.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-5-CONNECTORS-AND-INSTALLS.txt |
 | Chat file 6: your own WhatsApp app (optional Station 10) | `KIT-6-WHATSAPP-APP.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-6-WHATSAPP-APP.txt |
 | Chat file 7: time by area (optional Station 12) | `KIT-7-TIME-BY-AREA.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-7-TIME-BY-AREA.txt |
 | Chat file 8: overviews, glossary, changelog | `KIT-8-BACKGROUND.txt` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-8-BACKGROUND.txt |
@@ -65,6 +65,7 @@ All kit files with their full links. Fetch only what the current step needs.
 | Template: setup progress (this guide's memory) | `02-your-assistant/template-folder/00-handover/setup-progress.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/template-folder/00-handover/setup-progress.md |
 | Template: role and calendar | `02-your-assistant/template-folder/01-role-and-calendar/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/template-folder/01-role-and-calendar/README.md |
 | Template: incoming work list | `02-your-assistant/template-folder/01-role-and-calendar/incoming-work.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/template-folder/01-role-and-calendar/incoming-work.md |
+| Station 8: my role on one page | `02-your-assistant/template-folder/01-role-and-calendar/my-role.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/template-folder/01-role-and-calendar/my-role.md |
 | Template: chapter knowledge | `02-your-assistant/template-folder/02-chapter-knowledge/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/template-folder/02-chapter-knowledge/README.md |
 | Template: game plan sources | `02-your-assistant/template-folder/02-chapter-knowledge/game-plan-sources/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/template-folder/02-chapter-knowledge/game-plan-sources/README.md |
 | Template: game plan | `02-your-assistant/template-folder/02-chapter-knowledge/game-plan.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/template-folder/02-chapter-knowledge/game-plan.md |
@@ -120,6 +121,7 @@ All kit files with their full links. Fetch only what the current step needs.
 | Mail connectors (Gmail, Microsoft 365) | `07-connectors-and-browser/email-connectors.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/07-connectors-and-browser/email-connectors.md |
 | Prompts — overview | `08-prompts/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/08-prompts/README.md |
 | Prompt library for everyday work | `08-prompts/prompt-library.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/08-prompts/prompt-library.md |
+| Station 14: routines on a schedule, prompts 41–45 | `08-prompts/routines.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/08-prompts/routines.md |
 | WhatsApp app: the build prompt | `09-whatsapp-app-build-guide/BUILD-PROMPT.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/09-whatsapp-app-build-guide/BUILD-PROMPT.md |
 | WhatsApp app: ten ticks before use | `09-whatsapp-app-build-guide/CHECKLIST.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/09-whatsapp-app-build-guide/CHECKLIST.md |
 | WhatsApp app: optional confirmed sending | `09-whatsapp-app-build-guide/OPTIONAL-SEND.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/09-whatsapp-app-build-guide/OPTIONAL-SEND.md |
@@ -200,7 +202,7 @@ Then pick one mode and tell the Chapter Manager in one line which one it is, tog
 | Mode | Typical tools | How you guide |
 |---|---|---|
 | **A · Chat** — kit read by link or from the chat files, no file access | Claude, ChatGPT, Copilot or Gemini in the browser or app | **Click by click.** Practice material goes into one message, never a search through files (the [Lab B practice pack](02-your-assistant/lab-b-practice-pack.md)). Download test (Station 2) worked → you hand over ready files: at Station 2 the working folder as one ZIP, with the `{{…}}` placeholders replaced and `setup-progress.md` filled in; later `chapter-facts.md`, filed mails, log lines and drafts, each as a download. Test failed → you write every file's full text and its exact path, and they save it (box below). They upload what the next step needs. You describe where to click — and say that menu names can differ. After each file, say: *"This is a draft in the chat. To save it: download it / copy it into <path>. Tell me 'saved' when you see it in the folder."* |
-| **B · Agent** — reads and writes files, may run commands | ChatGPT Work in the ChatGPT desktop app, which works with local files after the Chapter Manager allows it ([source](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)); the Claude desktop app with folder access (Cowork); Codex; Claude Code | The easiest way for the Chapter Manager: you save every file yourself. **Offer to do it.** Before each action say in one sentence what you will do — "I'll copy the template folder to …" — and wait for yes. One action per yes. Nothing outside the folders you agreed on |
+| **B · Agent** — reads and writes files, may run commands | ChatGPT Work or Codex in the ChatGPT desktop app, once the Chapter Manager allows folder access ([source](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)); Claude Cowork; Claude Code | The easiest way for the Chapter Manager: you save every file yourself. **Offer to do it.** Before each action say in one sentence what you will do, and wait for yes. One action per yes. Nothing outside the folders you agreed on |
 
 > **Saving a file — mode A, only when the download test failed** (menu names as of Oct 2026 `[verify]`)
 > - **Windows:** once: File Explorer → View → Show → File name extensions. Then open Notepad, paste the text → File → Save as →
@@ -238,7 +240,7 @@ Clock times, optional: with question 1, offer once — *"Shall I note the time, 
 
 Then show the profile as a short table, propose today's stations, and ask for a go.
 
-**Your first quick win.** Right after the profile, pick up to three prompts from [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) that match the answers — mail → 11 *Email handoff* · WhatsApp → 12 *Chat-export summary* · events → 1 *Event follow-up* · rule questions → 2 *Bylaws quick answer* · officers → 22 *Weekly officer note* · requests from the region or global YPO → 27 *Request check* · new procedures or trainings → 28 *Procedure change summary* · forms, surveys and trainings piling up → 29 *Incoming work list* · event platform entries → 30 *Platform field map* · prospects → 31 *Membership pipeline step* — and offer to run one now, before or alongside the setup. Default: the fictional [Lab B practice pack](02-your-assistant/lab-b-practice-pack.md); it can run right here. A prompt with real chapter material runs in their daily project, after Station 3 (§ 7, rule 2).
+**Your first quick win.** Right after the profile, pick up to three prompts from [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) that match the answers — mail → 11 · WhatsApp → 12 · events → 1 · rule questions → 2 · officers → 22 · requests from the region or global YPO → 27 · new procedures or trainings → 28 · forms, surveys and trainings piling up → 29 · event platform entries → 30 · prospects → 31 — and offer to run one now, before or alongside the setup. Default: the fictional [Lab B practice pack](02-your-assistant/lab-b-practice-pack.md); it can run right here. A prompt with real chapter material runs in their daily project, after Station 3 (§ 7, rule 2).
 
 | Time today | Plan |
 |---|---|
@@ -251,7 +253,7 @@ Until the working folder exists (Station 2), keep the profile in the conversatio
 
 ## 5 · The learning path
 
-Thirteen stations. 1–8 are the core and run in a desktop app or a browser. 9–13 are optional depth — offer 9–11 and 13 only when 1–8 are done, or when the Chapter Manager asks.
+Fourteen stations. 1–8 are the core and run in a desktop app or a browser. 9–14 are optional depth — offer 9–11, 13 and 14 only when 1–8 are done, or when the Chapter Manager asks.
 Station 12's hours line can start any day after Station 3: it needs only the house rules.
 
 | # | Station | Time | Done when | Kit files |
@@ -269,6 +271,7 @@ Station 12's hours line can start any day after Station 3: it needs only the hou
 | 11 | *Optional:* Claude Code / Level 3 | 1 h | `claude --version` answers, `CLAUDE.md` and `house-rules.md` are **saved** in the chapter folder, and a log line **saved** by Claude Code is confirmed | [`setup/`](setup/), [`01-foundations/three-levels.md`](01-foundations/three-levels.md) (Level 3) |
 | 12 | *Optional:* time by area | 15 min (the hours app: 30–60 min more) | `areas.txt` and `hours.csv` are **saved** in their own folder, outside the chapter folder, with one confirmed hours line in `hours.csv` | [`10-time-by-area/`](10-time-by-area/), [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) (prompts 23–26) |
 | 13 | *Optional:* their own mini CRM | 30–60 min | Self-test `0 failed`, ten ticks done, one backup **saved** in the chapter storage | [`12-mini-crm/`](12-mini-crm/) |
+| 14 | *Optional:* a routine on a schedule | 20 min | One routine runs; its first draft is **saved**, not sent | [`08-prompts/routines.md`](08-prompts/routines.md) |
 
 After every station: one line at the bottom of `00-handover/log.md` (`YYYY-MM-DD · setup · <kit file> · <what is done> · <next step>`)
 and an update of `00-handover/setup-progress.md`. Before Station 2 exists, collect these lines and write them at Station 2.
@@ -368,6 +371,7 @@ With any connector: ask it to create drafts only.
   Rule 2 of the one-pager reads: "We use paid AI plans only, with training on our data switched off — a business plan with a data processing agreement where the chapter pays."
 - Draft a short note to the Chair asking for 30 minutes before the next ExCo, with [`06-chapter-rules/for-your-chair.md`](06-chapter-rules/for-your-chair.md) attached. The Chapter Manager sends it.
 - While the Chair is in view: the chapter accounts `manager@` and `chair@`, if Station 2 left them open ([`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md)); optional: the commitments calendar ([`05-officer-handover/commitments-calendar.md`](05-officer-handover/commitments-calendar.md)).
+- Offer `01-role-and-calendar/my-role.md` for the same 1:1.
 - **Done when:** the filled one-pager and the note are **saved** in `06-communication/drafts/`, and "ExCo decision on AI rules" is an open item in `handover.md`.
 
 ### Station 9 (optional) — Connectors, living folder, browser
@@ -380,7 +384,7 @@ With any connector: ask it to create drafts only.
 ### Station 10 (optional) — Their own WhatsApp app
 
 - Needs a tool that writes and runs code in a folder on their laptop, plus Node.js — do the install part of Station 11 first ([`setup/`](setup/)).
-- **ChatGPT users:** Codex, included in ChatGPT Plus ([source](https://help.openai.com/en/articles/11369540)), can run the same build prompt and reads `AGENTS.md` ([source](https://developers.openai.com/codex/guides/agents-md)). How to install it: OpenAI's own page `[verify]`.
+- **ChatGPT users:** Codex, in the same ChatGPT desktop app, runs the same build prompt and reads `AGENTS.md` ([source](https://developers.openai.com/codex/guides/agents-md)).
 - Follow [`09-whatsapp-app-build-guide/README.md`](09-whatsapp-app-build-guide/README.md) step by step. The app gets its own folder in the home folder, outside any synced folder;
   the build prompt is pasted in a **new** session opened in that folder, not in the kit. The QR code appears only in a terminal window the Chapter Manager opens themselves.
 - Their own number, read and draft, at a personal pace; sending stays on the phone or, with [`09-whatsapp-app-build-guide/OPTIONAL-SEND.md`](09-whatsapp-app-build-guide/OPTIONAL-SEND.md), one confirmed message at a time.
@@ -399,13 +403,17 @@ With any connector: ask it to create drafts only.
 - Run prompt 23 *Areas interview* from [`08-prompts/prompt-library.md`](08-prompts/prompt-library.md) in their daily project — at most five questions, about ten areas.
 - Check that house rules 19 and 20 are in their `house-rules.md`. Then one real task, one hours line `suggested` → they give the minutes → `confirmed`. The assistant suggests minutes; only what they confirm counts.
 - Mode A: they paste the round-up (prompt 24) into `hours.csv` with Notepad or TextEdit. Mode B: you add the rows yourself after their yes — in their hours folder only, never in the chapter folder.
-- **Optional app:** [`10-time-by-area/BUILD-PROMPT.md`](10-time-by-area/BUILD-PROMPT.md) — three files, opened by double-click in Chrome or Edge, no install. In mode A you hand them the three files as downloads. With ChatGPT Plus, the chat is the way; Codex only after Station 11.
+- **Optional app:** [`10-time-by-area/BUILD-PROMPT.md`](10-time-by-area/BUILD-PROMPT.md) — three files, opened by double-click in Chrome or Edge, no install. In mode A you hand them the three files as downloads.
 - **Done when:** `areas.txt` and `hours.csv` are **saved** in their own folder and one confirmed hours line is in `hours.csv` — with the app: `self-test.html` shows `0 failed` and the ten ticks of [`10-time-by-area/CHECKLIST.md`](10-time-by-area/CHECKLIST.md) are done.
 
 ### Station 13 (optional) — Their own mini CRM
 
 - After Station 11 (a coding tool, Node.js 24+): follow [`12-mini-crm/README.md`](12-mini-crm/README.md). You never read `crm.db`.
 - **Done when:** self-test `0 failed`, the ten ticks of [`12-mini-crm/CHECKLIST.md`](12-mini-crm/CHECKLIST.md) done, one backup **saved** in the chapter storage.
+
+### Station 14 (optional) — A routine on a schedule
+
+- Only for a prompt that worked by hand two or three times: follow [`08-prompts/routines.md`](08-prompts/routines.md). Drafts only.
 
 ## 6 · The progress file
 

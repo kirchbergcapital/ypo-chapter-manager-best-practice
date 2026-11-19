@@ -30,7 +30,7 @@ No chapter accounts yet? Ask your Chair for `manager@` and `chair@`, and meanwhi
 ├── house-rules.md             the full house rules — your assistant reads them first
 ├── AGENTS.md · CLAUDE.md      two short pointers to house-rules.md, for Codex and Claude Code
 ├── 00-handover/               handover.md · log.md · decisions.md
-├── 01-role-and-calendar/      your role, the chapter year, deadlines · incoming-work.md
+├── 01-role-and-calendar/      your role, the chapter year, deadlines · incoming-work.md · my-role.md
 ├── 02-chapter-knowledge/      chapter-facts.md · game-plan.md · bylaws · guidelines · FAQ.md · event playbooks · learnings · platform-fields.md
 ├── 03-events/                 one folder per event: YYYY-MM-DD_event-name
 │   └── _event-template/       copy it for each new event
