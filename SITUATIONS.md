@@ -28,6 +28,8 @@ Prompt numbers refer to [`08-prompts/prompt-library.md`](08-prompts/prompt-libra
 | "The WhatsApp groups run away from me." | [`03-communication/whatsapp.md`](03-communication/whatsapp.md) | 12 Chat-export summary |
 | "Five officers ask me for five things in five places." | [`03-communication/one-channel.md`](03-communication/one-channel.md) | 22 Weekly officer note |
 | "I write the same invitation, reminder or follow-up again and again." | [`03-communication/message-templates.md`](03-communication/message-templates.md) | — |
+| "I do the same report or summary every week — it could run by itself." | [`08-prompts/routines.md`](08-prompts/routines.md) — drafts only, on a schedule | 41–45 |
+| "New officers don't know what I do and what is theirs." | template `01-role-and-calendar/my-role.md` in [`02-your-assistant/template-folder/`](02-your-assistant/template-folder/) — one page, agreed with your Chair | — |
 | "A request came in — from an officer, the region or global. What exactly is asked, and how much time may it take?" | [`10-time-by-area/README.md`](10-time-by-area/README.md) (tasks "for region:", "for global:") | 27 Request check |
 | "Trainings, surveys, forms and deadlines are piling up." | template `01-role-and-calendar/incoming-work.md` in [`02-your-assistant/template-folder/`](02-your-assistant/template-folder/README.md) | 29 Incoming work list |
 | "Asks reach me by mail and WhatsApp faster than I can list them." | [`07-connectors-and-browser/email-connectors.md`](07-connectors-and-browser/email-connectors.md), [`03-communication/whatsapp.md`](03-communication/whatsapp.md) | 40 Incoming work sweep |

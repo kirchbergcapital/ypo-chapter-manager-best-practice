@@ -18,6 +18,7 @@ That is how a few minutes per task add up to a knowledge base a stand-in or the 
 | File | What it gives you |
 |---|---|
 | [prompt-library.md](prompt-library.md) | 40 prompts in nine groups: A Events · B Members · C Rules and meetings · D Finance · E Communication · F Memory and handover · G Event lifecycle · H Game plan · I Time by area — and how to share a prompt of your own |
+| [routines.md](routines.md) | Prompts 41–45 for work that comes back every day, week or month — meeting summaries after a chapter call, the pipeline report, applicant briefs, event feedback, the payment check — and how to let your AI run them on a schedule, drafts only |
 
 Start with three: **11 Email handoff**, **8 Post-event debrief** and **13 Checkpoint**. Add the others when the need comes up.
 

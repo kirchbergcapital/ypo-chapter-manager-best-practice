@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 8 OF 9: KIT-8-BACKGROUND.txt
 Contents: background: overviews, glossary, changelog.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-12 from 16 files.
+Built 2026-11-19 from 16 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -10,8 +10,8 @@ CHAT FILES OF THE KIT
   1. KIT-START.txt — the starter file: this AI guide, Stations 1 and 3 with the house rules, the Lab B practice pack (picking a business plan: file 2; more prompts: file 4)
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
-  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test
+  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (prompts 1–40) and the chapter moments
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45)
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog   <- this file
@@ -246,6 +246,8 @@ Prompt numbers refer to [`08-prompts/prompt-library.md`](08-prompts/prompt-libra
 | "The WhatsApp groups run away from me." | [`03-communication/whatsapp.md`](03-communication/whatsapp.md) | 12 Chat-export summary |
 | "Five officers ask me for five things in five places." | [`03-communication/one-channel.md`](03-communication/one-channel.md) | 22 Weekly officer note |
 | "I write the same invitation, reminder or follow-up again and again." | [`03-communication/message-templates.md`](03-communication/message-templates.md) | — |
+| "I do the same report or summary every week — it could run by itself." | [`08-prompts/routines.md`](08-prompts/routines.md) — drafts only, on a schedule | 41–45 |
+| "New officers don't know what I do and what is theirs." | template `01-role-and-calendar/my-role.md` in [`02-your-assistant/template-folder/`](02-your-assistant/template-folder/) — one page, agreed with your Chair | — |
 | "A request came in — from an officer, the region or global. What exactly is asked, and how much time may it take?" | [`10-time-by-area/README.md`](10-time-by-area/README.md) (tasks "for region:", "for global:") | 27 Request check |
 | "Trainings, surveys, forms and deadlines are piling up." | template `01-role-and-calendar/incoming-work.md` in [`02-your-assistant/template-folder/`](02-your-assistant/template-folder/README.md) | 29 Incoming work list |
 | "Asks reach me by mail and WhatsApp faster than I can list them." | [`07-connectors-and-browser/email-connectors.md`](07-connectors-and-browser/email-connectors.md), [`03-communication/whatsapp.md`](03-communication/whatsapp.md) | 40 Incoming work sweep |
@@ -537,7 +539,15 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 Purpose: what changed between versions of this kit, and what is planned next.
 
 > Community resource by a YPO member, not an official YPO resource.
-> **Maintainer:** see [`README.md`](README.md) · **last checked:** 10 Nov 2026 · menus move — every tool page carries an as-of date.
+> **Maintainer:** see [`README.md`](README.md) · **last checked:** 19 Nov 2026 · menus move — every tool page carries an as-of date.
+
+## v0.4 — 19 Nov 2026
+
+From the Chapter Managers in Vienna:
+- **Routines — work that runs while you are away:** [`08-prompts/routines.md`](08-prompts/routines.md) — prompts 41–45 (meeting summary drafts after a chapter call, weekly pipeline report, applicant brief before the interview, event feedback one-pager, payment check with reminder drafts) and how to run them on a schedule in Claude or ChatGPT. Start by hand; drafts only; turn a task into a routine when you have explained it twice. Optional Station 14.
+- **My role in our chapter — one page:** template `01-role-and-calendar/my-role.md` in the chapter folder: what you do, what the officers own, how to reach you. Agree it with your Chair, give it to every new officer. Station 8 offers it.
+- **ChatGPT: Work or Codex.** Both sit in the same ChatGPT desktop app; the setup pages now name both.
+- SITUATIONS: two new lines — the same report every week, and new officers who do not know what is theirs.
 
 ## v0.3.2 — 13 Nov 2026
 
@@ -1042,7 +1052,7 @@ Everything here writes into the folder structure from
 
 - `00-handover/handover.md` — the living handover note (what is set up, open items, what "done" looks like)
 - `00-handover/log.md` — append-only log, one dated line per change
-- `01-role-and-calendar/` — officer list, the one channel, the commitments calendar
+- `01-role-and-calendar/` — officer list, the one channel, the commitments calendar, `my-role.md` (give it to every new officer)
 - `02-chapter-knowledge/` — bylaws, charter, strategic plan, chapter-facts.md, game-plan.md
 
 Your assistant follows the house rules in

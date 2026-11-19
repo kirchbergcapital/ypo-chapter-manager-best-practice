@@ -19,6 +19,7 @@ Replace every `{{PLACEHOLDER}}`, make sure the files named under "Reads" are in 
 | G · Event lifecycle | 15 Speaker briefing · 16 RSVP reconciliation · 17 Run of show · 18 Debrief → learnings · 30 Platform field map |
 | H · Game plan | 19 Goal status · 20 Quarterly report · 21 Goals handover |
 | I · Time by area | 23 Areas interview · 24 Hours line round-up · 25 Month report by area · 26 Workload assessment |
+| J · Routines | 41 Meeting summary drafts · 42 Weekly pipeline report · 43 Applicant brief · 44 Event feedback one-pager · 45 Payment check — in [`routines.md`](routines.md), with how to run them on a schedule |
 
 Sharing a prompt of your own: [Share a prompt](#share-a-prompt) at the end.
 

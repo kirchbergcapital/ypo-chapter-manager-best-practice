@@ -3,7 +3,15 @@
 Purpose: what changed between versions of this kit, and what is planned next.
 
 > Community resource by a YPO member, not an official YPO resource.
-> **Maintainer:** see [`README.md`](README.md) · **last checked:** 10 Nov 2026 · menus move — every tool page carries an as-of date.
+> **Maintainer:** see [`README.md`](README.md) · **last checked:** 19 Nov 2026 · menus move — every tool page carries an as-of date.
+
+## v0.4 — 19 Nov 2026
+
+From the Chapter Managers in Vienna:
+- **Routines — work that runs while you are away:** [`08-prompts/routines.md`](08-prompts/routines.md) — prompts 41–45 (meeting summary drafts after a chapter call, weekly pipeline report, applicant brief before the interview, event feedback one-pager, payment check with reminder drafts) and how to run them on a schedule in Claude or ChatGPT. Start by hand; drafts only; turn a task into a routine when you have explained it twice. Optional Station 14.
+- **My role in our chapter — one page:** template `01-role-and-calendar/my-role.md` in the chapter folder: what you do, what the officers own, how to reach you. Agree it with your Chair, give it to every new officer. Station 8 offers it.
+- **ChatGPT: Work or Codex.** Both sit in the same ChatGPT desktop app; the setup pages now name both.
+- SITUATIONS: two new lines — the same report every week, and new officers who do not know what is theirs.
 
 ## v0.3.2 — 13 Nov 2026
 

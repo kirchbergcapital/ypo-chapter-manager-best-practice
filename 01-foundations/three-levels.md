@@ -54,7 +54,7 @@ Treat the chat as the workbench and the folder as the record.
 
 | Connection | What you gain | Facts |
 |---|---|---|
-| **Your chapter folder** | The assistant reads and writes the synced folder on your laptop: files mails, appends log lines, updates `handover.md` | Claude Cowork: paid plans, desktop app for macOS and Windows; the app stays open while it works ([source](https://support.claude.com/en/articles/13345190)) · ChatGPT Work in the ChatGPT desktop app (which plans and systems `[verify]`): works with local files after you allow it; Work can use a project's context, but not in a project set to project-only memory ([source](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)) |
+| **Your chapter folder** | The assistant reads and writes the synced folder on your laptop: files mails, appends log lines, updates `handover.md` | Claude Cowork: paid plans, desktop app for macOS and Windows; the app stays open while it works ([source](https://support.claude.com/en/articles/13345190)) · ChatGPT Work or Codex, both in the ChatGPT desktop app: work with local files after you allow it; Work not in a project set to project-only memory ([source](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)) |
 | **Mail and calendar** | It reads a mail in your mailbox and leaves a draft reply there. You send | Gmail, Calendar, Drive for all Claude users ([source](https://support.claude.com/en/articles/10166901)) · Microsoft 365 for work accounts; on Team and Enterprise the Claude owner enables it and an admin switches on write tools ([source](https://support.claude.com/en/articles/15183774)). Details: [`../07-connectors-and-browser/email-connectors.md`](../07-connectors-and-browser/email-connectors.md) |
 | **Canva** | Event visuals from your text, in your Canva account | [`../07-connectors-and-browser/canva.md`](../07-connectors-and-browser/canva.md) |
 | **Your browser** | It reads portal pages you are logged into and turns them into tables | Claude in Chrome, paid plans ([source](https://support.claude.com/en/articles/12012173)). See [`../07-connectors-and-browser/browser-agent.md`](../07-connectors-and-browser/browser-agent.md) |
@@ -62,7 +62,7 @@ Treat the chat as the workbench and the folder as the record.
 **Setup (30 minutes, plus connectors later)**
 
 1. Install your storage's desktop app so the chapter folder is on your laptop — see [where-your-data-lives.md](where-your-data-lives.md).
-2. Install the ChatGPT or Claude desktop app and open the chapter folder there (ChatGPT: Work · Claude: Cowork) `[verify the menu name]`.
+2. Install the ChatGPT or Claude desktop app and open the chapter folder there (ChatGPT: Work or Codex · Claude: Cowork).
 3. Put the core from [`../02-your-assistant/cm-assistant-instructions.md`](../02-your-assistant/cm-assistant-instructions.md) into the project instructions or where the app keeps standing instructions `[verify the menu name]`; the app reads `house-rules.md` from the folder.
 4. Connect your mailbox. Start with one connector; add the next when the first one runs.
 5. Test: *"Add one line to 00-handover/log.md: today's date · setup · level 2 · folder connected · first mail handoff."* Open the file yourself and check the line is there.

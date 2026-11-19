@@ -1,6 +1,6 @@
 Purpose: build your own Chapter Manager assistant in three short labs — in the workshop, or alone at your desk in about 40 minutes.
 You leave with an assistant in your desktop app that follows your house rules, a chapter folder it keeps for you, a first short version of your chapter facts, and one email filed, logged and drafted.
-The labs run in the **desktop app** — ChatGPT (Work) or Claude (Cowork), whichever you have; the assistant saves every file itself. No desktop app today? Every lab has a *Browser path*: the same steps, and you save the files yourself.
+The labs run in the **desktop app** — ChatGPT (Work, or Codex in the same app) or Claude (Cowork), whichever you have; the assistant saves every file itself. No desktop app today? Every lab has a *Browser path*: the same steps, and you save the files yourself.
 
 ## Before you start
 
@@ -27,7 +27,7 @@ Two words used in every check: **saved** = you can see the file in your folder �
 
 | Min | Step |
 | --- | --- |
-| 0–4 | **Open your working folder in the desktop app** — exactly as in your self-test: a new task with the folder `CM-Workspace` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`). Allow access to `CM-Workspace` only; with Claude, keep the app open while it works. **Paste the core** from [`cm-assistant-instructions.md`](cm-assistant-instructions.md) (everything below the line) as your first message. If it asks for `house-rules.md`: "Not yet — the next prompt creates it." |
+| 0–4 | **Open your working folder in the desktop app** — exactly as in your self-test: a new task with the folder `CM-Workspace` (ChatGPT: Work or Codex · Claude: Cowork `[verify the menu name]`). Allow access to `CM-Workspace` only; with Claude, keep the app open while it works. **Paste the core** from [`cm-assistant-instructions.md`](cm-assistant-instructions.md) (everything below the line) as your first message. If it asks for `house-rules.md`: "Not yet — the next prompt creates it." |
 | 4–9 | **Let it build your chapter folder.** Send prompt 1, answer its questions and say yes. |
 | 9–17 | **Your chapter facts, short version.** Send prompt 2 and answer six short questions from memory. Unsure? Say "verify". |
 | 17–20 | **Test it.** Send prompt 3 with the question you brought. Then open `CM-Workspace` in Finder or File Explorer: your chapter folder and `chapter-facts.md` are there. |

@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 4 OF 9: KIT-4-PROMPTS.txt
-Contents: the prompt library for everyday work (40 prompts) and the chapter moments.
+Contents: the prompt library for everyday work (prompts 1–40) and the chapter moments.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-12 from 10 files.
+Built 2026-11-19 from 10 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -10,8 +10,8 @@ CHAT FILES OF THE KIT
   1. KIT-START.txt — the starter file: this AI guide, Stations 1 and 3 with the house rules, the Lab B practice pack (picking a business plan: file 2; more prompts: file 4)
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
-  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (40 prompts) and the chapter moments   <- this file
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9 and 11: mail connectors, browser, installs, the pre-workshop self-test
+  4. KIT-4-PROMPTS.txt — the prompt library for everyday work (prompts 1–40) and the chapter moments   <- this file
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45)
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
@@ -52,6 +52,7 @@ That is how a few minutes per task add up to a knowledge base a stand-in or the 
 | File | What it gives you |
 |---|---|
 | [prompt-library.md](prompt-library.md) | 40 prompts in nine groups: A Events · B Members · C Rules and meetings · D Finance · E Communication · F Memory and handover · G Event lifecycle · H Game plan · I Time by area — and how to share a prompt of your own |
+| [routines.md](routines.md) | Prompts 41–45 for work that comes back every day, week or month — meeting summaries after a chapter call, the pipeline report, applicant briefs, event feedback, the payment check — and how to let your AI run them on a schedule, drafts only |
 
 Start with three: **11 Email handoff**, **8 Post-event debrief** and **13 Checkpoint**. Add the others when the need comes up.
 
@@ -101,6 +102,7 @@ Replace every `{{PLACEHOLDER}}`, make sure the files named under "Reads" are in 
 | G · Event lifecycle | 15 Speaker briefing · 16 RSVP reconciliation · 17 Run of show · 18 Debrief → learnings · 30 Platform field map |
 | H · Game plan | 19 Goal status · 20 Quarterly report · 21 Goals handover |
 | I · Time by area | 23 Areas interview · 24 Hours line round-up · 25 Month report by area · 26 Workload assessment |
+| J · Routines | 41 Meeting summary drafts · 42 Weekly pipeline report · 43 Applicant brief · 44 Event feedback one-pager · 45 Payment check — in [`routines.md`](routines.md), with how to run them on a schedule |
 
 Sharing a prompt of your own: [Share a prompt](#share-a-prompt) at the end.
 

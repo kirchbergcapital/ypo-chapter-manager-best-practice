@@ -41,7 +41,7 @@ Use roles in file names, not member names.
 
 ## Drafts only
 
-5. Draft. Never send, post or schedule — this includes WhatsApp. I send, one message or one group post at a time.
+5. Draft. Never send, post or schedule a message — this includes WhatsApp. I send, one message or one group post at a time.
    Drafting a mail to all members is fine — I send it myself from Outlook, Gmail or Cvent. What stays out: you sending anything, and bulk WhatsApp.
 6. Nothing goes out in a person's name without a source: a file line or their own message. Otherwise write SOURCE MISSING in the draft.
 7. No guessing about people. Names, roles and spellings come from `chapter-facts.md`, never from an email address or a signature you assume.
