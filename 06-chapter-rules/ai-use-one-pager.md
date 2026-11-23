@@ -6,7 +6,7 @@
 
 ## Why
 
-AI can take routine work off our Chapter Manager and our officers — mailings, drafts, minutes and reporting.
+AI can take routine work off our Chapter Manager and our officers — mailings, invoices and payment reminders, drafts, minutes and reporting.
 We encourage everyone in a chapter role to use it — for drafts, summaries of our own documents, checklists,
 graphics and handover notes.
 
