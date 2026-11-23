@@ -46,6 +46,18 @@ Could you approve it once, or find 10 minutes with me to do it together? Thank y
 
 3. After the consent: connect, log in with the work account, run the same test as for Gmail.
 
+### The screen says "Need admin approval"
+
+That is the one-time consent above, and it is normal: nobody has approved Claude for your organisation yet. You do it once; after that you and your colleagues connect with your usual chapter accounts.
+
+- **Who is the admin?** Whoever set up your chapter's Microsoft 365 — often the company that provides your domain and mailboxes, sometimes an IT helper. Ask them first; their welcome mail or control panel usually holds the admin login.
+- **You have the admin login:** on that screen click *Have an admin account? Sign in with that account*, sign in with it and accept the permissions for the whole organisation. Then connect again with your usual account. On Claude Team or Enterprise, the Claude owner adds the connector first.
+- **The admin has no Claude account:** they can approve in Microsoft Entra instead — send them Anthropic's admin guide: https://support.claude.com/en/articles/12542951
+- Keep the admin login in the chapter's password manager. Your AI never needs it.
+- Your provider asks you to accept a *delegated admin* (GDAP) request? Claude does not need it; it lets the provider make changes to your Microsoft 365 for you — a question for your Chair.
+
+*Checked 23 Nov 2026 against Anthropic's admin guide above. Suggested by Chapter Managers after the Vienna workshop.*
+
 **No tenant yet, only outlook.com?** Stay at Level 1 copy-and-paste for now — it works with any mailbox. The chapter accounts `manager@` and `chair@` the kit asks for ([`../05-officer-handover/role-accounts.md`](../05-officer-handover/role-accounts.md)) are the step that unlocks Level 2.
 
 ## Set it up (ChatGPT, Gmail or Outlook)
