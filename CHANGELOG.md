@@ -9,7 +9,7 @@ Purpose: what changed between versions of this kit, and what is planned next.
 
 More from Vienna:
 - **"Need admin approval"** when connecting Microsoft 365: who the admin is and what they click ([email connectors](07-connectors-and-browser/email-connectors.md)).
-- **House rule 13:** a correction becomes a dated rule — add the line to your own `house-rules.md`.
+- **House rule 13:** after a correction, your assistant suggests a dated rule — add the line to your own `house-rules.md`.
 - A file from another Chapter Manager ([knowledge base § 3](04-knowledge-base/knowledge-base.md)); *context window* in the glossary; WhatsApp Business linking; where Work is in ChatGPT; the one-pager names invoices and payment reminders.
 
 ## v0.5 — draft

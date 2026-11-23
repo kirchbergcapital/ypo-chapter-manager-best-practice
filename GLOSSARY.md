@@ -53,7 +53,7 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 | **UNCHECKED** | The assistant could not open the file or did not look. Never the same as "fine" |
 | **`[verify]`** | A fact nobody has checked yet. Check it before it goes to anyone |
 | **Checkpoint** | A short refresh of `00-handover/handover.md`: what is set up, what is open, which files changed |
-| **Context window** | How much one chat can hold. A full chat forgets its start or shows a limit; nothing in your folder is lost. Ask for a checkpoint, then open a new chat — your folder remembers, a chat does not |
+| **Context window** | How much one chat can work with at once. Long chats get summarised or reach a length limit; your folder keeps everything. Before that, ask for a checkpoint and open a new chat. A usage limit is different: your use across all chats |
 | **Level 1 · 2 · 3** | How deeply you set up your AI: chat project · living folder · Claude Code in your folder (a repository is optional) — see [`01-foundations/three-levels.md`](01-foundations/three-levels.md) |
 | **Hours line** | One line per finished task in a fixed form: `HOURS · YYYY-MM-DD · <area> · <event folder or -> · <task in a few words, roles not names> · <minutes> min · suggested\|confirmed`. Your assistant suggests the minutes; only lines you confirm count. They go into `hours.csv` in your own folder — see [`10-time-by-area/`](10-time-by-area/) |
 | **Area** | One kind of work your hours are counted under, such as "Member communication", "Learning and chapter events" or "Forum logistics". About ten, in your own words, one per line in `areas.txt` in your own folder — see [`10-time-by-area/areas-template.txt`](10-time-by-area/areas-template.txt) |

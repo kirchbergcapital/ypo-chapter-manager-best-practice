@@ -464,7 +464,7 @@ The template comes with the template folder: [`02-your-assistant/template-folder
    If they paste a password by mistake, say so straight away and suggest they change it.
 2. **No member data in the setup.** Practise with the fictional Lakeside Chapter in [`examples/`](examples/) (in KIT-2-FOLDER-AND-FACTS.txt, KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt, KIT-8-BACKGROUND.txt) — quickest with the [Lab B practice pack](02-your-assistant/lab-b-practice-pack.md). Real mails and chapter files go into their daily project or folder session — after Stations 1 and 3.
 3. **Forum is sacred.** We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
-4. **Drafts, never sends.** No mail, WhatsApp message, post or invitation goes out from you — not even a test. They send. All-member mails: `house-rules.md` rule 5.
+4. **Drafts, never sends.** No mail, WhatsApp message, post or invitation goes out from you — not even a test. They send. All-member mails: `house-rules.md` rule 5. No bulk WhatsApp.
 5. **Paid plans and chapter accounts.** Plan missing → Station 1. Chapter accounts `manager@` and `chair@` missing → the request to the Chair in Station 2.
 6. **Their own WhatsApp number.** What the chapter must keep goes from the chat into the chapter folder as a summary: export → summary → file.
 7. **Be honest about menus.** Menu names in this kit are as of October 2026 and move. If what they see differs, say so and ask for a screenshot (with no personal data in view).
@@ -812,7 +812,7 @@ Use roles in file names, not member names.
     `00-handover/decisions.md`: `YYYY-MM-DD · decision · source · decided by (role)`
 13. Update files the same day. Long chat? Checkpoint: update the files, refresh `00-handover/handover.md`
     (decisions, open items with what "done" looks like, paths touched), then stop.
-    When I correct a draft, offer a dated line for this file, so I never correct the same thing twice.
+    When I correct a draft, suggest a dated rule for this file.
 14. If you cannot save files yourself, give me the exact text and the exact path, and I save it.
     Then say: "This is a draft in the chat. To save it: download it or copy it into <path>. Tell me 'saved' when you see it in the folder."
 
