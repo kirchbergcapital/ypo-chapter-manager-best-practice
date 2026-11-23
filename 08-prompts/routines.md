@@ -37,8 +37,8 @@ A routine only sees what is connected or saved. If the data is not there, the be
 **Claude** ([source](https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork)) — all paid plans:
 1. In the Claude desktop app: **Scheduled** in the left sidebar → **New task** → *Create with Claude* (describe it in your words) or *Set up manually*.
 2. Give it a name, paste the prompt, choose how often: hourly, daily, weekly, on weekdays, or manually.
-3. **Choose your chapter folder.** All five routines here read it. *Require this computer* then switches on: the task runs while your laptop is awake and the Claude app is open. Save.
-4. No folder option offered? Your account may not allow it yet — keep running the prompt by hand `[verify]`. (Tasks that need no folder, only connected mail or calendar, run in the cloud, also while your laptop sleeps.)
+3. **Choose your chapter folder** (the field *Which folder Claude should work in*). All five routines here read it. Where offered, *Require this computer* then switches on: the task runs only while your computer is awake and the Claude app is open. Save.
+4. **Where it runs depends on your plan.** Tasks without a folder run in the cloud, also while your computer sleeps or the app is closed. On Pro, Max and Ultra — and on Team and Enterprise with Cowork in the cloud turned on — tasks you create on your computer move to the cloud automatically, and *Require this computer* is offered only to organizations with computer access turned on. How that works with a folder task: `[verify]` on the source page. So check the first run: if it could not read your chapter folder, keep running the prompt by hand for now.
 5. A connector set to *Always ask* may wait for you or skip that step — check the first run.
 
 **ChatGPT** — scheduling there is still changing:

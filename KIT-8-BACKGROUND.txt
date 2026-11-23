@@ -547,6 +547,8 @@ Purpose: what changed between versions of this kit, and what is planned next.
 
 From the Chapter Managers in Vienna:
 - **Do's and don'ts on one page:** [`01-foundations/dos-and-donts.md`](01-foundations/dos-and-donts.md) — account and training switch, what goes in, how you work, which connectors, plugins and skills to add and which to leave, and how to give your assistant more autonomy step by step.
+- **Routines — where a scheduled task runs:** [`08-prompts/routines.md`](08-prompts/routines.md) § 3 now says which plans move tasks to the cloud, when *Require this computer* is offered, and to check the first run.
+- **AI use in our chapter, Part B:** plugins and skills come only from the AI provider's own lists (for Claude: Anthropic's); free plans and private accounts stay out. Before, "free plugins" could be read as excluding Anthropic's own.
 
 ## v0.4 — 19 Nov 2026
 
