@@ -17,7 +17,7 @@ First move, every time: paste the exact message into Claude Code in the app fold
 | What you see | What helps |
 |---|---|
 | The QR code expires before you scan it, or the app stops after three codes | Open WhatsApp → Settings → **Linked devices** → **Link a device** on your phone **first**, then run `npm run link` and scan straight away |
-| "Couldn't link device" on the phone, or a code you typed is refused | Many phones have both **WhatsApp** and **WhatsApp Business**. Link from the app that holds the number you want to read — for a business number: WhatsApp Business → Settings → **Linked devices** → **Link a device**. Scan the QR code rather than typing a code. If your app asks for your number, type it the way it shows an example (country code, no spaces) |
+| "Couldn't link device" on the phone | Many phones have both **WhatsApp** and **WhatsApp Business**. Scan the QR code from the app that holds the number you want to read — for a business number: WhatsApp Business → Settings → **Linked devices** → **Link a device** |
 | No QR code appears at all | The app should draw it directly in the window. Paste what you see into Claude Code and ask it to check that the QR code is written with `process.stdout.write`, not `console.log` |
 | Two attempts did not work | Take a break from the app and use WhatsApp's own "Export chat" (stage 1 in [`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)) for today — same result, one chat at a time. Try again later with the rows below |
 | "Run this in a terminal window" | You started `link` inside Claude Code or the desktop app. Open *Terminal* (macOS) or *PowerShell* (Windows), go to the app folder, run it there |

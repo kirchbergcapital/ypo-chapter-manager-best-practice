@@ -13,7 +13,7 @@
 >
 > **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying. Keep the folder's files on the laptop, not online only — right-click the folder: *Always keep on this device* (OneDrive) · *Available offline* (Google Drive; Windows: under *Offline access*) · *Keep Downloaded* (iCloud; older macOS: *Download Now*); otherwise your assistant may read them as empty.
 >
-> The files are written for your AI — you need not read them. For the big picture, ask it: *"Give me the easy next steps."*
+> Most files are written for your AI — you need not read them. For the big picture, ask it: *"Give me the easy next steps."*
 >
 > If your AI says it cannot open links, use Way 2.
 >

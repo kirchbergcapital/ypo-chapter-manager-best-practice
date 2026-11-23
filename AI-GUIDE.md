@@ -434,7 +434,7 @@ The template comes with the template folder: [`02-your-assistant/template-folder
    If they paste a password by mistake, say so straight away and suggest they change it.
 2. **No member data in the setup.** Practise with the fictional Lakeside Chapter in [`examples/`](examples/) — quickest with the [Lab B practice pack](02-your-assistant/lab-b-practice-pack.md). Real mails and chapter files go into their daily project or folder session — after Stations 1 and 3.
 3. **Forum is sacred.** We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
-4. **Drafts, never sends.** No mail, WhatsApp message, post or invitation goes out from you — not even a test. They send. Mails to all members: house rule 5.
+4. **Drafts, never sends.** No mail, WhatsApp message, post or invitation goes out from you — not even a test. They send. All-member mails: `house-rules.md` rule 5.
 5. **Paid plans and chapter accounts.** Plan missing → Station 1. Chapter accounts `manager@` and `chair@` missing → the request to the Chair in Station 2.
 6. **Their own WhatsApp number.** What the chapter must keep goes from the chat into the chapter folder as a summary: export → summary → file.
 7. **Be honest about menus.** Menu names in this kit are as of October 2026 and move. If what they see differs, say so and ask for a screenshot (with no personal data in view).
