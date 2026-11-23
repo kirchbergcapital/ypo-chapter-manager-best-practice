@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 8 OF 9: KIT-8-BACKGROUND.txt
 Contents: background: overviews, glossary, changelog.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-19 from 16 files.
+Built 2026-11-23 from 16 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -508,6 +508,8 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 |---|---|
 | **Project (AI)** | A workspace in your AI tool with its own instructions and files, so every chat starts with your house rules. Names differ by tool `[verify]` |
 | **Connector** | A link that lets your AI read from (or write drafts to) another service, such as your mailbox, your cloud storage or Canva. What is available depends on tool and plan (as of Oct 2026, `[verify]`) |
+| **Plugin** | An add-on package for the Claude desktop app (Cowork) that can bring skills, connectors and small programs. Install only from Anthropic's lists or what your chapter's tool list allows |
+| **Skill** | A saved instruction file your AI uses for one kind of task, e.g. a weekly report. Use your own or Anthropic's |
 | **Training opt-out** | The setting that stops your AI provider from using your chats to train its models. Where it sits differs by tool — see [`01-foundations/paid-plan-and-training-off.md`](01-foundations/paid-plan-and-training-off.md) |
 | **Role account** | An email address and login that belong to the role, not the person — e.g. `manager@` or `chair@` at the chapter's domain, in the chapter's Microsoft 365 or Google Workspace. It passes to the next person with everything in it. Required by this kit: at least `manager@` for the Chapter Manager and `chair@` for the Chair. Your WhatsApp number is not a role account — it stays yours |
 | **Knowledge base** | The chapter's folder of short, dated files that your AI answers from: rules, event playbooks, contacts by role, decisions |
@@ -540,6 +542,11 @@ Purpose: what changed between versions of this kit, and what is planned next.
 
 > Community resource by a YPO member, not an official YPO resource.
 > **Maintainer:** see [`README.md`](README.md) · **last checked:** 19 Nov 2026 · menus move — every tool page carries an as-of date.
+
+## v0.5 — draft
+
+From the Chapter Managers in Vienna:
+- **Do's and don'ts on one page:** [`01-foundations/dos-and-donts.md`](01-foundations/dos-and-donts.md) — account and training switch, what goes in, how you work, which connectors, plugins and skills to add and which to leave, and how to give your assistant more autonomy step by step.
 
 ## v0.4 — 19 Nov 2026
 
@@ -788,6 +795,7 @@ Each one takes 15 to 20 minutes. You make them once and revisit them once a year
 | [paid-plan-and-training-off.md](paid-plan-and-training-off.md) | Work in a paid AI plan and switch off training on your data — tool by tool, where the switch is | 20 min |
 | [business-plan-checklist.md](business-plan-checklist.md) | Which business plan to buy — pick in 2 minutes, the big providers compared, a 10-point check before you pay | 2 min to pick, 15 min to check |
 | [where-your-data-lives.md](where-your-data-lives.md) | One cloud storage, owned by the chapter, synced to your laptop from Level 2 | 15 min |
+| [dos-and-donts.md](dos-and-donts.md) | The short list next to your laptop: account, what goes in, how you work, connectors/plugins/skills, more autonomy | 2 min |
 | [three-levels.md](three-levels.md) | Level 1 chat project · Level 2 living folder with connectors · Level 3 Claude Code | 15 min to choose |
 
 ## The short version

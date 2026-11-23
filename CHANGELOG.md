@@ -5,6 +5,11 @@ Purpose: what changed between versions of this kit, and what is planned next.
 > Community resource by a YPO member, not an official YPO resource.
 > **Maintainer:** see [`README.md`](README.md) · **last checked:** 19 Nov 2026 · menus move — every tool page carries an as-of date.
 
+## v0.5 — draft
+
+From the Chapter Managers in Vienna:
+- **Do's and don'ts on one page:** [`01-foundations/dos-and-donts.md`](01-foundations/dos-and-donts.md) — account and training switch, what goes in, how you work, which connectors, plugins and skills to add and which to leave, and how to give your assistant more autonomy step by step.
+
 ## v0.4 — 19 Nov 2026
 
 From the Chapter Managers in Vienna:

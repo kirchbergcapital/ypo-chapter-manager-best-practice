@@ -50,6 +50,7 @@ All kit files with their full links. Fetch only what the current step needs.
 | Foundations — overview | `01-foundations/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/README.md |
 | Station 1: paid plan, training switch off per tool | `01-foundations/paid-plan-and-training-off.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/paid-plan-and-training-off.md |
 | Station 1: which business plan — pick, compare, 10-point check | `01-foundations/business-plan-checklist.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/business-plan-checklist.md |
+| Do's and don'ts on one page | `01-foundations/dos-and-donts.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/dos-and-donts.md |
 | Three levels (chat, living folder, Claude Code); project menu names | `01-foundations/three-levels.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/three-levels.md |
 | One storage owned by the chapter | `01-foundations/where-your-data-lives.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/where-your-data-lives.md |
 | Your assistant — overview | `02-your-assistant/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/README.md |
@@ -286,13 +287,14 @@ and an update of `00-handover/setup-progress.md`. Before Station 2 exists, colle
   Rename it `YYYY-MM-DD_ai-training-off.png`; it moves into `01-role-and-calendar/` at Station 2. Before sending any screenshot into a chat, cover the email address.
 - Optional ten-minute check that the tool reads a file: [`00-before-the-workshop/pre-workshop-selftest.md`](00-before-the-workshop/pre-workshop-selftest.md).
 - **Done when:** paid plan active, switch off, screenshot **saved**.
+- Offer [`01-foundations/dos-and-donts.md`](01-foundations/dos-and-donts.md) to keep next to the laptop.
 
 ### Station 2 — Working folder from the template
 
 - **First: the chapter accounts** (interview question 4). The kit's second prerequisite: Microsoft 365 or Google Workspace with at least `manager@` for the Chapter Manager and `chair@` for the Chair. They stay required; only today's start does not wait for them.
   - **They exist** → build in the storage of `manager@` and give `chair@` access.
   - **Not yet, or not sure** → the order, said plainly: *"Start today in your own OneDrive or Google Drive — the bridge. Ask your Chair for manager@ and chair@ the same day. We move the folder in one step later."* The sentence for the Chair: *"Ask your Chair: the chapter needs Microsoft 365 or Google Workspace with at least two accounts — manager@ and chair@. That is what makes the handover work and lets the Chair read the chapter folder."*
-    Draft the request with the follow-up prompt in [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md); the Chapter Manager sends it. Until the accounts exist, build in their own Google Drive or OneDrive and add "chapter accounts manager@ + chair@, then move the folder into manager@" as an open item — the structure moves in one step.
+    Draft the request with the follow-up prompt in [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md); the Chapter Manager sends it. Add "chapter accounts manager@ + chair@, then move the folder into manager@" as an open item.
 - **The one-step move, once `manager@` exists:** [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md) § *Moving the folder into manager@* (in `KIT-2-FOLDER-AND-FACTS.txt`).
 - Read [`01-foundations/where-your-data-lives.md`](01-foundations/where-your-data-lives.md) with them in two minutes: one storage, owned by the chapter, the Chair and the Chapter Manager as admins.
 - **Which drive — say it plainly.** Microsoft: *"Use the OneDrive of your chapter login — the one you open at office.com with the same address as your chapter Outlook. Windows often shows two OneDrives."* Google: *"Use the Google Drive of the chapter's Google account."*

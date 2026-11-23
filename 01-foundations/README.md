@@ -13,6 +13,7 @@ Each one takes 15 to 20 minutes. You make them once and revisit them once a year
 | [paid-plan-and-training-off.md](paid-plan-and-training-off.md) | Work in a paid AI plan and switch off training on your data — tool by tool, where the switch is | 20 min |
 | [business-plan-checklist.md](business-plan-checklist.md) | Which business plan to buy — pick in 2 minutes, the big providers compared, a 10-point check before you pay | 2 min to pick, 15 min to check |
 | [where-your-data-lives.md](where-your-data-lives.md) | One cloud storage, owned by the chapter, synced to your laptop from Level 2 | 15 min |
+| [dos-and-donts.md](dos-and-donts.md) | The short list next to your laptop: account, what goes in, how you work, connectors/plugins/skills, more autonomy | 2 min |
 | [three-levels.md](three-levels.md) | Level 1 chat project · Level 2 living folder with connectors · Level 3 Claude Code | 15 min to choose |
 
 ## The short version

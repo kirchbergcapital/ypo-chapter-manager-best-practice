@@ -35,6 +35,8 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 |---|---|
 | **Project (AI)** | A workspace in your AI tool with its own instructions and files, so every chat starts with your house rules. Names differ by tool `[verify]` |
 | **Connector** | A link that lets your AI read from (or write drafts to) another service, such as your mailbox, your cloud storage or Canva. What is available depends on tool and plan (as of Oct 2026, `[verify]`) |
+| **Plugin** | An add-on package for the Claude desktop app (Cowork) that can bring skills, connectors and small programs. Install only from Anthropic's lists or what your chapter's tool list allows |
+| **Skill** | A saved instruction file your AI uses for one kind of task, e.g. a weekly report. Use your own or Anthropic's |
 | **Training opt-out** | The setting that stops your AI provider from using your chats to train its models. Where it sits differs by tool — see [`01-foundations/paid-plan-and-training-off.md`](01-foundations/paid-plan-and-training-off.md) |
 | **Role account** | An email address and login that belong to the role, not the person — e.g. `manager@` or `chair@` at the chapter's domain, in the chapter's Microsoft 365 or Google Workspace. It passes to the next person with everything in it. Required by this kit: at least `manager@` for the Chapter Manager and `chair@` for the Chair. Your WhatsApp number is not a role account — it stays yours |
 | **Knowledge base** | The chapter's folder of short, dated files that your AI answers from: rules, event playbooks, contacts by role, decisions |
