@@ -48,7 +48,7 @@ Could you approve it once, or find 10 minutes with me to do it together? Thank y
 
 ### The screen says "Need admin approval"
 
-That is the one-time consent above, and it is normal: nobody has approved Claude for your organisation yet. You do it once; after that you and your colleagues connect with your usual chapter accounts. On Claude Team or Enterprise, the Claude owner first adds the connector in the organisation settings. The screen can also come back after an earlier approval, when Claude asks for more than was approved then — the same steps fix it.
+Microsoft asks for an admin's approval here — the consent above. On Claude Team or Enterprise, the owner enables the connector first. If you see this message, ask your Microsoft 365 admin to check the app and review the requested permissions, even if the app was approved before.
 
 - **Who is the admin?** The person with the *Global Administrator* role in your chapter's Microsoft 365 — Anthropic's guide asks for that role. Ask your IT contact or your Microsoft 365 provider who holds it. That person approves with their own admin account; nobody shares a login.
 - **The admin approves:** on that screen they click *Have an admin account? Sign in with that account*, sign in, tick *Consent on behalf of your organization* and accept. Then you connect again with your usual account.
