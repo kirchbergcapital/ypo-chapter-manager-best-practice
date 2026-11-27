@@ -11,7 +11,7 @@ Five prompts (41–45) for work that comes back every day, week or month, and ho
 2. **House rules first.** Every run starts by reading `house-rules.md`, so the draft sounds like you.
 3. **Unsure goes on top.** Anything the routine was not sure of — an owner, a date, a name it could not match — sits in a short note at the very top of the draft, for you to check before sending.
 4. **One log line per run** in `00-handover/log.md`: date, routine, what it produced.
-5. **Read the first three days of drafts in full.** After that, a quick look is enough. When you correct a draft, your assistant suggests a dated rule for `house-rules.md` (house rule 13); add it once you agree — the same mistake does not come back.
+5. **Read the first three days of drafts in full.** After that, a quick look is enough. When you correct a draft, your assistant suggests a dated rule for `house-rules.md` (house rule 13); after your yes it adds the line, or gives it to you to add — the same mistake does not come back.
 
 **On the tool list first.** Every connector a routine uses (mail, calendar, a task tool) is on your chapter's tool list — Part B of the [AI use one-pager](../06-chapter-rules/ai-use-one-pager.md). Forum content never goes into a routine.
 

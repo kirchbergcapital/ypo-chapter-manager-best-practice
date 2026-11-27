@@ -14,7 +14,7 @@ Print it or copy it into a note and tick as you go.
 - [ ] **7 · The QR code shows only in a terminal window.** In Claude Code, *"run npm run link"* — the app should refuse with "Run this in a terminal window". And `npm run listen` before you ever linked stops with "run npm run link first".
 - [ ] **8 · The self-chat test worked.** "Message yourself" → `npm run chats` lists *Me (message yourself)* → `npm run export -- --chat "Me" --days 1` gives a readable file in `exports` → a second export gives a new file ending in `-2.md`.
 - [ ] **9 · Forum chats are excluded, and only exact names export.** `never-export.txt` contains `forum`, and *"Show me the tests that prove a chat with 'Forum' in its name is refused for export and never written to ./data."* — both exist and pass. `npm run export -- --chat "e"` exports nothing and lists names instead. Add words for any other chat that must never leave your phone.
-- [ ] **10 · You know the way out.** You noted the laptop's name under WhatsApp → Settings → **Linked devices**; to log out, tap it → **Log out**. On your laptop: delete the app folder by hand. `npm run unlink` prints the same steps and deletes nothing.
+- [ ] **10 · You know the way out.** You noted the laptop's name under **Linked devices** (Android: ⋮ → Linked devices; iPhone: Settings → Linked Devices); to log out, tap it → **Log out**. On your laptop: delete the app folder by hand. `npm run unlink` prints the same steps and deletes nothing.
 
 All ten ticked? Then go to step 6 in the [README](README.md): export one real chat and let your assistant summarise it.
 Something did not tick? Paste the question and the answer into Claude Code and ask it to fix the app — then run `npm test` again.

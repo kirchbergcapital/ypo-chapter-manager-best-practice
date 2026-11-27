@@ -7,7 +7,7 @@ If your chapter has its own AI rules, or YPO sets a line, that applies first.
 
 | Do | Don't |
 |---|---|
-| Work in a **paid plan**. The goal is a business plan the chapter pays for ([which one](business-plan-checklist.md)); your own paid plan, training off, is the bridge until then | Put chapter data into a free plan, or into an officer's or member's private account |
+| Work in a **paid plan**, training off. Your own paid plan is enough for chapter facts and events; member data waits for a business plan the chapter pays for, with a DPA ([which one](business-plan-checklist.md)) | Put chapter data into a free plan, or into an officer's or member's private account |
 | **Switch training off** before your first real chat, and keep a screenshot. Claude: Settings → Privacy → *Help Improve our AI models* → off. ChatGPT: Settings → Data controls → *Improve the model for everyone* → off ([all tools](paid-plan-and-training-off.md)). No switch in a business plan? Screenshot the plan name | Assume it is off. On personal plans it can be on. Send a chapter chat as feedback (thumbs) |
 | **Two-step sign-in** (a code on your phone at each login) on the chapter accounts, and on your AI account where it offers it | Share one login. Each person has their own paid login |
 
@@ -16,7 +16,7 @@ If your chapter has its own AI rules, or YPO sets a line, that applies first.
 | Do | Don't |
 |---|---|
 | Chapter work: bylaws, events, budgets, mails, minutes. That is what your assistant is for | **Forum content.** Forum logistics yes (dates, places, headcounts, costs, deadlines). Forum content never |
-| Member data your role needs, as YPO's rules allow ([YPO data or chapter data](where-your-data-lives.md#ypo-data-or-chapter-data)) | Passwords, codes, card numbers. They belong in the chapter's password manager |
+| Member data your role needs, as YPO's rules allow, once the chapter's business plan runs ([YPO data or chapter data](where-your-data-lives.md#ypo-data-or-chapter-data)) | Passwords, codes, card numbers. They belong in the chapter's password manager |
 
 ## 3 · How you work
 
@@ -34,8 +34,8 @@ If your chapter has its own AI rules, or YPO sets a line, that applies first.
 |---|---|
 | **Good first connectors:** your chapter mailbox (drafts only), calendar, cloud drive, Canva — from your tool's own list ([how](../07-connectors-and-browser/README.md)) | Add a connector by a web address someone sent you. Ask your Chair first |
 | **Plugins** from Anthropic's own list: in Claude, **Plugins** in the sidebar (older menus: *Customize → Plugins*). Check who publishes it | Plugins from other lists or unknown publishers. Ask your Chair first |
-| **Skills** you wrote yourself, or from Anthropic. Read a skill a colleague shares before you switch it on | Skills downloaded from the internet |
-| When a connector asks what it may do, choose **read** or **drafts**; set sending to *Always ask* or *Blocked*. You can add more later | Click "allow all" or *Automatically approve* to make a question go away |
+| **Skills** from Anthropic's list or written by you — on the chapter's tool list first | Skills from the internet, or a colleague's skill you have not read |
+| When a connector asks what it may do, choose **read** or **drafts**; set sending and forwarding to *Blocked*. You can add more later | Click "allow all" or *Automatically approve* to make a question go away |
 | Anything new goes on the chapter's AI tool list first: one line, OK by the Chair ([the list](../06-chapter-rules/ai-use-one-pager.md)) | Add apps, extensions or automations nobody else knows about |
 
 ChatGPT: the same rules apply to its apps and custom GPTs.

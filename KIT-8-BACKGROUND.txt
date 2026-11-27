@@ -550,8 +550,9 @@ Purpose: what changed between versions of this kit, and what is planned next.
 More from Vienna:
 - **"Need admin approval"** when connecting Microsoft 365: who the admin is and what they click ([email connectors](07-connectors-and-browser/email-connectors.md)).
 - **House rule 13:** after a correction, your assistant suggests a dated rule — add the line to your own `house-rules.md`.
-- **Already using the kit?** House rule 13 has a new last line: add it to your own `house-rules.md`.
-- Checked by two AI reviewers: plugin menu (*Plugins* in the sidebar), WhatsApp on Android (⋮ → *Linked devices*), connector sending set to *Always ask* or *Blocked*, the admin approves Microsoft 365 with their own sign-in, a peer's file is checked before you save it.
+- **Your own paid plan** is enough for chapter facts and events; member data waits for the chapter's business plan with a DPA (one-pager rule 2, do's and don'ts).
+- **Already using the kit?** House rule 13 has a new last line: replace the last line of rule 13 in your own `house-rules.md` with it.
+- Checked by two AI reviewers: plugin menu (*Plugins* in the sidebar), WhatsApp on Android (⋮ → *Linked devices*), connector sending set to *Blocked*, the admin approves Microsoft 365 with their own sign-in, a peer's file is checked before you save it.
 - A file from another Chapter Manager ([knowledge base § 3](04-knowledge-base/knowledge-base.md)); *context window* in the glossary; WhatsApp Business linking; where Work is in ChatGPT; the one-pager names invoices and payment reminders.
 
 ## v0.5

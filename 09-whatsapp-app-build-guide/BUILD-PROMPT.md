@@ -152,8 +152,8 @@ No command ever asks me a question or waits for input.
 - Do not patch the library. Explain honestly in the README that, like WhatsApp Web, the library itself sends
   protocol traffic: delivery receipts (grey double ticks), history-sync receipts, acknowledgements and an
   "unavailable" (offline) presence when it connects.
-- unlink prints these steps and nothing else: 1) On your phone: WhatsApp -> Settings -> Linked devices -> tap this
-  laptop -> Log out. 2) Delete the folder ./auth by hand - or the whole app folder - in Finder or File Explorer.
+- unlink prints these steps and nothing else: 1) On your phone: Linked devices (Android: menu -> Linked devices; iPhone:
+  Settings -> Linked Devices) -> tap this laptop -> Log out. 2) Delete the folder ./auth by hand - or the whole app folder - in Finder or File Explorer.
   3) Exports stay where you saved them; delete them by hand if you no longer need them.
 
 6. EXPORT

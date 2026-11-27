@@ -14,7 +14,7 @@ graphics and handover notes.
 
 1. Forum is sacred. We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
    *In short: **Forum logistics yes. Forum content never.** Chapter matters — a conduct case too — are chapter business.*
-2. **We use paid AI plans only, with training on our data switched off — a business plan with a data processing agreement where the chapter pays.**
+2. **We use paid AI plans only, with training on our data switched off. Member data goes only into a business plan with a data processing agreement that the chapter pays for.**
 3. **A human sends.** AI drafts; a person reads, edits and sends. No automatic sending, no bulk WhatsApp.
 4. **Role accounts, with two-factor sign-in.** Chapter mail and files live in role accounts in {{Microsoft 365 or Google Workspace}} — at least
    manager@{{chapter-domain}} for the Chapter Manager and chair@{{chapter-domain}} for the Chair — and in one folder owned by the chapter
@@ -31,7 +31,7 @@ graphics and handover notes.
 
 We work with the tools on this list — for chapter work and chapter data. That keeps our data where the chapter knows it, pays for it and can hand it over.
 
-**Something new?** Another app (Airtable, Notion, a survey or newsletter tool), a plugin or browser extension, a custom GPT, a connector, an automation, a self-built app: it goes on this list **first** — one line, OK by the Chair. Plugins come only from the AI provider's own list (for Claude: Anthropic's); skills from that list or written by us. Free plans and officers' or members' private accounts are not used for chapter data; the Chapter Manager's own paid plan, training off, is a bridge until the chapter pays.
+**Something new?** Another app (Airtable, Notion, a survey or newsletter tool), a plugin or browser extension, a custom GPT, a connector, an automation, a self-built app: it goes on this list **first** — one line, OK by the Chair. Plugins come only from the AI provider's own list (for Claude: Anthropic's); skills from that list or written by us. Free plans and officers' or members' private accounts are not used for chapter data. Until the chapter pays, the Chapter Manager's own paid plan (training off) may hold chapter facts and events, not member data.
 
 | Tool | What we use it for | Account / plan | Which data it may see | OK by · date |
 |---|---|---|---|---|

@@ -40,7 +40,7 @@ I use it to read mail and to create reply drafts in that mailbox. I send every m
 I use it with the chapter's work account only.
 Microsoft 365 needs a one-time consent from a global admin before the connector can be used; Anthropic's guide for admins is here:
 https://support.claude.com/en/articles/12542951
-Could you check which permissions it asks for and, if you can, limit it to my account? Then approve it with your own admin sign-in — or find 10 minutes with me to do it together. Thank you!
+With the chapter account's rights it can reach Outlook mail, calendar, OneDrive, SharePoint and Teams. Could you check the permissions, set "Assignment required" to Yes on both apps — M365 MCP Server for Claude and M365 MCP Client for Claude — and assign only my account? Then approve it with your own admin sign-in, or find 10 minutes with me to do it together. Thank you!
 {{YOUR_NAME}}
 ```
 
@@ -51,7 +51,7 @@ Could you check which permissions it asks for and, if you can, limit it to my ac
 Microsoft asks for an admin's approval here — the consent above. On Claude Team or Enterprise, the owner enables the connector first. If you see this message, ask your Microsoft 365 admin to check the app and review the requested permissions, even if the app was approved before.
 
 - **Who is the admin?** The person with the *Global Administrator* role in your chapter's Microsoft 365 — Anthropic's guide asks for that role. Ask your IT contact or your Microsoft 365 provider who holds it. That person approves with their own admin account; nobody shares a login.
-- **The admin approves:** they read the permissions the screen lists first. Then, with their own admin sign-in, they approve on that screen (*Have an admin account? Sign in with that account*) or in Microsoft Entra, following Anthropic's guide for admins. To keep it to your account, they can set the app to *Assignment required* in Entra and assign only you `[verify]`. Then you connect again with your usual account.
+- **The admin approves:** they read the permissions the screen lists first. Then, with their own admin sign-in, they approve on that screen (*Have an admin account? Sign in with that account*) or in Microsoft Entra, following Anthropic's guide for admins. With the chapter account's rights the connector can reach mail, calendar, OneDrive, SharePoint and Teams. To keep it to your account, they set *Assignment required* to *Yes* on **both** Entra apps, *M365 MCP Server for Claude* and *M365 MCP Client for Claude*, and assign only you. Then you connect again with your usual account.
 - **The admin has no Claude account:** they can approve in Microsoft Entra instead — send them Anthropic's guide for admins: https://support.claude.com/en/articles/12542951
 - Your AI never needs the admin login. Never paste it into a chat.
 - Your provider also asks you to accept a *delegated admin* request? Claude does not need it.
@@ -69,7 +69,7 @@ Microsoft asks for an admin's approval here — the consent above. On Claude Tea
 
 ## Keep it at drafts
 
-The connectors can send. Your house rules say *draft, never send* — a house rule is a request, a setting is a lock. In Claude's connector settings, set sending, replying and forwarding to *Always ask* or *Blocked* `[verify the menu name]`, and never choose *Automatically approve* (Claude in Chrome offers it). Scheduled tasks use the same settings. In ChatGPT, ask it to create drafts only; on Business the admin decides which write actions are allowed.
+The connectors can send. Your house rules say *draft, never send* — a house rule is a request, a setting is a lock. In Claude's connector settings, set sending, sending drafts, replying, forwarding and automatic replies to *Blocked* `[verify the menu name]` — *Always ask* is not enough: after one click, Claude sends. On Team or Enterprise, ask the workspace admin to block them there. Allow reading and, where offered, creating drafts. Never choose *Automatically approve* in Claude in Chrome. Scheduled tasks use the same settings. In ChatGPT, ask it to create drafts only; on Business the admin decides which write actions are allowed.
 Put this line into your `house-rules.md` as well, under *Drafts only*:
 
 ```

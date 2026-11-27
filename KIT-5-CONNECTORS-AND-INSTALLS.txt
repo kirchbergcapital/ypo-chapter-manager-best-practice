@@ -110,7 +110,7 @@ I use it to read mail and to create reply drafts in that mailbox. I send every m
 I use it with the chapter's work account only.
 Microsoft 365 needs a one-time consent from a global admin before the connector can be used; Anthropic's guide for admins is here:
 https://support.claude.com/en/articles/12542951
-Could you check which permissions it asks for and, if you can, limit it to my account? Then approve it with your own admin sign-in — or find 10 minutes with me to do it together. Thank you!
+With the chapter account's rights it can reach Outlook mail, calendar, OneDrive, SharePoint and Teams. Could you check the permissions, set "Assignment required" to Yes on both apps — M365 MCP Server for Claude and M365 MCP Client for Claude — and assign only my account? Then approve it with your own admin sign-in, or find 10 minutes with me to do it together. Thank you!
 {{YOUR_NAME}}
 ```
 
@@ -121,7 +121,7 @@ Could you check which permissions it asks for and, if you can, limit it to my ac
 Microsoft asks for an admin's approval here — the consent above. On Claude Team or Enterprise, the owner enables the connector first. If you see this message, ask your Microsoft 365 admin to check the app and review the requested permissions, even if the app was approved before.
 
 - **Who is the admin?** The person with the *Global Administrator* role in your chapter's Microsoft 365 — Anthropic's guide asks for that role. Ask your IT contact or your Microsoft 365 provider who holds it. That person approves with their own admin account; nobody shares a login.
-- **The admin approves:** they read the permissions the screen lists first. Then, with their own admin sign-in, they approve on that screen (*Have an admin account? Sign in with that account*) or in Microsoft Entra, following Anthropic's guide for admins. To keep it to your account, they can set the app to *Assignment required* in Entra and assign only you `[verify]`. Then you connect again with your usual account.
+- **The admin approves:** they read the permissions the screen lists first. Then, with their own admin sign-in, they approve on that screen (*Have an admin account? Sign in with that account*) or in Microsoft Entra, following Anthropic's guide for admins. With the chapter account's rights the connector can reach mail, calendar, OneDrive, SharePoint and Teams. To keep it to your account, they set *Assignment required* to *Yes* on **both** Entra apps, *M365 MCP Server for Claude* and *M365 MCP Client for Claude*, and assign only you. Then you connect again with your usual account.
 - **The admin has no Claude account:** they can approve in Microsoft Entra instead — send them Anthropic's guide for admins: https://support.claude.com/en/articles/12542951
 - Your AI never needs the admin login. Never paste it into a chat.
 - Your provider also asks you to accept a *delegated admin* request? Claude does not need it.
@@ -139,7 +139,7 @@ Microsoft asks for an admin's approval here — the consent above. On Claude Tea
 
 ## Keep it at drafts
 
-The connectors can send. Your house rules say *draft, never send* — a house rule is a request, a setting is a lock. In Claude's connector settings, set sending, replying and forwarding to *Always ask* or *Blocked* `[verify the menu name]`, and never choose *Automatically approve* (Claude in Chrome offers it). Scheduled tasks use the same settings. In ChatGPT, ask it to create drafts only; on Business the admin decides which write actions are allowed.
+The connectors can send. Your house rules say *draft, never send* — a house rule is a request, a setting is a lock. In Claude's connector settings, set sending, sending drafts, replying, forwarding and automatic replies to *Blocked* `[verify the menu name]` — *Always ask* is not enough: after one click, Claude sends. On Team or Enterprise, ask the workspace admin to block them there. Allow reading and, where offered, creating drafts. Never choose *Automatically approve* in Claude in Chrome. Scheduled tasks use the same settings. In ChatGPT, ask it to create drafts only; on Business the admin decides which write actions are allowed.
 Put this line into your `house-rules.md` as well, under *Drafts only*:
 
 ```
@@ -534,7 +534,7 @@ Install the desktop app of your tool from the provider's own website and sign in
 
 | Tool | What you need | Source |
 |---|---|---|
-| ChatGPT | The ChatGPT desktop app for Mac or Windows; *Work* is the mode that works with files on your laptop, and *Codex* sits in the same app. Work comes with paid plans except Free and Go; in Enterprise and Edu workspaces it is on unless your admin turned it off. No *Work*? Your plan or workspace may not include it — ask your admin; *Codex* in the same app also works with a folder `[verify]` | [OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) |
+| ChatGPT | The ChatGPT desktop app for Mac or Windows; *Work* is the mode that works with files on your laptop, and *Codex* sits in the same app. Work comes with paid plans except Free and Go; in eligible Enterprise and Edu workspaces (with EKM) it is on for the default role unless the admin turned it off; if Work or folder access is missing, ask your admin. No *Work*? Your plan or workspace may not include it — ask your admin; *Codex* in the same app also works with a folder `[verify]` | [OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) |
 | Claude | The Claude desktop app for Mac or Windows; *Cowork* works with a folder on your laptop, on paid plans | [Claude help](https://support.claude.com/en/articles/13345190) |
 
 **Works if:** the app opens and you see an empty chat.
@@ -685,7 +685,7 @@ Five prompts (41–45) for work that comes back every day, week or month, and ho
 2. **House rules first.** Every run starts by reading `house-rules.md`, so the draft sounds like you.
 3. **Unsure goes on top.** Anything the routine was not sure of — an owner, a date, a name it could not match — sits in a short note at the very top of the draft, for you to check before sending.
 4. **One log line per run** in `00-handover/log.md`: date, routine, what it produced.
-5. **Read the first three days of drafts in full.** After that, a quick look is enough. When you correct a draft, your assistant suggests a dated rule for `house-rules.md` (house rule 13); add it once you agree — the same mistake does not come back.
+5. **Read the first three days of drafts in full.** After that, a quick look is enough. When you correct a draft, your assistant suggests a dated rule for `house-rules.md` (house rule 13); after your yes it adds the line, or gives it to you to add — the same mistake does not come back.
 
 **On the tool list first.** Every connector a routine uses (mail, calendar, a task tool) is on your chapter's tool list — Part B of the [AI use one-pager](../06-chapter-rules/ai-use-one-pager.md). Forum content never goes into a routine.
 

@@ -310,7 +310,7 @@ and an update of `00-handover/setup-progress.md`. Before Station 2 exists, colle
 ### Station 1 — Paid plan, training off
 
 - Read [`01-foundations/paid-plan-and-training-off.md`](01-foundations/paid-plan-and-training-off.md). Point them to the row for their tool and the exact switch name.
-- **A business plan is ideal; a paid personal plan with training off is enough to start.** Choosing one: "Pick in 2 minutes" in [`01-foundations/business-plan-checklist.md`](01-foundations/business-plan-checklist.md) (in KIT-2-FOLDER-AND-FACTS.txt) — prices and limits only from that page, with its date, never from memory.
+- **A paid personal plan, training off, is enough to start; member data waits for the chapter's business plan with a DPA.** Choosing one: "Pick in 2 minutes" in [`01-foundations/business-plan-checklist.md`](01-foundations/business-plan-checklist.md) (in KIT-2-FOLDER-AND-FACTS.txt) — prices and limits only from that page, with its date, never from memory.
 - **No paid plan yet:** who pays is the chapter's decision, ideally — the one-pager in Station 8 is written for it. Until the plan runs, explain the path and stop here.
 - They switch training off themselves. Where the switch sits `[verify]`: ChatGPT — profile picture → Settings → Data controls · Claude — your name → Settings → Privacy · other tools — their row in the kit file.
 - Then a screenshot: Windows **Win+Shift+S** (it lands in Pictures → Screenshots `[verify]`) · Mac **Cmd+Shift+4** (it lands on the desktop).
@@ -323,9 +323,9 @@ and an update of `00-handover/setup-progress.md`. Before Station 2 exists, colle
 
 - **First: the chapter accounts** (interview question 4). The kit's second prerequisite: Microsoft 365 or Google Workspace with at least `manager@` for the Chapter Manager and `chair@` for the Chair. They stay required; only today's start does not wait for them.
   - **They exist** → build in the storage of `manager@` and give `chair@` access.
-  - **Not yet, or not sure** → the order, said plainly: *"Start today in your own OneDrive or Google Drive — the bridge. Ask your Chair for manager@ and chair@ the same day. We move the folder in one step later."* The sentence for the Chair: *"Ask your Chair: the chapter needs Microsoft 365 or Google Workspace with at least two accounts — manager@ and chair@. That is what makes the handover work and lets the Chair read the chapter folder."*
+  - **Not yet, or not sure** → the order, said plainly: *"Start today in your own OneDrive or Google Drive — the bridge. Ask your Chair for manager@ and chair@ the same day. We move the folder in one step later."* The sentence for the Chair: *"Ask your Chair: the chapter needs Microsoft 365 or Google Workspace with at least two accounts — manager@ and chair@. That makes the handover work."*
     Draft the request with the follow-up prompt in [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md) (in KIT-2-FOLDER-AND-FACTS.txt); the Chapter Manager sends it. Add "chapter accounts manager@ + chair@, then move the folder into manager@" as an open item.
-- **The one-step move, once `manager@` exists:** [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md) (in KIT-2-FOLDER-AND-FACTS.txt) § *Moving the folder into manager@* (in `KIT-2-FOLDER-AND-FACTS.txt`).
+- **The one-step move, once `manager@` exists:** [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md) (in KIT-2-FOLDER-AND-FACTS.txt) § *Moving the folder into manager@*.
 - Read [`01-foundations/where-your-data-lives.md`](01-foundations/where-your-data-lives.md) (in KIT-2-FOLDER-AND-FACTS.txt) with them in two minutes: one storage, owned by the chapter, the Chair and the Chapter Manager as admins.
 - **Which drive — say it plainly.** Microsoft: *"Use the OneDrive of your chapter login — the one you open at office.com with the same address as your chapter Outlook. Windows often shows two OneDrives."* Google: *"Use the Google Drive of the chapter's Google account."*
 - **Download test — mode A, here for the first time:** create a tiny file `download-test.md` and ask *"Can you see a download link for download-test.md and save it?"* Do this before you hand over any file to save.
@@ -366,9 +366,9 @@ and an update of `00-handover/setup-progress.md`. Before Station 2 exists, colle
 
 ### Station 5 — First mail handoff
 
-- **One real mail** — in their daily project or folder session from Station 3, not in this setup chat, with the prompt from Lab B in [`02-your-assistant/lab-build-your-assistant.md`](02-your-assistant/lab-build-your-assistant.md) (in KIT-2-FOLDER-AND-FACTS.txt). The pattern: [`03-communication/email-handoff.md`](03-communication/email-handoff.md) (in KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt).
+- **One real mail** — in their daily project or folder session from Station 3, not in this setup chat; on a personal plan, a mail without member data. Use the prompt from Lab B in [`02-your-assistant/lab-build-your-assistant.md`](02-your-assistant/lab-build-your-assistant.md) (in KIT-2-FOLDER-AND-FACTS.txt). The pattern: [`03-communication/email-handoff.md`](03-communication/email-handoff.md) (in KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt).
 - **To copy a real mail with sender and date:** *"In Outlook, click Forward, copy everything including the header lines, then discard the forward."* Gmail works the same way with Forward.
-- **Practice pack:** [`02-your-assistant/lab-b-practice-pack.md`](02-your-assistant/lab-b-practice-pack.md) — the prompt, the fictional mail and the two bylaws sections it needs, in one block. In chat mode, show the practice pack in one message instead of sending the Chapter Manager to find files. It is the default quick win (§ 4) and the right step when the test in Station 3 wobbled.
+- **Practice pack:** [`02-your-assistant/lab-b-practice-pack.md`](02-your-assistant/lab-b-practice-pack.md) — the prompt, the fictional mail and the two bylaws sections it needs, in one block. In chat mode, show it in one message. It is the default quick win (§ 4) and the right step when the test in Station 3 wobbled.
 - **Branch by mail world** (details and sources in [`07-connectors-and-browser/email-connectors.md`](07-connectors-and-browser/email-connectors.md) (in KIT-5-CONNECTORS-AND-INSTALLS.txt)):
 
 | Mail world | Route today | Later (Station 9) |
