@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 1 OF 9: KIT-START.txt
 Contents: the starter file: this AI guide, Stations 1 and 3 with the house rules, the Lab B practice pack (picking a business plan: file 2; more prompts: file 4).
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-23 from 6 files.
+Built 2026-11-27 from 6 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: the kit comes in small chat files, so each one fits into a chat. This starter file holds the guide, Stations 1 and 3 and the Lab B practice pack; picking a business plan (Station 1) is in KIT-2, the other quick-win prompts are in KIT-4. Start with the file AI-GUIDE.md below and follow it. Each file starts with a line '===== FILE: <path> ====='. The guide's kit directory names the chat file that holds every other file — ask for that one chat file only when a step needs it, as the guide says in § 0 b. Quote prompts word for word.
