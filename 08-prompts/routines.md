@@ -11,7 +11,7 @@ Five prompts (41–45) for work that comes back every day, week or month, and ho
 2. **House rules first.** Every run starts by reading `house-rules.md`, so the draft sounds like you.
 3. **Unsure goes on top.** Anything the routine was not sure of — an owner, a date, a name it could not match — sits in a short note at the very top of the draft, for you to check before sending.
 4. **One log line per run** in `00-handover/log.md`: date, routine, what it produced.
-5. **Read the first three days of drafts in full.** After that, a quick look is enough. When you correct a draft, put the correction into `house-rules.md` with the date — the same mistake does not come back.
+5. **Read the first three days of drafts in full.** After that, a quick look is enough. When you correct a draft, your assistant suggests a dated rule for `house-rules.md` (house rule 13); add it once you agree — the same mistake does not come back.
 
 **On the tool list first.** Every connector a routine uses (mail, calendar, a task tool) is on your chapter's tool list — Part B of the [AI use one-pager](../06-chapter-rules/ai-use-one-pager.md). Forum content never goes into a routine.
 
@@ -38,7 +38,7 @@ A routine only sees what is connected or saved. If the data is not there, the be
 1. In the Claude desktop app: **Scheduled** in the left sidebar → **New task** → *Create with Claude* (describe it in your words) or *Set up manually*.
 2. Give it a name, paste the prompt, choose how often: hourly, daily, weekly, on weekdays, or manually.
 3. **Choose your chapter folder** (the field *Which folder Claude should work in*). All five routines here read it. Where offered, *Require this computer* then switches on: the task runs only while your computer is awake and the Claude app is open. Save.
-4. **Where it runs depends on your plan.** Tasks without a folder run in the cloud, also while your computer sleeps or the app is closed. On Pro, Max and Ultra — and on Team and Enterprise with Cowork in the cloud turned on — tasks you create on your computer move to the cloud automatically, and *Require this computer* is offered only to organizations with computer access turned on. How that works with a folder task: `[verify]` on the source page. So check the first run: if it could not read your chapter folder, keep running the prompt by hand for now.
+4. **Where it runs depends on your plan.** Tasks without a folder run in the cloud, also while your computer sleeps or the app is closed. On Pro, Max and Ultra — and on Team and Enterprise with Cowork in the cloud turned on — tasks you create on your computer move to the cloud automatically, and *Require this computer* is offered only to organizations with computer access turned on. A cloud task can run while your computer is off, but it reaches a folder on that computer only while the Claude app is open `[verify]`. So check the first run: if it could not read your chapter folder, keep running the prompt by hand for now.
 5. A connector set to *Always ask* may wait for you or skip that step — check the first run.
 
 **ChatGPT** — scheduling there is still changing:

@@ -16,8 +16,8 @@ First move, every time: paste the exact message into Claude Code in the app fold
 
 | What you see | What helps |
 |---|---|
-| The QR code expires before you scan it, or the app stops after three codes | Open WhatsApp → Settings → **Linked devices** → **Link a device** on your phone **first**, then run `npm run link` and scan straight away |
-| "Couldn't link device" on the phone | Many phones have both **WhatsApp** and **WhatsApp Business**. On your main phone, open the app that holds the number you want to read. In WhatsApp Business: Android ⋮ (three dots) → **Linked devices** → **Link a device**; iPhone **Settings** → **Linked Devices** → **Link a Device**. Then scan the new QR code ([WhatsApp help](https://faq.whatsapp.com/878854700132604)) |
+| The QR code expires before you scan it, or the app stops after three codes | On your phone, open **Linked devices** **first** (Android: ⋮ → **Linked devices**; iPhone: **Settings** → **Linked Devices**) → **Link a device**, then run `npm run link` and scan straight away |
+| "Couldn't link device" on the phone | Many phones have both **WhatsApp** and **WhatsApp Business**. On your main phone, open the app that holds the number you want to read. In WhatsApp Business: Android ⋮ (three dots) → **Linked devices** → **Link a device**; iPhone **Settings** → **Linked Devices** → **Link a Device**. Then run `npm run link` again and scan the fresh QR code ([WhatsApp help](https://faq.whatsapp.com/878854700132604)) |
 | No QR code appears at all | The app should draw it directly in the window. Paste what you see into Claude Code and ask it to check that the QR code is written with `process.stdout.write`, not `console.log` |
 | Two attempts did not work | Take a break from the app and use WhatsApp's own "Export chat" (stage 1 in [`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)) for today — same result, one chat at a time. Try again later with the rows below |
 | "Run this in a terminal window" | You started `link` inside Claude Code or the desktop app. Open *Terminal* (macOS) or *PowerShell* (Windows), go to the app folder, run it there |

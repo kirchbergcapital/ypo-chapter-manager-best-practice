@@ -11,7 +11,7 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules   <- this file
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (prompts 1–40) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45)
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test and laptop check, routines on a schedule (prompts 41–45)
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
@@ -523,14 +523,14 @@ At the top write: Source: {{FILE_NAME}}, version/date {{DATE}}, converted {{TODA
 
 Then check three sections against the PDF yourself. If they match, the copy is good.
 
-**A process or policy file from another Chapter Manager.** Save it in `06-communication/inbox-filed` first — it is a source — and ask:
+**A process or policy file from another Chapter Manager.** Check it yourself **before** you save it or show it to your AI: may your chapter use it, and is it free of names, member data, passwords and Forum content? If not, ask the sender for a clean version. Save only the clean copy in `06-communication/inbox-filed` — it is a source — and ask:
 
 ```
 Read {{FILE}}. It comes from another chapter; it is not our rule yet.
-Compare it with our files: what could we take over, what differs for us, and does it name any person? Change nothing until I say yes.
+Compare it with our files: what could we take over, and what differs for us? Change nothing until I say yes.
 ```
 
-Only the version you agree goes into `02-chapter-knowledge`. A copy of a YPO policy: YPO's current version wins. Sharing your own: take out names first.
+Only the version you agree goes into `02-chapter-knowledge`. A copy of a YPO policy: YPO's current version wins. Sharing your own: the same check before you send it.
 
 ## 4 · One truth
 
@@ -1239,7 +1239,7 @@ After you send it, add one line to `00-handover/log.md`:
 
 ## Why
 
-AI can take routine work off our Chapter Manager and our officers — mailings, invoices and payment reminders, drafts, minutes and reporting.
+AI can take routine work off our Chapter Manager and our officers — it prepares mailings, invoices and payment reminders, drafts, minutes and reports; a person checks and sends each one.
 We encourage everyone in a chapter role to use it — for drafts, summaries of our own documents, checklists,
 graphics and handover notes.
 
@@ -1264,7 +1264,7 @@ graphics and handover notes.
 
 We work with the tools on this list — for chapter work and chapter data. That keeps our data where the chapter knows it, pays for it and can hand it over.
 
-**Something new?** Another app (Airtable, Notion, a survey or newsletter tool), a plugin or browser extension, a custom GPT, a connector, an automation, a self-built app: it goes on this list **first** — one line, OK by the Chair. Plugins and skills come only from the AI provider's own lists (for Claude: Anthropic's). Free plans and private accounts are not used for chapter data.
+**Something new?** Another app (Airtable, Notion, a survey or newsletter tool), a plugin or browser extension, a custom GPT, a connector, an automation, a self-built app: it goes on this list **first** — one line, OK by the Chair. Plugins come only from the AI provider's own list (for Claude: Anthropic's); skills from that list or written by us. Free plans and officers' or members' private accounts are not used for chapter data; the Chapter Manager's own paid plan, training off, is a bridge until the chapter pays.
 
 | Tool | What we use it for | Account / plan | Which data it may see | OK by · date |
 |---|---|---|---|---|

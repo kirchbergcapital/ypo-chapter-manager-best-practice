@@ -35,7 +35,7 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 |---|---|
 | **Project (AI)** | A workspace in your AI tool with its own instructions and files, so every chat starts with your house rules. Names differ by tool `[verify]` |
 | **Connector** | A link that lets your AI read from (or write drafts to) another service, such as your mailbox, your cloud storage or Canva. What is available depends on tool and plan (as of Oct 2026, `[verify]`) |
-| **Plugin** | An add-on package for the Claude desktop app (Cowork) that can bring skills, connectors and small programs. Install only from Anthropic's lists or what your chapter's tool list allows |
+| **Plugin** | An add-on package for Claude that can bring skills, connectors and small programs. Install only from Anthropic's list, once it is on your chapter's tool list |
 | **Skill** | A saved instruction file your AI uses for one kind of task, e.g. a weekly report. Use your own or Anthropic's |
 | **Training opt-out** | The setting that stops your AI provider from using your chats to train its models. Where it sits differs by tool — see [`01-foundations/paid-plan-and-training-off.md`](01-foundations/paid-plan-and-training-off.md) |
 | **Role account** | An email address and login that belong to the role, not the person — e.g. `manager@` or `chair@` at the chapter's domain, in the chapter's Microsoft 365 or Google Workspace. It passes to the next person with everything in it. Required by this kit: at least `manager@` for the Chapter Manager and `chair@` for the Chair. Your WhatsApp number is not a role account — it stays yours |
@@ -53,7 +53,7 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 | **UNCHECKED** | The assistant could not open the file or did not look. Never the same as "fine" |
 | **`[verify]`** | A fact nobody has checked yet. Check it before it goes to anyone |
 | **Checkpoint** | A short refresh of `00-handover/handover.md`: what is set up, what is open, which files changed |
-| **Context window** | How much one chat can work with at once. Long chats get summarised or reach a length limit; your folder keeps everything. Before that, ask for a checkpoint and open a new chat. A usage limit is different: your use across all chats |
+| **Context window** | How much one chat can work with at once. Long chats get summarised or reach a length limit; your folder keeps what was saved. Before that, ask for a checkpoint and open a new chat. A usage limit is different: your use across all chats |
 | **Level 1 · 2 · 3** | How deeply you set up your AI: chat project · living folder · Claude Code in your folder (a repository is optional) — see [`01-foundations/three-levels.md`](01-foundations/three-levels.md) |
 | **Hours line** | One line per finished task in a fixed form: `HOURS · YYYY-MM-DD · <area> · <event folder or -> · <task in a few words, roles not names> · <minutes> min · suggested\|confirmed`. Your assistant suggests the minutes; only lines you confirm count. They go into `hours.csv` in your own folder — see [`10-time-by-area/`](10-time-by-area/) |
 | **Area** | One kind of work your hours are counted under, such as "Member communication", "Learning and chapter events" or "Forum logistics". About ten, in your own words, one per line in `areas.txt` in your own folder — see [`10-time-by-area/areas-template.txt`](10-time-by-area/areas-template.txt) |

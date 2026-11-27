@@ -16,7 +16,7 @@ The kit is public. One of these three ways always works — use the first one th
 | Your situation | What you do |
 |---|---|
 | **(a) You can open links** | Every kit file sits at `https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/` + its path. Fetch the files yourself when a station or a question needs them — the directory below lists them all. Links inside the files are relative: resolve them from the file's own link. Do not ask the Chapter Manager to upload or paste kit files. If links fail, see the rule below the table and switch to (b) |
-| **(b) You cannot open links** | Work from the chat files — the kit cut into eight small files, so each one fits into a chat. Ask for the starter file first, in these words: *"I can't open links here. Please download this one file — no account needed: https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-START.txt (right-click → "Save link as", or open it and save it). It is about 100 KB. Then attach it to this chat with the paperclip or by drag and drop — please don't paste its text into the message box, that is too long for a chat."* `KIT-START.txt` holds this guide, Stations 1 and 3 and the Lab B practice pack; its kit directory names the chat file that holds every other file. When a step needs a file you do not have, ask for that one chat file the same way, by its name and link — for example `KIT-2-FOLDER-AND-FACTS.txt` when they want to pick a business plan (Station 1), or before Station 2. One chat file at a time, only when the step needs it; one that is already attached in this conversation, you use. |
+| **(b) You cannot open links** | Work from the chat files — the kit cut into nine small files, so each one fits into a chat. Ask for the starter file first, in these words: *"I can't open links here. Please download this one file — no account needed: https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-START.txt (right-click → "Save link as", or open it and save it). It is about 100 KB. Then attach it to this chat with the paperclip or by drag and drop — please don't paste its text into the message box, that is too long for a chat."* `KIT-START.txt` holds this guide, Stations 1 and 3 and the Lab B practice pack; its kit directory names the chat file that holds every other file. When a step needs a file you do not have, ask for that one chat file the same way, by its name and link — for example `KIT-2-FOLDER-AND-FACTS.txt` when they want to pick a business plan (Station 1), or before Station 2. One chat file at a time, only when the step needs it; one that is already attached in this conversation, you use. |
 | **(c) You work in a folder on their computer** | Read the files locally, by the paths below — the unzipped kit (in a subfolder `_kit` — from `_kit.zip` — or a folder called `ypo-chapter-manager-best-practice-main`), or the chat files saved in one folder (start with `KIT-START.txt`; its kit directory names the file that holds each kit file). File size does not matter here: read what the step needs |
 
 **A link that does not open is not a missing file.** Don't search the web or rebuild it: name the chat file that holds it; they get it from wherever `KIT-START.txt` came from and save it next to it.
@@ -213,7 +213,7 @@ Then pick one mode and tell the Chapter Manager in one line which one it is, tog
 
 > **A `.md` file opens in another app?** It is plain text: right-click → Open With → TextEdit (Mac) or Notepad (Windows).
 
-In mode B you still do not touch their accounts: logins, plan changes, privacy switches and admin consents are clicks the Chapter Manager makes.
+In mode B you still do not touch their accounts: logins, plan changes and privacy switches are their clicks; admin consents, the admin's.
 If you are unsure which mode applies, ask: *"Can I create a file on your computer from here, or do you save the files yourself?"*
 
 ## 3 · Start: has this begun before?
@@ -430,7 +430,7 @@ The template comes with the template folder: [`02-your-assistant/template-folder
 
 ## 7 · Rules during the setup
 
-1. **Never ask for passwords**, codes, recovery keys or QR codes, and never type them. Logins, payments, privacy switches and admin consents are the Chapter Manager's own clicks.
+1. **Never ask for passwords**, codes, recovery keys or QR codes, and never type them. Logins, payments and privacy switches are the Chapter Manager's own clicks; admin consents, the admin's.
    If they paste a password by mistake, say so straight away and suggest they change it.
 2. **No member data in the setup.** Practise with the fictional Lakeside Chapter in [`examples/`](examples/) — quickest with the [Lab B practice pack](02-your-assistant/lab-b-practice-pack.md). Real mails and chapter files go into their daily project or folder session — after Stations 1 and 3.
 3. **Forum is sacred.** We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.

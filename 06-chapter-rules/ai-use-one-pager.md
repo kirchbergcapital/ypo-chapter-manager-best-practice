@@ -6,7 +6,7 @@
 
 ## Why
 
-AI can take routine work off our Chapter Manager and our officers — mailings, invoices and payment reminders, drafts, minutes and reporting.
+AI can take routine work off our Chapter Manager and our officers — it prepares mailings, invoices and payment reminders, drafts, minutes and reports; a person checks and sends each one.
 We encourage everyone in a chapter role to use it — for drafts, summaries of our own documents, checklists,
 graphics and handover notes.
 
@@ -31,7 +31,7 @@ graphics and handover notes.
 
 We work with the tools on this list — for chapter work and chapter data. That keeps our data where the chapter knows it, pays for it and can hand it over.
 
-**Something new?** Another app (Airtable, Notion, a survey or newsletter tool), a plugin or browser extension, a custom GPT, a connector, an automation, a self-built app: it goes on this list **first** — one line, OK by the Chair. Plugins and skills come only from the AI provider's own lists (for Claude: Anthropic's). Free plans and private accounts are not used for chapter data.
+**Something new?** Another app (Airtable, Notion, a survey or newsletter tool), a plugin or browser extension, a custom GPT, a connector, an automation, a self-built app: it goes on this list **first** — one line, OK by the Chair. Plugins come only from the AI provider's own list (for Claude: Anthropic's); skills from that list or written by us. Free plans and officers' or members' private accounts are not used for chapter data; the Chapter Manager's own paid plan, training off, is a bridge until the chapter pays.
 
 | Tool | What we use it for | Account / plan | Which data it may see | OK by · date |
 |---|---|---|---|---|

@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 5 OF 9: KIT-5-CONNECTORS-AND-INSTALLS.txt
-Contents: optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45).
+Contents: optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test and laptop check, routines on a schedule (prompts 41–45).
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-27 from 9 files.
+Built 2026-11-27 from 10 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -11,7 +11,7 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (prompts 1–40) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45)   <- this file
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test and laptop check, routines on a schedule (prompts 41–45)   <- this file
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
@@ -26,6 +26,7 @@ IN THIS FILE
   - setup/macos.md
   - setup/windows.md
   - 00-before-the-workshop/pre-workshop-selftest.md
+  - 00-before-the-workshop/laptop-and-account-check.md
   - 08-prompts/routines.md
 
 
@@ -81,7 +82,7 @@ Choose by your **address**, not by the app you read it in: an `@gmail.com` addre
 | Your mailbox | AI | Connector | What it can do | What you need | Source |
 |---|---|---|---|---|---|
 | Gmail / Google Workspace | Claude | Gmail, Google Calendar, Google Drive | Read mail, create drafts, reply, send. By default Claude asks before every action | Any Claude user | [support.claude.com](https://support.claude.com/en/articles/10166901) |
-| Outlook on Microsoft 365 | Claude | Microsoft 365 | Read mail; with write tools draft and send (no attachments) | A **work account** — not outlook.com or hotmail — and a **one-time consent by an Entra global admin** of the tenant. All Claude plans; on Team/Enterprise the Claude owner enables it, an admin switches on write tools | [support.claude.com](https://support.claude.com/en/articles/15183774) |
+| Outlook on Microsoft 365 | Claude | Microsoft 365 | Read mail; with write tools draft and send (no attachments) | For chapter mail, the chapter's **work account** (Claude also connects personal outlook.com accounts on some individual plans — not for chapter data) and a **one-time consent by an Entra global admin** of the tenant. All Claude plans; on Team/Enterprise the Claude owner enables it, an admin switches on write tools | [support.claude.com](https://support.claude.com/en/articles/15183774) |
 | Gmail / Google Workspace | ChatGPT | Gmail app | Draft and send since June 2026 (release notes), in ChatGPT on the web | Plus, Pro, Business or Enterprise. On Business, the admin decides which write actions are allowed. Availability depends on app, plan and region — check in your account | [Release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Admin controls](https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps) · [Apps](https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt) |
 | Outlook on Microsoft 365 | ChatGPT | Outlook app | Draft and send since June 2026 (release notes), in ChatGPT on the web | Same plans. On Business, the admin decides which write actions are allowed. On a work account, the Microsoft tenant may need to give consent once `[verify]` | [Release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Admin controls](https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps) · [Apps](https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt) |
 | OneDrive / SharePoint | ChatGPT | SharePoint app | Connects SharePoint and work or school OneDrive | A work or school account — personal OneDrive is not supported | [help.openai.com](https://help.openai.com/en/articles/12143177-sharepoint-app-and-setup-in-chatgpt) |
@@ -106,10 +107,10 @@ Choose by your **address**, not by the app you read it in: an `@gmail.com` addre
 Hi {{ADMIN_NAME}},
 I'd like to connect Claude's Microsoft 365 connector to the chapter mailbox {{ROLE_ADDRESS}}.
 I use it to read mail and to create reply drafts in that mailbox. I send every mail myself; my assistant's house rules say it drafts and never sends.
-Only I use it, as the chapter's Chapter Manager, logged in with the chapter's work account.
-Microsoft 365 needs a one-time consent from a global admin before the connector can be used; Anthropic's guide is here:
-https://support.claude.com/en/articles/15183774
-Could you approve it once, or find 10 minutes with me to do it together? Thank you!
+I use it with the chapter's work account only.
+Microsoft 365 needs a one-time consent from a global admin before the connector can be used; Anthropic's guide for admins is here:
+https://support.claude.com/en/articles/12542951
+Could you check which permissions it asks for and, if you can, limit it to my account? Then approve it with your own admin sign-in — or find 10 minutes with me to do it together. Thank you!
 {{YOUR_NAME}}
 ```
 
@@ -120,14 +121,14 @@ Could you approve it once, or find 10 minutes with me to do it together? Thank y
 Microsoft asks for an admin's approval here — the consent above. On Claude Team or Enterprise, the owner enables the connector first. If you see this message, ask your Microsoft 365 admin to check the app and review the requested permissions, even if the app was approved before.
 
 - **Who is the admin?** The person with the *Global Administrator* role in your chapter's Microsoft 365 — Anthropic's guide asks for that role. Ask your IT contact or your Microsoft 365 provider who holds it. That person approves with their own admin account; nobody shares a login.
-- **The admin approves:** on that screen they click *Have an admin account? Sign in with that account*, sign in, tick *Consent on behalf of your organization* and accept. Then you connect again with your usual account.
+- **The admin approves:** they read the permissions the screen lists first. Then, with their own admin sign-in, they approve on that screen (*Have an admin account? Sign in with that account*) or in Microsoft Entra, following Anthropic's guide for admins. To keep it to your account, they can set the app to *Assignment required* in Entra and assign only you `[verify]`. Then you connect again with your usual account.
 - **The admin has no Claude account:** they can approve in Microsoft Entra instead — send them Anthropic's guide for admins: https://support.claude.com/en/articles/12542951
 - Your AI never needs the admin login. Never paste it into a chat.
 - Your provider also asks you to accept a *delegated admin* request? Claude does not need it.
 
 *Admin steps and role as in Anthropic's guide for admins; checkbox and "earlier approval" case from [Microsoft's consent troubleshooting](https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/app-integration/troubleshoot-consent-issues) (both read 23 Nov 2026); the screen text from a Chapter Manager's screenshot, Vienna, November 2026.*
 
-**No tenant yet, only outlook.com?** Stay at Level 1 copy-and-paste for now — it works with any mailbox. The chapter accounts `manager@` and `chair@` the kit asks for ([`../05-officer-handover/role-accounts.md`](../05-officer-handover/role-accounts.md)) are the step that unlocks Level 2.
+**No tenant yet, only outlook.com?** For chapter mail, stay at Level 1 copy-and-paste for now — it works with any mailbox. The chapter accounts `manager@` and `chair@` the kit asks for ([`../05-officer-handover/role-accounts.md`](../05-officer-handover/role-accounts.md)) are the step that unlocks Level 2.
 
 ## Set it up (ChatGPT, Gmail or Outlook)
 
@@ -138,7 +139,7 @@ Microsoft asks for an admin's approval here — the consent above. On Claude Tea
 
 ## Keep it at drafts
 
-The connectors can send. Your house rules say *draft, never send*, and Claude asks before each action by default — answer "draft only". In ChatGPT, ask it to create drafts only.
+The connectors can send. Your house rules say *draft, never send* — a house rule is a request, a setting is a lock. In Claude's connector settings, set sending, replying and forwarding to *Always ask* or *Blocked* `[verify the menu name]`, and never choose *Automatically approve* (Claude in Chrome offers it). Scheduled tasks use the same settings. In ChatGPT, ask it to create drafts only; on Business the admin decides which write actions are allowed.
 Put this line into your `house-rules.md` as well, under *Drafts only*:
 
 ```
@@ -533,7 +534,7 @@ Install the desktop app of your tool from the provider's own website and sign in
 
 | Tool | What you need | Source |
 |---|---|---|
-| ChatGPT | The ChatGPT desktop app for Mac or Windows; *Work* is the mode that works with files on your laptop, and *Codex* sits in the same app. Work comes with paid plans except Free and Go; in Enterprise and Edu workspaces your admin switches it on. No *Work*? Your plan or workspace may not include it — ask your admin; *Codex* in the same app also works with a folder `[verify]` | [OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) |
+| ChatGPT | The ChatGPT desktop app for Mac or Windows; *Work* is the mode that works with files on your laptop, and *Codex* sits in the same app. Work comes with paid plans except Free and Go; in Enterprise and Edu workspaces it is on unless your admin turned it off. No *Work*? Your plan or workspace may not include it — ask your admin; *Codex* in the same app also works with a folder `[verify]` | [OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) |
 | Claude | The Claude desktop app for Mac or Windows; *Cowork* works with a folder on your laptop, on paid plans | [Claude help](https://support.claude.com/en/articles/13345190) |
 
 **Works if:** the app opens and you see an empty chat.
@@ -613,6 +614,62 @@ Not done? Come anyway. You'll pair up with a neighbour.
 
 Back to [README.md](README.md) · [laptop-and-account-check.md](laptop-and-account-check.md)
 
+===== FILE: 00-before-the-workshop/laptop-and-account-check.md =====
+
+# Laptop and account check
+
+Purpose: in 10 minutes, find out what you will work with in the workshop — device, storage, mail, AI plan, desktop app, WhatsApp — so the set-up on the day fits *your* situation. The workshop runs in the desktop app of ChatGPT or Claude, in one folder on your laptop.
+
+Tick one answer per line. There are no wrong answers; "not yet" is a perfectly good start.
+
+## The check
+
+| # | Question | Your answer |
+|---|---|---|
+| 1 | **Device** — what will you bring? | ☐ Windows laptop ☐ Mac ☐ Chromebook *(browser path)* ☐ only an iPad/tablet *(browser path — pair up or borrow a laptop)* |
+| 2 | **Cloud storage** — where does chapter work live today? | ☐ Google Drive, chapter account ☐ Google Drive, private ☐ OneDrive, chapter account ☐ OneDrive, private ☐ other: ____ ☐ spread over several places |
+| 3 | **Email** — which mail do you use for chapter work? | ☐ Gmail ☐ Outlook / Microsoft 365 ☐ other: ____ |
+| 4 | **Role address** — is there an address that belongs to the role, e.g. `manager@<chapter-domain>`? | ☐ yes ☐ no ☐ not sure |
+| 4b | **Chapter accounts** — does the chapter have accounts in Microsoft 365 or Google Workspace, at least one for you (`manager@`) and one for your Chair (`chair@`)? | ☐ yes, both ☐ only mine ☐ no ☐ not sure |
+| 5 | **Paid AI plan** — which one do you have? | ☐ Claude (Pro or higher) ☐ ChatGPT (Plus or higher) ☐ Gemini (paid) ☐ Copilot (paid or work account) ☐ not yet — I set it up this week |
+| 6 | **Desktop app** — can you install the ChatGPT or Claude desktop app on this laptop? | ☐ yes, installed ☐ yes, not yet ☐ no — the laptop is managed by IT ☐ not sure |
+| 6b | **Synced drive** — do you see your OneDrive or Google Drive as a folder on this laptop? | ☐ yes ☐ no ☐ not sure |
+| 7 | **WhatsApp** — do you also use it on your laptop (desktop app or web)? | ☐ yes ☐ no ☐ only on the phone |
+| 8 | **One wish** — the task you would most like AI to take off your desk (1–2 sentences) | ______________________ |
+| 9 | **The third time** — which question do you answer every year, for the third time, when a new officer starts? | ______________________ |
+| 10 | **Gone again** *(if you have been in the role a while)* — one tool that disappeared again in your chapter: what was the reason? | ______________________ |
+
+Your trainer may send a short form for these answers, together with your self-test result. That is how the trainer
+knows before the day where everyone stands — plan, laptop, self-test — so nobody is asked about it in the room.
+Question 9 feeds your first lab: the answer goes into your chapter facts, so you do not have to write it a fourth time.
+No form? Just bring your answers.
+
+## What your answers mean for the day
+
+| If you ticked … | Then in the workshop … |
+|---|---|
+| Only an iPad/tablet, or a Chromebook | You take the browser path with a neighbour and set up the desktop app on a laptop later — everything is in the kit |
+| No desktop app possible (IT-managed laptop, or Work switched off in your workspace) | The browser path: the same labs, and you save the files yourself. The desktop app follows on a laptop you control |
+| No synced drive on the laptop | Install its sync app before the day (OneDrive comes with Windows; Mac: the OneDrive app or *Google Drive for desktop*). Not possible? A local folder today, moved into the drive later |
+| Storage "private" or "several places" | You build the folder structure today wherever you can; moving it into a chapter account later is one step ([../01-foundations/where-your-data-lives.md](../01-foundations/where-your-data-lives.md)) |
+| No role address, or no chapter accounts for you and your Chair | Common — and the one thing your Chair can unlock. Chapter accounts in Microsoft 365 or Google Workspace for at least you and your Chair are the kit's second prerequisite: they make the handover work and let your Chair read the chapter folder. Ask your Chair now — the request is ready in [../05-officer-handover/role-accounts.md](../05-officer-handover/role-accounts.md). On the day you build in your own drive and move the folder across once the accounts exist |
+| No paid AI plan yet | A paid plan is the first prerequisite. Set it up before the workshop (about 20 minutes, see [../01-foundations/paid-plan-and-training-off.md](../01-foundations/paid-plan-and-training-off.md); before anyone pays, the plan pick and check in [../01-foundations/business-plan-checklist.md](../01-foundations/business-plan-checklist.md)). If it is not ready on the day, watch with your neighbour and set it up the same evening. |
+| WhatsApp only on the phone | Fine — the WhatsApp step works with an export from your phone |
+
+## Common worries — short answers
+
+| Worry | Answer |
+|---|---|
+| "I have no time for this." | That's why the workshop ends with something running, not with homework. After that, the bet: the hours come from searching and answering twice. Test it with your own week — your log will tell you. |
+| "My chapter doesn't pay for an AI plan yet." | The one-pager in the kit is written for exactly that ExCo decision. Until then, set up a paid plan before the workshop — it is the first prerequisite. |
+| "What about member data?" | Paid plan with training switched off, one chapter storage, WhatsApp read on your own laptop, and you send every message yourself. |
+| "I'm not technical." | If you use Canva and Zoom, you can do this. In the desktop app the assistant saves the files for you. No code until Level 3 — and Level 3 is optional. |
+| "Can I use my iPhone?" | Yes, for ordinary chats and drafts on the go — same app, same account. The folder task stays on the laptop, where the folder lives. |
+| "Is my laptop safe if the AI works in a folder?" | You choose the folder: allow access to `CM-Workspace` only, and read what the app asks for. You still send every message yourself. |
+| "My board will never do this." | The rules for working with your CM aren't an AI question — the chair sets them; AI just makes them easy to keep. The kit has a page for that ([../06-chapter-rules/operating-guardrails.md](../06-chapter-rules/operating-guardrails.md)). |
+
+Next: [pre-workshop-selftest.md](pre-workshop-selftest.md) (about 20 minutes — installs the app and tests the folder).
+
 ===== FILE: 08-prompts/routines.md =====
 
 # Routines — work that runs while you are away
@@ -628,7 +685,7 @@ Five prompts (41–45) for work that comes back every day, week or month, and ho
 2. **House rules first.** Every run starts by reading `house-rules.md`, so the draft sounds like you.
 3. **Unsure goes on top.** Anything the routine was not sure of — an owner, a date, a name it could not match — sits in a short note at the very top of the draft, for you to check before sending.
 4. **One log line per run** in `00-handover/log.md`: date, routine, what it produced.
-5. **Read the first three days of drafts in full.** After that, a quick look is enough. When you correct a draft, put the correction into `house-rules.md` with the date — the same mistake does not come back.
+5. **Read the first three days of drafts in full.** After that, a quick look is enough. When you correct a draft, your assistant suggests a dated rule for `house-rules.md` (house rule 13); add it once you agree — the same mistake does not come back.
 
 **On the tool list first.** Every connector a routine uses (mail, calendar, a task tool) is on your chapter's tool list — Part B of the [AI use one-pager](../06-chapter-rules/ai-use-one-pager.md). Forum content never goes into a routine.
 
@@ -655,7 +712,7 @@ A routine only sees what is connected or saved. If the data is not there, the be
 1. In the Claude desktop app: **Scheduled** in the left sidebar → **New task** → *Create with Claude* (describe it in your words) or *Set up manually*.
 2. Give it a name, paste the prompt, choose how often: hourly, daily, weekly, on weekdays, or manually.
 3. **Choose your chapter folder** (the field *Which folder Claude should work in*). All five routines here read it. Where offered, *Require this computer* then switches on: the task runs only while your computer is awake and the Claude app is open. Save.
-4. **Where it runs depends on your plan.** Tasks without a folder run in the cloud, also while your computer sleeps or the app is closed. On Pro, Max and Ultra — and on Team and Enterprise with Cowork in the cloud turned on — tasks you create on your computer move to the cloud automatically, and *Require this computer* is offered only to organizations with computer access turned on. How that works with a folder task: `[verify]` on the source page. So check the first run: if it could not read your chapter folder, keep running the prompt by hand for now.
+4. **Where it runs depends on your plan.** Tasks without a folder run in the cloud, also while your computer sleeps or the app is closed. On Pro, Max and Ultra — and on Team and Enterprise with Cowork in the cloud turned on — tasks you create on your computer move to the cloud automatically, and *Require this computer* is offered only to organizations with computer access turned on. A cloud task can run while your computer is off, but it reaches a folder on that computer only while the Claude app is open `[verify]`. So check the first run: if it could not read your chapter folder, keep running the prompt by hand for now.
 5. A connector set to *Always ask* may wait for you or skip that step — check the first run.
 
 **ChatGPT** — scheduling there is still changing:

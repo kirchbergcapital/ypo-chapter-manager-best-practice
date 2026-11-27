@@ -11,7 +11,7 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (prompts 1–40) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45)
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test and laptop check, routines on a schedule (prompts 41–45)
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app   <- this file
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
@@ -464,7 +464,7 @@ You do not need to understand the code. At the end `npm test` shows a short summ
 The QR code is a one-time login code, so the app shows it **only in a terminal window**, never in Claude's chat.
 
 1. Open a **new** *Terminal* or *PowerShell* window, go to the folder (`cd ~/whatsapp-app` or `cd $HOME\whatsapp-app`) and type `npm run link`.
-2. On your phone: **WhatsApp → Settings → Linked devices → Link a device**, and scan the QR code.
+2. On your phone, in the app that holds your chapter-work number: Android **⋮ → Linked devices → Link a device**; iPhone **Settings → Linked Devices → Link a Device**. Scan the QR code.
 3. Under **Linked devices** a new entry appears for the laptop. Note its name and today's date, so you can later log out the right one.
 4. Leave the window open for a minute or two while your recent chats arrive. It keeps listening; **Ctrl-C** stops it.
 
@@ -514,7 +514,7 @@ That is what the chapter keeps. The chat stays on your phone, the export in the 
 
 ## Removing it again
 
-1. **On your phone:** WhatsApp → Settings → **Linked devices** → tap the laptop entry you noted in step 4 → **Log out**. From this moment the app cannot read anything new.
+1. **On your phone:** **Linked devices** (Android: ⋮ → Linked devices; iPhone: Settings → Linked Devices) → tap the laptop entry you noted in step 4 → **Log out**. From this moment the app cannot read anything new.
 2. **On your laptop:** delete the `whatsapp-app` folder by hand (Finder or File Explorer → Trash, then empty the Trash). That removes the login keys and the saved messages.
 3. Exports you saved elsewhere stay where you saved them, and older backups keep their copy — delete them by hand if you no longer need them.
 
@@ -575,8 +575,8 @@ First move, every time: paste the exact message into Claude Code in the app fold
 
 | What you see | What helps |
 |---|---|
-| The QR code expires before you scan it, or the app stops after three codes | Open WhatsApp → Settings → **Linked devices** → **Link a device** on your phone **first**, then run `npm run link` and scan straight away |
-| "Couldn't link device" on the phone | Many phones have both **WhatsApp** and **WhatsApp Business**. On your main phone, open the app that holds the number you want to read. In WhatsApp Business: Android ⋮ (three dots) → **Linked devices** → **Link a device**; iPhone **Settings** → **Linked Devices** → **Link a Device**. Then scan the new QR code ([WhatsApp help](https://faq.whatsapp.com/878854700132604)) |
+| The QR code expires before you scan it, or the app stops after three codes | On your phone, open **Linked devices** **first** (Android: ⋮ → **Linked devices**; iPhone: **Settings** → **Linked Devices**) → **Link a device**, then run `npm run link` and scan straight away |
+| "Couldn't link device" on the phone | Many phones have both **WhatsApp** and **WhatsApp Business**. On your main phone, open the app that holds the number you want to read. In WhatsApp Business: Android ⋮ (three dots) → **Linked devices** → **Link a device**; iPhone **Settings** → **Linked Devices** → **Link a Device**. Then run `npm run link` again and scan the fresh QR code ([WhatsApp help](https://faq.whatsapp.com/878854700132604)) |
 | No QR code appears at all | The app should draw it directly in the window. Paste what you see into Claude Code and ask it to check that the QR code is written with `process.stdout.write`, not `console.log` |
 | Two attempts did not work | Take a break from the app and use WhatsApp's own "Export chat" (stage 1 in [`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)) for today — same result, one chat at a time. Try again later with the rows below |
 | "Run this in a terminal window" | You started `link` inside Claude Code or the desktop app. Open *Terminal* (macOS) or *PowerShell* (Windows), go to the app folder, run it there |

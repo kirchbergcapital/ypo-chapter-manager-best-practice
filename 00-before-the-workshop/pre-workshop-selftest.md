@@ -13,7 +13,7 @@ Install the desktop app of your tool from the provider's own website and sign in
 
 | Tool | What you need | Source |
 |---|---|---|
-| ChatGPT | The ChatGPT desktop app for Mac or Windows; *Work* is the mode that works with files on your laptop, and *Codex* sits in the same app. Work comes with paid plans except Free and Go; in Enterprise and Edu workspaces your admin switches it on. No *Work*? Your plan or workspace may not include it — ask your admin; *Codex* in the same app also works with a folder `[verify]` | [OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) |
+| ChatGPT | The ChatGPT desktop app for Mac or Windows; *Work* is the mode that works with files on your laptop, and *Codex* sits in the same app. Work comes with paid plans except Free and Go; in Enterprise and Edu workspaces it is on unless your admin turned it off. No *Work*? Your plan or workspace may not include it — ask your admin; *Codex* in the same app also works with a folder `[verify]` | [OpenAI release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) |
 | Claude | The Claude desktop app for Mac or Windows; *Cowork* works with a folder on your laptop, on paid plans | [Claude help](https://support.claude.com/en/articles/13345190) |
 
 **Works if:** the app opens and you see an empty chat.
