@@ -63,7 +63,7 @@ Microsoft asks for an admin's approval here — the consent above. On Claude Tea
 ## Set it up (ChatGPT, Gmail or Outlook)
 
 1. In ChatGPT, open the apps settings and connect Gmail or Outlook `[verify the menu name]`. Log in with the **chapter's** account, not a private one.
-2. On a Microsoft 365 work account, if a consent screen asks for an admin, send your admin the request above, with ChatGPT in place of Claude `[verify]`.
+2. On a Microsoft 365 work account, if a consent screen asks for an admin, ask your Microsoft 365 admin to approve ChatGPT's Outlook app with their own admin sign-in, following OpenAI's guide: [Outlook apps in ChatGPT](https://help.openai.com/en/articles/12512241-outlook-email-and-calendar-apps-in-chatgpt) `[verify]`. The Claude request above names Claude's apps — don't reuse it for ChatGPT.
 3. Ask it to create drafts only — put the line from *Keep it at drafts* below into your `house-rules.md`.
 4. Run the same test as for Gmail with Claude.
 
