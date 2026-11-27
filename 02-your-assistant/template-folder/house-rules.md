@@ -62,6 +62,7 @@ Use roles in file names, not member names.
     `00-handover/decisions.md`: `YYYY-MM-DD · decision · source · decided by (role)`
 13. Update files the same day. Long chat? Checkpoint: update the files, refresh `00-handover/handover.md`
     (decisions, open items with what "done" looks like, paths touched), then stop.
+    When I correct a draft, suggest one dated rule for this file; add it after my yes.
 14. If you cannot save files yourself, give me the exact text and the exact path, and I save it.
     Then say: "This is a draft in the chat. To save it: download it or copy it into <path>. Tell me 'saved' when you see it in the folder."
 

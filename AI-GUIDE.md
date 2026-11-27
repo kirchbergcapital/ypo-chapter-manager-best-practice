@@ -16,7 +16,7 @@ The kit is public. One of these three ways always works — use the first one th
 | Your situation | What you do |
 |---|---|
 | **(a) You can open links** | Every kit file sits at `https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/` + its path. Fetch the files yourself when a station or a question needs them — the directory below lists them all. Links inside the files are relative: resolve them from the file's own link. Do not ask the Chapter Manager to upload or paste kit files. If links fail, see the rule below the table and switch to (b) |
-| **(b) You cannot open links** | Work from the chat files — the kit cut into eight small files, so each one fits into a chat. Ask for the starter file first, in these words: *"I can't open links here. Please download this one file — no account needed: https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-START.txt (right-click → "Save link as", or open it and save it). It is about 100 KB. Then attach it to this chat with the paperclip or by drag and drop — please don't paste its text into the message box, that is too long for a chat."* `KIT-START.txt` holds this guide, Stations 1 and 3 and the Lab B practice pack; its kit directory names the chat file that holds every other file. When a step needs a file you do not have, ask for that one chat file the same way, by its name and link — for example `KIT-2-FOLDER-AND-FACTS.txt` when they want to pick a business plan (Station 1), or before Station 2. One chat file at a time, only when the step needs it; one that is already attached in this conversation, you use. |
+| **(b) You cannot open links** | Work from the chat files — the kit cut into nine small files, so each one fits into a chat. Ask for the starter file first, in these words: *"I can't open links here. Please download this one file — no account needed: https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-START.txt (right-click → "Save link as", or open it and save it). It is about 100 KB. Then attach it to this chat with the paperclip or by drag and drop — please don't paste its text into the message box, that is too long for a chat."* `KIT-START.txt` holds this guide, Stations 1 and 3 and the Lab B practice pack; its kit directory names the chat file that holds every other file. When a step needs a file you do not have, ask for that one chat file the same way, by its name and link — for example `KIT-2-FOLDER-AND-FACTS.txt` when they want to pick a business plan (Station 1), or before Station 2. One chat file at a time, only when the step needs it; one that is already attached in this conversation, you use. |
 | **(c) You work in a folder on their computer** | Read the files locally, by the paths below — the unzipped kit (in a subfolder `_kit` — from `_kit.zip` — or a folder called `ypo-chapter-manager-best-practice-main`), or the chat files saved in one folder (start with `KIT-START.txt`; its kit directory names the file that holds each kit file). File size does not matter here: read what the step needs |
 
 **A link that does not open is not a missing file.** Don't search the web or rebuild it: name the chat file that holds it; they get it from wherever `KIT-START.txt` came from and save it next to it.
@@ -50,6 +50,7 @@ All kit files with their full links. Fetch only what the current step needs.
 | Foundations — overview | `01-foundations/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/README.md |
 | Station 1: paid plan, training switch off per tool | `01-foundations/paid-plan-and-training-off.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/paid-plan-and-training-off.md |
 | Station 1: which business plan — pick, compare, 10-point check | `01-foundations/business-plan-checklist.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/business-plan-checklist.md |
+| Do's and don'ts on one page | `01-foundations/dos-and-donts.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/dos-and-donts.md |
 | Three levels (chat, living folder, Claude Code); project menu names | `01-foundations/three-levels.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/three-levels.md |
 | One storage owned by the chapter | `01-foundations/where-your-data-lives.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/01-foundations/where-your-data-lives.md |
 | Your assistant — overview | `02-your-assistant/README.md` | https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/02-your-assistant/README.md |
@@ -212,7 +213,7 @@ Then pick one mode and tell the Chapter Manager in one line which one it is, tog
 
 > **A `.md` file opens in another app?** It is plain text: right-click → Open With → TextEdit (Mac) or Notepad (Windows).
 
-In mode B you still do not touch their accounts: logins, plan changes, privacy switches and admin consents are clicks the Chapter Manager makes.
+In mode B you still do not touch their accounts: logins, plan changes and privacy switches are their clicks; admin consents, the admin's.
 If you are unsure which mode applies, ask: *"Can I create a file on your computer from here, or do you save the files yourself?"*
 
 ## 3 · Start: has this begun before?
@@ -279,21 +280,22 @@ and an update of `00-handover/setup-progress.md`. Before Station 2 exists, colle
 ### Station 1 — Paid plan, training off
 
 - Read [`01-foundations/paid-plan-and-training-off.md`](01-foundations/paid-plan-and-training-off.md). Point them to the row for their tool and the exact switch name.
-- **A business plan is ideal; a paid personal plan with training off is enough to start.** Choosing one: "Pick in 2 minutes" in [`01-foundations/business-plan-checklist.md`](01-foundations/business-plan-checklist.md) — prices and limits only from that page, with its date, never from memory.
+- **A paid personal plan, training off, is enough to start; member data waits for the chapter's business plan with a DPA.** Choosing one: "Pick in 2 minutes" in [`01-foundations/business-plan-checklist.md`](01-foundations/business-plan-checklist.md) — prices and limits only from that page, with its date, never from memory.
 - **No paid plan yet:** who pays is the chapter's decision, ideally — the one-pager in Station 8 is written for it. Until the plan runs, explain the path and stop here.
 - They switch training off themselves. Where the switch sits `[verify]`: ChatGPT — profile picture → Settings → Data controls · Claude — your name → Settings → Privacy · other tools — their row in the kit file.
 - Then a screenshot: Windows **Win+Shift+S** (it lands in Pictures → Screenshots `[verify]`) · Mac **Cmd+Shift+4** (it lands on the desktop).
   Rename it `YYYY-MM-DD_ai-training-off.png`; it moves into `01-role-and-calendar/` at Station 2. Before sending any screenshot into a chat, cover the email address.
 - Optional ten-minute check that the tool reads a file: [`00-before-the-workshop/pre-workshop-selftest.md`](00-before-the-workshop/pre-workshop-selftest.md).
 - **Done when:** paid plan active, switch off, screenshot **saved**.
+- Offer [`01-foundations/dos-and-donts.md`](01-foundations/dos-and-donts.md) to keep next to the laptop.
 
 ### Station 2 — Working folder from the template
 
 - **First: the chapter accounts** (interview question 4). The kit's second prerequisite: Microsoft 365 or Google Workspace with at least `manager@` for the Chapter Manager and `chair@` for the Chair. They stay required; only today's start does not wait for them.
   - **They exist** → build in the storage of `manager@` and give `chair@` access.
-  - **Not yet, or not sure** → the order, said plainly: *"Start today in your own OneDrive or Google Drive — the bridge. Ask your Chair for manager@ and chair@ the same day. We move the folder in one step later."* The sentence for the Chair: *"Ask your Chair: the chapter needs Microsoft 365 or Google Workspace with at least two accounts — manager@ and chair@. That is what makes the handover work and lets the Chair read the chapter folder."*
-    Draft the request with the follow-up prompt in [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md); the Chapter Manager sends it. Until the accounts exist, build in their own Google Drive or OneDrive and add "chapter accounts manager@ + chair@, then move the folder into manager@" as an open item — the structure moves in one step.
-- **The one-step move, once `manager@` exists:** [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md) § *Moving the folder into manager@* (in `KIT-2-FOLDER-AND-FACTS.txt`).
+  - **Not yet, or not sure** → the order, said plainly: *"Start today in your own OneDrive or Google Drive — the bridge. Ask your Chair for manager@ and chair@ the same day. We move the folder in one step later."* The sentence for the Chair: *"Ask your Chair: the chapter needs Microsoft 365 or Google Workspace with at least two accounts — manager@ and chair@. That makes the handover work."*
+    Draft the request with the follow-up prompt in [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md); the Chapter Manager sends it. Add "chapter accounts manager@ + chair@, then move the folder into manager@" as an open item.
+- **The one-step move, once `manager@` exists:** [`05-officer-handover/role-accounts.md`](05-officer-handover/role-accounts.md) § *Moving the folder into manager@*.
 - Read [`01-foundations/where-your-data-lives.md`](01-foundations/where-your-data-lives.md) with them in two minutes: one storage, owned by the chapter, the Chair and the Chapter Manager as admins.
 - **Which drive — say it plainly.** Microsoft: *"Use the OneDrive of your chapter login — the one you open at office.com with the same address as your chapter Outlook. Windows often shows two OneDrives."* Google: *"Use the Google Drive of the chapter's Google account."*
 - **Download test — mode A, here for the first time:** create a tiny file `download-test.md` and ask *"Can you see a download link for download-test.md and save it?"* Do this before you hand over any file to save.
@@ -334,9 +336,9 @@ and an update of `00-handover/setup-progress.md`. Before Station 2 exists, colle
 
 ### Station 5 — First mail handoff
 
-- **One real mail** — in their daily project or folder session from Station 3, not in this setup chat, with the prompt from Lab B in [`02-your-assistant/lab-build-your-assistant.md`](02-your-assistant/lab-build-your-assistant.md). The pattern: [`03-communication/email-handoff.md`](03-communication/email-handoff.md).
+- **One real mail** — in their daily project or folder session from Station 3, not in this setup chat; on a personal plan, a mail without member data. Use the prompt from Lab B in [`02-your-assistant/lab-build-your-assistant.md`](02-your-assistant/lab-build-your-assistant.md). The pattern: [`03-communication/email-handoff.md`](03-communication/email-handoff.md).
 - **To copy a real mail with sender and date:** *"In Outlook, click Forward, copy everything including the header lines, then discard the forward."* Gmail works the same way with Forward.
-- **Practice pack:** [`02-your-assistant/lab-b-practice-pack.md`](02-your-assistant/lab-b-practice-pack.md) — the prompt, the fictional mail and the two bylaws sections it needs, in one block. In chat mode, show the practice pack in one message instead of sending the Chapter Manager to find files. It is the default quick win (§ 4) and the right step when the test in Station 3 wobbled.
+- **Practice pack:** [`02-your-assistant/lab-b-practice-pack.md`](02-your-assistant/lab-b-practice-pack.md) — the prompt, the fictional mail and the two bylaws sections it needs, in one block. In chat mode, show it in one message. It is the default quick win (§ 4) and the right step when the test in Station 3 wobbled.
 - **Branch by mail world** (details and sources in [`07-connectors-and-browser/email-connectors.md`](07-connectors-and-browser/email-connectors.md)):
 
 | Mail world | Route today | Later (Station 9) |
@@ -428,12 +430,11 @@ The template comes with the template folder: [`02-your-assistant/template-folder
 
 ## 7 · Rules during the setup
 
-1. **Never ask for passwords**, codes, recovery keys or QR codes, and never type them. Logins, payments, privacy switches and admin consents are the Chapter Manager's own clicks.
+1. **Never ask for passwords**, codes, recovery keys or QR codes, and never type them. Logins, payments and privacy switches are the Chapter Manager's own clicks; admin consents, the admin's.
    If they paste a password by mistake, say so straight away and suggest they change it.
 2. **No member data in the setup.** Practise with the fictional Lakeside Chapter in [`examples/`](examples/) — quickest with the [Lab B practice pack](02-your-assistant/lab-b-practice-pack.md). Real mails and chapter files go into their daily project or folder session — after Stations 1 and 3.
 3. **Forum is sacred.** We use AI for Forum logistics only: dates, places, headcounts, costs, deadlines. Never for what is said in or around a Forum: topics, stories, notes, retreat conversations, anything shared in confidence, or any link between a name and a topic. If in doubt, leave it out.
-4. **Drafts, never sends.** No mail, WhatsApp message, post or invitation goes out from you — not even a test. They send.
-   Drafting a mail to all members is fine — they send it themselves from Outlook, Gmail or Cvent. What stays out: you sending anything, and bulk WhatsApp.
+4. **Drafts, never sends.** No mail, WhatsApp message, post or invitation goes out from you — not even a test. They send. All-member mails: `house-rules.md` rule 5. No bulk WhatsApp.
 5. **Paid plans and chapter accounts.** Plan missing → Station 1. Chapter accounts `manager@` and `chair@` missing → the request to the Chair in Station 2.
 6. **Their own WhatsApp number.** What the chapter must keep goes from the chat into the chapter folder as a summary: export → summary → file.
 7. **Be honest about menus.** Menu names in this kit are as of October 2026 and move. If what they see differs, say so and ask for a screenshot (with no personal data in view).

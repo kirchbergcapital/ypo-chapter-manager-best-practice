@@ -64,7 +64,7 @@ Shorter: no form, no repo link, three steps. The folder is set up together in th
 >
 > If you have about 20 minutes before the day, three steps help the afternoon go smoothly:
 >
-> 1. **Training off, two-factor on.** ChatGPT: Settings → Data controls → switch off "Improve the model for everyone". Claude: Settings → Privacy → switch off "Help improve our AI models". On a Business or Team plan this is usually off already. While you are in the settings: switch on two-factor sign-in where your account offers it — for your email and cloud storage too.
+> 1. **Training off, two-factor on.** ChatGPT: Settings → Data controls → switch off "Improve the model for everyone". Claude: Settings → Privacy → switch off "Help Improve our AI models". On a Business or Team plan this is usually off already. While you are in the settings: switch on two-factor sign-in where your account offers it — for your email and cloud storage too.
 > 2. **Desktop app.** Install the ChatGPT or Claude desktop app from the provider's website and sign in with your paid plan. (The ChatGPT Mac app needs macOS 14 or newer; otherwise the browser is fine.)
 > 3. **One file.** On your laptop, open this link: {{KIT_LINK}} — it downloads `_kit.zip`. No account, nothing to install. If your browser asks, choose "Keep". Leave it in your Downloads folder; we unpack it together.
 >

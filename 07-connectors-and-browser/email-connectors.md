@@ -12,7 +12,7 @@ Choose by your **address**, not by the app you read it in: an `@gmail.com` addre
 | Your mailbox | AI | Connector | What it can do | What you need | Source |
 |---|---|---|---|---|---|
 | Gmail / Google Workspace | Claude | Gmail, Google Calendar, Google Drive | Read mail, create drafts, reply, send. By default Claude asks before every action | Any Claude user | [support.claude.com](https://support.claude.com/en/articles/10166901) |
-| Outlook on Microsoft 365 | Claude | Microsoft 365 | Read mail; with write tools draft and send (no attachments) | A **work account** — not outlook.com or hotmail — and a **one-time consent by an Entra global admin** of the tenant. All Claude plans; on Team/Enterprise the Claude owner enables it, an admin switches on write tools | [support.claude.com](https://support.claude.com/en/articles/15183774) |
+| Outlook on Microsoft 365 | Claude | Microsoft 365 | Read mail; with write tools draft and send (no attachments) | For chapter mail, the chapter's **work account** (Claude also connects personal outlook.com accounts on some individual plans — not for chapter data) and a **one-time consent by an Entra global admin** of the tenant. All Claude plans; on Team/Enterprise the Claude owner enables it, an admin switches on write tools | [support.claude.com](https://support.claude.com/en/articles/15183774) |
 | Gmail / Google Workspace | ChatGPT | Gmail app | Draft and send since June 2026 (release notes), in ChatGPT on the web | Plus, Pro, Business or Enterprise. On Business, the admin decides which write actions are allowed. Availability depends on app, plan and region — check in your account | [Release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Admin controls](https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps) · [Apps](https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt) |
 | Outlook on Microsoft 365 | ChatGPT | Outlook app | Draft and send since June 2026 (release notes), in ChatGPT on the web | Same plans. On Business, the admin decides which write actions are allowed. On a work account, the Microsoft tenant may need to give consent once `[verify]` | [Release notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) · [Admin controls](https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps) · [Apps](https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt) |
 | OneDrive / SharePoint | ChatGPT | SharePoint app | Connects SharePoint and work or school OneDrive | A work or school account — personal OneDrive is not supported | [help.openai.com](https://help.openai.com/en/articles/12143177-sharepoint-app-and-setup-in-chatgpt) |
@@ -37,27 +37,39 @@ Choose by your **address**, not by the app you read it in: an `@gmail.com` addre
 Hi {{ADMIN_NAME}},
 I'd like to connect Claude's Microsoft 365 connector to the chapter mailbox {{ROLE_ADDRESS}}.
 I use it to read mail and to create reply drafts in that mailbox. I send every mail myself; my assistant's house rules say it drafts and never sends.
-Only I use it, as the chapter's Chapter Manager, logged in with the chapter's work account.
-Microsoft 365 needs a one-time consent from a global admin before the connector can be used; Anthropic's guide is here:
-https://support.claude.com/en/articles/15183774
-Could you approve it once, or find 10 minutes with me to do it together? Thank you!
+I use it with the chapter's work account only.
+Microsoft 365 needs a one-time consent from a global admin before the connector can be used; Anthropic's guide for admins is here:
+https://support.claude.com/en/articles/12542951
+With the chapter account's rights it can reach Outlook mail, calendar, OneDrive, SharePoint and Teams. Could you check the permissions, set "Assignment required" to Yes on both apps — M365 MCP Server for Claude and M365 MCP Client for Claude — and assign only my account? Then approve it with your own admin sign-in, or find 10 minutes with me to do it together. Thank you!
 {{YOUR_NAME}}
 ```
 
 3. After the consent: connect, log in with the work account, run the same test as for Gmail.
 
-**No tenant yet, only outlook.com?** Stay at Level 1 copy-and-paste for now — it works with any mailbox. The chapter accounts `manager@` and `chair@` the kit asks for ([`../05-officer-handover/role-accounts.md`](../05-officer-handover/role-accounts.md)) are the step that unlocks Level 2.
+### The screen says "Need admin approval"
+
+Microsoft asks for an admin's approval here — the consent above. On Claude Team or Enterprise, the owner enables the connector first. If you see this message, ask your Microsoft 365 admin to check the app and review the requested permissions, even if the app was approved before.
+
+- **Who is the admin?** The person with the *Global Administrator* role in your chapter's Microsoft 365 — Anthropic's guide asks for that role. Ask your IT contact or your Microsoft 365 provider who holds it. That person approves with their own admin account; nobody shares a login.
+- **The admin approves:** they read the permissions the screen lists first. Then, with their own admin sign-in, they approve on that screen (*Have an admin account? Sign in with that account*) or in Microsoft Entra, following Anthropic's guide for admins. With the chapter account's rights the connector can reach mail, calendar, OneDrive, SharePoint and Teams. To keep it to your account, they set *Assignment required* to *Yes* on **both** Entra apps, *M365 MCP Server for Claude* and *M365 MCP Client for Claude*, and assign only you. Then you connect again with your usual account.
+- **The admin has no Claude account:** they can approve in Microsoft Entra instead — send them Anthropic's guide for admins: https://support.claude.com/en/articles/12542951
+- Your AI never needs the admin login. Never paste it into a chat.
+- Your provider also asks you to accept a *delegated admin* request? Claude does not need it.
+
+*Admin steps and role as in Anthropic's guide for admins; checkbox and "earlier approval" case from [Microsoft's consent troubleshooting](https://learn.microsoft.com/en-us/troubleshoot/entra/entra-id/app-integration/troubleshoot-consent-issues) (both read 23 Nov 2026); the screen text from a Chapter Manager's screenshot, Vienna, November 2026.*
+
+**No tenant yet, only outlook.com?** For chapter mail, stay at Level 1 copy-and-paste for now — it works with any mailbox. The chapter accounts `manager@` and `chair@` the kit asks for ([`../05-officer-handover/role-accounts.md`](../05-officer-handover/role-accounts.md)) are the step that unlocks Level 2.
 
 ## Set it up (ChatGPT, Gmail or Outlook)
 
 1. In ChatGPT, open the apps settings and connect Gmail or Outlook `[verify the menu name]`. Log in with the **chapter's** account, not a private one.
-2. On a Microsoft 365 work account, if a consent screen asks for an admin, send your admin the request above, with ChatGPT in place of Claude `[verify]`.
+2. On a Microsoft 365 work account, if a consent screen asks for an admin, ask your Microsoft 365 admin to approve ChatGPT's Outlook app with their own admin sign-in, following OpenAI's guide: [Outlook apps in ChatGPT](https://help.openai.com/en/articles/12512241-outlook-email-and-calendar-apps-in-chatgpt) `[verify]`. The Claude request above names Claude's apps — don't reuse it for ChatGPT.
 3. Ask it to create drafts only — put the line from *Keep it at drafts* below into your `house-rules.md`.
 4. Run the same test as for Gmail with Claude.
 
 ## Keep it at drafts
 
-The connectors can send. Your house rules say *draft, never send*, and Claude asks before each action by default — answer "draft only". In ChatGPT, ask it to create drafts only.
+The connectors can send. Your house rules say *draft, never send* — a house rule is a request, a setting is a lock. In Claude's connector settings, set sending, sending drafts, replying, forwarding and automatic replies to *Blocked* `[verify the menu name]` — *Always ask* is not enough: after one click, Claude sends. On Team or Enterprise, ask the workspace admin to block them there. Allow reading and, where offered, creating drafts. Never choose *Automatically approve* in Claude in Chrome. Scheduled tasks use the same settings. In ChatGPT, ask it to create drafts only; on Business the admin decides which write actions are allowed.
 Put this line into your `house-rules.md` as well, under *Drafts only*:
 
 ```

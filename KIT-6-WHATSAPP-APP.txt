@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 6 OF 9: KIT-6-WHATSAPP-APP.txt
 Contents: optional Station 10: build your own WhatsApp app.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-19 from 5 files.
+Built 2026-11-27 from 5 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -11,7 +11,7 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (prompts 1–40) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45)
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test and laptop check, routines on a schedule (prompts 41–45)
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app   <- this file
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog
@@ -181,8 +181,8 @@ No command ever asks me a question or waits for input.
 - Do not patch the library. Explain honestly in the README that, like WhatsApp Web, the library itself sends
   protocol traffic: delivery receipts (grey double ticks), history-sync receipts, acknowledgements and an
   "unavailable" (offline) presence when it connects.
-- unlink prints these steps and nothing else: 1) On your phone: WhatsApp -> Settings -> Linked devices -> tap this
-  laptop -> Log out. 2) Delete the folder ./auth by hand - or the whole app folder - in Finder or File Explorer.
+- unlink prints these steps and nothing else: 1) On your phone: Linked devices (Android: menu -> Linked devices; iPhone:
+  Settings -> Linked Devices) -> tap this laptop -> Log out. 2) Delete the folder ./auth by hand - or the whole app folder - in Finder or File Explorer.
   3) Exports stay where you saved them; delete them by hand if you no longer need them.
 
 6. EXPORT
@@ -272,7 +272,7 @@ Print it or copy it into a note and tick as you go.
 - [ ] **7 · The QR code shows only in a terminal window.** In Claude Code, *"run npm run link"* — the app should refuse with "Run this in a terminal window". And `npm run listen` before you ever linked stops with "run npm run link first".
 - [ ] **8 · The self-chat test worked.** "Message yourself" → `npm run chats` lists *Me (message yourself)* → `npm run export -- --chat "Me" --days 1` gives a readable file in `exports` → a second export gives a new file ending in `-2.md`.
 - [ ] **9 · Forum chats are excluded, and only exact names export.** `never-export.txt` contains `forum`, and *"Show me the tests that prove a chat with 'Forum' in its name is refused for export and never written to ./data."* — both exist and pass. `npm run export -- --chat "e"` exports nothing and lists names instead. Add words for any other chat that must never leave your phone.
-- [ ] **10 · You know the way out.** You noted the laptop's name under WhatsApp → Settings → **Linked devices**; to log out, tap it → **Log out**. On your laptop: delete the app folder by hand. `npm run unlink` prints the same steps and deletes nothing.
+- [ ] **10 · You know the way out.** You noted the laptop's name under **Linked devices** (Android: ⋮ → Linked devices; iPhone: Settings → Linked Devices); to log out, tap it → **Log out**. On your laptop: delete the app folder by hand. `npm run unlink` prints the same steps and deletes nothing.
 
 All ten ticked? Then go to step 6 in the [README](README.md): export one real chat and let your assistant summarise it.
 Something did not tick? Paste the question and the answer into Claude Code and ask it to fix the app — then run `npm test` again.
@@ -464,7 +464,7 @@ You do not need to understand the code. At the end `npm test` shows a short summ
 The QR code is a one-time login code, so the app shows it **only in a terminal window**, never in Claude's chat.
 
 1. Open a **new** *Terminal* or *PowerShell* window, go to the folder (`cd ~/whatsapp-app` or `cd $HOME\whatsapp-app`) and type `npm run link`.
-2. On your phone: **WhatsApp → Settings → Linked devices → Link a device**, and scan the QR code.
+2. On your phone, in the app that holds your chapter-work number: Android **⋮ → Linked devices → Link a device**; iPhone **Settings → Linked Devices → Link a Device**. Scan the QR code.
 3. Under **Linked devices** a new entry appears for the laptop. Note its name and today's date, so you can later log out the right one.
 4. Leave the window open for a minute or two while your recent chats arrive. It keeps listening; **Ctrl-C** stops it.
 
@@ -514,7 +514,7 @@ That is what the chapter keeps. The chat stays on your phone, the export in the 
 
 ## Removing it again
 
-1. **On your phone:** WhatsApp → Settings → **Linked devices** → tap the laptop entry you noted in step 4 → **Log out**. From this moment the app cannot read anything new.
+1. **On your phone:** **Linked devices** (Android: ⋮ → Linked devices; iPhone: Settings → Linked Devices) → tap the laptop entry you noted in step 4 → **Log out**. From this moment the app cannot read anything new.
 2. **On your laptop:** delete the `whatsapp-app` folder by hand (Finder or File Explorer → Trash, then empty the Trash). That removes the login keys and the saved messages.
 3. Exports you saved elsewhere stay where you saved them, and older backups keep their copy — delete them by hand if you no longer need them.
 
@@ -575,7 +575,8 @@ First move, every time: paste the exact message into Claude Code in the app fold
 
 | What you see | What helps |
 |---|---|
-| The QR code expires before you scan it, or the app stops after three codes | Open WhatsApp → Settings → **Linked devices** → **Link a device** on your phone **first**, then run `npm run link` and scan straight away |
+| The QR code expires before you scan it, or the app stops after three codes | On your phone, open **Linked devices** **first** (Android: ⋮ → **Linked devices**; iPhone: **Settings** → **Linked Devices**) → **Link a device**, then run `npm run link` and scan straight away |
+| "Couldn't link device" on the phone | Many phones have both **WhatsApp** and **WhatsApp Business**. On your main phone, open the app that holds the number you want to read. In WhatsApp Business: Android ⋮ (three dots) → **Linked devices** → **Link a device**; iPhone **Settings** → **Linked Devices** → **Link a Device**. Then run `npm run link` again and scan the fresh QR code ([WhatsApp help](https://faq.whatsapp.com/878854700132604)) |
 | No QR code appears at all | The app should draw it directly in the window. Paste what you see into Claude Code and ask it to check that the QR code is written with `process.stdout.write`, not `console.log` |
 | Two attempts did not work | Take a break from the app and use WhatsApp's own "Export chat" (stage 1 in [`../03-communication/whatsapp.md`](../03-communication/whatsapp.md)) for today — same result, one chat at a time. Try again later with the rows below |
 | "Run this in a terminal window" | You started `link` inside Claude Code or the desktop app. Open *Terminal* (macOS) or *PowerShell* (Windows), go to the app folder, run it there |

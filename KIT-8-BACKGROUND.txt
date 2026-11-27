@@ -1,7 +1,7 @@
 OPERATIONAL AI EXCELLENCE FOR CHAPTER MANAGERS — CHAT FILE 8 OF 9: KIT-8-BACKGROUND.txt
 Contents: background: overviews, glossary, changelog.
 Community resource by a YPO member, not an official YPO resource. Licence: CC BY 4.0.
-Built 2026-11-19 from 16 files.
+Built 2026-11-27 from 15 files.
 For people: this file is meant for your AI tool — attach it to a chat or keep it in your chapter folder; you do not need to read it.
 
 FOR THE AI ASSISTANT: this is one part of the kit. The guide (AI-GUIDE.md) is in KIT-START.txt — follow it; if you do not have it in this conversation, ask for KIT-START.txt first. Each file starts with a line '===== FILE: <path> ====='; find a file by its path. Quote prompts word for word.
@@ -11,7 +11,7 @@ CHAT FILES OF THE KIT
   2. KIT-2-FOLDER-AND-FACTS.txt — Stations 2 and 4: business plans, working folder, templates, chapter facts
   3. KIT-3-MAIL-KNOWLEDGE-HANDOVER.txt — Stations 5 to 8: mail handoff, knowledge base, handover note, chapter rules
   4. KIT-4-PROMPTS.txt — the prompt library for everyday work (prompts 1–40) and the chapter moments
-  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test, routines on a schedule (prompts 41–45)
+  5. KIT-5-CONNECTORS-AND-INSTALLS.txt — optional Stations 9, 11 and 14: mail connectors, browser, installs, the pre-workshop self-test and laptop check, routines on a schedule (prompts 41–45)
   6. KIT-6-WHATSAPP-APP.txt — optional Station 10: build your own WhatsApp app
   7. KIT-7-TIME-BY-AREA.txt — optional Station 12: where your hours go
   8. KIT-8-BACKGROUND.txt — background: overviews, glossary, changelog   <- this file
@@ -26,7 +26,6 @@ IN THIS FILE
   - CLAUDE.md
   - AGENTS.md
   - 00-before-the-workshop/README.md
-  - 00-before-the-workshop/laptop-and-account-check.md
   - 01-foundations/README.md
   - 02-your-assistant/README.md
   - 03-communication/README.md
@@ -63,7 +62,7 @@ IN THIS FILE
 > This is my kit. Read the AI guide section first and guide me step by step.
 > ```
 >
-> The rest of the kit comes as seven more chat files (`KIT-2-…` to `KIT-8-…`, same place). Your AI tells you which one it needs, when it needs it — one at a time. With a desktop app, save the file in a subfolder `_kit` of that one folder, open the one folder and say: `Read _kit/KIT-START.txt and guide me step by step.` Your assistant builds the chapter folder next to `_kit`.
+> The rest of the kit comes as eight more chat files (`KIT-2-…` to `KIT-9-…`, same place). Your AI tells you which one it needs, when it needs it — one at a time. With a desktop app, save the file in a subfolder `_kit` of that one folder, open the one folder and say: `Read _kit/KIT-START.txt and guide me step by step.` Your assistant builds the chapter folder next to `_kit`.
 >
 > **Way 3 — the whole kit in one folder** (desktop app with a folder, and for building things such as the WhatsApp app — with ChatGPT Work, Claude Cowork, Codex or Claude Code).
 > Download the kit as one file, [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) — no account needed, always the latest version.
@@ -87,7 +86,7 @@ IN THIS FILE
 > **Weg 2 — wenn Deine KI keine Links öffnen kann:** Lade die Startdatei
 > [KIT-START.txt](https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-START.txt)
 > herunter (Rechtsklick → „Link speichern unter"; rund 100 KB). **Häng sie an** einen neuen Chat an — Büroklammer oder hineinziehen; nicht den Text ins Eingabefeld kopieren, das ist für einen Chat zu lang — und schreib: `This is my kit. Read the AI guide section first and guide me step by step.`
-> Der Rest des Kits kommt in sieben weiteren Chat-Dateien (`KIT-2-…` bis `KIT-8-…`, gleicher Ort). Deine KI sagt Dir, welche sie wann braucht — immer nur eine. Mit einer Desktop-App legst Du die Datei in einen Unterordner `_kit` dieses einen Ordners, öffnest den einen Ordner und schreibst: `Read _kit/KIT-START.txt and guide me step by step.` Dein Assistent baut den Chapter-Ordner neben `_kit`.
+> Der Rest des Kits kommt in acht weiteren Chat-Dateien (`KIT-2-…` bis `KIT-9-…`, gleicher Ort). Deine KI sagt Dir, welche sie wann braucht — immer nur eine. Mit einer Desktop-App legst Du die Datei in einen Unterordner `_kit` dieses einen Ordners, öffnest den einen Ordner und schreibst: `Read _kit/KIT-START.txt and guide me step by step.` Dein Assistent baut den Chapter-Ordner neben `_kit`.
 >
 > **Weg 3 — das ganze Kit in einem Ordner** (Desktop-App mit Ordner, und zum Bauen, z. B. der WhatsApp-App — mit ChatGPT Work, Claude Cowork, Codex oder Claude Code):
 > [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) laden (immer die neueste Fassung) und in diesem einen Ordner entpacken — es entsteht der Ordner `_kit`,
@@ -337,6 +336,8 @@ Then tell the maintainer, or open an issue in this repository if you already use
 >
 > **Best with a desktop app.** In the ChatGPT or Claude desktop app, open **one** new, empty folder for your chapter work — ideally inside your OneDrive or Google Drive folder on the laptop, for example `YPO` (ChatGPT: Work · Claude: Cowork `[verify the menu name]`) — then paste the same sentence. Your assistant builds your chapter folder inside it and saves every file itself — no downloads, no copying. Keep the folder's files on the laptop, not online only — right-click the folder: *Always keep on this device* (OneDrive) · *Available offline* (Google Drive; Windows: under *Offline access*) · *Keep Downloaded* (iCloud; older macOS: *Download Now*); otherwise your assistant may read them as empty.
 >
+> Most files are written for your AI — you need not read them. For the big picture, ask it: *"Give me the easy next steps."*
+>
 > If your AI says it cannot open links, use Way 2.
 >
 > **Way 2 — if your AI cannot open links.** Download the starter file, no account needed:
@@ -347,7 +348,7 @@ Then tell the maintainer, or open an issue in this repository if you already use
 > This is my kit. Read the AI guide section first and guide me step by step.
 > ```
 >
-> The rest of the kit comes as seven more chat files (`KIT-2-…` to `KIT-8-…`, same place). Your AI tells you which one it needs, when it needs it — one at a time. With a desktop app, save the file in a subfolder `_kit` of that one folder, open the one folder and say: `Read _kit/KIT-START.txt and guide me step by step.` Your assistant builds the chapter folder next to `_kit`.
+> The rest of the kit comes as eight more chat files (`KIT-2-…` to `KIT-9-…`, same place). Your AI tells you which one it needs, when it needs it — one at a time. With a desktop app, save the file in a subfolder `_kit` of that one folder, open the one folder and say: `Read _kit/KIT-START.txt and guide me step by step.` Your assistant builds the chapter folder next to `_kit`.
 >
 > **Way 3 — the whole kit in one folder** (desktop app with a folder, and for building things such as the WhatsApp app — with ChatGPT Work, Claude Cowork, Codex or Claude Code).
 > Download the kit as one file, [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) — no account needed, always the latest version.
@@ -508,6 +509,8 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 |---|---|
 | **Project (AI)** | A workspace in your AI tool with its own instructions and files, so every chat starts with your house rules. Names differ by tool `[verify]` |
 | **Connector** | A link that lets your AI read from (or write drafts to) another service, such as your mailbox, your cloud storage or Canva. What is available depends on tool and plan (as of Oct 2026, `[verify]`) |
+| **Plugin** | An add-on package for Claude that can bring skills, connectors and small programs. Install only from Anthropic's list, once it is on your chapter's tool list |
+| **Skill** | A saved instruction file your AI uses for one kind of task, e.g. a weekly report. Use your own or Anthropic's |
 | **Training opt-out** | The setting that stops your AI provider from using your chats to train its models. Where it sits differs by tool — see [`01-foundations/paid-plan-and-training-off.md`](01-foundations/paid-plan-and-training-off.md) |
 | **Role account** | An email address and login that belong to the role, not the person — e.g. `manager@` or `chair@` at the chapter's domain, in the chapter's Microsoft 365 or Google Workspace. It passes to the next person with everything in it. Required by this kit: at least `manager@` for the Chapter Manager and `chair@` for the Chair. Your WhatsApp number is not a role account — it stays yours |
 | **Knowledge base** | The chapter's folder of short, dated files that your AI answers from: rules, event playbooks, contacts by role, decisions |
@@ -524,6 +527,7 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 | **UNCHECKED** | The assistant could not open the file or did not look. Never the same as "fine" |
 | **`[verify]`** | A fact nobody has checked yet. Check it before it goes to anyone |
 | **Checkpoint** | A short refresh of `00-handover/handover.md`: what is set up, what is open, which files changed |
+| **Context window** | How much one chat can work with at once. Long chats get summarised or reach a length limit; your folder keeps what was saved. Before that, ask for a checkpoint and open a new chat. A usage limit is different: your use across all chats |
 | **Level 1 · 2 · 3** | How deeply you set up your AI: chat project · living folder · Claude Code in your folder (a repository is optional) — see [`01-foundations/three-levels.md`](01-foundations/three-levels.md) |
 | **Hours line** | One line per finished task in a fixed form: `HOURS · YYYY-MM-DD · <area> · <event folder or -> · <task in a few words, roles not names> · <minutes> min · suggested\|confirmed`. Your assistant suggests the minutes; only lines you confirm count. They go into `hours.csv` in your own folder — see [`10-time-by-area/`](10-time-by-area/) |
 | **Area** | One kind of work your hours are counted under, such as "Member communication", "Learning and chapter events" or "Forum logistics". About ten, in your own words, one per line in `areas.txt` in your own folder — see [`10-time-by-area/areas-template.txt`](10-time-by-area/areas-template.txt) |
@@ -539,7 +543,24 @@ Terms marked `[verify]` may differ in your chapter or region — your Regional M
 Purpose: what changed between versions of this kit, and what is planned next.
 
 > Community resource by a YPO member, not an official YPO resource.
-> **Maintainer:** see [`README.md`](README.md) · **last checked:** 19 Nov 2026 · menus move — every tool page carries an as-of date.
+> **Maintainer:** see [`README.md`](README.md) · **last checked:** 27 Nov 2026 · menus move — every tool page carries an as-of date.
+
+## v0.6 — 27 Nov 2026
+
+More from Vienna:
+- **"Need admin approval"** when connecting Microsoft 365: who the admin is and what they click ([email connectors](07-connectors-and-browser/email-connectors.md)).
+- **House rule 13:** after a correction, your assistant suggests a dated rule — add the line to your own `house-rules.md`.
+- **Your own paid plan, training off,** is enough for chapter facts and events; member data waits for the chapter's business plan with a DPA (one-pager rule 2, do's and don'ts).
+- **Already using the kit?** House rule 13 has a new last line: replace the last line of rule 13 in your own `house-rules.md` with it.
+- Checked by two AI reviewers: plugin menu (*Plugins* in the sidebar), WhatsApp on Android (⋮ → *Linked devices*), connector sending set to *Blocked*, the admin approves Microsoft 365 with their own sign-in, a peer's file is checked before you save it.
+- A file from another Chapter Manager ([knowledge base § 3](04-knowledge-base/knowledge-base.md)); *context window* in the glossary; WhatsApp Business linking; where Work is in ChatGPT; the one-pager names invoices and payment reminders.
+
+## v0.5
+
+From Vienna:
+- **Do's and don'ts on one page:** [`01-foundations/dos-and-donts.md`](01-foundations/dos-and-donts.md) — account and training switch, what goes in, how you work, which connectors, plugins and skills to add and which to leave, and how to give your assistant more autonomy step by step.
+- **Routines — where a scheduled task runs:** [`08-prompts/routines.md`](08-prompts/routines.md) § 3 now says which plans move tasks to the cloud, when *Require this computer* is offered, and to check the first run.
+- **AI use in our chapter, Part B:** plugins and skills come only from the AI provider's own lists (for Claude: Anthropic's); free plans and private accounts stay out. Before, "free plugins" could be read as excluding Anthropic's own.
 
 ## v0.4 — 19 Nov 2026
 
@@ -715,62 +736,6 @@ Come anyway. In the workshop you work next to a neighbour, and there is a way th
 
 Everything you build in the workshop is also described step by step in [../START-HERE.md](../START-HERE.md) — so you can continue at home, or start without the workshop.
 
-===== FILE: 00-before-the-workshop/laptop-and-account-check.md =====
-
-# Laptop and account check
-
-Purpose: in 10 minutes, find out what you will work with in the workshop — device, storage, mail, AI plan, desktop app, WhatsApp — so the set-up on the day fits *your* situation. The workshop runs in the desktop app of ChatGPT or Claude, in one folder on your laptop.
-
-Tick one answer per line. There are no wrong answers; "not yet" is a perfectly good start.
-
-## The check
-
-| # | Question | Your answer |
-|---|---|---|
-| 1 | **Device** — what will you bring? | ☐ Windows laptop ☐ Mac ☐ Chromebook *(browser path)* ☐ only an iPad/tablet *(browser path — pair up or borrow a laptop)* |
-| 2 | **Cloud storage** — where does chapter work live today? | ☐ Google Drive, chapter account ☐ Google Drive, private ☐ OneDrive, chapter account ☐ OneDrive, private ☐ other: ____ ☐ spread over several places |
-| 3 | **Email** — which mail do you use for chapter work? | ☐ Gmail ☐ Outlook / Microsoft 365 ☐ other: ____ |
-| 4 | **Role address** — is there an address that belongs to the role, e.g. `manager@<chapter-domain>`? | ☐ yes ☐ no ☐ not sure |
-| 4b | **Chapter accounts** — does the chapter have accounts in Microsoft 365 or Google Workspace, at least one for you (`manager@`) and one for your Chair (`chair@`)? | ☐ yes, both ☐ only mine ☐ no ☐ not sure |
-| 5 | **Paid AI plan** — which one do you have? | ☐ Claude (Pro or higher) ☐ ChatGPT (Plus or higher) ☐ Gemini (paid) ☐ Copilot (paid or work account) ☐ not yet — I set it up this week |
-| 6 | **Desktop app** — can you install the ChatGPT or Claude desktop app on this laptop? | ☐ yes, installed ☐ yes, not yet ☐ no — the laptop is managed by IT ☐ not sure |
-| 6b | **Synced drive** — do you see your OneDrive or Google Drive as a folder on this laptop? | ☐ yes ☐ no ☐ not sure |
-| 7 | **WhatsApp** — do you also use it on your laptop (desktop app or web)? | ☐ yes ☐ no ☐ only on the phone |
-| 8 | **One wish** — the task you would most like AI to take off your desk (1–2 sentences) | ______________________ |
-| 9 | **The third time** — which question do you answer every year, for the third time, when a new officer starts? | ______________________ |
-| 10 | **Gone again** *(if you have been in the role a while)* — one tool that disappeared again in your chapter: what was the reason? | ______________________ |
-
-Your trainer may send a short form for these answers, together with your self-test result. That is how the trainer
-knows before the day where everyone stands — plan, laptop, self-test — so nobody is asked about it in the room.
-Question 9 feeds your first lab: the answer goes into your chapter facts, so you do not have to write it a fourth time.
-No form? Just bring your answers.
-
-## What your answers mean for the day
-
-| If you ticked … | Then in the workshop … |
-|---|---|
-| Only an iPad/tablet, or a Chromebook | You take the browser path with a neighbour and set up the desktop app on a laptop later — everything is in the kit |
-| No desktop app possible (IT-managed laptop, or Work switched off in your workspace) | The browser path: the same labs, and you save the files yourself. The desktop app follows on a laptop you control |
-| No synced drive on the laptop | Install its sync app before the day (OneDrive comes with Windows; Mac: the OneDrive app or *Google Drive for desktop*). Not possible? A local folder today, moved into the drive later |
-| Storage "private" or "several places" | You build the folder structure today wherever you can; moving it into a chapter account later is one step ([../01-foundations/where-your-data-lives.md](../01-foundations/where-your-data-lives.md)) |
-| No role address, or no chapter accounts for you and your Chair | Common — and the one thing your Chair can unlock. Chapter accounts in Microsoft 365 or Google Workspace for at least you and your Chair are the kit's second prerequisite: they make the handover work and let your Chair read the chapter folder. Ask your Chair now — the request is ready in [../05-officer-handover/role-accounts.md](../05-officer-handover/role-accounts.md). On the day you build in your own drive and move the folder across once the accounts exist |
-| No paid AI plan yet | A paid plan is the first prerequisite. Set it up before the workshop (about 20 minutes, see [../01-foundations/paid-plan-and-training-off.md](../01-foundations/paid-plan-and-training-off.md); before anyone pays, the plan pick and check in [../01-foundations/business-plan-checklist.md](../01-foundations/business-plan-checklist.md)). If it is not ready on the day, watch with your neighbour and set it up the same evening. |
-| WhatsApp only on the phone | Fine — the WhatsApp step works with an export from your phone |
-
-## Common worries — short answers
-
-| Worry | Answer |
-|---|---|
-| "I have no time for this." | That's why the workshop ends with something running, not with homework. After that, the bet: the hours come from searching and answering twice. Test it with your own week — your log will tell you. |
-| "My chapter doesn't pay for an AI plan yet." | The one-pager in the kit is written for exactly that ExCo decision. Until then, set up a paid plan before the workshop — it is the first prerequisite. |
-| "What about member data?" | Paid plan with training switched off, one chapter storage, WhatsApp read on your own laptop, and you send every message yourself. |
-| "I'm not technical." | If you use Canva and Zoom, you can do this. In the desktop app the assistant saves the files for you. No code until Level 3 — and Level 3 is optional. |
-| "Can I use my iPhone?" | Yes, for ordinary chats and drafts on the go — same app, same account. The folder task stays on the laptop, where the folder lives. |
-| "Is my laptop safe if the AI works in a folder?" | You choose the folder: allow access to `CM-Workspace` only, and read what the app asks for. You still send every message yourself. |
-| "My board will never do this." | The rules for working with your CM aren't an AI question — the chair sets them; AI just makes them easy to keep. The kit has a page for that ([../06-chapter-rules/operating-guardrails.md](../06-chapter-rules/operating-guardrails.md)). |
-
-Next: [pre-workshop-selftest.md](pre-workshop-selftest.md) (about 20 minutes — installs the app and tests the folder).
-
 ===== FILE: 01-foundations/README.md =====
 
 # 01 · Foundations — three decisions before the first prompt
@@ -788,6 +753,7 @@ Each one takes 15 to 20 minutes. You make them once and revisit them once a year
 | [paid-plan-and-training-off.md](paid-plan-and-training-off.md) | Work in a paid AI plan and switch off training on your data — tool by tool, where the switch is | 20 min |
 | [business-plan-checklist.md](business-plan-checklist.md) | Which business plan to buy — pick in 2 minutes, the big providers compared, a 10-point check before you pay | 2 min to pick, 15 min to check |
 | [where-your-data-lives.md](where-your-data-lives.md) | One cloud storage, owned by the chapter, synced to your laptop from Level 2 | 15 min |
+| [dos-and-donts.md](dos-and-donts.md) | The short list next to your laptop: account, what goes in, how you work, connectors/plugins/skills, more autonomy | 2 min |
 | [three-levels.md](three-levels.md) | Level 1 chat project · Level 2 living folder with connectors · Level 3 Claude Code | 15 min to choose |
 
 ## The short version

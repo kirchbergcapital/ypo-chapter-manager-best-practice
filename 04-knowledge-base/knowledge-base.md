@@ -50,6 +50,15 @@ At the top write: Source: {{FILE_NAME}}, version/date {{DATE}}, converted {{TODA
 
 Then check three sections against the PDF yourself. If they match, the copy is good.
 
+**A process or policy file from another Chapter Manager.** Check it yourself **before** you save it or show it to your AI: may your chapter use it, and is it free of names, member data, passwords and Forum content? If not, ask the sender for a clean version. Save only the clean copy in `06-communication/inbox-filed` — it is a source — and ask:
+
+```
+Read {{FILE}}. It comes from another chapter; it is not our rule yet.
+Compare it with our files: what could we take over, and what differs for us? Change nothing until I say yes.
+```
+
+Only the version you agree goes into `02-chapter-knowledge`. A copy of a YPO policy: YPO's current version wins. Sharing your own: the same check before you send it.
+
 ## 4 · One truth
 
 Each fact lives in **one** file. Other files point to it.

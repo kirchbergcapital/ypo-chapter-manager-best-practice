@@ -93,7 +93,7 @@ You do not need to understand the code. At the end `npm test` shows a short summ
 The QR code is a one-time login code, so the app shows it **only in a terminal window**, never in Claude's chat.
 
 1. Open a **new** *Terminal* or *PowerShell* window, go to the folder (`cd ~/whatsapp-app` or `cd $HOME\whatsapp-app`) and type `npm run link`.
-2. On your phone: **WhatsApp → Settings → Linked devices → Link a device**, and scan the QR code.
+2. On your phone, in the app that holds your chapter-work number: Android **⋮ → Linked devices → Link a device**; iPhone **Settings → Linked Devices → Link a Device**. Scan the QR code.
 3. Under **Linked devices** a new entry appears for the laptop. Note its name and today's date, so you can later log out the right one.
 4. Leave the window open for a minute or two while your recent chats arrive. It keeps listening; **Ctrl-C** stops it.
 
@@ -143,7 +143,7 @@ That is what the chapter keeps. The chat stays on your phone, the export in the 
 
 ## Removing it again
 
-1. **On your phone:** WhatsApp → Settings → **Linked devices** → tap the laptop entry you noted in step 4 → **Log out**. From this moment the app cannot read anything new.
+1. **On your phone:** **Linked devices** (Android: ⋮ → Linked devices; iPhone: Settings → Linked Devices) → tap the laptop entry you noted in step 4 → **Log out**. From this moment the app cannot read anything new.
 2. **On your laptop:** delete the `whatsapp-app` folder by hand (Finder or File Explorer → Trash, then empty the Trash). That removes the login keys and the saved messages.
 3. Exports you saved elsewhere stay where you saved them, and older backups keep their copy — delete them by hand if you no longer need them.
 

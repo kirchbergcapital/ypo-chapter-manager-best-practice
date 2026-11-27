@@ -23,7 +23,7 @@
 > This is my kit. Read the AI guide section first and guide me step by step.
 > ```
 >
-> The rest of the kit comes as seven more chat files (`KIT-2-…` to `KIT-8-…`, same place). Your AI tells you which one it needs, when it needs it — one at a time. With a desktop app, save the file in a subfolder `_kit` of that one folder, open the one folder and say: `Read _kit/KIT-START.txt and guide me step by step.` Your assistant builds the chapter folder next to `_kit`.
+> The rest of the kit comes as eight more chat files (`KIT-2-…` to `KIT-9-…`, same place). Your AI tells you which one it needs, when it needs it — one at a time. With a desktop app, save the file in a subfolder `_kit` of that one folder, open the one folder and say: `Read _kit/KIT-START.txt and guide me step by step.` Your assistant builds the chapter folder next to `_kit`.
 >
 > **Way 3 — the whole kit in one folder** (desktop app with a folder, and for building things such as the WhatsApp app — with ChatGPT Work, Claude Cowork, Codex or Claude Code).
 > Download the kit as one file, [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) — no account needed, always the latest version.
@@ -47,7 +47,7 @@
 > **Weg 2 — wenn Deine KI keine Links öffnen kann:** Lade die Startdatei
 > [KIT-START.txt](https://raw.githubusercontent.com/kirchbergcapital/ypo-chapter-manager-best-practice/main/KIT-START.txt)
 > herunter (Rechtsklick → „Link speichern unter"; rund 100 KB). **Häng sie an** einen neuen Chat an — Büroklammer oder hineinziehen; nicht den Text ins Eingabefeld kopieren, das ist für einen Chat zu lang — und schreib: `This is my kit. Read the AI guide section first and guide me step by step.`
-> Der Rest des Kits kommt in sieben weiteren Chat-Dateien (`KIT-2-…` bis `KIT-8-…`, gleicher Ort). Deine KI sagt Dir, welche sie wann braucht — immer nur eine. Mit einer Desktop-App legst Du die Datei in einen Unterordner `_kit` dieses einen Ordners, öffnest den einen Ordner und schreibst: `Read _kit/KIT-START.txt and guide me step by step.` Dein Assistent baut den Chapter-Ordner neben `_kit`.
+> Der Rest des Kits kommt in acht weiteren Chat-Dateien (`KIT-2-…` bis `KIT-9-…`, gleicher Ort). Deine KI sagt Dir, welche sie wann braucht — immer nur eine. Mit einer Desktop-App legst Du die Datei in einen Unterordner `_kit` dieses einen Ordners, öffnest den einen Ordner und schreibst: `Read _kit/KIT-START.txt and guide me step by step.` Dein Assistent baut den Chapter-Ordner neben `_kit`.
 >
 > **Weg 3 — das ganze Kit in einem Ordner** (Desktop-App mit Ordner, und zum Bauen, z. B. der WhatsApp-App — mit ChatGPT Work, Claude Cowork, Codex oder Claude Code):
 > [`_kit.zip`](https://github.com/kirchbergcapital/ypo-chapter-manager-best-practice/releases/latest/download/_kit.zip) laden (immer die neueste Fassung) und in diesem einen Ordner entpacken — es entsteht der Ordner `_kit`,
